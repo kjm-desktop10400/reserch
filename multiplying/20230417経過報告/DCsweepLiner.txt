@@ -1,0 +1,182 @@
+do for [i = 1 : 5]{
+more> stats "DCsweepLiner.txt" using 1 : i + 1
+more> }
+
+* FILE: 
+  Records:           19002
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMNS:
+  Mean:               0.0005                0.0002
+  Std Dev:            0.0055                0.0017
+  Sample StdDev:      0.0055                0.0017
+  Skewness:           0.0000               -0.0000
+  Kurtosis:           1.8000                1.7999
+  Avg Dev:            0.0048                0.0015
+  Sum:                9.4620                2.9757
+  Sum Sq.:            0.5765                0.0571
+
+  Mean Err.:          0.0000                0.0000
+  Std Dev Err.:       0.0000                0.0000
+  Skewness Err.:      0.0178                0.0178
+  Kurtosis Err.:      0.0355                0.0355
+
+  Minimum:           -0.0090 [    1]       -0.0028 [    0]
+  Maximum:            0.0100 [18998]        0.0032 [18995]
+  Quartile:          -0.0043               -0.0013
+  Median:             0.0005                0.0002
+  Quartile:           0.0053                0.0016
+
+  Linear Model:       y = 0.3148 x - 1.486e-07
+  Slope:              0.3148 +- 3.322e-06
+  Intercept:          -1.486e-07 +- 1.83e-08
+  Correlation:        r = 1
+  Sum xy:             0.1815
+
+
+* FILE: 
+  Records:           19002
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMNS:
+  Mean:               0.0005                0.0003
+  Std Dev:            0.0055                0.0036
+  Sample StdDev:      0.0055                0.0036
+  Skewness:           0.0000               -0.0001
+  Kurtosis:           1.8000                1.7998
+  Avg Dev:            0.0048                0.0031
+  Sum:                9.4620                6.1233
+  Sum Sq.:            0.5765                0.2419
+
+  Mean Err.:          0.0000                0.0000
+  Std Dev Err.:       0.0000                0.0000
+  Skewness Err.:      0.0178                0.0178
+  Kurtosis Err.:      0.0355                0.0355
+
+  Minimum:           -0.0090 [    1]       -0.0058 [    0]
+  Maximum:            0.0100 [18998]        0.0065 [19000]
+  Quartile:          -0.0043               -0.0028
+  Median:             0.0005                0.0003
+  Quartile:           0.0053                0.0034
+
+  Linear Model:       y = 0.6478 x - 3.235e-07
+  Slope:              0.6478 +- 4.217e-06
+  Intercept:          -3.235e-07 +- 2.323e-08
+  Correlation:        r = 1
+  Sum xy:             0.3734
+
+
+* FILE: 
+  Records:           19002
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMNS:
+  Mean:               0.0005                0.0005
+  Std Dev:            0.0055                0.0055
+  Sample StdDev:      0.0055                0.0055
+  Skewness:           0.0000               -0.0001
+  Kurtosis:           1.8000                1.7995
+  Avg Dev:            0.0048                0.0048
+  Sum:                9.4620                9.5596
+  Sum Sq.:            0.5765                0.5898
+
+  Mean Err.:          0.0000                0.0000
+  Std Dev Err.:       0.0000                0.0000
+  Skewness Err.:      0.0178                0.0178
+  Kurtosis Err.:      0.0355                0.0355
+
+  Minimum:           -0.0090 [    1]       -0.0091 [    0]
+  Maximum:            0.0100 [18998]        0.0101 [19001]
+  Quartile:          -0.0043               -0.0043
+  Median:             0.0005                0.0005
+  Quartile:           0.0053                0.0053
+
+  Linear Model:       y = 1.011 x - 5.732e-07
+  Slope:              1.011 +- 5.963e-06
+  Intercept:          -5.732e-07 +- 3.284e-08
+  Correlation:        r = 1
+  Sum xy:             0.5831
+
+
+* FILE: 
+  Records:           19002
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMNS:
+  Mean:               0.0005                0.0007
+  Std Dev:            0.0055                0.0077
+  Sample StdDev:      0.0055                0.0077
+  Skewness:           0.0000               -0.0003
+  Kurtosis:           1.8000                1.7990
+  Avg Dev:            0.0048                0.0066
+  Sum:                9.4620               13.2218
+  Sum Sq.:            0.5765                1.1288
+
+  Mean Err.:          0.0000                0.0001
+  Std Dev Err.:       0.0000                0.0000
+  Skewness Err.:      0.0178                0.0178
+  Kurtosis Err.:      0.0355                0.0355
+
+  Minimum:           -0.0090 [    1]       -0.0126 [    0]
+  Maximum:            0.0100 [18998]        0.0140 [19001]
+  Quartile:          -0.0043               -0.0060
+  Median:             0.0005                0.0007
+  Quartile:           0.0053                0.0073
+
+  Linear Model:       y = 1.399 x - 9.842e-07
+  Slope:              1.399 +- 2.023e-05
+  Intercept:          -9.842e-07 +- 1.115e-07
+  Correlation:        r = 1
+  Sum xy:             0.8067
+
+
+* FILE: 
+  Records:           19002
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMNS:
+  Mean:               0.0005                0.0009
+  Std Dev:            0.0055                0.0097
+  Sample StdDev:      0.0055                0.0097
+  Skewness:           0.0000               -0.0005
+  Kurtosis:           1.8000                1.7983
+  Avg Dev:            0.0048                0.0084
+  Sum:                9.4620               16.7015
+  Sum Sq.:            0.5765                1.8023
+
+  Mean Err.:          0.0000                0.0001
+  Std Dev Err.:       0.0000                0.0000
+  Skewness Err.:      0.0178                0.0178
+  Kurtosis Err.:      0.0355                0.0355
+
+  Minimum:           -0.0090 [    1]       -0.0159 [    0]
+  Maximum:            0.0100 [18998]        0.0177 [18996]
+  Quartile:          -0.0043               -0.0075
+  Median:             0.0005                0.0009
+  Quartile:           0.0053                0.0093
+
+  Linear Model:       y = 1.768 x - 1.54e-06
+  Slope:              1.768 +- 2.636e-05
+  Intercept:          -1.54e-06 +- 1.452e-07
+  Correlation:        r = 1
+  Sum xy:             1.019

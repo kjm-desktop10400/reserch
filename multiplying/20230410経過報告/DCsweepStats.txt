@@ -1,0 +1,184 @@
+gnuplot> stats "DCsweepLiner.txt" using 1 : 2
+
+* FILE: 
+  Records:           100100
+  Out of range:           0
+  Invalid:                0
+  Header records:         0
+  Blank:                  0
+  Data Blocks:            1
+
+* COLUMNS:
+  Mean:          -9.99001e-09            -1.17882e-07
+  Std Dev:            0.0289                 0.0068
+  Sample StdDev:      0.0289                 0.0068
+  Skewness:           0.0000            3.50489e-07
+  Kurtosis:           1.8000                 1.8017
+  Avg Dev:            0.0250                 0.0059
+  Sum:               -0.0010                -0.0118
+  Sum Sq.:           83.5835                 4.6777
+
+  Mean Err.:          0.0001                 0.0000
+  Std Dev Err.:       0.0001                 0.0000
+  Skewness Err.:      0.0077                 0.0077
+  Kurtosis Err.:      0.0155                 0.0155
+
+  Minimum:           -0.0500 [     0]       -0.0118 [     0]
+  Maximum:            0.0500 [100099]        0.0118 [100099]
+  Quartile:          -0.0250                -0.0059
+  Median:        -5.00000e-07            -1.19000e-07
+  Quartile:           0.0250                 0.0059
+
+  Linear Model:       y = 0.2366 x - 1.155e-07
+  Slope:              0.2366 +- 1.495e-06
+  Intercept:          -1.155e-07 +- 4.319e-08
+  Correlation:        r = 1
+  Sum xy:             19.77
+
+gnuplot> stats "DCsweepLiner.txt" using 3 : 4  
+
+* FILE: 
+  Records:           100100
+  Out of range:           0
+  Invalid:                0
+  Header records:         0
+  Blank:                  0
+  Data Blocks:            1
+
+* COLUMNS:
+  Mean:          -9.99001e-09            -2.43756e-07
+  Std Dev:            0.0289                 0.0141
+  Sample StdDev:      0.0289                 0.0141
+  Skewness:           0.0000            -4.32545e-08
+  Kurtosis:           1.8000                 1.7994
+  Avg Dev:            0.0250                 0.0122
+  Sum:               -0.0010                -0.0244
+  Sum Sq.:           83.5835                19.8486
+
+  Mean Err.:          0.0001                 0.0000
+  Std Dev Err.:       0.0001                 0.0000
+  Skewness Err.:      0.0077                 0.0077
+  Kurtosis Err.:      0.0155                 0.0155
+
+  Minimum:           -0.0500 [     0]       -0.0244 [     0]
+  Maximum:            0.0500 [100099]        0.0244 [100099]
+  Quartile:          -0.0250                -0.0122
+  Median:        -5.00000e-07            -2.38500e-07
+  Quartile:           0.0250                 0.0122
+
+  Linear Model:       y = 0.4873 x - 2.389e-07
+  Slope:              0.4873 +- 2.815e-06
+  Intercept:          -2.389e-07 +- 8.135e-08
+  Correlation:        r = 1
+  Sum xy:             40.73
+
+gnuplot> stats "DCsweepLiner.txt" using 5 :6   
+
+* FILE: 
+  Records:           100100
+  Out of range:           0
+  Invalid:                0
+  Header records:         0
+  Blank:                  0
+  Data Blocks:            1
+
+* COLUMNS:
+  Mean:          -9.99001e-09            -3.78621e-07
+  Std Dev:            0.0289                 0.0219
+  Sample StdDev:      0.0289                 0.0219
+  Skewness:           0.0000            2.75402e-07
+  Kurtosis:           1.8000                 1.7936
+  Avg Dev:            0.0250                 0.0190
+  Sum:               -0.0010                -0.0379
+  Sum Sq.:           83.5835                48.1845
+
+  Mean Err.:          0.0001                 0.0001
+  Std Dev Err.:       0.0001                 0.0000
+  Skewness Err.:      0.0077                 0.0077
+  Kurtosis Err.:      0.0155                 0.0155
+
+  Minimum:           -0.0500 [     0]       -0.0379 [     0]
+  Maximum:            0.0500 [100099]        0.0379 [100099]
+  Quartile:          -0.0250                -0.0191
+  Median:        -5.00000e-07            -3.57500e-07
+  Quartile:           0.0250                 0.0191
+
+  Linear Model:       y = 0.7593 x - 3.71e-07
+  Slope:              0.7593 +- 6.002e-06
+  Intercept:          -3.71e-07 +- 1.734e-07
+  Correlation:        r = 1
+  Sum xy:             63.46
+
+gnuplot>  stats "DCsweepLiner.txt" using 7 :8      
+
+* FILE: 
+  Records:           100100
+  Out of range:           0
+  Invalid:                0
+  Header records:         0
+  Blank:                  0
+  Data Blocks:            1
+
+* COLUMNS:
+  Mean:          -9.99001e-09            -5.15485e-07
+  Std Dev:            0.0289                 0.0300
+  Sample StdDev:      0.0289                 0.0300
+  Skewness:           0.0000            8.53284e-07
+  Kurtosis:           1.8000                 1.7839
+  Avg Dev:            0.0250                 0.0261
+  Sum:               -0.0010                -0.0516
+  Sum Sq.:           83.5835                90.3382
+
+  Mean Err.:          0.0001                 0.0001
+  Std Dev Err.:       0.0001                 0.0001
+  Skewness Err.:      0.0077                 0.0077
+  Kurtosis Err.:      0.0155                 0.0155
+
+  Minimum:           -0.0500 [     0]       -0.0516 [     0]
+  Maximum:            0.0500 [100099]        0.0516 [100099]
+  Quartile:          -0.0250                -0.0262
+  Median:        -5.00000e-07            -4.77000e-07
+  Quartile:           0.0250                 0.0262
+
+  Linear Model:       y = 1.04 x - 5.051e-07
+  Slope:              1.04 +- 1.745e-05
+  Intercept:          -5.051e-07 +- 5.042e-07
+  Correlation:        r = 1
+  Sum xy:             86.89
+
+gnuplot>  stats "DCsweepLiner.txt" using 9 :10      
+
+* FILE: 
+  Records:           100100
+  Out of range:           0
+  Invalid:                0
+  Header records:         0
+  Blank:                  0
+  Data Blocks:            1
+
+* COLUMNS:
+  Mean:          -9.99001e-09            -6.36364e-07
+  Std Dev:            0.0289                 0.0372
+  Sample StdDev:      0.0289                 0.0372
+  Skewness:           0.0000                 0.0000
+  Kurtosis:           1.8000                 1.7751
+  Avg Dev:            0.0250                 0.0323
+  Sum:               -0.0010                -0.0637
+  Sum Sq.:           83.5835               138.6190
+
+  Mean Err.:          0.0001                 0.0001
+  Std Dev Err.:       0.0001                 0.0001
+  Skewness Err.:      0.0077                 0.0077
+  Kurtosis Err.:      0.0155                 0.0155
+
+  Minimum:           -0.0500 [     0]       -0.0637 [     1]
+  Maximum:            0.0500 [100099]        0.0637 [100093]
+  Quartile:          -0.0250                -0.0326
+  Median:        -5.00000e-07            -6.55000e-07
+  Quartile:           0.0250                 0.0326
+
+  Linear Model:       y = 1.288 x - 6.235e-07
+  Slope:              1.288 +- 3.304e-05
+  Intercept:          -6.235e-07 +- 9.548e-07
+  Correlation:        r = 1
+  Sum xy:             107.6

@@ -1,0 +1,1131 @@
+
+
+*******************************************************************************
+Fri Apr 07 14:39:09 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.700000]
+        #datapoints = 2000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.5)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 4.6579943143e-07   0.00e+00  2.20e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   6 2.9323189195e-13  -1.30e-04  2.20e-11    4.632610e-05   3.981564e-01   5.077537e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 2.93232e-13
+rel. change during last iteration : -1.30048e-09
+
+degrees of freedom    (FIT_NDF)                        : 1997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.21176e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.46836e-16
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 4.63261e-05      +/- 1.3e+04      (2.806e+10%)
+v               = 0.398156         +/- 5.194e-05    (0.01304%)
+l               = 0.507754         +/- 7.037e+08    (1.386e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.033  1.000 
+l              -1.000 -0.033  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 14:40:37 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.900000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.5)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 3.2791357073e-06   0.00e+00  3.38e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 5.8195070855e-12  -5.15e-03  3.38e-10    4.455520e-05   3.928674e-01   5.065783e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 5.81951e-12
+rel. change during last iteration : -5.15316e-08
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.81572e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.45597e-15
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 4.45552e-05      +/- 1.329e+04    (2.983e+10%)
+v               = 0.392867         +/- 6.909e-05    (0.01759%)
+l               = 0.506578         +/- 7.477e+08    (1.476e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v              -0.020  1.000 
+l              -1.000  0.020  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 14:43:28 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.900000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 3.8715856089e-06   0.00e+00  3.63e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 5.8195070925e-12  -9.05e-02  3.63e-10    4.244920e-05   3.928674e-01   4.853348e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 5.81951e-12
+rel. change during last iteration : -9.05109e-07
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.81572e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.45597e-15
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 4.24492e-05      +/- 1.41e+04     (3.322e+10%)
+v               = 0.392867         +/- 6.908e-05    (0.01758%)
+l               = 0.485335         +/- 6.722e+08    (1.385e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.008  1.000 
+l              -1.000 -0.008  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 15:04:46 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.600000 : 0.800000]
+        #datapoints = 2000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.4)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 3.1579435716e-07   0.00e+00  2.98e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   8 5.5432701506e-10  -1.13e-04  2.98e-05    3.128305e-04   3.979693e-01   8.060509e-01
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 5.54327e-10
+rel. change during last iteration : -1.13303e-09
+
+degrees of freedom    (FIT_NDF)                        : 1997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.26858e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.7758e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.00031283       +/- 3.497e+05    (1.118e+11%)
+v               = 0.397969         +/- 0.0002788    (0.07006%)
+l               = 0.806051         +/- 3.696e+09    (4.585e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v              -0.012  1.000 
+l              -1.000  0.012  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 15:05:17 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.700000]
+        #datapoints = 2000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.4)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 4.1180397542e-08   0.00e+00  2.10e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   8 3.3204959495e-11  -4.74e-03  2.10e-09    3.623154e-04   4.196245e-01   8.864782e-01
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 3.3205e-11
+rel. change during last iteration : -4.7413e-08
+
+degrees of freedom    (FIT_NDF)                        : 1997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.28947e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.66274e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000362315      +/- 2.008e+05    (5.543e+10%)
+v               = 0.419624         +/- 6.889e-05    (0.01642%)
+l               = 0.886478         +/- 1.877e+09    (2.118e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.030  1.000 
+l              -1.000 -0.030  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 15:06:06 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.700000]
+        #datapoints = 2000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.4)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 4.1180397542e-08   0.00e+00  2.10e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   8 3.3204959495e-11  -4.74e-03  2.10e-09    3.623154e-04   4.196245e-01   8.864782e-01
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 3.3205e-11
+rel. change during last iteration : -4.7413e-08
+
+degrees of freedom    (FIT_NDF)                        : 1997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.28947e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.66274e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000362315      +/- 2.008e+05    (5.543e+10%)
+v               = 0.419624         +/- 6.889e-05    (0.01642%)
+l               = 0.886478         +/- 1.877e+09    (2.118e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.030  1.000 
+l              -1.000 -0.030  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 15:06:25 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.700000]
+        #datapoints = 2000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.4)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 4.1180397542e-08   0.00e+00  2.10e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   8 3.3204959495e-11  -4.74e-03  2.10e-09    3.623154e-04   4.196245e-01   8.864782e-01
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 3.3205e-11
+rel. change during last iteration : -4.7413e-08
+
+degrees of freedom    (FIT_NDF)                        : 1997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.28947e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.66274e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000362315      +/- 2.008e+05    (5.543e+10%)
+v               = 0.419624         +/- 6.889e-05    (0.01642%)
+l               = 0.886478         +/- 1.877e+09    (2.118e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.030  1.000 
+l              -1.000 -0.030  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 15:06:53 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.600000]
+        #datapoints = 2000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.4)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 1.3286949242e-08   0.00e+00  1.35e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 2.3529260596e-10  -6.42e-01  1.35e-10    3.028306e-04   4.035637e-01   7.725421e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.35293e-10
+rel. change during last iteration : -6.42047e-06
+
+degrees of freedom    (FIT_NDF)                        : 1997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.43254e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.17823e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000302831      +/- 1.445e+06    (4.77e+11%)
+v               = 0.403564         +/- 0.0003458    (0.08569%)
+l               = 0.772542         +/- 1.561e+10    (2.021e+12%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v              -0.008  1.000 
+l              -1.000  0.008  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 15:07:08 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.4)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 6.3766062907e-09   0.00e+00  1.65e-05    1.400000e-04   3.000000e-01   6.000000e-01
+  28 1.0352070622e-11  -1.02e-01  1.65e-09    3.450802e-04   4.160517e-01   8.654493e-01
+
+After 28 iterations the fit converged.
+final sum of squares of residuals : 1.03521e-11
+rel. change during last iteration : -1.01697e-06
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.01898e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.03832e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.00034508       +/- 4.936e+05    (1.43e+11%)
+v               = 0.416052         +/- 0.0001402    (0.03369%)
+l               = 0.865449         +/- 4.814e+09    (5.563e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.008  1.000 
+l              -1.000 -0.008  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 15:07:31 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.4)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 6.3766062907e-09   0.00e+00  1.65e-05    1.400000e-04   3.000000e-01   6.000000e-01
+  28 1.0352070622e-11  -1.02e-01  1.65e-09    3.450802e-04   4.160517e-01   8.654493e-01
+
+After 28 iterations the fit converged.
+final sum of squares of residuals : 1.03521e-11
+rel. change during last iteration : -1.01697e-06
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.01898e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.03832e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.00034508       +/- 4.936e+05    (1.43e+11%)
+v               = 0.416052         +/- 0.0001402    (0.03369%)
+l               = 0.865449         +/- 4.814e+09    (5.563e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.008  1.000 
+l              -1.000 -0.008  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 16:12:15 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.4)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 4.1956193131e-09   0.00e+00  1.65e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   4 4.0657671286e-14  -5.23e-01  1.65e-09    1.069067e-04   2.896562e-01   5.733653e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 4.06577e-14
+rel. change during last iteration : -5.23466e-06
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.38592e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.078e-17
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000106907      +/- 6984         (6.533e+09%)
+v               = 0.289656         +/- 2.781e-05    (0.009602%)
+l               = 0.573365         +/- 2.008e+08    (3.502e+10%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v              -0.003  1.000 
+l              -1.000  0.003  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 16:13:40 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 1.1644743686e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 4.0657671282e-14  -6.45e-07  1.86e-04    9.680943e-05   2.896562e-01   5.501037e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 4.06577e-14
+rel. change during last iteration : -6.45436e-12
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.38592e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.078e-17
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 9.68094e-05      +/- 9046         (9.344e+09%)
+v               = 0.289656         +/- 2.782e-05    (0.009603%)
+l               = 0.550104         +/- 1.952e+08    (3.548e+10%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.010  1.000 
+l              -1.000 -0.010  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 16:15:08 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 1.1644743686e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 4.0657671282e-14  -6.45e-07  1.86e-04    9.680943e-05   2.896562e-01   5.501037e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 4.06577e-14
+rel. change during last iteration : -6.45436e-12
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.38592e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.078e-17
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 9.68094e-05      +/- 9046         (9.344e+09%)
+v               = 0.289656         +/- 2.782e-05    (0.009603%)
+l               = 0.550104         +/- 1.952e+08    (3.548e+10%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.010  1.000 
+l              -1.000 -0.010  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 16:15:24 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 1.1644743686e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 4.0657671282e-14  -6.45e-07  1.86e-04    9.680943e-05   2.896562e-01   5.501037e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 4.06577e-14
+rel. change during last iteration : -6.45436e-12
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.38592e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.078e-17
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 9.68094e-05      +/- 9046         (9.344e+09%)
+v               = 0.289656         +/- 2.782e-05    (0.009603%)
+l               = 0.550104         +/- 1.952e+08    (3.548e+10%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.010  1.000 
+l              -1.000 -0.010  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 16:16:01 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 1.1644743686e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 4.0657671282e-14  -6.45e-07  1.86e-04    9.680943e-05   2.896562e-01   5.501037e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 4.06577e-14
+rel. change during last iteration : -6.45436e-12
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.38592e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.078e-17
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 9.68094e-05      +/- 9046         (9.344e+09%)
+v               = 0.289656         +/- 2.782e-05    (0.009603%)
+l               = 0.550104         +/- 1.952e+08    (3.548e+10%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.010  1.000 
+l              -1.000 -0.010  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 16:50:14 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 7.9273219836e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 3.7769831235e-13  -2.06e-04  1.86e-10    9.918283e-05   3.898863e-01   5.491500e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 3.77698e-13
+rel. change during last iteration : -2.05575e-09
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.94637e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.78835e-16
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 9.91828e-05      +/- 7.106e+04    (7.165e+10%)
+v               = 0.389886         +/- 8.853e-05    (0.02271%)
+l               = 0.54915          +/- 1.496e+09    (2.724e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.008  1.000 
+l              -1.000 -0.008  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 16:50:32 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 7.9273219836e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 3.7769831235e-13  -2.06e-04  1.86e-10    9.918283e-05   3.898863e-01   5.491500e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 3.77698e-13
+rel. change during last iteration : -2.05575e-09
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.94637e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.78835e-16
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 9.91828e-05      +/- 7.106e+04    (7.165e+10%)
+v               = 0.389886         +/- 8.853e-05    (0.02271%)
+l               = 0.54915          +/- 1.496e+09    (2.724e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.008  1.000 
+l              -1.000 -0.008  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 16:50:55 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 7.9273219836e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 3.7769831235e-13  -2.06e-04  1.86e-10    9.918283e-05   3.898863e-01   5.491500e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 3.77698e-13
+rel. change during last iteration : -2.05575e-09
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.94637e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.78835e-16
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 9.91828e-05      +/- 7.106e+04    (7.165e+10%)
+v               = 0.389886         +/- 8.853e-05    (0.02271%)
+l               = 0.54915          +/- 1.496e+09    (2.724e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.008  1.000 
+l              -1.000 -0.008  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 23:30:12 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 1.1644743686e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 4.0657671282e-14  -6.45e-07  1.86e-04    9.680943e-05   2.896562e-01   5.501037e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 4.06577e-14
+rel. change during last iteration : -6.45436e-12
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.38592e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.078e-17
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 9.68094e-05      +/- 9046         (9.344e+09%)
+v               = 0.289656         +/- 2.782e-05    (0.009603%)
+l               = 0.550104         +/- 1.952e+08    (3.548e+10%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.010  1.000 
+l              -1.000 -0.010  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 23:31:26 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 1.1644743686e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 4.0657671282e-14  -6.45e-07  1.86e-04    9.680943e-05   2.896562e-01   5.501037e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 4.06577e-14
+rel. change during last iteration : -6.45436e-12
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.38592e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.078e-17
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 9.68094e-05      +/- 9046         (9.344e+09%)
+v               = 0.289656         +/- 2.782e-05    (0.009603%)
+l               = 0.550104         +/- 1.952e+08    (3.548e+10%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.010  1.000 
+l              -1.000 -0.010  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 23:31:45 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 1.1644743686e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 4.0657671282e-14  -6.45e-07  1.86e-04    9.680943e-05   2.896562e-01   5.501037e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 4.06577e-14
+rel. change during last iteration : -6.45436e-12
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.38592e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.078e-17
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 9.68094e-05      +/- 9046         (9.344e+09%)
+v               = 0.289656         +/- 2.782e-05    (0.009603%)
+l               = 0.550104         +/- 1.952e+08    (3.548e+10%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.010  1.000 
+l              -1.000 -0.010  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 23:32:27 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 1.1644743686e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 4.0657671282e-14  -6.45e-07  1.86e-04    9.680943e-05   2.896562e-01   5.501037e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 4.06577e-14
+rel. change during last iteration : -6.45436e-12
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.38592e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.078e-17
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 9.68094e-05      +/- 9046         (9.344e+09%)
+v               = 0.289656         +/- 2.782e-05    (0.009603%)
+l               = 0.550104         +/- 1.952e+08    (3.548e+10%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.010  1.000 
+l              -1.000 -0.010  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 23:32:40 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 1.1644743686e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 4.0657671282e-14  -6.45e-07  1.86e-04    9.680943e-05   2.896562e-01   5.501037e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 4.06577e-14
+rel. change during last iteration : -6.45436e-12
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.38592e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.078e-17
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 9.68094e-05      +/- 9046         (9.344e+09%)
+v               = 0.289656         +/- 2.782e-05    (0.009603%)
+l               = 0.550104         +/- 1.952e+08    (3.548e+10%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.010  1.000 
+l              -1.000 -0.010  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 23:47:52 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.600000]
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 6.4846197177e-08   0.00e+00  1.86e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 5.7701727370e-13  -4.30e-03  1.86e-10    1.206595e-04   3.900696e-01   5.742768e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 5.77017e-13
+rel. change during last iteration : -4.30303e-08
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.40573e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.78754e-16
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.00012066       +/- 8.976e+04    (7.439e+10%)
+v               = 0.39007          +/- 8.89e-05     (0.02279%)
+l               = 0.574277         +/- 1.572e+09    (2.737e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v              -0.009  1.000 
+l              -1.000  0.009  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 23:48:56 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.700000]
+        #datapoints = 2000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 2.2183826377e-07   0.00e+00  2.36e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 2.2970093133e-12  -8.97e-04  2.36e-10    1.264961e-04   3.942744e-01   5.816834e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.29701e-12
+rel. change during last iteration : -8.96651e-09
+
+degrees of freedom    (FIT_NDF)                        : 1997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.3915e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.15023e-15
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000126496      +/- 4.634e+04    (3.663e+10%)
+v               = 0.394274         +/- 4.807e-05    (0.01219%)
+l               = 0.581683         +/- 7.766e+08    (1.335e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.044  1.000 
+l              -1.000 -0.044  1.000 
+
+
+*******************************************************************************
+Fri Apr 07 23:49:11 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.700000]
+        #datapoints = 2000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 2.2183826377e-07   0.00e+00  2.36e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 2.2970093133e-12  -8.97e-04  2.36e-10    1.264961e-04   3.942744e-01   5.816834e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.29701e-12
+rel. change during last iteration : -8.96651e-09
+
+degrees of freedom    (FIT_NDF)                        : 1997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.3915e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.15023e-15
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000126496      +/- 4.634e+04    (3.663e+10%)
+v               = 0.394274         +/- 4.807e-05    (0.01219%)
+l               = 0.581683         +/- 7.766e+08    (1.335e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.044  1.000 
+l              -1.000 -0.044  1.000 
+
+
+*******************************************************************************
+Mon Apr 10 11:25:32 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.700000]
+        #datapoints = 2000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 2.2183826377e-07   0.00e+00  2.36e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 2.2970093133e-12  -8.97e-04  2.36e-10    1.264961e-04   3.942744e-01   5.816834e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.29701e-12
+rel. change during last iteration : -8.96651e-09
+
+degrees of freedom    (FIT_NDF)                        : 1997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.3915e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.15023e-15
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000126496      +/- 4.634e+04    (3.663e+10%)
+v               = 0.394274         +/- 4.807e-05    (0.01219%)
+l               = 0.581683         +/- 7.766e+08    (1.335e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.044  1.000 
+l              -1.000 -0.044  1.000 
+
+
+*******************************************************************************
+Mon Apr 10 11:25:59 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.700000]
+        #datapoints = 2000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 2.2183826377e-07   0.00e+00  2.36e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 2.2970093133e-12  -8.97e-04  2.36e-10    1.264961e-04   3.942744e-01   5.816834e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.29701e-12
+rel. change during last iteration : -8.96651e-09
+
+degrees of freedom    (FIT_NDF)                        : 1997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.3915e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.15023e-15
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000126496      +/- 4.634e+04    (3.663e+10%)
+v               = 0.394274         +/- 4.807e-05    (0.01219%)
+l               = 0.581683         +/- 7.766e+08    (1.335e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.044  1.000 
+l              -1.000 -0.044  1.000 
+
+
+*******************************************************************************
+Mon Apr 10 11:26:16 2023
+
+
+FIT:    data read from "TSMC182n.txt" using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.700000]
+        #datapoints = 2000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (x - v)**2 * (1 + l * 0.65)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             v             l            
+   0 2.2183826377e-07   0.00e+00  2.36e-05    1.400000e-04   3.000000e-01   6.000000e-01
+   5 2.2970093133e-12  -8.97e-04  2.36e-10    1.264961e-04   3.942744e-01   5.816834e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.29701e-12
+rel. change during last iteration : -8.96651e-09
+
+degrees of freedom    (FIT_NDF)                        : 1997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.3915e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.15023e-15
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000126496      +/- 4.634e+04    (3.663e+10%)
+v               = 0.394274         +/- 4.807e-05    (0.01219%)
+l               = 0.581683         +/- 7.766e+08    (1.335e+11%)
+
+correlation matrix of the fit parameters:
+                K      v      l      
+K               1.000 
+v               0.044  1.000 
+l              -1.000 -0.044  1.000 

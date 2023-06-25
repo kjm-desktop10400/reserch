@@ -1,0 +1,40 @@
+designの中に新しいライブラリフォルダを作る
+その中にpdkのzipを移動
+
+端末で開く⇒”unzip {zipファイル名}”で展開
+
+展開後、pealの先頭行を"/user/bin/peal"から"/bin/peal"に変更
+
+rootでpdkInstall.plの所有権、実行権を変える(chmod,chown)
+
+pealを実行
+
+bashの末尾に環境変数追加のスクリプトを入れる
+
+展開されたフォルダから"PTS06LIB","PTS06_PCELL","PTS06_SAMPLE"をライブラリフォルダにコピー
+
+元のライブラリフォルダから必要なものをコピー
+
+cdsにpdkから移したフォルダの名前とフルパスを追加
+
+元のライブラリファイルにある、.cdsinitを作ったライブラリファイルにコピー
+
+ruluファイルをdesign/mustにコピー
+
+virtuosoのレイアウトかかキャリバーを出す
+
+rulesからプロセスのデザインルールを参照
+
+runディレクトリにはdesign/must/caliber/DRC内に新しいフォルダを作りそこに保存
+
+左上の"file"からrunset⇒save asでrunsetを.runsetで保存
+
+virtuoso⇒caliberを表示
+
+初回はrunsetのファイル選択画面でキャンセル
+
+runsetはコピーしたlvsのルールを参照
+
+runディレクトリは同様caliber内にLVSフォルダをつくる
+
+左上の"file"からrunset⇒save asでrunsetを.runsetで保存

@@ -1,0 +1,25 @@
+<mxfile host="Electron" modified="2023-04-17T02:52:29.524Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="zpcgKfdK9dX26j4LpUxg" version="21.1.2" type="device">
+  <diagram name="ページ1" id="rcmrNkZCL4LnC8l5nCDi">
+    <mxGraphModel dx="574" dy="338" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h4c1l16U0uj68sK93_ea-1" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.transistors.nmos;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="230" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="h4c1l16U0uj68sK93_ea-2" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;`V_G`&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="260" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h4c1l16U0uj68sK93_ea-3" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;`I_S`&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="230" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h4c1l16U0uj68sK93_ea-4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="240" as="sourcePoint" />
+            <mxPoint x="260" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

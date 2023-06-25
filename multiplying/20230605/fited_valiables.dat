@@ -1,0 +1,4 @@
+# fit [range_l : range_r] I(vgs) "current_source_estVth.vcsv" skip 6 using 2 * i - 1: 2 * i via fK, fVth
+# final sum of squares of residuals : 6.87343e-08
+fK              = 6.36441135380563e-05  
+fVth            = 0.384851565040584     

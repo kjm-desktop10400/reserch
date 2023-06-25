@@ -1,0 +1,1906 @@
+
+
+*******************************************************************************
+Sun May 28 17:46:39 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(vgs)
+	Id(vgs) = K * W / L * (vgs - Vth)**2 * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Mon May 29 01:26:45 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(vgs)
+	Id(vgs) = K * W / L * (vgs - Vth)**2 * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Mon May 29 01:27:40 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(vgs)
+	Id(vgs) = K * W / L * (vgs - Vth)**2 * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Mon May 29 01:27:46 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(vgs)
+	Id(vgs) = K * W / L * (vgs - Vth)**2 * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Mon May 29 01:27:48 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(vgs)
+	Id(vgs) = K * W / L * (vgs - Vth)**2 * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Mon May 29 01:29:22 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(vgs)
+	Id(vgs) = K * W / L * (vgs - Vth)**2 * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Mon May 29 01:30:09 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(vgs)
+	Id(vgs) = K * (W / L) * ((vgs - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Mon May 29 01:31:46 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 2.0942597800e-06   0.00e+00  3.80e-04    7.000000e-05   5.000000e-01   4.000000e-01
+   6 1.7552658657e-08  -2.78e-02  3.80e-10    2.380493e-05   1.265990e-01   2.994243e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 1.75527e-08
+rel. change during last iteration : -2.77873e-07
+
+degrees of freedom    (FIT_NDF)                        : 47
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.93251e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.73461e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 2.38049e-05      +/- 1.688e+06    (7.089e+12%)
+Vth             = 0.126599         +/- 0.02944      (23.26%)
+lambda          = 0.299424         +/- 6.061e+10    (2.024e+13%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.274  1.000 
+lambda         -1.000  0.274  1.000 
+
+
+*******************************************************************************
+Mon May 29 01:30:41 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        #datapoints = 50
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(vgs)
+	Id(vgs) = K * (W / L) * ((vgs - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Mon May 29 01:35:36 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.800000]
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.3204012844e-09   0.00e+00  6.96e-05    7.000000e-05   5.000000e-01   4.000000e-01
+   4 2.5950945622e-12  -7.98e-02  6.96e-09    6.861771e-05   4.503691e-01   3.966456e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.59509e-12
+rel. change during last iteration : -7.979e-07
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.57659e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.32516e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 6.86177e-05      +/- 2.353e+06    (3.43e+12%)
+Vth             = 0.450369         +/- 0.003262     (0.7244%)
+lambda          = 0.396646         +/- 3.266e+10    (8.233e+12%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.298  1.000 
+lambda         -1.000  0.298  1.000 
+
+
+*******************************************************************************
+Mon May 29 01:36:46 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.800000]
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.3204012844e-09   0.00e+00  6.96e-05    7.000000e-05   5.000000e-01   4.000000e-01
+   4 2.5950945622e-12  -7.98e-02  6.96e-09    6.861771e-05   4.503691e-01   3.966456e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.59509e-12
+rel. change during last iteration : -7.979e-07
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.57659e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.32516e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 6.86177e-05      +/- 2.353e+06    (3.43e+12%)
+Vth             = 0.450369         +/- 0.003262     (0.7244%)
+lambda          = 0.396646         +/- 3.266e+10    (8.233e+12%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.298  1.000 
+lambda         -1.000  0.298  1.000 
+
+
+*******************************************************************************
+Mon May 29 01:40:08 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.800000]
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.3204012844e-09   0.00e+00  6.96e-05    7.000000e-05   5.000000e-01   4.000000e-01
+   4 2.5950945622e-12  -7.98e-02  6.96e-09    6.861771e-05   4.503691e-01   3.966456e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.59509e-12
+rel. change during last iteration : -7.979e-07
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.57659e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.32516e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 6.86177e-05      +/- 2.353e+06    (3.43e+12%)
+Vth             = 0.450369         +/- 0.003262     (0.7244%)
+lambda          = 0.396646         +/- 3.266e+10    (8.233e+12%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.298  1.000 
+lambda         -1.000  0.298  1.000 
+
+
+*******************************************************************************
+Mon May 29 01:40:30 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.800000]
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.3204012844e-09   0.00e+00  6.96e-05    7.000000e-05   5.000000e-01   4.000000e-01
+   4 2.5950945622e-12  -7.98e-02  6.96e-09    6.861771e-05   4.503691e-01   3.966456e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.59509e-12
+rel. change during last iteration : -7.979e-07
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.57659e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.32516e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 6.86177e-05      +/- 2.353e+06    (3.43e+12%)
+Vth             = 0.450369         +/- 0.003262     (0.7244%)
+lambda          = 0.396646         +/- 3.266e+10    (8.233e+12%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.298  1.000 
+lambda         -1.000  0.298  1.000 
+
+
+*******************************************************************************
+Mon May 29 01:54:47 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.800000]
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.3204012844e-09   0.00e+00  6.96e-05    7.000000e-05   5.000000e-01   4.000000e-01
+   4 2.5950945622e-12  -7.98e-02  6.96e-09    6.861771e-05   4.503691e-01   3.966456e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.59509e-12
+rel. change during last iteration : -7.979e-07
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.57659e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.32516e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 6.86177e-05      +/- 2.353e+06    (3.43e+12%)
+Vth             = 0.450369         +/- 0.003262     (0.7244%)
+lambda          = 0.396646         +/- 3.266e+10    (8.233e+12%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.298  1.000 
+lambda         -1.000  0.298  1.000 
+
+
+*******************************************************************************
+Mon May 29 01:55:58 2023
+
+
+FIT:    data read from "specter_output.csv" skip 1 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.800000]
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.3204012844e-09   0.00e+00  6.96e-05    7.000000e-05   5.000000e-01   4.000000e-01
+   4 2.5950945622e-12  -7.98e-02  6.96e-09    6.861771e-05   4.503691e-01   3.966456e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.59509e-12
+rel. change during last iteration : -7.979e-07
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.57659e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.32516e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 6.86177e-05      +/- 2.353e+06    (3.43e+12%)
+Vth             = 0.450369         +/- 0.003262     (0.7244%)
+lambda          = 0.396646         +/- 3.266e+10    (8.233e+12%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.298  1.000 
+lambda         -1.000  0.298  1.000 
+
+
+*******************************************************************************
+Mon May 29 02:21:44 2023
+
+
+FIT:    data read from "specter_output.csv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.800000]
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.3204012844e-09   0.00e+00  6.96e-05    7.000000e-05   5.000000e-01   4.000000e-01
+   4 2.5950945622e-12  -7.98e-02  6.96e-09    6.861771e-05   4.503691e-01   3.966456e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.59509e-12
+rel. change during last iteration : -7.979e-07
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.57659e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.32516e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 6.86177e-05      +/- 2.353e+06    (3.43e+12%)
+Vth             = 0.450369         +/- 0.003262     (0.7244%)
+lambda          = 0.396646         +/- 3.266e+10    (8.233e+12%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.298  1.000 
+lambda         -1.000  0.298  1.000 
+
+
+*******************************************************************************
+Mon May 29 02:55:57 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 3
+        format = x:z
+        x range restricted to [-0.0100000 : 0.0100000]
+BREAK: No data to fit
+
+*******************************************************************************
+Mon May 29 02:56:11 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 3
+        format = x:z
+        x range restricted to [-0.0100000 : 0.0100000]
+BREAK: No data to fit
+
+*******************************************************************************
+Mon May 29 02:56:35 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 3
+        format = x:z
+        x range restricted to [-0.100000 : 0.100000]
+BREAK: No data to fit
+
+*******************************************************************************
+Mon May 29 02:56:45 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 3
+        format = x:z
+        x range restricted to [-0.100000 : 0.100000]
+BREAK: No data to fit
+
+*******************************************************************************
+Mon May 29 02:56:59 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [-0.100000 : 0.100000]
+        #datapoints = 5001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 5.0175522221e+03   0.00e+00  7.08e-01    1.000000e+00   1.000000e+00
+   4 2.5646090813e-11  -4.54e-05  7.08e-05    3.107125e-05   1.233856e-05
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.56461e-11
+rel. change during last iteration : -4.5383e-10
+
+degrees of freedom    (FIT_NDF)                        : 4999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.16257e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.13024e-15
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 3.10713e-05      +/- 1.754e-08    (0.05645%)
+b               = 1.23386e-05      +/- 1.013e-09    (0.008209%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.000  1.000 
+
+
+*******************************************************************************
+Mon May 29 02:57:14 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [-0.0100000 : 0.0100000]
+        #datapoints = 500
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.9998425028e+02   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+   6 2.4197630528e-16   0.00e+00  7.07e+01    3.152403e-05   1.241643e-05
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 2.41976e-16
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 498
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.97063e-10
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.85896e-19
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 3.1524e-05       +/- 5.399e-09    (0.01713%)
+b               = 1.24164e-05      +/- 3.117e-11    (0.0002511%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.003  1.000 
+
+
+*******************************************************************************
+Mon May 29 03:02:13 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [-0.0100000 : 0.0100000]
+        #datapoints = 500
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.9998425028e+02   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+   6 2.4197630528e-16   0.00e+00  7.07e+01    3.152403e-05   1.241643e-05
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 2.41976e-16
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 498
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.97063e-10
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.85896e-19
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 3.1524e-05       +/- 5.399e-09    (0.01713%)
+b               = 1.24164e-05      +/- 3.117e-11    (0.0002511%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.003  1.000 
+
+
+*******************************************************************************
+Mon May 29 03:02:28 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [-0.0100000 : 0.0100000]
+        #datapoints = 500
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.9998425028e+02   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+   6 2.4197630528e-16   0.00e+00  7.07e+01    3.152403e-05   1.241643e-05
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 2.41976e-16
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 498
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.97063e-10
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.85896e-19
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 3.1524e-05       +/- 5.399e-09    (0.01713%)
+b               = 1.24164e-05      +/- 3.117e-11    (0.0002511%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.003  1.000 
+
+
+*******************************************************************************
+Mon May 29 03:02:40 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [-0.0100000 : 0.0100000]
+        #datapoints = 500
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.9999637883e+02   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+   6 8.4364031276e-26  -7.14e-01  7.07e-07    1.930464e-08   2.879779e-07
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 8.4364e-26
+rel. change during last iteration : -7.14167e-06
+
+degrees of freedom    (FIT_NDF)                        : 498
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30156e-14
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69406e-28
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.93046e-08      +/- 1.008e-13    (0.0005223%)
+b               = 2.87978e-07      +/- 5.821e-16    (2.021e-07%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.003  1.000 
+
+
+*******************************************************************************
+Mon May 29 03:04:33 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [-0.0100000 : 0.0100000]
+        #datapoints = 500
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.9996442237e+02   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+   6 1.3475506854e-18  -4.69e-08  7.07e-07    1.896168e-05   3.224534e-05
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 1.34755e-18
+rel. change during last iteration : -4.69352e-13
+
+degrees of freedom    (FIT_NDF)                        : 498
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.20185e-11
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.70593e-21
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1.89617e-05      +/- 4.029e-10    (0.002125%)
+b               = 3.22453e-05      +/- 2.326e-12    (7.215e-06%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.003  1.000 
+
+
+*******************************************************************************
+Mon May 29 03:05:32 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [-0.0100000 : 0.0100000]
+        #datapoints = 500
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.9958107154e+02   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+   6 2.3836804560e-14  -6.95e-09  7.07e-07    2.017565e-04   4.156873e-04
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 2.38368e-14
+rel. change during last iteration : -6.94979e-14
+
+degrees of freedom    (FIT_NDF)                        : 498
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.91846e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.78651e-17
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.000201757      +/- 5.359e-08    (0.02656%)
+b               = 0.000415687      +/- 3.094e-10    (7.443e-05%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.003  1.000 
+
+
+*******************************************************************************
+Mon May 29 03:08:02 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [-0.0100000 : 0.0100000]
+        #datapoints = 500
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.9578308947e+02   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+   5 3.8892035415e-12  -1.69e-01  7.07e-06    1.030215e-02   4.222440e-03
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 3.8892e-12
+rel. change during last iteration : -1.6859e-06
+
+degrees of freedom    (FIT_NDF)                        : 498
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 8.83722e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.80965e-15
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.0103021        +/- 6.845e-07    (0.006645%)
+b               = 0.00422244       +/- 3.952e-09    (9.36e-05%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               0.003  1.000 
+
+
+*******************************************************************************
+Mon May 29 03:48:33 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [-0.0100000 : 0.0100000]
+        #datapoints = 101
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.0201338350e+02   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+   7 3.1853229346e-27  -2.29e-06  7.07e-08    4.538411e-11   2.067064e-12
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.18532e-27
+rel. change during last iteration : -2.28833e-11
+
+degrees of freedom    (FIT_NDF)                        : 99
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.6723e-15
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.2175e-29
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 4.53841e-11      +/- 1.936e-13    (0.4266%)
+b               = 2.06706e-12      +/- 1.12e-15     (0.05421%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.864  1.000 
+
+
+*******************************************************************************
+Mon May 29 03:49:52 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [-0.0100000 : 0.0100000]
+        #datapoints = 101
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.0201338350e+02   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+   7 3.1853229346e-27  -2.29e-06  7.07e-08    4.538411e-11   2.067064e-12
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.18532e-27
+rel. change during last iteration : -2.28833e-11
+
+degrees of freedom    (FIT_NDF)                        : 99
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.6723e-15
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.2175e-29
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 4.53841e-11      +/- 1.936e-13    (0.4266%)
+b               = 2.06706e-12      +/- 1.12e-15     (0.05421%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.864  1.000 
+
+
+*******************************************************************************
+Mon May 29 03:59:58 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [-0.0100000 : 0.0100000]
+        #datapoints = 101
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.0201338350e+02   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+   7 3.1853229346e-27  -2.29e-06  7.07e-08    4.538411e-11   2.067064e-12
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.18532e-27
+rel. change during last iteration : -2.28833e-11
+
+degrees of freedom    (FIT_NDF)                        : 99
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 5.6723e-15
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.2175e-29
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 4.53841e-11      +/- 1.936e-13    (0.4266%)
+b               = 2.06706e-12      +/- 1.12e-15     (0.05421%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.864  1.000 
+
+
+*******************************************************************************
+Mon May 29 04:00:35 2023
+
+
+FIT:    data read from "specter_output.csv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.800000]
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.0802875793e-08   0.00e+00  1.25e-05    7.000000e-05   5.000000e-01   4.000000e-01
+   7 2.5950943567e-12  -1.09e-10  1.25e-01    2.365298e-04   4.503684e-01   9.790768e-01
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 2.59509e-12
+rel. change during last iteration : -1.08947e-15
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.57659e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.32516e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.00023653       +/- 1.529e+07    (6.465e+12%)
+Vth             = 0.450368         +/- 0.003498     (0.7766%)
+lambda          = 0.979077         +/- 9.922e+10    (1.013e+13%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth             0.455  1.000 
+lambda         -1.000 -0.455  1.000 
+
+
+*******************************************************************************
+Mon May 29 04:01:42 2023
+
+
+FIT:    data read from "specter_output.csv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.800000]
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.1465903734e-08   0.00e+00  9.88e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   7 2.5950943984e-12  -4.72e-05  9.88e-06    3.290210e-04   4.503686e-01   1.095354e+00
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 2.59509e-12
+rel. change during last iteration : -4.71738e-10
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.57659e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.32516e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000329021      +/- 1.575e+07    (4.786e+12%)
+Vth             = 0.450369         +/- 0.004178     (0.9276%)
+lambda          = 1.09535          +/- 1.056e+11    (9.641e+12%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth             0.666  1.000 
+lambda         -1.000 -0.666  1.000 
+
+
+*******************************************************************************
+Mon May 29 04:02:53 2023
+
+
+FIT:    data read from "specter_output.csv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.800000]
+        #datapoints = 9
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.1465903734e-08   0.00e+00  9.88e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   7 2.5950943984e-12  -4.72e-05  9.88e-06    3.290210e-04   4.503686e-01   1.095354e+00
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 2.59509e-12
+rel. change during last iteration : -4.71738e-10
+
+degrees of freedom    (FIT_NDF)                        : 6
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.57659e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.32516e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000329021      +/- 1.575e+07    (4.786e+12%)
+Vth             = 0.450369         +/- 0.004178     (0.9276%)
+lambda          = 1.09535          +/- 1.056e+11    (9.641e+12%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth             0.666  1.000 
+lambda         -1.000 -0.666  1.000 
+
+
+*******************************************************************************
+Mon May 29 04:03:12 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.800000]
+        #datapoints = 3000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 6.9547601603e-08   0.00e+00  9.78e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   5 1.9118150606e-11  -2.43e-02  9.78e-11    8.856873e-05   4.260082e-01   4.300527e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.91182e-11
+rel. change during last iteration : -2.43267e-07
+
+degrees of freedom    (FIT_NDF)                        : 2997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.98692e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.3791e-15
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 8.85687e-05      +/- 6.793e+04    (7.669e+10%)
+Vth             = 0.426008         +/- 0.000103     (0.02418%)
+lambda          = 0.430053         +/- 1.182e+09    (2.748e+11%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth             0.004  1.000 
+lambda         -1.000 -0.004  1.000 
+
+
+*******************************************************************************
+Mon May 29 04:03:43 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 6.9799447212e-08   0.00e+00  8.62e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   5 8.0249983954e-11  -6.20e-02  8.62e-06    8.773521e-05   4.235991e-01   4.202479e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.025e-11
+rel. change during last iteration : -6.19967e-07
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.41695e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.00776e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 8.77352e-05      +/- 1.18e+05     (1.345e+11%)
+Vth             = 0.423599         +/- 0.0001757    (0.04149%)
+lambda          = 0.420248         +/- 2.059e+09    (4.9e+11%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.002  1.000 
+lambda         -1.000  0.002  1.000 
+
+
+*******************************************************************************
+Mon May 29 04:03:44 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 6.9799447212e-08   0.00e+00  8.62e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   5 8.0249983954e-11  -6.20e-02  8.62e-06    8.773521e-05   4.235991e-01   4.202479e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.025e-11
+rel. change during last iteration : -6.19967e-07
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.41695e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.00776e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 8.77352e-05      +/- 1.18e+05     (1.345e+11%)
+Vth             = 0.423599         +/- 0.0001757    (0.04149%)
+lambda          = 0.420248         +/- 2.059e+09    (4.9e+11%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.002  1.000 
+lambda         -1.000  0.002  1.000 
+
+
+*******************************************************************************
+Mon May 29 04:03:57 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 6.9799447212e-08   0.00e+00  8.62e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   5 8.0249983954e-11  -6.20e-02  8.62e-06    8.773521e-05   4.235991e-01   4.202479e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.025e-11
+rel. change during last iteration : -6.19967e-07
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.41695e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.00776e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 8.77352e-05      +/- 1.18e+05     (1.345e+11%)
+Vth             = 0.423599         +/- 0.0001757    (0.04149%)
+lambda          = 0.420248         +/- 2.059e+09    (4.9e+11%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.002  1.000 
+lambda         -1.000  0.002  1.000 
+
+
+*******************************************************************************
+Mon May 29 04:06:29 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 6.9799447212e-08   0.00e+00  8.62e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   5 8.0249983954e-11  -6.20e-02  8.62e-06    8.773521e-05   4.235991e-01   4.202479e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.025e-11
+rel. change during last iteration : -6.19967e-07
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.41695e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.00776e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 8.77352e-05      +/- 1.18e+05     (1.345e+11%)
+Vth             = 0.423599         +/- 0.0001757    (0.04149%)
+lambda          = 0.420248         +/- 2.059e+09    (4.9e+11%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.002  1.000 
+lambda         -1.000  0.002  1.000 
+
+
+*******************************************************************************
+Mon May 29 04:06:31 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 6.9799447212e-08   0.00e+00  8.62e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   5 8.0249983954e-11  -6.20e-02  8.62e-06    8.773521e-05   4.235991e-01   4.202479e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.025e-11
+rel. change during last iteration : -6.19967e-07
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.41695e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.00776e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 8.77352e-05      +/- 1.18e+05     (1.345e+11%)
+Vth             = 0.423599         +/- 0.0001757    (0.04149%)
+lambda          = 0.420248         +/- 2.059e+09    (4.9e+11%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.002  1.000 
+lambda         -1.000  0.002  1.000 
+
+
+*******************************************************************************
+Mon May 29 04:06:42 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 6.9799447212e-08   0.00e+00  8.62e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   5 8.0249983954e-11  -6.20e-02  8.62e-06    8.773521e-05   4.235991e-01   4.202479e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.025e-11
+rel. change during last iteration : -6.19967e-07
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.41695e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.00776e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 8.77352e-05      +/- 1.18e+05     (1.345e+11%)
+Vth             = 0.423599         +/- 0.0001757    (0.04149%)
+lambda          = 0.420248         +/- 2.059e+09    (4.9e+11%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.002  1.000 
+lambda         -1.000  0.002  1.000 
+
+
+*******************************************************************************
+Mon May 29 04:07:29 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 6.9799447212e-08   0.00e+00  8.62e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   5 8.0249983954e-11  -6.20e-02  8.62e-06    8.773521e-05   4.235991e-01   4.202479e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.025e-11
+rel. change during last iteration : -6.19967e-07
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.41695e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.00776e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 8.77352e-05      +/- 1.18e+05     (1.345e+11%)
+Vth             = 0.423599         +/- 0.0001757    (0.04149%)
+lambda          = 0.420248         +/- 2.059e+09    (4.9e+11%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.002  1.000 
+lambda         -1.000  0.002  1.000 
+
+
+*******************************************************************************
+Mon May 29 04:07:54 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 6.9799447212e-08   0.00e+00  8.62e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   5 8.0249983954e-11  -6.20e-02  8.62e-06    8.773521e-05   4.235991e-01   4.202479e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.025e-11
+rel. change during last iteration : -6.19967e-07
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.41695e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.00776e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 8.77352e-05      +/- 1.18e+05     (1.345e+11%)
+Vth             = 0.423599         +/- 0.0001757    (0.04149%)
+lambda          = 0.420248         +/- 2.059e+09    (4.9e+11%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.002  1.000 
+lambda         -1.000  0.002  1.000 
+
+
+*******************************************************************************
+Mon May 29 11:54:16 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 6.9799447212e-08   0.00e+00  8.62e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   5 8.0249983954e-11  -6.20e-02  8.62e-06    8.773521e-05   4.235991e-01   4.202479e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.025e-11
+rel. change during last iteration : -6.19967e-07
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.41695e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.00776e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 8.77352e-05      +/- 1.18e+05     (1.345e+11%)
+Vth             = 0.423599         +/- 0.0001757    (0.04149%)
+lambda          = 0.420248         +/- 2.059e+09    (4.9e+11%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.002  1.000 
+lambda         -1.000  0.002  1.000 
+
+
+*******************************************************************************
+Mon May 29 12:00:15 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 8.7401995407e-06   0.00e+00  8.62e-06    7.000000e-05   5.000000e-01   4.000000e-01
+  13 4.3409152236e-08  -6.15e-01  8.62e-09    2.153876e-04   2.798327e-01   7.480320e-01
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 4.34092e-08
+rel. change during last iteration : -6.14521e-06
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.29552e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.08604e-11
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000215388      +/- 1.423e+06    (6.605e+11%)
+Vth             = 0.279833         +/- 0.0009019    (0.3223%)
+lambda          = 0.748032         +/- 1.228e+10    (1.642e+12%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.017  1.000 
+lambda         -1.000  0.017  1.000 
+
+
+*******************************************************************************
+Mon May 29 12:42:21 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((x - Vth)**2) * (1 + lambda * Vds)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 6.9799447212e-08   0.00e+00  8.62e-06    7.000000e-05   5.000000e-01   4.000000e-01
+   5 8.0249983954e-11  -6.20e-02  8.62e-06    8.773521e-05   4.235991e-01   4.202479e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 8.025e-11
+rel. change during last iteration : -6.19967e-07
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.41695e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.00776e-14
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 8.77352e-05      +/- 1.18e+05     (1.345e+11%)
+Vth             = 0.423599         +/- 0.0001757    (0.04149%)
+lambda          = 0.420248         +/- 2.059e+09    (4.9e+11%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -0.002  1.000 
+lambda         -1.000  0.002  1.000 
+
+
+*******************************************************************************
+Mon May 29 12:44:48 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((0.65 - Vth)**2) * (1 + lambda * x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 9.9558695293e-08   0.00e+00  1.01e-05    7.000000e-05   4.200000e-01   4.000000e-01
+ 246 6.5470522382e-08  -9.56e-01  1.01e-08    6.115566e-05   6.817888e-01   1.603454e+02
+
+After 246 iterations the fit converged.
+final sum of squares of residuals : 6.54705e-08
+rel. change during last iteration : -9.56381e-06
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.04721e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.63799e-11
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 6.11557e-05      +/- 1.01e+07     (1.652e+13%)
+Vth             = 0.681789         +/- 2.598e+09    (3.811e+11%)
+lambda          = 160.345          +/- 887.5        (553.5%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -1.000  1.000 
+lambda         -0.010  0.010  1.000 
+
+
+*******************************************************************************
+Mon May 29 12:45:58 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((0.65 - Vth)**2) * (1 + lambda * x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 9.9558695293e-08   0.00e+00  1.01e-05    7.000000e-05   4.200000e-01   4.000000e-01
+ 246 6.5470522382e-08  -9.56e-01  1.01e-08    6.115566e-05   6.817888e-01   1.603454e+02
+
+After 246 iterations the fit converged.
+final sum of squares of residuals : 6.54705e-08
+rel. change during last iteration : -9.56381e-06
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.04721e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.63799e-11
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 6.11557e-05      +/- 1.01e+07     (1.652e+13%)
+Vth             = 0.681789         +/- 2.598e+09    (3.811e+11%)
+lambda          = 160.345          +/- 887.5        (553.5%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -1.000  1.000 
+lambda         -0.010  0.010  1.000 
+
+
+*******************************************************************************
+Mon May 29 12:47:41 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 4000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((0.65 - Vth)**2) * (1 + lambda * x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 6.9278466018e-09   0.00e+00  1.01e-05    7.000000e-05   4.200000e-01   4.000000e-01
+   5 3.7173666092e-14  -2.21e-09  1.01e-09    7.216097e-05   3.736307e-01   1.187414e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 3.71737e-14
+rel. change during last iteration : -2.20698e-14
+
+degrees of freedom    (FIT_NDF)                        : 3997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.04965e-09
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.30039e-18
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 7.2161e-05       +/- 8206         (1.137e+10%)
+Vth             = 0.373631         +/- 1.572e+07    (4.208e+09%)
+lambda          = 0.118741         +/- 8.134e-05    (0.06851%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth             1.000  1.000 
+lambda          0.065  0.065  1.000 
+
+
+*******************************************************************************
+Mon May 29 12:48:37 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.00000 : 0.800000]
+        #datapoints = 8001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((0.65 - Vth)**2) * (1 + lambda * x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.6348899839e-08   0.00e+00  9.42e-06    7.000000e-05   4.200000e-01   4.000000e-01
+   3 5.8881226755e-09  -2.02e-02  9.42e-09    7.035155e-05   4.122179e-01   8.607399e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 5.88812e-09
+rel. change during last iteration : -2.02321e-07
+
+degrees of freedom    (FIT_NDF)                        : 7998
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 8.58021e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.36199e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 7.03515e-05      +/- 1.656e+06    (2.353e+12%)
+Vth             = 0.412218         +/- 2.8e+09      (6.793e+11%)
+lambda          = 0.86074          +/- 0.01419      (1.648%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth             1.000  1.000 
+lambda         -0.007 -0.007  1.000 
+
+
+*******************************************************************************
+Mon May 29 12:49:23 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 6000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((0.65 - Vth)**2) * (1 + lambda * x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.1523060968e-08   0.00e+00  9.73e-06    7.000000e-05   4.200000e-01   4.000000e-01
+   4 1.9917337613e-12  -3.40e-06  9.73e-10    7.203641e-05   3.752595e-01   1.421325e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1.99173e-12
+rel. change during last iteration : -3.4047e-11
+
+degrees of freedom    (FIT_NDF)                        : 5997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.82242e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.32122e-16
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 7.20364e-05      +/- 3.992e+04    (5.541e+10%)
+Vth             = 0.375259         +/- 7.617e+07    (2.03e+10%)
+lambda          = 0.142133         +/- 0.0002677    (0.1883%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth             1.000  1.000 
+lambda         -0.012 -0.012  1.000 
+
+*******************************************************************************
+Mon May 29 18:26:38 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 6000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((0.65 - Vth)**2) * (1 + lambda * x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.3348788022e-07   0.00e+00  9.73e-06    7.000000e-05   4.200000e-01   4.000000e-01
+ 204 8.2653671852e-08  -2.02e-01  9.73e-09    6.176261e-05   6.771906e-01   1.915672e+02
+
+After 204 iterations the fit converged.
+final sum of squares of residuals : 8.26537e-08
+rel. change during last iteration : -2.01826e-06
+
+degrees of freedom    (FIT_NDF)                        : 5997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.71248e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.37825e-11
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 6.17626e-05      +/- 1.035e+07    (1.675e+13%)
+Vth             = 0.677191         +/- 2.249e+09    (3.322e+11%)
+lambda          = 191.567          +/- 621.6        (324.5%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -1.000  1.000 
+lambda          0.070 -0.070  1.000 
+
+
+*******************************************************************************
+Mon May 29 18:27:06 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.200000 : 0.800000]
+        #datapoints = 6000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(x)
+	Id(x) = K * (W / L) * ((0.65 - Vth)**2) * (1 + lambda * x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth           lambda       
+   0 1.3348788022e-07   0.00e+00  9.73e-06    7.000000e-05   4.200000e-01   4.000000e-01
+ 204 8.2653671852e-08  -2.02e-01  9.73e-09    6.176261e-05   6.771906e-01   1.915672e+02
+
+After 204 iterations the fit converged.
+final sum of squares of residuals : 8.26537e-08
+rel. change during last iteration : -2.01826e-06
+
+degrees of freedom    (FIT_NDF)                        : 5997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.71248e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.37825e-11
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 6.17626e-05      +/- 1.035e+07    (1.675e+13%)
+Vth             = 0.677191         +/- 2.249e+09    (3.322e+11%)
+lambda          = 191.567          +/- 621.6        (324.5%)
+
+correlation matrix of the fit parameters:
+                K      Vth    lambda 
+K               1.000 
+Vth            -1.000  1.000 
+lambda          0.070 -0.070  1.000 
+
+
+*******************************************************************************
+Fri Jun 02 16:01:22 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6
+        format = z
+        x range restricted to [5.00000e-07 : 5.00000e-06]
+        #datapoints = 10001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(L)
+	Id(L) = K *(1 + lambda * vds) / L
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Fri Jun 02 16:01:48 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6
+        format = z
+        x range restricted to [5.00000e-07 : 5.00000e-06]
+        #datapoints = 10001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(L)
+	Id(L) = K *(1 + lambda * vds) / L
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Fri Jun 02 16:02:52 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6
+        format = z
+        L range restricted to [5.00000e-07 : 5.00000e-06]
+        #datapoints = 10001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(L)
+	Id(L) = K *(1 + lambda * vds) / L
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             lambda       
+   0 1.3376634259e+16   0.00e+00  9.05e+05    1.000000e+00   1.000000e+00
+   5 1.7546695796e-12  -3.88e-05  9.05e+00    3.981222e-12   5.938710e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.75467e-12
+rel. change during last iteration : -3.87503e-10
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.32471e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.75485e-16
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 3.98122e-12      +/- 0.000823     (2.067e+10%)
+lambda          = 0.593871         +/- 3.524e+08    (5.935e+10%)
+
+correlation matrix of the fit parameters:
+                K      lambda 
+K               1.000 
+lambda         -1.000  1.000 
+
+
+*******************************************************************************
+Fri Jun 02 16:04:08 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6
+        format = z
+        x range restricted to [5.00000e-07 : 5.00000e-06]
+        #datapoints = 10001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(L)
+	Id(L) = K *(1 + lambda * vds) / L
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Fri Jun 02 16:04:43 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6
+        format = z
+        x range restricted to [5.00000e-07 : 5.00000e-06]
+        #datapoints = 10001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(L)
+	Id(L) = K *(1 + lambda * vds) / L
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Fri Jun 02 16:05:22 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6
+        format = z
+        L range restricted to [5.00000e-07 : 5.00000e-06]
+        #datapoints = 10001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(L)
+	Id(L) = K *(1 + lambda * vds) / L
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             lambda       
+   0 8.0437239128e-08   0.00e+00  6.53e-07    1.000000e-12   5.000000e-01
+   5 1.7546695796e-12  -3.45e-11  6.53e-08    3.576980e-12   7.865548e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.75467e-12
+rel. change during last iteration : -3.45276e-16
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.32471e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.75485e-16
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 3.57698e-12      +/- 0.0009       (2.516e+10%)
+lambda          = 0.786555         +/- 4.775e+08    (6.07e+10%)
+
+correlation matrix of the fit parameters:
+                K      lambda 
+K               1.000 
+lambda         -1.000  1.000 
+
+
+*******************************************************************************
+Fri Jun 02 17:09:00 2023
+
+
+FIT:    data read from "specter_output.vcsv" skip 6
+        format = z
+        L range restricted to [5.00000e-07 : 5.00000e-06]
+        #datapoints = 10001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: Id(L)
+	Id(L) = K *(1 + delta / L) / L
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             delta        
+   0 1.1865521710e+03   0.00e+00  3.44e-01    1.000000e-12   5.000000e-01
+ 114 1.2059975053e-12  -7.60e-09  3.44e-10    6.135299e-12  -4.157355e-09
+
+After 114 iterations the fit converged.
+final sum of squares of residuals : 1.206e-12
+rel. change during last iteration : -7.60238e-14
+
+degrees of freedom    (FIT_NDF)                        : 9999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.09823e-08
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.20612e-16
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 6.1353e-12       +/- 4.28e-16     (0.006976%)
+delta           = -4.15735e-09     +/- 6.138e-11    (1.476%)
+
+correlation matrix of the fit parameters:
+                K      delta  
+K               1.000 
+delta          -0.906  1.000 
