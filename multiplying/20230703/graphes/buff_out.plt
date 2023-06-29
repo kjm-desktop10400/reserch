@@ -16,7 +16,7 @@ set mytics 5
 set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1
 
 #set ytics 0.2
-set y2tics 5
+set y2tics 2
 set y2label "current [mA]" font "Arial,30" offset 8,0
 
 vinb = 0.9
@@ -39,7 +39,7 @@ I2(x) = I1_2(x) - Iout(x)
 
 set xrange [100 : 200]
 set yrange [0 : ]
-set y2range [0 : 13.5]
+set y2range [0 : 12]
 
 plot vout(x) axis x1y1 title "Vout"
 #replot I1_1(x) * 1e3 axis x1y2 title "I_{1}"
