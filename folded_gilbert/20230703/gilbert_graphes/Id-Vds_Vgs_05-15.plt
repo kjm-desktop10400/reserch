@@ -3,8 +3,8 @@ set datafile separator ","
 
 set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1
 set tics font "Arial,30"
-set xlabel "V_{ds} [V]" font "Arial,30" offset 0,-1
-set ylabel "I_{d} [mA]" font "Arial,30" offset -8,0
+set xlabel "V_{DS} [V]" font "Arial,30" offset 0,-1
+set ylabel "I_{D} [uA]" font "Arial,30" offset -8,0
 #set y2label " []" font "Arial,30" offset 8,0
 set key font"Arial,25"
 set key top right spacing 2 offset -10,-2
@@ -38,11 +38,11 @@ set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1
 ###################################################################
 
 #x_scale = 1e3
-y_scale = 1e3
+y_scale = 1e6
 
-#input = "Id-Vds_Vgs_05.vcsv"
+input = "Id-Vds_Vgs_05.vcsv"
 #input = "Id-Vds_Vgs_10.vcsv"
-input = "Id-Vds_Vgs_18.vcsv"
+#input = "Id-Vds_Vgs_18.vcsv"
 
 
 plot input   skip 6 using ($1 ) : ($2 ) * y_scale with lines title "L : 0.5 um"
