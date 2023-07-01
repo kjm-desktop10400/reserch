@@ -61,6 +61,7 @@ A = 100e-6
 B = -1e-3
 
 fit [0.69 : 0.71] f(x) input via A, B
+set yrange[0 : ]
 replot (f(x) * y_scale) with lines notitle
 
 pause -1
