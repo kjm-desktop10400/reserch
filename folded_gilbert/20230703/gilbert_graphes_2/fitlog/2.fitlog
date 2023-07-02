@@ -1,0 +1,4 @@
+# fit [0.6 : 0.8] g(x) input skip 6 using 3  : (sqrt($4 )) via C, D 
+# final sum of squares of residuals : 2.47556e-05
+C               = 0.086286637165324     
+D               = -0.0390570691108672   
