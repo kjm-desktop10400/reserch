@@ -21,7 +21,7 @@ set mxtics 5
 set mytics 5
 set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1
 
-#set xrange [-0.2 : 0.2]
+set xrange [-0.2 : 0.2]
 #set yrange [0 : 50e-3]
 #set y2range [ : ]
 
@@ -37,7 +37,7 @@ set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1
 #
 ###################################################################
 
-x_scale = 1e0
+x_scale = 1e3
 y_scale = 1e3
 
 input = "Vout-vin_VCTRL0-200.vcsv"
@@ -51,5 +51,16 @@ replot input skip 6 using ($1) * x_scale : (-1 * (($6 ) - ($18)) * y_scale) with
 replot input skip 6 using ($1) * x_scale : (-1 * (($8 ) - ($20)) * y_scale) with lines title "V_{CTRL} : 120 mV"
 replot input skip 6 using ($1) * x_scale : (-1 * (($10) - ($22)) * y_scale) with lines title "V_{CTRL} : 160 mV"
 replot input skip 6 using ($1) * x_scale : (-1 * (($12) - ($24)) * y_scale) with lines title "V_{CTRL} : 200 mV"
+
+KA = 1e-3 / ((0.8 - 0.59)**2)
+RL = 150
+vout(x, y) = 8 * RL * KA * y * x
+
+replot vout(x, 0   * 1e-3) with lines dt (10, 20) title ""
+replot vout(x, 40  * 1e-3) with lines dt (10, 20) title ""
+replot vout(x, 80  * 1e-3) with lines dt (10, 20) title ""
+replot vout(x, 120 * 1e-3) with lines dt (10, 20) title ""
+replot vout(x, 160 * 1e-3) with lines dt (10, 20) title ""
+replot vout(x, 200 * 1e-3) with lines dt (10, 20) title ""
 
 pause -1
