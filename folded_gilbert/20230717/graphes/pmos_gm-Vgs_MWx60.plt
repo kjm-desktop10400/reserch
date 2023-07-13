@@ -4,7 +4,7 @@ set datafile separator ","
 set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1
 set tics font "Arial,30"
 set xlabel "V_{GS} [V]" font "Arial,30" offset 0,-1
-set ylabel "I_{D} [uA]" font "Arial,30" offset -8,0
+set ylabel "I_{D} [mA]" font "Arial,30" offset -8,0
 #set y2label " []" font "Arial,30" offset 8,0
 set key font"Arial,25"
 set key top center spacing 2.5 offset 10,-2
@@ -26,31 +26,34 @@ set xrange [0 : 1]
 #set y2range [ : ]
 
 ###################################################################
-#       M = 
-#       L = 
-#       W = 
-#       vds
-#       Vgs
-#       Vbs
+#       M = 30
+#       L = 0.72u
+#       W = 40u
+#       vds = 1
+#       Vgs = 0 - 1
+#       Vbs = 0
 #
-#       vin 
+#       vin = vgs
 #
 ###################################################################
 
 #x_scale = 1e3
-y_scale = 1e6
+y_scale = 1e3
 
-input = "data\\n_p_Id_Vgs.vcsv"
+input = "data\\pmos_gm-Vgs_MWx60.csv"
 
-plot   input skip 6 using 1  : (($2 ) * y_scale) with lines title "nmos"
-replot input skip 6 using 3  : (($4 ) * y_scale) with lines title "pmos"
+plot   input skip 6 using 1  : (($2 ) * y_scale) with lines title ""
 
 f(x) = A * x + B
-g(x) = C * x + D
 A = C = 100e-6
 B = D = -1e-3
+#
+fit [0.573 : 0.574] f(x) input skip 6 using 1  : (($2 )) via A, B 
+#fit [0.6 : 0.8] g(x) input skip 6 using 3  : (sqrt($4 )) via C, D 
 
-fit [0.6 : 0.8] f(x) input skip 6 using 1  : (sqrt($2 )) via A, B 
-fit [0.6 : 0.8] g(x) input skip 6 using 3  : (sqrt($4 )) via C, D 
+set xrange[0 : 1]
+set yrange[0 :  ]
+
+replot f(x) * y_scale title sprintf("slope : %f [mS/V]\n\n\nVth : %f [V]", A * y_scale, -1 * B / A)
 
 pause -1

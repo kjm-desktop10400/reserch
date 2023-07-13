@@ -40,7 +40,7 @@ set xrange [0 : 1]
 #x_scale = 1e3
 y_scale = 1e6
 
-input = "n_p_gm_Vgs.dat"
+input = "data\\n_p_gm_Vgs.dat"
 
 plot   input skip 6 using 1  : ((($2 )) * y_scale) with lines title "nmos"
 replot input skip 6 using 1  : ((($3 )) * y_scale) with lines title "pmos"
