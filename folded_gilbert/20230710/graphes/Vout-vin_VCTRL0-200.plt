@@ -52,15 +52,15 @@ replot input skip 6 using ($1) * x_scale : (($8 ) * y_scale) with lines title "V
 replot input skip 6 using ($1) * x_scale : (($10) * y_scale) with lines title "V_{CTRL} : 160 mV"
 replot input skip 6 using ($1) * x_scale : (($12) * y_scale) with lines title "V_{CTRL} : 200 mV"
 
-KA = 1e-3 / ((0.8 - 0.59)**2)
+KA = 15.3 *1e-3
 RL = 300
 vout(x, y) = 4 * RL * KA * y * x
 
-#replot vout(x, 0   * 1e-3) with lines dt (10, 20) title ""
-#replot vout(x, 40  * 1e-3) with lines dt (10, 20) title ""
-#replot vout(x, 80  * 1e-3) with lines dt (10, 20) title ""
-#replot vout(x, 120 * 1e-3) with lines dt (10, 20) title ""
-#replot vout(x, 160 * 1e-3) with lines dt (10, 20) title ""
-#replot vout(x, 200 * 1e-3) with lines dt (10, 20) title ""
+replot vout(x, 0   * 1e-3) with lines dt (10, 20) title ""
+replot vout(x, 40  * 1e-3) with lines dt (10, 20) title ""
+replot vout(x, 80  * 1e-3) with lines dt (10, 20) title ""
+replot vout(x, 120 * 1e-3) with lines dt (10, 20) title ""
+replot vout(x, 160 * 1e-3) with lines dt (10, 20) title ""
+replot vout(x, 200 * 1e-3) with lines dt (10, 20) title ""
 
 pause -1
