@@ -23,7 +23,7 @@ set mytics 5
 set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1
 
 set xrange [1e6 : ]
-#set yrange [0 : 1.2]
+set yrange [-20 : 20]
 #set y2range [0 : 6]
 
 ###################################################################
