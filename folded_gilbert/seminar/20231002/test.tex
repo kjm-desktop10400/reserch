@@ -1,0 +1,70 @@
+\documentclass[twocolumn]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{kenzemi}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{nidanfloat}
+
+\begin{document}
+
+\title{折り返し型ギルバート乗算回路の周波数特性劣化}
+\author{小島 光}
+\date{2023年10月2日}
+\abstract{以前から検討している折り返し型ギルバート乗算回路について、非線形な動作をする乗算回路について小信号等価回路に手を加え解析を行った。またPMOSの各端子間にキャパシタを付加し、各回路について小信号解析を行った。}
+\keyword{ギルバート乗算回路,小信号解析,非線形回路}
+\maketitle
+
+\section{はじめに}
+以前設計した従来型との比較のために設計した折り返し型ギルバート乗算回路ではサイズの大きなPMOSを使用している。したがって、ゲート面積が増大し寄生容量が大きくなることが考えられる。今週はこの寄生容量について、具体的にどの部分が最も周波数特性劣化の原因として大きいのかを検討した。
+
+\section{動作点の変動}
+MOSFETは流れているバイアス電流に応じて動作点が決まり、小信号では動作点付近で動作するため線形回路として扱うことができる。この時、トランスコンダクタンス$g_{m}$はバイアス電流$I_{d}$を用いて
+\begin{align}
+    g_{m}=2\sqrt{KI_{d}}\label{eq:gm}
+\end{align}
+と表される。\par
+
+しかし、現在検討しているような乗算回路(図1)では$V_{CTRL}$によってバイアス電流が変動する。これにより一定のトランスコンダクタンス$g_{m}$を用いた小信号等価回路による解析は行えない。そこでまず、PMOSのテール電流が一定であるという仮定のもと小信号等価回路の解析を行った。特に、この乗算回路は完全差動で動作するので今回は図1のように左側の半回路についてのみ考える。
+
+\begin{figure*}[b]
+\begin{center}
+    \includegraphics*[width=160mm]{figures/folded_gilbert.png}
+    \caption{検討中の折り返し型ギルバート乗算回路}
+\end{center}
+\end{figure*}
+
+\begin{figure}[h]
+    \includegraphics*[width=70mm]{figures/FoldedGilbertVctrlEquivalentCircuit.png}
+    \caption{PMOSの部分の小信号等価回路}
+\end{figure}
+
+図2のように電流を決めると、KCLにより、
+\begin{align}
+    &i_{u}=i_{l}+i_{r}\\
+    &i_{l}=g_{mp}(v_{pS}+v_{d})+g_{dp}(v_{pS}-v_{outl})\\
+    &i_{r}=g_{mp}(v_{pS}-v_{d})+g_{dp}(v_{pS}-v_{outr})
+\end{align}
+
+と表せる。ここで、$V_{CTRL}$の差動成分$v_{d}$が$0$であるとき、$i_{l}=i_{r}$となる。従って
+\begin{align*}
+    i_{l}&=i_{r}\\
+    g_{mp}(v_{pS})+g_{dp}(v_{pS}-v_{outl})&=g_{mp}(v_{pS})+g_{dp}(v_{pS}-v_{outr})\\
+    \iff v_{outl}&=v_{outr}
+\end{align*}
+
+すなわち
+
+\begin{align}
+    i_{u}=2(g_{mp}+g_{dp})v_{pS}
+\end{align}
+
+となる。\eqref{eq:gm}式より差動信号が入力されていないとき
+
+\begin{align}
+    g_{mp}&=2\sqrt{K\cdot\frac{i_{u}}{2}}=\sqrt{2Ki_{u}}\\
+    K&=\frac{g_{mp}^{2}}{2i_{u}}
+\end{align}
+
+と表すことができた。
+
+\end{document}
