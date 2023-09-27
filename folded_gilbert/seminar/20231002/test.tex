@@ -43,7 +43,7 @@
     \end{center}
 \end{figure}%
 
-一般にMOSFETのドレイン電流は2乗則の式に従い
+一般にMOSFETのドレイン電流は2乗則に従い
 
 \begin{align}
     I_{D}=K(V_{GS}-V_{th})^{2}  \label{eq:square}
@@ -52,46 +52,38 @@
 である。では、図\eqref{fig:pmos_diff}において$V_{CTRL}=0$のとき、ゲートソース間電圧は$V_{GS}=V_{pS}-V_{G}$なので、トランスコンダクタンスは
 
 \begin{align}
-    g_{mp} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial }V_{GS} K(V_{GS}-V_{th})^{2} \notag\\
+    g_{mp} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial V_{GS}} K(V_{GS}-V_{th})^{2} \notag\\
     &=2K(V_{GS}-V_{th})    \notag\\ 
     &=2K(V_{pS}-V_{G}-V_{th})   \label{eq:g_mp}
 \end{align}
 
-と計算できる。今度は$V_{CTRL}\neq0$の時、$V_{GS}=V_{pS}- \left( V_{G}-V_{CTRL} \right)$なので左右のトランスコンダクタンスをそれぞれ$g_{mpl},g_{mpr}$とすると
+と計算できる。次に$V_{CTRL}\neq0$の時、$V_{GS}=V_{pS}- \left( V_{G}-V_{CTRL} \right)$なので左右のトランスコンダクタンスをそれぞれ$g_{mpl},g_{mpr}$とすると
 
 \begin{align}
     g_{mpl} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial }V_{GS} K(V_{GS}-V_{th})^{2} \notag\\
     &=2K(V_{GS}-V_{th})    \notag\\ 
     &=2K(V_{pS}-V_{G}+V_{CTRL}-V_{th})  \notag\\
-    &=g_{mp}+2KV_{CTRL}   \label{eq:g_mpl}\\
+    &=g_{mp}+2KV_{CTRL}\equiv g_{mp}+\Delta g_{m}   \label{eq:g_mpl}\\
     g_{mpr} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial }V_{GS} K(V_{GS}-V_{th})^{2} \notag\\
     &=2K(V_{GS}-V_{th})    \notag\\ 
     &=2K(V_{pS}-V_{G}-V_{CTRL}-V_{th})  \notag\\
-    &=g_{mp}-2KV_{CTRL}   \label{eq:g_mpr}
+    &=g_{mp}-2KV_{CTRL}\equiv g_{mp}-\Delta g_{m}   \label{eq:g_mpr}
 \end{align}
 
 と表すことができた。従って$V_{CTRL}$が差動で印加されたとき、トランスコンダクタンスは$V_{CTRL}$に比例して変化することが分かった。
 
 \section{回路全体の小信号解析}
-前章でPMOSについても小信号等価回路で表現することができるということを示すことができた。これにより回路全体についての小信号等価回路を図3に示す。
-
-\begin{figure}[b]
-    \begin{center}
-        \includegraphics*[width=80mm]{figures/FoldedGilbertBaseEquivalentCircuit.png}
-        \caption{回路全体の小信号等価回路}
-    \end{center}
-\end{figure}
-
-回路全体を小信号等価回路に置き換えることはできたがこれでもまだ複雑である。しかし、本回路中で対応する部分の電流・電圧はそれぞれ異符号かつ等しい絶対値で動作する。従て、対応する部分の片側だけを考えれば事足りる。つまり今回は図4のように$M_{n1},M_{p1},M_{p2}$の小信号等価回路で考えた。
+前章でPMOSFETのトランスコンダクタンスを$V_{CTRL}$を用いて表すことができた。これによりPMOSFETのトランスコンダクタンスを$V_{CTRL}$を$\Delta g_{m}$を用いて回路全体についての小信号等価回路を作ることができる。前述のとおり半回路で考えればよく、この小信号等価回路を図\eqref{fig:base_eq}に示す。
 
 \begin{figure}[h]
     \begin{center}
         \includegraphics*[width=80mm]{figures/FoldedGilbertHalfBaseEquivalentCircuit.png}
         \caption{半回路の小信号等価回路}
+        \label{fig:base_eq}
     \end{center}
 \end{figure}
 
-各部の電流は
+このとき、各部の電流は
 
 \begin{align}
     i_{ul}&=g_{mn}v_{in}-g_{dn}v_{pS1} \label{eq:iul}\\
@@ -99,7 +91,7 @@
     i_{lr}&=(g_{mp}-\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}-v_{out+}) \label{eq:ilr}
 \end{align}
 
-また、KCL,式\eqref{eq:iul},式\eqref{eq:ill},式\eqref{eq:ilr}より
+と表すことができる。また、KCL,式\eqref{eq:iul},式\eqref{eq:ill},式\eqref{eq:ilr}より
 
 \begin{align}
     i_{ul}&=i_{ll}+i_{lr} \notag\\
