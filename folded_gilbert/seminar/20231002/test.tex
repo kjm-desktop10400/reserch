@@ -103,7 +103,7 @@ MOSFETは流れているバイアス電流に応じて動作点が決まり、�
 
 \begin{figure*}[b]
     \begin{center}
-        \includegraphics*[width=180mm]{figures/FoldedGilbertBaseEquivalentCircuit.png}
+        \includegraphics*[width=180mm,height=80mm]{figures/FoldedGilbertBaseEquivalentCircuit.png}
         \caption{回路全体の小信号等価回路}
     \end{center}
 \end{figure*}
@@ -149,6 +149,16 @@ MOSFETは流れているバイアス電流に応じて動作点が決まり、�
     &=-2\Delta g_{m}v_{pS1}-2g_{dp}v_{out+}
 \end{align}
 
-と表すことができる。
+と表すことができる。$v_{out}\equiv v_{out+}-v_{out-}$とすと
+
+\begin{align}
+    v_{out}&=R_{L}i_{out+}-R_{L}i_{out-} \notag\\
+    \frac{v_{out}}{R_L}&=i_{out+}-i_{out-} \notag\\
+    &=-4g_{mp}v_{pS1}-2g_{dp}v_{out} \notag\\
+    v_{out}&=\frac{-4R_{L}}{1+2R_{L}g_{dp}}\Delta g_{m}v_{pS1} \notag\\
+    &\approx \frac{-4R_{L}g_{mn}}{1+2R_{L}g_{dp}}v_{in}\Delta g_{m}
+\end{align}
+
+ここで$\Delta g_{m}$は$V_{CTRL}$に比例するので、出力電圧は
 
 \end{document}
