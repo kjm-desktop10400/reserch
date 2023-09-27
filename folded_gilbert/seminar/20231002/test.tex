@@ -2,8 +2,9 @@
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{kenzemi}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{mathtools}
-\usepackage{nidanfloat}
+
 
 \begin{document}
 
@@ -17,7 +18,7 @@
 \section{はじめに}
 以前設計した従来型との比較のために設計した折り返し型ギルバート乗算回路(図\eqref{fig:folded_gilbert})ではサイズの大きなPMOSを使用している。したがって、ゲート面積が増大し寄生容量が大きくなることが考えられる。今週はこの寄生容量について、具体的にどの部分が最も周波数特性劣化の原因として大きいのかを検討した。
 
-\begin{figure}[b]
+\begin{figure}[h]
     \begin{center}
         \includegraphics*[width=80mm]{figures/folded_gilbert.png}
         \caption{検討している折り返し型ギルバート乗算回路}
@@ -26,6 +27,7 @@
 \end{figure}
 
 \section{動作点の変動}
+
 図\eqref{fig:folded_gilbert}ではPMOSFETのゲートに直流で$\pm V_{CTRL}$なる電圧を印加する。これはつまり、PMOSFETに流れるバイアス電流が$V_{CTRL}$により変動することを意味している。小信号解析では入力信号が小振幅であるとき、MOSFETのトランスコンダクタンス$g_{m}$が一定であるという近似を前提として小信号等価回路を作成する。しかし、トランスコンダクタンス$g_{m}$は実際には一定でなく、ドレイン電流$I_{D}$と定数係数$K$を用いて
 
 \begin{align}
@@ -67,7 +69,8 @@
     g_{mpr} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial }V_{GS} K(V_{GS}-V_{th})^{2} \notag\\
     &=2K(V_{GS}-V_{th})    \notag\\ 
     &=2K(V_{pS}-V_{G}-V_{CTRL}-V_{th})  \notag\\
-    &=g_{mp}-2KV_{CTRL}\equiv g_{mp}-\Delta g_{m}   \label{eq:g_mpr}
+    &=g_{mp}-2KV_{CTRL}\equiv g_{mp}-\Delta g_{m}   \label{eq:g_mpr}\\
+    \Delta g_{m}&=2KV_{CTRL}   \label{eq:delta_gm}
 \end{align}
 
 と表すことができた。従って$V_{CTRL}$が差動で印加されたとき、トランスコンダクタンスは$V_{CTRL}$に比例して変化することが分かった。
@@ -125,6 +128,104 @@
     &\approx \frac{-4R_{L}g_{mn}}{1+2R_{L}g_{dp}}v_{in}\Delta g_{m}
 \end{align}
 
-ここで$\Delta g_{m}$は$V_{CTRL}$に比例するので、出力電圧は
+ここで$\Delta g_{m}$は$V_{CTRL}$に比例するので、出力電圧は式\eqref{eq:delta_gm}より
+
+\begin{align}
+    v_{out}=\frac{-8KR_{L}g_{mn}}{1+2R_{L}g_{dp}}\cdot v_{in}\cdot V_{CTRL} \label{eq:vout}
+\end{align}
+
+と求めることができた。
+
+\section{寄生容量を含めた出力電圧}
+次に各端子間に寄生容量が付いた場合の出力について検討する。
+
+    \subsection{ゲートソース間容量}
+    ゲートソース間に寄生容量が付いた場合の小信号半回路を図\refeq{fig:cgs}に示す。
+
+    \begin{figure}[b]
+        \begin{center}
+            \includegraphics*[width=80mm]{figures/FoldedGilbert_GS_Half_Equivalent.png}
+            \caption{ゲートソース間の寄生容量}
+            \label{fig:cgs}
+        \end{center}
+    \end{figure}
+
+    このとき各部の電流は
+
+    \begin{align}
+        i_{ul} &= g_{mn}v_{in}-g_{dn}v_{pS1}    \notag\\
+        i_{ll} &= (g_{mp}+\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}-v_{out-})     \notag\\
+        i_{lr} &= (g_{mp}-\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}+v_{out-})     \notag\\
+        i_{cll} &= i_{clr} = i_{c} = j\omega C_{GS}\cdot v_{pS1}     \notag
+    \end{align}
+
+    ここでKCLより
+
+    \begin{align}
+        i_{ul} &= i_{ll}+i_{lr}+2i_{cl}     \notag\\
+        g_{mn}v_{in}-g_{dn}v_{pS1} &= 2g_{mp}v_{pS1}+2g_{dp}v_{pS1}+j2\omega C_{GS}\cdot v_{pS1}     \notag\\
+        v_{pS1} &= \frac{g_{mn}}{2g_{mn}+g_{dn}+2g_{dp}+j2\omega C_{GS}}\cdot v_{in}    \notag\\
+        &\approx \frac{g_{mn}}{2g_{mp}+j2\omega C_{GS}}     \label{eq:vps_gc}
+    \end{align}
+
+    このとき、負荷抵抗に流れる電流は寄生容量がついていないときと同様なので
+
+    \begin{align}
+        v_{out}&=\frac{-4R_{L}}{1+2R_{L}g_{dp}}\Delta g_{m}v_{pS1}      \notag\\
+        &= \frac{-4R_{L}}{1+2R_{L}g_{dp}}\Delta g_{m}\cdot \frac{g_{mn}}{2g_{mp}+j2\omega C_{GS}}   \notag\\
+        &\approx\frac{-4KR_{L}g_{mn}}{(1+2R_{L}g_{dp})(g_{mp}+j\omega C_{GS})}\cdot v_{in}\cdot V_{CTRL}    \label{eq:vout_gs}
+    \end{align}
+
+    と計算出来た。
+
+    \subsection{ドレインソース間容量}
+    ドレインソース間に寄生容量が付いた場合の小信号半回路を図\refeq{fig:cds}に示す。
+
+    \begin{figure}[b]
+        \begin{center}
+            \includegraphics*[width=80mm]{figures/FoldedGilbert_DS_Half_Equivalent.png}
+            \caption{ドレインソース間の寄生容量}
+            \label{fig:cds}
+        \end{center}
+    \end{figure}
+
+    このとき、各部の電流は
+
+    \begin{align}
+        i_{ul} &= g_{mn}v_{in}-g_{dn}v_{pS1}    \notag\\
+        i_{ll} &= (g_{mp}+\Delta g_{m})v_{pS1}+(g_{dp}+j\omega C_{DS})(v_{pS1}-v_{out-})     \notag\\
+        i_{lr} &= (g_{mp}-\Delta g_{m})v_{pS1}+(g_{dp}+j\omega C_{DS})(v_{pS1}+v_{out-})     \notag
+    \end{align}
+
+    と表せるので、KCLより
+
+    \begin{align}
+        i_{ul}&=i_{ll}+i_{lr}   \notag\\
+        g_{mn}v_{in}-g_{dn}v_{pS1} &= 2g_{mp}v_{pS1}+2(g_{dp}+j\omega C_{DS})v_{pS1}     \notag\\
+        v_{pS1}&=\frac{g_{mn}}{2g_{mp}+g_{dn}+2g_{dp}+j2\omega C_{DS}}\cdot v_{in}      \notag\\
+        &\approx \frac{g_{mn}}{2(g_{mp}+j\omega C_{DS})}\cdot v_{in}    \label{eq:vps_ds}
+    \end{align}
+
+    ドレインソース間に寄生容量が付いた場合も、ゲートソース間に寄生容量が付いた場合と同様の電流が負荷抵抗に流れるので
+
+    \begin{align}
+        v_{out}&=\frac{-4R_{L}}{1+2R_{L}g_{dp}}\Delta g_{m}v_{pS1}      \notag\\
+        &\approx\frac{-4KR_{L}g_{mn}}{(1+2R_{L}g_{dp})(g_{mp}+j\omega C_{GS})}\cdot v_{in}\cdot V_{CTRL}    \label{eq:vout_ds}
+    \end{align}
+
+    と計算出来た。\newpage
+
+    \subsection{ゲートドレイン間容量}
+    ゲートドレイン間に寄生容量が付いた場合の小信号半回路を図\refeq{fig:cgd}に示す。
+
+    \begin{figure}[b]
+        \begin{center}
+            \includegraphics*[width=80mm]{figures/FoldedGilbert_GD_Half_Equivalent.png}
+            \caption{ゲートドレイン間の寄生容量}
+            \label{fig:cgd}
+        \end{center}
+    \end{figure}
+
+    
 
 \end{document}
