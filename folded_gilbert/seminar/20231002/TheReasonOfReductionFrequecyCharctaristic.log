@@ -1,9 +1,12 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.26)  3 OCT 2023 00:37
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.26)  3 OCT 2023 00:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**e:/Desktop/reserch/folded_gilbert/seminar/20231002/test.tex
-(e:/Desktop/reserch/folded_gilbert/seminar/20231002/test.tex
+**e:/Desktop/reserch/folded_gilbert/seminar/20231002/TheReasonOfReductionFreque
+cyCharctaristic.tex
+
+(e:/Desktop/reserch/folded_gilbert/seminar/20231002/TheReasonOfReductionFrequec
+yCharctaristic.tex
 pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
 L3 programming layer <2023-05-15>
 (c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -213,8 +216,8 @@ File: l3backend-dvips.def 2023-04-19 L3 backend support: dvips
 \g__pdf_backend_link_int=\count281
 \g__pdf_backend_link_sf_int=\count282
 )
-(./test.aux)
-\openout1 = `test.aux'.
+(./TheReasonOfReductionFrequecyCharctaristic.aux)
+\openout1 = `TheReasonOfReductionFrequecyCharctaristic.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -252,7 +255,8 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 4.805pt on input line 26.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
- (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
@@ -304,14 +308,15 @@ File: graphes/bitmap/Fgd_vout_ac.PNG Graphic file (type bmp)
 <graphes/bitmap/Fgd_vout_ac.PNG>
 File: graphes/bitmap/RL_cutooff.PNG Graphic file (type bmp)
 <graphes/bitmap/RL_cutooff.PNG>
- [3] (./test.aux) ) 
+ [3] (./TheReasonOfReductionFrequecyCharctaristic.aux) ) 
 Here is how much of TeX's memory you used:
  3311 strings out of 476759
- 50460 string characters out of 5809550
+ 50904 string characters out of 5809550
  1876672 words of memory out of 5000000
  23672 multiletter control sequences out of 15000+600000
  525981 words of font info for 95 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,13n,62p,881b,327s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,13n,62p,918b,327s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on test.dvi (3 pages, 18988 bytes).
+Output written on TheReasonOfReductionFrequecyCharctaristic.dvi (3 pages, 18988
+ bytes).

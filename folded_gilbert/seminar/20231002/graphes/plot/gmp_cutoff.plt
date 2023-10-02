@@ -28,6 +28,6 @@ input = "..\\data\\gmp_cutoff.data"
 set xrange[1 : 3]
 set yrange[0 : 6]
 
-plot   input skip 1 using 2 : 3 with points pt 2 ps 3 title ""
+plot   input skip 1 using 2 : 3 with points pt 22 ps 3 lc black title ""
 
 pause -1
