@@ -1,681 +1,319 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.26)  29 SEP 2023 15:06
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.26)  2 OCT 2023 12:40
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **c:/Users/LarcH/Desktop/reserch/folded_gilbert/seminar/20231002/test.tex
 (c:/Users/LarcH/Desktop/reserch/folded_gilbert/seminar/20231002/test.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-05-15> (c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
-
-c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls:14: LaTeX Error: This file needs format `pLaTeX2e'
-               but this is `LaTeX2e'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14 \NeedsTeXFormat{pLaTeX2e}
-                              
-The current input file will not be processed further,
-because it was written for some other flavor of TeX.
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-) (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
+L3 programming layer <2023-05-15>
+(c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+Document Class: jsarticle 2023/02/23 jsclasses (okumura, texjporg)
+Class jsarticle Info: Autodetected engine: pLaTeX on input line 236.
+\jsc@mpt=\dimen156
+\jsc@mmm=\dimen157
+\jsc@smallskipamount=\skip48
+LaTeX Info: Redefining \textmc on input line 511.
+LaTeX Info: Redefining \textgt on input line 513.
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 575.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 769.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 769.
+\fullwidth=\dimen158
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 922.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 922.
+\c@part=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\@abstractbox=\box68
+\c@figure=\count190
+\c@table=\count191
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\jsc@tocl@width=\dimen159
+\@lnumwidth=\dimen160
+\bibindent=\dimen161
+(c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2019/07/25 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 82.
+LaTeX Info: Redefining \LaTeX on input line 135.
+LaTeX Info: Redefining \LaTeXe on input line 188.
+)
+\heisei=\count192
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
-) (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+\KV@toks@=\toks17
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 107.
- (c:/texlive/2023/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2022/09/22 v5.0m Graphics/color driver for dvipdfmx
 ))
-\Gin@req@height=\dimen140
-\Gin@req@width=\dimen141
-) (./kenzemi.sty
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
+(./kenzemi.sty
 kenzemi.sty; Version 1.11 [April 12 2004]
-./kenzemi.sty:44: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   z
-l.44 \parindent=1z
-                  w
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-./kenzemi.sty:44: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \parindent=1z
-                  w
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no z in font nullfont!
-Missing character: There is no w in font nullfont!
-
-Overfull \hbox (1.0pt too wide) in paragraph at lines 44--52
-[] 
- []
-
-\JQ=\dimen142
-\@Q=\dimen143
-\@bs=\dimen144
-./kenzemi.sty:197: Undefined control sequence.
-\@normalsize ...{14pt}{\ixpt }{\@ixpt }\kanjiskip 
-                                                  =0zw plus .1zw minus .05zw...
-l.197 \normalsize
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./kenzemi.sty:197: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.197 \normalsize
-                 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (23.61096pt too wide) in paragraph at lines 197--198
-[]\OT1/cmr/m/n/9 =0zw
- []
-
-
-Overfull \hbox (16.49573pt too wide) in paragraph at lines 197--198
-\OT1/cmr/m/n/9 plus
- []
-
-
-Overfull \hbox (17.986pt too wide) in paragraph at lines 197--198
-\OT1/cmr/m/n/9 .1zw
- []
-
-
-Overfull \hbox (13.36102pt too wide) in paragraph at lines 197--198
-\OT1/cmr/m/n/9 mi-
- []
-
-
-Overfull \hbox (13.66936pt too wide) in paragraph at lines 197--198
-\OT1/cmr/m/n/9 nus
- []
-
-
-Overfull \hbox (22.61096pt too wide) in paragraph at lines 197--198
-\OT1/cmr/m/n/9 .05zw 
- []
-
-./kenzemi.sty:219: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   z
-l.219 \leftmargini=2z
-                     w
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-./kenzemi.sty:219: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.219 \leftmargini=2z
-                     w
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./kenzemi.sty:220: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   z
-l.220 \leftmarginii=2z
-                      w
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./kenzemi.sty:221: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   z
-l.221 \leftmarginiii=2z
-                       w
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./kenzemi.sty:222: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   z
-l.222 \leftmarginiv=2z
-                      w
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./kenzemi.sty:223: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   z
-l.223 \leftmarginv=1z
-                     w
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./kenzemi.sty:224: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   z
-l.224 \leftmarginvi=1z
-                      w
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./kenzemi.sty:226: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   z
-l.226 \labelsep=1z
-                  w
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Overfull \hbox (11.7916pt too wide) in paragraph at lines 219--229
-[]\OT1/cmr/m/n/9 zw
- []
-
-
-Overfull \hbox (10.7916pt too wide) in paragraph at lines 219--229
-\OT1/cmr/m/n/9 zw
- []
-
-
-Overfull \hbox (10.7916pt too wide) in paragraph at lines 219--229
-\OT1/cmr/m/n/9 zw
- []
-
-
-Overfull \hbox (10.7916pt too wide) in paragraph at lines 219--229
-\OT1/cmr/m/n/9 zw
- []
-
-
-Overfull \hbox (10.7916pt too wide) in paragraph at lines 219--229
-\OT1/cmr/m/n/9 zw
- []
-
-
-Overfull \hbox (10.7916pt too wide) in paragraph at lines 219--229
-\OT1/cmr/m/n/9 zw
- []
-
-
-Overfull \hbox (10.7916pt too wide) in paragraph at lines 219--229
-\OT1/cmr/m/n/9 zw 
- []
-
-./kenzemi.sty:381: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.381 \def\FRAC#1
-                 #2{\leavevmode\kern-.1em
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:381: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.381 \def\FRAC#1#2
-                   {\leavevmode\kern-.1em
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:382: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.382   \raise.5ex\hbox{\the\scriptfont0 #1
-                                           }\kern-.1em
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:383: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.383 ....15em\lower.25ex\hbox{\the\scriptfont0 #2
-                                                  }}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:384: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.384 \def\RN#1
-               {\uppercase\expandafter{\romannumeral#1}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:384: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.384 ...#1{\uppercase\expandafter{\romannumeral#1
-                                                  }}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:386: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.386 \def\MARU#1
-                 {\raisebox{0.1zh}{{%
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:387: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.387 ...vevmode\ooalign{\hfil\lower.168ex\hbox{#1
-                                                  }\hfil\crcr\mathhexbox20D}}}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:389: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.389 \def\kintou#1
-                   #2{\@ifundefined{jintercharskip}%
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:389: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.389 \def\kintou#1#2
-                     {\@ifundefined{jintercharskip}%
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:390: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.390  {\makebox[#1
-                   ]{\kanjiskip\z@ plus 1fill minus 1fill\xkanjiskip=\kanjis...
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:390: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.390 ...fill minus 1fill\xkanjiskip=\kanjiskip #2
-                                                  }}%
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:391: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.391  {\makebox[#1
-                   ]{\jintercharskip=0pt plus 1fill minus 1fill
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:392: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.392  \jasciikanjiskip=\jintercharskip #2
-                                          }}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:394: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.394 \def\ruby#1
-                 #2{\leavevmode \setbox0=\hbox{#1}\setbox1=\hbox{\tiny#2}%% <
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:394: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.394 \def\ruby#1#2
-                   {\leavevmode \setbox0=\hbox{#1}\setbox1=\hbox{\tiny#2}%% <
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:394: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.394 \def\ruby#1#2{\leavevmode \setbox0=\hbox{#1
-                                                 }\setbox1=\hbox{\tiny#2}%% <
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:394: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.394 ... \setbox0=\hbox{#1}\setbox1=\hbox{\tiny#2
-                                                  }%% <
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:397: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.397  \vbox{\hbox to \dimen0{\tiny \hfil#2
-                                           \hfil}%
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:398: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.398   \nointerlineskip \hbox to \dimen0{\hfil#1
-                                                 \hfil}}}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:409: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.409 \def\gl@align#1
-                     #2{\lower.6ex\vbox{\baselineskip\z@skip\lineskip\z@
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:409: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.409 \def\gl@align#1#2
-                       {\lower.6ex\vbox{\baselineskip\z@skip\lineskip\z@
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:410: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.410  \ialign{$\m@th#1
-                       \hfil##\hfil$\crcr#2\crcr=\crcr}}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:410: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.410  \ialign{$\m@th#1\hfil##\hfil$\crcr#2
-                                           \crcr=\crcr}}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:414: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.414 \def\c@ncelass#1
-                      #2{\ooalign{$\hfil#1\mkern-.4mu|\hfil$\crcr$#1#2$}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:414: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.414 \def\c@ncelass#1#2
-                        {\ooalign{$\hfil#1\mkern-.4mu|\hfil$\crcr$#1#2$}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:414: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.414 \def\c@ncelass#1#2{\ooalign{$\hfil#1
-                                          \mkern-.4mu|\hfil$\crcr$#1#2$}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:414: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.414 ...oalign{$\hfil#1\mkern-.4mu|\hfil$\crcr$#1
-                                                  #2$}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:414: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.414 ...lign{$\hfil#1\mkern-.4mu|\hfil$\crcr$#1#2
-                                                  $}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:426: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.426 \def\thebibliography#1
-                            {%
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:452: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.452 \def\@citex[#1
-                    ]#2{%
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:452: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.452 \def\@citex[#1]#2
-                       {%
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:453: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.453 ...te \write \@auxout {\string \citation {#2
-                                                  }}\fi
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:457: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.457   \@for \@citeb:=#2
-                         \do {\@ifundefined {b@\@citeb}%
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:460: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.460 {\@minsofar\z@ \@for \@scan@cites:=#2
-                                           \do {%
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:484: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.484 ...ea{],\penalty\@highpenalty\,[}}\@h@ld}{#1
-                                                  }}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:490: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.490 \long\def\@makecaption#1
-                              #2{
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:490: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.490 \long\def\@makecaption#1#2
-                                {
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:492: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.492  \setbox\@tempboxa\hbox{#1
-                                ~#2}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:492: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   2
-l.492  \setbox\@tempboxa\hbox{#1~#2
-                                   }
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:504: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.504 \def\bi#1
-               {\mbox{\boldmath$#1$}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./kenzemi.sty:504: Illegal parameter number in definition of \@maketitle.
-<to be read again> 
-                   1
-l.504 \def\bi#1{\mbox{\boldmath$#1
-                                  $}}
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
+\JQ=\dimen164
+\@Q=\dimen165
+\@bs=\dimen166
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 197.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 197.
+\mathindent=\dimen167
+\@minsofar=\count193
+\@min=\count194
+\@cite@temp=\count195
+) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen168
+))
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen169
 )
-Runaway definition?
-->\newpage \null \vskip 0em \hfill \hbox {\normalsize ^^[$B\begin {ce\ETC.
-c:/Users/LarcH/Desktop/reserch/folded_gilbert/seminar/20231002/test.tex:4: File ended while scanning definition of \@maketitle.
-<inserted text> 
-                }
-l.4 \usepackage
-               {amsmath}
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
 )
-Runaway definition?
-->\newpage \null \vskip 0em \hfill \hbox {\normalsize ^^[$B\begin {ce\ETC.
-! File ended while scanning definition of \@maketitle.
-<inserted text> 
-                }
-<*> ...ch/folded_gilbert/seminar/20231002/test.tex
-                                                  
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
+\inf@bad=\count196
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count197
+\leftroot@=\count198
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count199
+\DOTSCASE@=\count266
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box69
+\strutbox@=\box70
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen170
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count267
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count268
+\dotsspace@=\muskip16
+\c@parentequation=\count269
+\dspbrk@lvl=\count270
+\tag@help=\toks19
+\row@=\count271
+\column@=\count272
+\maxfields@=\count273
+\andhelp@=\toks20
+\eqnshift@=\dimen171
+\alignsep@=\dimen172
+\tagshift@=\dimen173
+\tagwidth@=\dimen174
+\totwidth@=\dimen175
+\lineht@=\dimen176
+\@envbody=\toks21
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-! Emergency stop.
-<*> ...ch/folded_gilbert/seminar/20231002/test.tex
-                                                  
-*** (job aborted, no legal \end found)
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
 
- 
+(c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count274
+\calc@Bcount=\count275
+\calc@Adimen=\dimen177
+\calc@Bdimen=\dimen178
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count276
+\calc@Cskip=\skip56
+)
+(c:/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count277
+\l_MT_multwidth_dim=\dimen179
+\origjot=\skip57
+\l_MT_shortvdotswithinadjustabove_dim=\dimen180
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen181
+\l_MT_above_intertext_sep=\dimen182
+\l_MT_below_intertext_sep=\dimen183
+\l_MT_above_shortintertext_sep=\dimen184
+\l_MT_below_shortintertext_sep=\dimen185
+\xmathstrut@box=\box71
+\xmathstrut@dim=\dimen186
+)
+(c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2023-04-19 L3 backend support: dvips
+\l__pdf_internal_box=\box72
+\g__pdf_backend_object_int=\count278
+\l__pdf_backend_content_box=\box73
+\l__pdf_backend_model_box=\box74
+\g__pdf_backend_annotation_int=\count279
+\g__pdf_backend_link_int=\count280
+\g__pdf_backend_link_sf_int=\count281
+)
+(./test.aux)
+\openout1 = `test.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 16.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 16.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 16.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 18.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 18.
+File: figures/folded_gilbert.png Graphic file (type bmp)
+<figures/folded_gilbert.png>
+File: figures/pmos_diff.png Graphic file (type bmp)
+<figures/pmos_diff.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+]
+File: figures/FoldedGilbertBaseEquivalentCircuit.png Graphic file (type bmp)
+<figures/FoldedGilbertBaseEquivalentCircuit.png>
+
+Overfull \hbox (217.66357pt too wide) in paragraph at lines 80--81
+ [] 
+ []
+
+File: figures/FoldedGilbertHalfBaseEquivalentCircuit.png Graphic file (type bmp
+)
+<figures/FoldedGilbertHalfBaseEquivalentCircuit.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+Underfull \hbox (badness 1014) in paragraph at lines 138--139
+[]\JY1/mc/m/n/9 したが って 、 各寄生容量がついた時の遮断周波数を
+ []
+
+[3
+
+] (./test.aux) ) 
 Here is how much of TeX's memory you used:
- 643 strings out of 476096
- 9531 string characters out of 5795114
- 1850845 words of memory out of 5000000
- 21089 multiletter control sequences out of 15000+600000
- 514153 words of font info for 38 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 57i,0n,62p,648b,36s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 3223 strings out of 476759
+ 49193 string characters out of 5809550
+ 1867672 words of memory out of 5000000
+ 23592 multiletter control sequences out of 15000+600000
+ 525981 words of font info for 95 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 55i,9n,62p,509b,329s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on test.dvi (3 pages, 13724 bytes).

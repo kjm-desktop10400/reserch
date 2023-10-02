@@ -75,6 +75,49 @@
 
 と表すことができた。従って$V_{CTRL}$が差動で印加されたとき、トランスコンダクタンスは$V_{CTRL}$に比例した変化分を持つことが示せた。
 
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics*[width=160mm]{figures/FoldedGilbertBaseEquivalentCircuit.png}
+        \caption{小信号等価回路}
+        \label{fgi:base_equiv}
+    \end{center}
+\end{figure}
+
+
+\section{小信号等価解析}
+次に寄生容量がついていない場合と各端子間に寄生容量がついた場合の小信号等価解析を行う。解析の際には図\refeq{fgi:base_equiv}に示す小信号等価回路の各端子に寄生容量を負荷し、それぞれの場合において計算した。
+
+\subsection{寄生容量のついていない場合}
+    図\refeq{fig:half_eq}に左側の小信号等価回路の半回路を示す。
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width=80mm]{figures/FoldedGilbertHalfBaseEquivalentCircuit.png}
+            \caption{寄生容量のついていない場合の小信号等価半回路}
+            \label{fig:half_eq}
+        \end{center}
+    \end{figure}
+
+    各部に流れる電流は
+
+    \begin{align*}
+        i_{ul} = g_{mn}-v_{in}-g_{dn}v_{pS1}\\
+        i_{ll} = (g_{mp}+\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}-v_{out+})\\
+        i_{lr} = (g_{mp}-\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}-v_{out-})
+    \end{align*}
+    KCLより
+    \begin{align}
+        i_{ul} &= i_{ll}+i_{lr}   \notag\\
+        g_{mn}-v_{in}-g_{dn}v_{pS1} &= 2g_{mp}v_{pS1}+2g_{dp}v_{pS1}    \notag\\
+        v_{pS1} &= \frac{g_{mn}}{ 2g_{mp}+g_{dn}+2g_{dp} }v_{in}    \notag\\
+        &\approx \frac{g_{mn}}{2g_{mp}}v_{in}   \label{eq:vps1}
+    \end{align}
+    差動回路なので$v_{out+}=v_{out-},i_{ll}=-i_{rl},i_{lr}=-i_{rl}$となる。これにより
+    \begin{align}
+        i_{out+}=i_{ll}+i_{rl} &= i_{ll}-i_{lr}   \notag\\
+        &= 2\Delta g_{m}v_{pS1}-2g_{dp}v_{out+}     \\
+        \therefore i_{out-} &= -g_{m}v_{pS1}-2g_{dp}v_{out-}    \\
+    \end{align}
+
 \section{解析結果の考察}
 前回、各端子間に容量がついたときの出力の式を示したが、改めてゲートソース間、ソースゲート間、ゲートドレイン間に寄生容量がついた時の$v_{in}$を入力とする増幅率をを以下に示す。
 
