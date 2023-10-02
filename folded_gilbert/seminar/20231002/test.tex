@@ -18,15 +18,15 @@
 
 \begin{document}
 
-\title{折り返し型ギルバート乗算回路の周波数特性劣化}
+\title{折り返し型ギルバート乗算回路の周波数特性劣化に対する寄生容量の影響}
 \author{小島 光}
 \date{2023年10月2日}
-\abstract{以前から検討している折り返し型ギルバート乗算回路について、非線形な動作をする乗算回路について小信号等価回路に手を加え解析を行った。またPMOSの各端子間にキャパシタを付加し、各回路について小信号解析を行った。}
-\keyword{ギルバート乗算回路,小信号解析,非線形回路}
+\abstract{ギルバート乗算回路を並列に接続して使用する際には信号振幅が圧迫されS/N比が劣化するなどの問題が考えられる。そこで出力範囲が広がる折り返し型ギルバート乗算回路を提案する。現状課題となっている周波数特性劣化の原因を探る。}
+\keyword{ギルバート乗算回路,小信号解析,周波数特性}
 \maketitle
 
 \section{はじめに}
-以前設計した従来型との比較のために設計した折り返し型ギルバート乗算回路(図\refeq{fig:folded_gilbert})ではサイズの大きなPMOSを使用している。したがって、ゲート面積が増大し寄生容量が大きくなることが考えられる。今週はこの寄生容量について、具体的にどの部分が最も周波数特性劣化の原因として大きいのかを検討した。
+以前設計した従来型との比較のために設計した折り返し型ギルバート乗算回路(図\refeq{fig:folded_gilbert})ではサイズの大きなPMOSを使用している。したがって、ゲート面積が増大し寄生容量が大きくなることが考えられる。折り返し型ギルバート乗算回路では現状周波数特性の面で従来型に劣り、要求された動作速度を満たせていないため周波数特性を改善する必要がある。今回はこの原因と考えられる寄生容量ついて検討した。
 
 \begin{figure}[h]
     \begin{center}
@@ -61,7 +61,7 @@
     I_{D}=K(V_{GS}-V_{th})^{2}  \label{eq:square}
 \end{align}
 
-である。では、図\refeq{fig:pmos_diff}において$V_{CTRL}=0$のとき、ゲートソース間電圧は$V_{GS}=V_{pS}-V_{G}$なので、トランスコンダクタンスは
+である。図\refeq{fig:pmos_diff}において$V_{CTRL}=0$のとき、ゲートソース間電圧は\nobreak$V_{GS}=V_{pS}-V_{G}$なので、トランスコンダクタンスは
 
 \begin{align}
     g_{mp} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial V_{GS}} K(V_{GS}-V_{th})^{2} \notag\\
@@ -72,11 +72,11 @@
 と計算できる。次に$V_{CTRL}\neq0$の時、$V_{GS}=V_{pS}- \left( V_{G}-V_{CTRL} \right)$なので左右のトランスコンダクタンスをそれぞれ$g_{mpl},g_{mpr}$とすると
 
 \begin{align}
-    g_{mpl} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial }V_{GS} K(V_{GS}-V_{th})^{2} \notag\\
+    g_{mpl} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial V_{GS}} K(V_{GS}-V_{th})^{2} \notag\\
     &=2K(V_{GS}-V_{th})    \notag\\ 
     &=2K(V_{pS}-V_{G}+V_{CTRL}-V_{th})  \notag\\
     &=g_{mp}+2KV_{CTRL}\equiv g_{mp}+\Delta g_{m}   \label{eq:g_mpl}\\
-    g_{mpr} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial }V_{GS} K(V_{GS}-V_{th})^{2} \notag\\
+    g_{mpr} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial V_{GS}} K(V_{GS}-V_{th})^{2} \notag\\
     &=2K(V_{GS}-V_{th})    \notag\\ 
     &=2K(V_{pS}-V_{G}-V_{CTRL}-V_{th})  \notag\\
     &=g_{mp}-2KV_{CTRL}\equiv g_{mp}-\Delta g_{m}   \label{eq:g_mpr}\\
@@ -85,7 +85,7 @@
 
 と表すことができた。従って$V_{CTRL}$が差動で印加されたとき、トランスコンダクタンスは$V_{CTRL}$に比例した変化分を持つことが示せた。
 
-\section{解析結果の考察}
+\section{解析結果の検討}
 前回、各端子間に容量がついたときの出力の式を示したが、改めてゲートソース間、ソースゲート間、ゲートドレイン間に寄生容量がついた時の$v_{in}$を入力とする増幅率をを以下に示す。
 
 \begin{align*}
@@ -94,7 +94,7 @@
     A_{GD}=\frac{2R_{L}g_{mn} }{ g_{mp}(1+2R_{L}g_{dp} + j2R_{L}\omega C_{GD}) }\Delta g_{m}  
 \end{align*}
 
-であった。ここで、前述の式\eqref{eq:delta_gm}を代入すると
+ここで、前述の\eqref{eq:delta_gm}式を代入すると
 
 \begin{align}
     A_{SG}=\frac{4KR_{L}g_{mn} }{ (1+2R_{L}g_{dp})(g_{mp}+j\omega C_{GS}) }\cdot V_{CTRL}  \label{eq:a_sg}\\
@@ -117,9 +117,9 @@
     \begin{align*}
         g_{m}=\frac{2I_{d}}{V_{GS}-V_{th}}
     \end{align*}
-    という関係がある。また、式\eqref{eq:cutoff_sg},\eqref{eq:cutoff_sd}より$g_{mp}$が変動すると遮断周波数も変動すると考えられるが、端子$v_{pS1},v_{pS2}$の電位はPMOSFETのゲート端子を基準に定まるため電流を変化させるとソース電位も変化してしまう。従って$g_{mp}$を直接制御することはできないので、バイアス電流を適切な範囲で振り、.op解析で求めた$g_{mp}$と遮断周波数との関係を見ることとした。表\refeq{table:sim_s_g/d}にシミュレーション時の条件を示す。また、表\refeq{table:gm_cutoff}と図\refeq{fig:gm_cutoff}にトランスコンダクタンスと遮断周波数の関係を示す。ただし、遮断周波数$f_{cutoff}$は
+    という関係がある。また、\eqref{eq:cutoff_sg},\eqref{eq:cutoff_sd}式より$g_{mp}$が変動すると遮断周波数も変動すると考えられるが、端子$v_{pS1},v_{pS2}$の電位はPMOSFETのゲート端子を基準に定まるため電流を変化させるとソース電位も変化してしまう。従って$g_{mp}$を直接制御することはできないので、バイアス電流を適切な範囲で振り、.op解析で求めた$g_{mp}$と、遮断周波数との関係を見ることとした。表\nobreak\refeq{table:sim_s_g/d}にRohm 0.18$\mathrm{\mu m}$processでのシミュレーション時の条件を示す。また、表\refeq{table:gm_cutoff}と図\refeq{fig:gm_cutoff}にトランスコンダクタンスと遮断周波数の関係を示す。ただし、遮断周波数$f_{\mathrm{cutoff}}$は低域のゲインから$3\mathrm{dB}$小さくなった周波数とし、$\prime$の付いたものはトランスコンダクタンスが最も小さかった$I_{d}=11\mathrm{[mA]}$の時の値で割ったものである。
 
-    \begin{table}[h]
+    \begin{table}[!h]
         \caption{折り返し型ギルバート乗算回路の素子値}
         \label{table:sim_s_g/d}
         \centering
@@ -138,32 +138,32 @@
             \hline\hline
             200 & & 300 &\\
             &&&\\
-            $I_{bias}$[mA] & From[mA] & To[mA] & Step Size[mA]\\
+             & From[mA] & To[mA] & Step Size[mA]\\
             \hline\hline
-            & 3 & 11 & 1
+            $I_{bias}$ & 3 & 11 & 1
         \end{tabular}
     \end{table}
 
-    \begin{table}[h]
+    \begin{table}[!h]
         \caption{トランスコンダクタンスと遮断周波数の関係}
         \label{table:gm_cutoff}
         \centering
-        \begin{tabular}{cccccccccc}
-            $I_{d}[\mathrm{mA}]$ & $g_{mp}[\mathrm{mS}]$ & $f_{cutoff}[\mathrm{GHz}]$ &$g\prime_{mn}$ & $f\prime_{cutoff}$\\
+        \begin{tabular}{ccccccccc}
+            $I_{d}[\mathrm{mA}]$ & $g_{mp}[\mathrm{mS}]$ & $f_{\mathrm{cutoff}}[\mathrm{GHz}]$ &$g\prime_{mn}$ & $f\prime_{\mathrm{cutoff}}$\\
             \hline\hline
-            11 & 1.222 & 4.932 & 1.000 & 1.000\\
-            10 & 1.384 & 2.649 & 1.133 & 0.537\\
-            9 & 1.594 & 2.265 & 1.304 & 0.459\\
-            3 & 1.847 & 0.912 & 1.511 & 0.185\\
-            8 & 1.868 & 2.000 & 1.529 & 0.406\\
-            7 & 2.216 & 1.762 & 1.813 & 0.357\\
-            4 & 2.309 & 1.213 & 1.890 & 0.246\\
-            6 & 2.547 & 1.578 & 2.084 & 0.320\\
-            5 & 2.566 & 1.416 & 2.100 & 0.287\\
+            3 & 1.847 & 0.912 & 1.000 & 1.000\\
+            4 & 2.309 & 1.213 & 1.250 & 1.330\\
+            5 & 2.566 & 1.416 & 1.389 & 1.552\\
+            6 & 2.547 & 1.578 & 1.379 & 1.730\\
+            7 & 2.216 & 1.762 & 1.200 & 1.932\\
+            8 & 1.868 & 2.000 & 1.011 & 2.193\\
+            9 & 1.594 & 2.265 & 0.863 & 2.483\\
+            10 & 1.384 & 2.649 & 0.749 & 2.904\\
+            11 & 1.222 & 4.932 & 0.662 & 5.408
         \end{tabular}
     \end{table}
 
-    \begin{figure}[h]
+    \begin{figure}[!h]
         \begin{center}
             \includegraphics*[width=80mm]{graphes/bitmap/gmp_cutoff.PNG}
             \caption{トランスコンダクタンスと遮断周波数の関係}
@@ -171,19 +171,20 @@
         \end{center}
     \end{figure}
 
+    \newpage
 
-    
+    \eqref{eq:cutoff_sg},\eqref{eq:cutoff_sd}式では遮断周波数とトランスコンダクタンスは比例関係にあるが、図\refeq{fig:gm_cutoff}では比例関係が見て取れなかった。    
 
 \subsection{ゲートドレイン間の寄生容量について}
-    式\eqref{eq:cutoff_gd}より、
+    \eqref{eq:cutoff_gd}式より、
     \begin{align*}
         f_{GD}(R_{L})\equiv\frac{1+2R_{L}g_{dp}}{4\pi R_{L}C_{GD}}
     \end{align*}
     と置くと負荷抵抗が$n$倍になった時の遮断周波数は$f_{GD}(nR_{L})$と表せる。したがって、負荷抵抗が$n$倍になった時、遮断周波数は元の遮断周波数に比べ$\frac{f_{GD}(nR_{L})}{f_{GD}(R_{L})}$倍されることが分かる。
-    \begin{align*}
-        \frac{f_{GD}(nR_{L})}{f_{GD}(R_{L})}=\frac{1+2nR_{L}g_{dp}}{n(1+2R_{L}g_{dp})}
-    \end{align*}
-    表\refeq{table:sim}の条件下で行った.ac解析結果を図\refeq{graph:fgd_vout_ac}に示す。
+    \begin{align}
+        \frac{f_{GD}(nR_{L})}{f_{GD}(R_{L})}=\frac{1+2nR_{L}g_{dp}}{n(1+2R_{L}g_{dp})} 
+    \end{align}
+    表\refeq{table:sim_gd}の条件下で行った.ac解析結果を図\refeq{graph:fgd_vout_ac}に示す。また、図\refeq{fig:rl_cutoff}に、負荷抵抗$R_{L}$と遮断周波数の関係を示す。ただし、この遮断周波数もソース-ゲート/ドレイン間と同様に計算した。
 
     \begin{table}[h]
         \caption{折り返し型ギルバート乗算回路の素子値}
@@ -204,11 +205,13 @@
             \hline\hline
             4 & & 200 & \\
             &&&\\
-            $R_{L}$ & From[$\mathrm{\Omega}$] & To[$\mathrm{\Omega}$] & Step Size[$\mathrm{\Omega}$]\\
+            & From[$\mathrm{\Omega}$] & To[$\mathrm{\Omega}$] & Step Size[$\mathrm{\Omega}$]\\
             \hline\hline
-            & 30 & 300 & 30
+            $R_{L}$ & 30 & 300 & 30
         \end{tabular}
     \end{table}
+
+    \newpage
 
     \begin{figure}[h]
         \begin{center}
@@ -217,13 +220,23 @@
             \label{graph:fgd_vout_ac}
         \end{center}
     \end{figure}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width=80mm]{graphes/bitmap/RL_cutooff.PNG}
+            \caption{負荷抵抗$R_{L}$と遮断周波数の関係}
+            \label{fig:rl_cutoff}
+        \end{center}        
+    \end{figure}
     
-    表\refeq{table:sim}のとき、.op解析結果では$g_{dp}=54.88[\mu S]$であった。対して負荷抵抗は2~3桁なので$R_{L}\ll g_{dp}$とすると
+    表\refeq{table:sim_gd}のとき、.op解析結果では$g_{dp}=54.88[\mu S]$であった。対して負荷抵抗は2$\sim$3桁なので$R_{L}\gg g_{dp}$とすると
     \begin{align*}
         \frac{f_{GD}(nR_{L})}{f_{GD}(R_{L})}\approx \frac{1}{n}
     \end{align*}
-    と近似できる。これはシミュレーションの結果と一致しないので、ゲートドレイン間の寄生容量は周波数特性劣化の原因ではないと考えられる。
+    と近似できる。これは図\refeq{fig:rl_cutoff}とは一致しなかった。
 
 
+\section{おわりに}
+    寄生容量に関する検討ではどちらも周波数特性劣化の原因であるという結果は得られなかった。しかし、MOSFETにおける寄生容量は電圧により大きさが変動することや、別の結線方法で寄生容量が付くことなども考えられる。したがって、今回の検討では単純な端子間の寄生容量が主たる原因ではないとい考えられたが、バックゲートに対する容量なども考えられる。他の原因を検討するともにこれらのより複雑なモデルによる寄生容量に関しても検討する余地があると考えられる。
 
 \end{document}

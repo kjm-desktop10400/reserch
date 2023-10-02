@@ -4,7 +4,7 @@ set datafile separator ","
 
 set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1
 set tics font "Arial,30"
-set xlabel "gm [mS]" font "Arial,30" offset 0,-2
+set xlabel "R_{L} [ohm]" font "Arial,30" offset 0,-2
 set ylabel "cutoff freq [GHz]" font "Arial,30" offset -8,0
 #set y2label "g_{m} [mS]" font "Arial,30" offset 8,0
 set key font"Arial,25"
@@ -16,18 +16,18 @@ set rmargin 20
 set bmargin 8
 set tmargin 2
 set tics font "Arial,25"
-set xtics offset -3, -1
+set xtics offset -3, -0.7
 set ytics
 #set y2tics 1
 set mxtics 5
 set mytics 5
 set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1
 
-input = "..\\data\\gmp_cutoff.data"
+input = "..\\data\\RL_cutoff.data"
 
-set xrange[1 : 3]
-set yrange[0 : 6]
+set xrange[0 : 330]
+set yrange[1.2 : 1.3]
 
-plot   input skip 1 using 2 : 3 with points pt 2 ps 3 title ""
+plot   input skip 1 using 1 : 2 with points pt 2 ps 3 title ""
 
 pause -1
