@@ -4,13 +4,17 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathtools}
+\usepackage{float}
 
 \setcounter{topnumber}{100}
 \setcounter{bottomnumber}{100}
 \setcounter{totalnumber}{100}
 \renewcommand{\textfraction}{0.0}
 \renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
 
+\renewcommand{\dbltopfraction}{.7}
+\renewcommand{\dblfloatpagefraction}{.5}
 
 \begin{document}
 
@@ -81,52 +85,6 @@
 
 と表すことができた。従って$V_{CTRL}$が差動で印加されたとき、トランスコンダクタンスは$V_{CTRL}$に比例した変化分を持つことが示せた。
 
-
-\section{小信号等価解析}
-次に寄生容量がついていない場合と各端子間に寄生容量がついた場合の小信号等価解析を行う。解析の際には図\refeq{fgi:base_equiv}に示す小信号等価回路の各端子に寄生容量を付加し、それぞれの場合において計算した。
-
-\begin{figure*}[!b]
-    \centering
-    \includegraphics*[width=150mm]{figures/FoldedGilbertBaseEquivalentCircuit.png}
-    \caption{小信号等価回路}
-    \label{fgi:base_equiv}
-\end{figure*}
-
-
-\subsection{寄生容量のついていない場合}
-    図\refeq{fig:half_eq}に左側の小信号等価回路の半回路を示す。
-    \begin{figure}[h]
-        \begin{center}
-            \includegraphics*[width=80mm]{figures/FoldedGilbertHalfBaseEquivalentCircuit.png}
-            \caption{寄生容量のついていない場合の小信号等価半回路}
-            \label{fig:half_eq}
-        \end{center}
-    \end{figure}
-
-
-    各部に流れる電流は
-
-    \begin{align*}
-        i_{ul} = g_{mn}-v_{in}-g_{dn}v_{pS1}\\
-        i_{ll} = (g_{mp}+\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}-v_{out+})\\
-        i_{lr} = (g_{mp}-\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}-v_{out-})
-    \end{align*}
-    KCLより
-    \begin{align}
-        i_{ul} &= i_{ll}+i_{lr}   \notag\\
-        g_{mn}-v_{in}-g_{dn}v_{pS1} &= 2g_{mp}v_{pS1}+2g_{dp}v_{pS1}    \notag\\
-        v_{pS1} &= \frac{g_{mn}}{ 2g_{mp}+g_{dn}+2g_{dp} }v_{in}    \notag\\
-        &\approx \frac{g_{mn}}{2g_{mp}}v_{in}   \label{eq:vps1}
-    \end{align}
-    差動回路なので$v_{out+}=v_{out-},i_{ll}=-i_{rl},i_{lr}=-i_{rl}$となる。これにより
-    \begin{align}
-        i_{out+}=i_{ll}+i_{rl} &= i_{ll}-i_{lr}   \notag\\
-        &= 2\Delta g_{m}v_{pS1}-2g_{dp}v_{out+}     \\
-        \therefore i_{out-} &= -g_{m}v_{pS1}-2g_{dp}v_{out-}    
-    \end{align}
-
-
-
 \section{解析結果の考察}
 前回、各端子間に容量がついたときの出力の式を示したが、改めてゲートソース間、ソースゲート間、ゲートドレイン間に寄生容量がついた時の$v_{in}$を入力とする増幅率をを以下に示す。
 
@@ -153,6 +111,91 @@
 \end{align}
 
 と計算できる。
+
+\subsection{ソース-ゲート/ドレイン間の寄生容量について}
+    トランスコンダクタンスについては
+    \begin{align*}
+        g_{m}=\frac{2I_{d}}{V_{GS}-V_{th}}
+    \end{align*}
+    という関係がある。また、式\eqref{eq:cutoff_sg},\eqref{eq:cutoff_sd}より$g_{mp}$が変動すると遮断周波数も変動すると考えられるが、端子$v_{pS1},v_{pS2}$の電位はPMOSFETのゲート端子を基準に定まるため電流を変化させるとソース電位も変化してしまう。従って$g_{mp}$を直接制御することはできないので、バイアス電流を適切な範囲で振り、.op解析で求めた$g_{mp}$と遮断周波数との関係を見ることとした。表\refeq{table:sim_s_g/d}にシミュレーション時の条件を示す。また、表\refeq{table:gm_cutoff}にトランスコンダクタンスと遮断周波数の関係を示す。
+
+    \begin{table}[h]
+        \caption{折り返し型ギルバート乗算回路の素子値}
+        \label{table:sim_s_g/d}
+        \centering
+        \begin{tabular}{cccccccccc}
+            MOSFET & L[$\mu m$] & W[$\mu m$] & multifinger\\
+            \hline \hline
+            $M_{p}$ & 0.72 & 4.27 & 10 \\
+            $M_{n}$ & 0.72 & 4.27 & 20 \\
+            $M_{C}$ & 0.72 & 11.6 & 40 \\
+            &&&\\
+            $V_{dd}$[V] & $V_{A}$[V] & $V_{B}$[V] & $V_{C}$[V]\\
+            \hline\hline
+            1.8 & 1.59 & 1.09 & 0.65 \\
+            &&&\\
+             $V_{CTRL}$[mV] & & $R_{L}[\Omega]$ & \\
+            \hline\hline
+            200 & & 300 &\\
+            &&&\\
+            $I_{bias}$[mA] & From[mA] & To[mA] & Step Size[mA]\\
+            \hline\hline
+            & 3 & 11 & 1
+        \end{tabular}
+    \end{table}
+
     
+
+\subsection{ゲートドレイン間の寄生容量について}
+    式\eqref{eq:cutoff_gd}より、
+    \begin{align*}
+        f_{GD}(R_{L})\equiv\frac{1+2R_{L}g_{dp}}{4\pi R_{L}C_{GD}}
+    \end{align*}
+    と置くと負荷抵抗が$n$倍になった時の遮断周波数は$f_{GD}(nR_{L})$と表せる。したがって、負荷抵抗が$n$倍になった時、遮断周波数は元の遮断周波数に比べ$\frac{f_{GD}(nR_{L})}{f_{GD}(R_{L})}$倍されることが分かる。
+    \begin{align*}
+        \frac{f_{GD}(nR_{L})}{f_{GD}(R_{L})}=\frac{1+2nR_{L}g_{dp}}{n(1+2R_{L}g_{dp})}
+    \end{align*}
+    表\refeq{table:sim}の条件下で行った.ac解析結果を図\refeq{graph:fgd_vout_ac}に示す。
+
+    \begin{table}[h]
+        \caption{折り返し型ギルバート乗算回路の素子値}
+        \label{table:sim_gd}
+        \centering
+        \begin{tabular}{cccccccccc}
+            MOSFET & L[$\mu m$] & W[$\mu m$] & multifinger\\
+            \hline \hline
+            $M_{p}$ & 0.72 & 4.27 & 10 \\
+            $M_{n}$ & 0.72 & 4.27 & 20 \\
+            $M_{C}$ & 0.72 & 11.6 & 40 \\
+            &&&\\
+            $V_{dd}$[V] & $V_{A}$[V] & $V_{B}$[V] & $V_{C}$[V]\\
+            \hline\hline
+            1.8 & 1.59 & 1.09 & 0.65 \\
+            &&&\\
+            $I_{bias}$[mA] & & $V_{CTRL}$[mV] & \\
+            \hline\hline
+            4 & & 200 & \\
+            &&&\\
+            $R_{L}$ & From[$\Omega$] & To[$\Omega$] & Step Size[$\Omega$]\\
+            \hline\hline
+            & 30 & 300 & 30
+        \end{tabular}
+    \end{table}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width=80mm]{graphes/bitmap/Fgd_vout_ac.PNG}
+            \caption{負荷抵抗を変化させたときの.ac解析結果}
+            \label{graph:fgd_vout_ac}
+        \end{center}
+    \end{figure}
+    
+    表\refeq{table:sim}のとき、.op解析結果では$g_{dp}=54.88[\mu S]$であった。対して負荷抵抗は2~3桁なので$R_{L}\ll g_{dp}$とすると
+    \begin{align*}
+        \frac{f_{GD}(nR_{L})}{f_{GD}(R_{L})}\approx \frac{1}{n}
+    \end{align*}
+    と近似できる。これはシミュレーションの結果と一致しないので、ゲートドレイン間の寄生容量は周波数特性劣化の原因ではないと考えられる。
+
+
 
 \end{document}
