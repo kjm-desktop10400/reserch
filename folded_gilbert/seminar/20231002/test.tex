@@ -117,14 +117,14 @@
     \begin{align*}
         g_{m}=\frac{2I_{d}}{V_{GS}-V_{th}}
     \end{align*}
-    という関係がある。また、式\eqref{eq:cutoff_sg},\eqref{eq:cutoff_sd}より$g_{mp}$が変動すると遮断周波数も変動すると考えられるが、端子$v_{pS1},v_{pS2}$の電位はPMOSFETのゲート端子を基準に定まるため電流を変化させるとソース電位も変化してしまう。従って$g_{mp}$を直接制御することはできないので、バイアス電流を適切な範囲で振り、.op解析で求めた$g_{mp}$と遮断周波数との関係を見ることとした。表\refeq{table:sim_s_g/d}にシミュレーション時の条件を示す。また、表\refeq{table:gm_cutoff}にトランスコンダクタンスと遮断周波数の関係を示す。
+    という関係がある。また、式\eqref{eq:cutoff_sg},\eqref{eq:cutoff_sd}より$g_{mp}$が変動すると遮断周波数も変動すると考えられるが、端子$v_{pS1},v_{pS2}$の電位はPMOSFETのゲート端子を基準に定まるため電流を変化させるとソース電位も変化してしまう。従って$g_{mp}$を直接制御することはできないので、バイアス電流を適切な範囲で振り、.op解析で求めた$g_{mp}$と遮断周波数との関係を見ることとした。表\refeq{table:sim_s_g/d}にシミュレーション時の条件を示す。また、表\refeq{table:gm_cutoff}と図\refeq{fig:gm_cutoff}にトランスコンダクタンスと遮断周波数の関係を示す。ただし、遮断周波数$f_{cutoff}$は
 
     \begin{table}[h]
         \caption{折り返し型ギルバート乗算回路の素子値}
         \label{table:sim_s_g/d}
         \centering
         \begin{tabular}{cccccccccc}
-            MOSFET & L[$\mu m$] & W[$\mu m$] & multifinger\\
+            MOSFET & L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & multifinger\\
             \hline \hline
             $M_{p}$ & 0.72 & 4.27 & 10 \\
             $M_{n}$ & 0.72 & 4.27 & 20 \\
@@ -134,7 +134,7 @@
             \hline\hline
             1.8 & 1.59 & 1.09 & 0.65 \\
             &&&\\
-             $V_{CTRL}$[mV] & & $R_{L}[\Omega]$ & \\
+             $V_{CTRL}$[mV] & & $R_{L}[\mathrm{\Omega}]$ & \\
             \hline\hline
             200 & & 300 &\\
             &&&\\
@@ -143,6 +143,34 @@
             & 3 & 11 & 1
         \end{tabular}
     \end{table}
+
+    \begin{table}[h]
+        \caption{トランスコンダクタンスと遮断周波数の関係}
+        \label{table:gm_cutoff}
+        \centering
+        \begin{tabular}{cccccccccc}
+            $I_{d}[\mathrm{mA}]$ & $g_{mp}[\mathrm{mS}]$ & $f_{cutoff}[\mathrm{GHz}]$ &$g\prime_{mn}$ & $f\prime_{cutoff}$\\
+            \hline\hline
+            11 & 1.222 & 4.932 & 1.000 & 1.000\\
+            10 & 1.384 & 2.649 & 1.133 & 0.537\\
+            9 & 1.594 & 2.265 & 1.304 & 0.459\\
+            3 & 1.847 & 0.912 & 1.511 & 0.185\\
+            8 & 1.868 & 2.000 & 1.529 & 0.406\\
+            7 & 2.216 & 1.762 & 1.813 & 0.357\\
+            4 & 2.309 & 1.213 & 1.890 & 0.246\\
+            6 & 2.547 & 1.578 & 2.084 & 0.320\\
+            5 & 2.566 & 1.416 & 2.100 & 0.287\\
+        \end{tabular}
+    \end{table}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width=80mm]{graphes/bitmap/gmp_cutoff.PNG}
+            \caption{トランスコンダクタンスと遮断周波数の関係}
+            \label{fig:gm_cutoff}
+        \end{center}
+    \end{figure}
+
 
     
 
@@ -162,11 +190,11 @@
         \label{table:sim_gd}
         \centering
         \begin{tabular}{cccccccccc}
-            MOSFET & L[$\mu m$] & W[$\mu m$] & multifinger\\
+            MOSFET & L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & multifinger\\
             \hline \hline
-            $M_{p}$ & 0.72 & 4.27 & 10 \\
-            $M_{n}$ & 0.72 & 4.27 & 20 \\
-            $M_{C}$ & 0.72 & 11.6 & 40 \\
+            $\mathrm{M_{p}}$ & 0.72 & 4.27 & 10 \\
+            $\mathrm{M_{n}}$ & 0.72 & 4.27 & 20 \\
+            $\mathrm{M_{C}}$ & 0.72 & 11.6 & 40 \\
             &&&\\
             $V_{dd}$[V] & $V_{A}$[V] & $V_{B}$[V] & $V_{C}$[V]\\
             \hline\hline
@@ -176,7 +204,7 @@
             \hline\hline
             4 & & 200 & \\
             &&&\\
-            $R_{L}$ & From[$\Omega$] & To[$\Omega$] & Step Size[$\Omega$]\\
+            $R_{L}$ & From[$\mathrm{\Omega}$] & To[$\mathrm{\Omega}$] & Step Size[$\mathrm{\Omega}$]\\
             \hline\hline
             & 30 & 300 & 30
         \end{tabular}
