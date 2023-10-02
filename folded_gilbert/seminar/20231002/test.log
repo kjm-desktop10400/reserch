@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.26)  2 OCT 2023 12:40
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.25)  2 OCT 2023 14:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/Users/LarcH/Desktop/reserch/folded_gilbert/seminar/20231002/test.tex
-(c:/Users/LarcH/Desktop/reserch/folded_gilbert/seminar/20231002/test.tex
+**c:/Desktop/reserch/folded_gilbert/seminar/20231002/test.tex
+(c:/Desktop/reserch/folded_gilbert/seminar/20231002/test.tex
 pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
 L3 programming layer <2023-05-15>
 (c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -208,69 +208,69 @@ File: l3backend-dvips.def 2023-04-19 L3 backend support: dvips
 (./test.aux)
 \openout1 = `test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 16.
+(Font)              scaled to size 13.83836pt on input line 22.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 16.
+(Font)              scaled to size 13.83836pt on input line 22.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 16.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 16.
+(Font)              scaled to size 13.83836pt on input line 22.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 16.
+(Font)              scaled to size 13.83836pt on input line 22.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 16.
+(Font)              scaled to size 6.72699pt on input line 22.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 16.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+(Font)              scaled to size 4.805pt on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
 
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 16.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 16.
+(Font)              scaled to size 8.64899pt on input line 22.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 16.
+(Font)              scaled to size 8.64899pt on input line 22.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 16.
+(Font)              scaled to size 5.76599pt on input line 22.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 18.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 18.
+(Font)              scaled to size 9.60999pt on input line 24.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 18.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 18.
+(Font)              scaled to size 9.60999pt on input line 24.
 File: figures/folded_gilbert.png Graphic file (type bmp)
 <figures/folded_gilbert.png>
 File: figures/pmos_diff.png Graphic file (type bmp)
@@ -288,32 +288,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: figures/FoldedGilbertBaseEquivalentCircuit.png Graphic file (type bmp)
 <figures/FoldedGilbertBaseEquivalentCircuit.png>
-
-Overfull \hbox (217.66357pt too wide) in paragraph at lines 80--81
- [] 
- []
-
 File: figures/FoldedGilbertHalfBaseEquivalentCircuit.png Graphic file (type bmp
 )
 <figures/FoldedGilbertHalfBaseEquivalentCircuit.png>
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2]
-Underfull \hbox (badness 1014) in paragraph at lines 138--139
+
+Underfull \hbox (badness 1014) in paragraph at lines 147--148
 []\JY1/mc/m/n/9 したが って 、 各寄生容量がついた時の遮断周波数を
  []
 
-[3
+[2] [3] [4
+
 
 ] (./test.aux) ) 
 Here is how much of TeX's memory you used:
- 3223 strings out of 476759
- 49193 string characters out of 5809550
- 1867672 words of memory out of 5000000
- 23592 multiletter control sequences out of 15000+600000
+ 3223 strings out of 476760
+ 49157 string characters out of 5809571
+ 1871672 words of memory out of 5000000
+ 23591 multiletter control sequences out of 15000+600000
  525981 words of font info for 95 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,9n,62p,509b,329s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,9n,62p,497b,329s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on test.dvi (3 pages, 13724 bytes).
+Output written on test.dvi (4 pages, 13740 bytes).

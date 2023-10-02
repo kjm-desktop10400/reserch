@@ -5,6 +5,12 @@
 \usepackage{amssymb}
 \usepackage{mathtools}
 
+\setcounter{topnumber}{100}
+\setcounter{bottomnumber}{100}
+\setcounter{totalnumber}{100}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\topfraction}{1.0}
+
 
 \begin{document}
 
@@ -75,17 +81,17 @@
 
 と表すことができた。従って$V_{CTRL}$が差動で印加されたとき、トランスコンダクタンスは$V_{CTRL}$に比例した変化分を持つことが示せた。
 
-\begin{figure}[h]
-    \begin{center}
-        \includegraphics*[width=160mm]{figures/FoldedGilbertBaseEquivalentCircuit.png}
-        \caption{小信号等価回路}
-        \label{fgi:base_equiv}
-    \end{center}
-\end{figure}
-
 
 \section{小信号等価解析}
-次に寄生容量がついていない場合と各端子間に寄生容量がついた場合の小信号等価解析を行う。解析の際には図\refeq{fgi:base_equiv}に示す小信号等価回路の各端子に寄生容量を負荷し、それぞれの場合において計算した。
+次に寄生容量がついていない場合と各端子間に寄生容量がついた場合の小信号等価解析を行う。解析の際には図\refeq{fgi:base_equiv}に示す小信号等価回路の各端子に寄生容量を付加し、それぞれの場合において計算した。
+
+\begin{figure*}[!b]
+    \centering
+    \includegraphics*[width=150mm]{figures/FoldedGilbertBaseEquivalentCircuit.png}
+    \caption{小信号等価回路}
+    \label{fgi:base_equiv}
+\end{figure*}
+
 
 \subsection{寄生容量のついていない場合}
     図\refeq{fig:half_eq}に左側の小信号等価回路の半回路を示す。
@@ -96,6 +102,7 @@
             \label{fig:half_eq}
         \end{center}
     \end{figure}
+
 
     各部に流れる電流は
 
@@ -115,8 +122,10 @@
     \begin{align}
         i_{out+}=i_{ll}+i_{rl} &= i_{ll}-i_{lr}   \notag\\
         &= 2\Delta g_{m}v_{pS1}-2g_{dp}v_{out+}     \\
-        \therefore i_{out-} &= -g_{m}v_{pS1}-2g_{dp}v_{out-}    \\
+        \therefore i_{out-} &= -g_{m}v_{pS1}-2g_{dp}v_{out-}    
     \end{align}
+
+
 
 \section{解析結果の考察}
 前回、各端子間に容量がついたときの出力の式を示したが、改めてゲートソース間、ソースゲート間、ゲートドレイン間に寄生容量がついた時の$v_{in}$を入力とする増幅率をを以下に示す。
