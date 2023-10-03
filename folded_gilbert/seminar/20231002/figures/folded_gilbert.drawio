@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-09-28T06:14:12.964Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="L_tqEZ-j4ypr1DflLHMo" version="21.1.2" type="device">
+<mxfile host="Electron" modified="2023-10-03T02:39:02.817Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="s1Fxcumi8JoqvKUTpD1I" version="21.1.2" type="device">
   <diagram name="ページ1" id="6QW9j_EPjuSqzMXPCzot">
-    <mxGraphModel dx="978" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="1" shadow="0">
+    <mxGraphModel dx="989" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -333,8 +333,8 @@
         <mxCell id="eJ6VPdQpt5nklv8nxf46-5" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;`I_{bias}`&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="317" y="250" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="9qM64ygTq06jUZPEfWJV-1" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;`I_{bias}`&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
-          <mxGeometry x="186" y="497" width="120" height="40" as="geometry" />
+        <mxCell id="9qM64ygTq06jUZPEfWJV-1" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;`I_{C}`&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
+          <mxGeometry x="187.5" y="500" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="9qM64ygTq06jUZPEfWJV-2" value="" style="endArrow=classic;html=1;rounded=0;labelBackgroundColor=default;strokeColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;shape=connector;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
