@@ -2,12 +2,12 @@
 #set multiplot
 
 set logscale x
-set logscale y
+#set logscale y
 
 set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1
 set tics font "Arial,30"
-set xlabel "/R_{L} [ohm]" font "Arial,30" offset 0,-1
-set ylabel "cutoff freq [GHz]" font "Arial,30" offset -8,0
+set xlabel "frequency [Hz]" font "Arial,30" offset 0,-1
+set ylabel "magnitude [dB]" font "Arial,30" offset -8,0
 #set y2label "g_{m} [mS]" font "Arial,30" offset 8,0
 set key font"Arial,25"
 set key bottom left spacing 2.5 offset 35,2
@@ -22,7 +22,7 @@ set ytics
 #set y2tics 1
 set mxtics 5
 set mytics 5
-set grid xtics mxtics ytics mytics linewidth 2, linewidth 1, linewidth 2, linewidth 1
+set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1
 
 gmp = 2.031*1e-3
 gmn = 10.72*1e-3
@@ -42,19 +42,18 @@ Cgd = gd
 Cs = Csg + Csd
 Cd = Csd + Cgd
 
+Id = 1e-3
 R = 300
 VCTRL = 200*1e-3
+Kp = gmp**2 / (4*Id)
 
-set xrange[10 : 350]
+set xrange[1e6 : 1e10]
+set yrange[-22 : 5]
 
-fRp(x) = ( Cs +2*x*gmp*Cd + sqrt( (Cs+2*x*gmp*Cd)**2 + 8*x*gmp*Cs*Cd ) ) / ( 8*pi*x*Cs*Cd )
-fRn(x) = ( Cs +2*x*gmp*Cd - sqrt( (Cs+2*x*gmp*Cd)**2 + 8*x*gmp*Cs*Cd ) ) / ( 8*pi*x*Cs*Cd )
+vout(x) = 20 * log10( 4*Kp*R*gmn*VCTRL / ( sqrt((( gmp-2*R*((2*pi*x)**2)*Cd*Cs )**2) + (( (2*pi*x)*(Cs+2*R*gmp*Cd) )**2)) ) )
 
-fgp(x) = ( Cs +2*R*x*Cd + sqrt( (Cs+2*R*x*Cd)**2 + 8*R*x*Cs*Cd ) ) / ( 8*pi*R*Cs*Cd )
-fgn(x) = ( Cs +2*R*x*Cd - sqrt( (Cs+2*R*x*Cd)**2 + 8*R*x*Cs*Cd ) ) / ( 8*pi*R*Cs*Cd )
-
-plot   fRp(x) * 1e-9
-#replot fRn(x)
+plot   vout(x)
+#replot fgn(x)*1e-9
 
 
 

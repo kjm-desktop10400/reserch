@@ -50,7 +50,7 @@ fcut(x) = ( 1+2*x*gdp ) / ( 4*pi*x*Cgd )
 set xrange [1:330]
 
 
-plot   input skip 1 using 1 : ($2) * 1e9 with points pt 22 ps 3 lc black title ""
-replot fcut(x) title "ideal cutoff freq"
+plot   input skip 1 using 1 : ($2) * 1e9 with points pt 22 ps 3 lc black title "simulated"
+replot fcut(x) black title "ideal cutoff freq"
 
 pause -1
