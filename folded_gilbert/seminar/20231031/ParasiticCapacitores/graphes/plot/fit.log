@@ -304,3 +304,42 @@ correlation matrix of the fit parameters:
                 A      B      
 A               1.000 
 B              -0.995  1.000 
+
+
+*******************************************************************************
+Tue Oct 10 11:09:43 2023
+
+
+FIT:    data read from input_predict skip 1 using 2 : 3
+        format = x:z
+        x range restricted to [1.80000 : 2.60000]
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: predict(x)
+	predict(x) = A * x + B
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'A' is zero.
+Warning: Initial value of parameter 'B' is zero.
+iter      chisq       delta/lim  lambda   A             B            
+   0 1.4591936000e+01   0.00e+00  1.76e+00    1.000000e-30   1.000000e-30
+   5 6.5919724826e-04  -3.63e-09  1.76e-05    6.917157e-01  -3.756006e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.000659197
+rel. change during last iteration : -3.63486e-14
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00907743
+variance of residuals (reduced chisquare) = WSSR/ndf   : 8.23997e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+A               = 0.691716         +/- 0.01202      (1.738%)
+B               = -0.375601        +/- 0.02748      (7.315%)
+
+correlation matrix of the fit parameters:
+                A      B      
+A               1.000 
+B              -0.995  1.000 

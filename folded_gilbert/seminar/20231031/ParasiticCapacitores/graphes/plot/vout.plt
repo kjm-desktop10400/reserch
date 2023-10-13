@@ -47,8 +47,8 @@ R = 300
 VCTRL = 200*1e-3
 Kp = gmp**2 / (4*Id)
 
-set xrange[1e6 : 1e10]
-set yrange[-22 : 5]
+set xrange[1e6 : 1e12]
+set yrange[-40 : 4]
 
 vout(x) = 20 * log10( 4*Kp*R*gmn*VCTRL / ( sqrt((( gmp-2*R*((2*pi*x)**2)*Cd*Cs )**2) + (( (2*pi*x)*(Cs+2*R*gmp*Cd) )**2)) ) )
 
