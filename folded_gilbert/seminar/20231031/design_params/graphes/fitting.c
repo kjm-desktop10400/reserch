@@ -3,43 +3,67 @@
 
 int main(void)
 {
-    //open pipe
-    FILE* pipe;
-    pipe = popen("gnuplot", "w");
-    if(pipe == NULL)
+    //scan number of colum
+    int data = 0;
+    char flag = 0;
+    char buf = 2;
+    FILE* data_file = fopen("data\\gdp_L.vcsv", "r");
+    if(data_file == NULL)
     {
-        printf("couldnt open pipe");
+        puts("data file couldnt opend");
+        return 0;
     }
     else
     {
-        printf("pipe opend");
+        puts("opened data file");
     }
+    while(1)
+    {
+        switch(buf = fgetc(data_file))
+        {
+            case ';' :
+                data++;
+                putc(buf, stdout);
+                break;
+            case '\n' :
+                flag--;
+                putc(buf, stdout);
+                break;
+            default :
+                putc(buf, stdout);
+                continue;
+        }
+        if(flag == 0)
+        {
+            break;
+        }
+    }
+    fclose(data_file);
+    printf("data number : %d\n", data + 1);
 
+    //open pipe
+    FILE* pipe;
+    pipe = popen("gnuplot", "w");
+    
+    //set separator type
+    fprintf(pipe, "#set datafile separator \",\"");
     
     //set input file
-    fputs("input = \"data\\\\test.data\"", pipe);
+    fprintf(pipe, "input = \"data\\\\gdp_L.vcsv\"\n");
 
     //set fitting function
-    fputs("f(x) = A * x + B", pipe);
-    fputs("A = 1", pipe);
-    fputs("B = 1", pipe);
+    fprintf(pipe, "f(x) = A * x + B\n");
+    fprintf(pipe, "A = 1\n");
+    fprintf(pipe, "B = 1\n");
 
-    int i = 1;
+    //intrinsic fitting
+    for(int i = 0; i < 10; i++){
+        //fitting
+        fprintf(pipe, "fit f(x) input skip 6 using %d : %d via A, B\n", 2 * i + 1, 2 * i + 2);
 
-    //fitting
-    fprintf(pipe, "fit f(x) input skip 0 using %d : %d via A, B", i, i + 1);
-
-    //save fitlog
-    fprintf(pipe, "save fit sprintf(\"data\\\\fitlog\\\\fitlog%d\",)", i);
-
-    i++;
-
-    //fitting
-    fprintf(pipe, "fit f(x) input skip 0 using %d : %d via A, B", i, i + 1);
-
-    //save fitlog
-    fprintf(pipe, "save fit sprintf(\"data\\\\fitlog\\\\fitlog%d\",)", i);
-
+        //save fitlog
+        fprintf(pipe, "save fit sprintf(\"data\\\\fitlog\\\\%d.fitlog\")\n", i + 1);
+    }
 
     //close pipe
     fputs("e", pipe);
