@@ -7,7 +7,7 @@ int main(void)
     int data = 0;
     char flag = 0;
     char buf = 2;
-    FILE* data_file = fopen("data\\gdp_L.vcsv", "r");
+    FILE* data_file = fopen("data\\test.data", "r");
     if(data_file == NULL)
     {
         puts("data file couldnt opend");
