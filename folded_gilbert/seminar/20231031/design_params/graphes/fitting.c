@@ -7,7 +7,7 @@ int main(void)
     int data = 0;
     char flag = 0;
     char buf = 2;
-    FILE* data_file = fopen("data\\test.data", "r");
+    FILE* data_file = fopen("data\\gdp_L.vcsv", "r");
     if(data_file == NULL)
     {
         puts("data file couldnt opend");
@@ -16,6 +16,20 @@ int main(void)
     else
     {
         puts("opened data file");
+    }
+    for(int i = 1; i < 2; i++)
+    {//最初の二行を読み飛ばす
+        while(1)
+        {
+            if(fgetc(data_file) == '\n')
+            {
+                break;
+            }
+            else
+            {
+                continue;
+            }
+        }
     }
     while(1)
     {
@@ -26,14 +40,14 @@ int main(void)
                 putc(buf, stdout);
                 break;
             case '\n' :
-                flag--;
+                flag = 1;
                 putc(buf, stdout);
                 break;
             default :
                 putc(buf, stdout);
                 continue;
         }
-        if(flag == 0)
+        if(flag)
         {
             break;
         }
@@ -46,7 +60,7 @@ int main(void)
     pipe = popen("gnuplot", "w");
     
     //set separator type
-    fprintf(pipe, "#set datafile separator \",\"");
+    fprintf(pipe, "set datafile separator \",\"\n");
     
     //set input file
     fprintf(pipe, "input = \"data\\\\gdp_L.vcsv\"\n");
@@ -57,9 +71,9 @@ int main(void)
     fprintf(pipe, "B = 1\n");
 
     //intrinsic fitting
-    for(int i = 0; i < 10; i++){
+    for(int i = 0; i <= data; i++){
         //fitting
-        fprintf(pipe, "fit f(x) input skip 6 using %d : %d via A, B\n", 2 * i + 1, 2 * i + 2);
+        fprintf(pipe, "fit [2 : ] f(x) input skip 4 using %d : %d via A, B\n", 2 * i + 1, 2 * i + 2);
 
         //save fitlog
         fprintf(pipe, "save fit sprintf(\"data\\\\fitlog\\\\%d.fitlog\")\n", i + 1);
