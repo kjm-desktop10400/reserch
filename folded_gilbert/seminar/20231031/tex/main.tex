@@ -61,9 +61,13 @@
         i_{lGD}=j\omega C_{GD}v_{out+}      \\
         i_{rGD}=j\omega C_{GD}v_{out-}      \\
         \therefore i_{lGD}+i_{rGD}=0\;\;\;(\because v_{out+}=-v_{out-})     \\
-        i_{ll} = (g_{mp}+\Delta g_{m})v_{pS1}+(g_{dp}+j\omega C_{SD})(v_{pS1}-v_{out+})-i_{lGD}    \\
-        i_{ll} = (g_{mp}-\Delta g_{m})v_{pS1}+(g_{dp}+j\omega C_{SD})(v_{pS1}-v_{out-})-i_{rGD}
     \end{gather*}
+    \begin{multline*}
+        i_{ll} = (g_{mp}+\Delta g_{m})v_{pS1}\\+(g_{dp}+j\omega C_{SD})(v_{pS1}-v_{out+})-i_{lGD}
+    \end{multline*}
+    \begin{multline*}
+        i_{ll} = (g_{mp}-\Delta g_{m})v_{pS1}\\+(g_{dp}+j\omega C_{SD})(v_{pS1}-v_{out-})-i_{rGD}    
+    \end{multline*}
     KCLより
     \begin{align*}
         i_{ul} &= i_{ll}+i_{lGD}+i_{lSG}+i_{lr}+i_{rGD}+i_{rSG}    \\
@@ -95,18 +99,83 @@
         \Delta g_{m} = 2KV_{CTRL}
     \end{align*}
     だったので出力は
-    \begin{align}
-        v_{out} = \frac{4KR_{L}g_{mn}}{ \left\{ 1+j2R_{L}\omega(C_{SD}+C_{GD}) \right\}\left\{ g_{mp}+j\omega(C_{SD}+C_{SG}) \right\} }    \label{eq:vout}
-    \end{align}
+    \begin{multline}
+        v_{out} \\
+        = \frac{4KR_{L}g_{mn}\cdot V_{CTRL}\cdot v_{in}}{ \left\{ 1+j2R_{L}\omega(C_{SD}+C_{GD}) \right\}\left\{ g_{mp}+j\omega(C_{SD}+C_{SG}) \right\} }    \label{eq:vout}
+    \end{multline}
     と求められた。
 
-    折り返し型のギルバート乗算回路を$\mathrm{Rohm 0.18 \mu m process}$でシミュレーションを行い、.op解析から得られた各パラメータを入力した際のシミュレーション波形と理論式のグラフを図\refeq{fig:vout_sim}、\refeq{fig:vout_theory}に示す。
-
-
+    折り返し型のギルバート乗算回路でシミュレーションを行い、.op解析からコントロール電圧毎のパラメータを抽出した。この時のシミュレーション条件を図\refeq{table:state_folded_ac}に示す。また、この時のシミュレーション波形と.op解析で得られたパラメータを代入した理論式のグラフを図\refeq{fig:vout_theoretical}、\refeq{fig:vout_sim}に示す。
+    \begin{table}[h]
+        \caption{折り返し型ギルバート乗算回路の素子値}
+        \label{table:state_folded_ac}
+        \centering
+        \begin{tabular}{cccccccccc}
+            \hline
+            &Process&$\mathrm{Rohm\,0.18\,\mu m}$&\\
+            \hline
+            &&&\\
+            MOSFET & L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & finger\\
+            \hline \hline
+            $\mathrm{M_{p}}$ & 0.72 & 4.27 & 10 \\
+            $\mathrm{M_{n}}$ & 0.72 & 4.27 & 20 \\
+            $\mathrm{M_{C}}$ & 0.72 & 11.6 & 40 \\
+            &&&\\
+            $V_{dd}$[V] & $V_{A}$[V] & $V_{B}$[V] & $V_{C}$[V]\\
+            \hline\hline
+            1.8 & 1.59 & 1.09 & 0.65 \\
+            &&&\\
+            $I_{bias}$[mA] & $I_{C}\mathrm{[mA]}$ & $V_{CTRL}$[mV] & \\
+            \hline\hline
+            4 & 4 & 200 & \\
+        \end{tabular}
+    \end{table}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/vout_ac_theoretical_monochrome.PNG}
+            \caption{\eqref{eq:vout}式の周波数特性}
+            \label{fig:vout_theoretical}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/vout_ac_simulation_monochrome.PNG}
+            \caption{シミュレーションから得られた周波数特性}
+            \label{fig:vout_sim}
+        \end{center}
+    \end{figure}
+    どちらも下から$V_{CTRL}=20\,\mathrm{mV},40\,\mathrm{mV},60\,\mathrm{mV}\cdots200\,\mathrm{mV}$のときの周波数特性である。二つを比較すると低域利得には数dBの差があるが遮断周波数はおおよそ近い結果が得られた。\eqref{eq:vout}式では虚部にのみ周波数を含んでいるので、やはり遮断周波数は虚部である寄生容量の値が影響していると考えられる。したがって折り返し型において周波数特性を改善する方法として寄生容量を小さくする、即ちサイズを小さくするといったことが考えられる。
 
 
 \section{負荷にインダクタを負荷した際の周波数特性}
-
+    前章ではトランジスタサイズを小さくし、寄生容量を減らすことで周波数特性改善につながるということについて述べたが、別の方法としてインダクタを付加するという方法が考えられる。集積化を目標にしているため大きなインダクタを乗せることはできないが、シミュレーションによる改善効果を検討することで現実的なサイズのインダクタを付加することが有効な改善方法になり得るかを検討する。図\refeq{fig:inductor}にインダクタを付加した小信号等価回路を示す。
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/ParasiticInductorHalfEquivalent.png}
+            \caption{負荷としてインダクタを挿入した小信号等価回路}
+            \label{fig:inductor}
+        \end{center}
+    \end{figure}
+    このとき、インダクタは負荷抵抗に直列に挿入したので、\eqref{eq:vout}式の負荷抵抗に$R_{L}+j\omega L$を代入することで利得が求められる。したがって、インダクタを付加した際の利得は
+    \begin{multline}
+        v_{out,i} \\
+        = \frac{4K(R_{L}+j\omega L)g_{mn}\cdot V_{CTRL}\cdot v_{in}}{ \left\{ 1+j2\omega(R_{L}+j\omega L)(C_{SD}+C_{GD}) \right\}\left\{ g_{mp}+j\omega(C_{SD}+C_{SG}) \right\} }    \label{eq:vout_inductor}
+    \end{multline}
+    と求められた。コントロール電圧を$200\,\mathrm{mV}$に固定し、それ以外の条件は\refeq{table:state_folded_ac}と同様の条件でインダクタを付加した際の\eqref{eq:vout_inductor}式から得られる周波数特性を図\refeq{fig:vout_inductor_theoretical}に、シミュレーション波形を図\refeq{fig:vout_inductor_simulation}に示す。
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/inductor_theoretical_monochrome.PNG}
+            \caption{\eqref{eq:vout_inductor}式の数波数特性}
+            \label{fig:vout_inductor_theoretical}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/inductor_simulation_monochrome.PNG}
+            \caption{インダクタを挿入した時のシミュレーション波形}
+            \label{fig:vout_inductor_simulation}
+        \end{center}
+    \end{figure}
 
 \section{新規トポロジの提案}
 

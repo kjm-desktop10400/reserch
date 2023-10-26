@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#define ROW 7       //行
+#define COLUMN 5    //列
+
 int main(void)
 {
 
@@ -13,7 +16,7 @@ int main(void)
 
     enum annotato
     {
-        VCTRL,
+        L,
         gmn,
         gmp,
         gds,
@@ -23,7 +26,7 @@ int main(void)
     };
 
     char buf;
-    char dcop[10][7][100];
+    char dcop[COLUMN][ROW][100];
     fputs("skip first line.\n", stdout);
     while(1)
     {
@@ -40,9 +43,9 @@ int main(void)
     }
 
 
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < COLUMN; i++)
     {
-        for(int j = 0; j < 7; j++)
+        for(int j = 0; j < ROW; j++)
         {
             int count = 0;
             while(1)
@@ -92,7 +95,7 @@ int main(void)
     fputs("set xlabel \"frequency [Hz]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
     fputs("set ylabel \"magnitude [dB]\" font \"Arial,30\" offset -8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
-    fputs("set key top right spacing 2.5 offset 0,-1\n", pipe);
+    fputs("set key bottom left spacing 2.5 offset 20,5\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
     fputs("set lmargin 20\n", pipe);
     fputs("set rmargin 20\n", pipe);
@@ -104,13 +107,13 @@ int main(void)
     fputs("set mxtics 5\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [1e6 : 1e12]\n", pipe);
-    fputs("set yrange [-40 : 5]\n", pipe);
+    fputs("set xrange [1e8 :3e10]\n", pipe);
+    fputs("#set yrange [-20 : 20]\n", pipe);
 
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < COLUMN; i++)
     {
 
-        fprintf(pipe, "VCTRL%d = %s*1e-3\n", i, dcop[i][VCTRL]);
+        fprintf(pipe, "L%d = %s*1e-9\n", i, dcop[i][L]);
         fprintf(pipe, "gmn%d = %s\n", i, dcop[i][gmn]);
         fprintf(pipe, "gmp%d = %s\n", i, dcop[i][gmp]);
         fprintf(pipe, "gds%d = %s\n", i, dcop[i][gds]);
@@ -118,23 +121,25 @@ int main(void)
         fprintf(pipe, "cdg%d = %s\n", i, dcop[i][cdg]);
         fprintf(pipe, "cds%d = %s\n", i, dcop[i][cds]);
 
+        fputs("VCTRL = 200*1e-3\n", pipe);
         fputs("Id = 1e-3\n", pipe);
         fputs("R = 300\n", pipe);
         fprintf(pipe, "Kp%d = gmp%d**2 / (4*Id)\n", i, i);
         fputs("omg(x) = 2 * pi * x\n", pipe);
 
-        fprintf(pipe, "vdc%d = 20*log10(4*Kp%d*R*gmn%d*VCTRL%d/gmp%d)\n", i, i, i, i, i);
-        fprintf(pipe, "vaca%d(x) = 20*log10( sqrt( 1 + ( 2*R*omg(x)*(cds%d+cdg%d) )**2 ) )\n", i, i, i);
-        fprintf(pipe, "vacb%d(x) = 20*log10( sqrt( 1 + ( omg(x)*(cds%d+cgs%d)/gmp%d )**2 ) ) \n", i, i, i, i);
-        fprintf(pipe, "vout%d(x) = vdc%d - vaca%d(x) - vacb%d(x)\n", i, i, i, i);
+        fprintf(pipe, "va%d(x) = 20*log10( 4*Kp%d*gmn%d*VCTRL/gmp%d )\n", i, i, i, i);
+        fprintf(pipe, "vb%d(x) = 20*log10( sqrt( R**2 + (omg(x)*L%d)**2 ) )\n", i, i);
+        fprintf(pipe, "vc%d(x) = 20*log10( sqrt( ( 1-2*(omg(x)**2)*L%d*(cds%d+cdg%d) )**2 + ( 2*R*(omg(x))*(cds%d+cdg%d) )**2 ))\n", i, i, i, i, i, i);
+        fprintf(pipe, "vd%d(x) = 20*log10( sqrt( 1 + ( omg(x)*(cds%d+cgs%d)/gmp%d )**2 ) )\n", i, i, i, i);
+        fprintf(pipe, "vout%d(x) = va%d(x)+vb%d(x)-vc%d(x)-vd%d(x)\n", i, i, i, i, i);
 
         if(i == 0)
         {
-            fprintf(pipe, "plot vout%d(x) black with lines notitle\n", i);
+            fprintf(pipe, "plot vout%d(x) black with lines notitle\n", i, dcop[i][L]);
         }
         else
         {
-            fprintf(pipe, "replot vout%d(x) black with lines notitle\n", i);
+            fprintf(pipe, "replot vout%d(x) black with lines notitle\n", i, dcop[i][L]);
         }
 
     }

@@ -1,0 +1,426 @@
+\documentclass[twocolumn]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{kenzemi}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{float}
+
+\setcounter{topnumber}{100}
+\setcounter{bottomnumber}{100}
+\setcounter{totalnumber}{100}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+
+\renewcommand{\dbltopfraction}{.7}
+\renewcommand{\dblfloatpagefraction}{.5}
+
+\mathtoolsset{showonlyrefs = true}
+
+\begin{document}
+
+\title{折り返し型ギルバート乗算回路の周波数特性劣化に対する寄生容量の影響}
+\author{小島 光}
+\date{2023年10月3日}
+\abstract{ギルバート乗算回路を並列に接続して使用する際には信号振幅が圧迫されS/N比が劣化するなどの問題が考えられる。そこで出力範囲が広がる折り返し型ギルバート乗算回路を提案する。現状課題となっている周波数特性劣化の原因を探る。}
+\keyword{ギルバート乗算回路,小信号解析,周波数特性}
+\maketitle
+
+\section{はじめに}
+以前設計した従来型との比較のために設計した折り返し型ギルバート乗算回路(図\refeq{fig:folded_gilbert})では従来型の対応個所に比べサイズの大きなPMOSを使用している。したがって、ゲート面積が増大し寄生容量が大きくなることが考えられる。折り返し型ギルバート乗算回路では現状周波数特性の面で従来型に劣り、要求された動作速度を満たせていないため周波数特性を改善する必要がある。今回はこの原因と考えられる寄生容量ついて検討した。
+
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics*[width=80mm]{figures/folded_gilbert.png}
+        \caption{検討している折り返し型ギルバート乗算回路}
+        \label{fig:folded_gilbert}
+    \end{center}
+\end{figure}
+
+\section{動作点の変動}
+
+図\refeq{fig:folded_gilbert}ではPMOSFETのゲートに直流で$\pm V_{CTRL}$なる電圧を印加する。これはつまり、PMOSFETに流れるバイアス電流が$V_{CTRL}$により変動することを意味している。小信号解析では入力信号が小振幅であるとき、MOSFETのトランスコンダクタンス$g_{m}$が一定であるという近似を前提として小信号等価回路を作成する。しかし、トランスコンダクタンス$g_{m}$は実際には一定でなく、ドレイン電流$I_{D}$と定数係数$K$を用いて
+
+\begin{align}
+    g_{m}=2\sqrt{KI_{D}} \label{eq:gm}
+\end{align}
+
+と表される。即ち$V_{CTRL}$によりPMOSFETに流れるドレイン電流が変化すると、それに伴いトランスコンダクタンスが変化することになる。このままでは小信号解析を行うことができないので、小信号解析の前に$V_{CTRL}$とトランスコンダクタンスの関係を明らかにする。\par
+まずは片方のPMOS差動対について考えるが、今回のような対応する接点の電圧と電流の符号が反転するような回路において、対応する半分のみの回路をを考えればもう半分については符号を入れ替えればよいので、片側のPMOS差動対のみについて解析すれば事足りる。したがって、図\refeq{fig:folded_gilbert}において左側のPMOS差動対を取り出し、図\refeq{fig:pmos_diff}のような回路について考える。
+
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics*[width=80mm]{figures/pmos_diff.png}
+        \caption{PMOS差動対}
+        \label{fig:pmos_diff}
+    \end{center}
+\end{figure}%
+
+一般にMOSFETのドレイン電流は2乗則に従い
+
+\begin{align}
+    I_{D}=K(V_{GS}-V_{th})^{2}  \label{eq:square}
+\end{align}
+
+である。図\refeq{fig:pmos_diff}において$V_{CTRL}=0$のとき、ゲートソース間電圧は\nobreak$V_{GS}=V_{pS}-V_{G}$なので、トランスコンダクタンスは
+
+\begin{align}
+    g_{mp} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial V_{GS}} K(V_{GS}-V_{th})^{2} \notag\\
+    &=2K(V_{GS}-V_{th})    \notag\\ 
+    &=2K(V_{pS}-V_{G}-V_{th})   \label{eq:g_mp}
+\end{align}
+
+と計算できる。次に$V_{CTRL}\neq0$の時、$V_{GS}=V_{pS}- \left( V_{G}-V_{CTRL} \right)$なので左右のトランスコンダクタンスをそれぞれ$g_{mpl},g_{mpr}$とすると
+
+\begin{align}
+    g_{mpl} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial V_{GS}} K(V_{GS}-V_{th})^{2} \notag\\
+    &=2K(V_{GS}-V_{th})    \notag\\ 
+    &=2K(V_{pS}-V_{G}+V_{CTRL}-V_{th})  \notag\\
+    &=g_{mp}+2KV_{CTRL}\equiv g_{mp}+\Delta g_{m}   \label{eq:g_mpl}\\
+    g_{mpr} = \frac{\partial I_{D}}{\partial V_{GS}} &= \frac{\partial}{\partial V_{GS}} K(V_{GS}-V_{th})^{2} \notag\\
+    &=2K(V_{GS}-V_{th})    \notag\\ 
+    &=2K(V_{pS}-V_{G}-V_{CTRL}-V_{th})  \notag\\
+    &=g_{mp}-2KV_{CTRL}\equiv g_{mp}-\Delta g_{m}   \label{eq:g_mpr}\\
+    \Delta g_{m}&=2KV_{CTRL}   \label{eq:delta_gm}
+\end{align}
+
+と表すことができた。従って$V_{CTRL}$が差動で印加されたとき、トランスコンダクタンスは$V_{CTRL}$に比例した変化分を持つことが示せた。
+
+\section{解析結果の検討}
+前回、各端子間に容量がついたときの出力の式を示したが、改めてゲートソース間、ソースゲート間、ゲートドレイン間に寄生容量がついた時の$v_{in}$を入力とする増幅率をを以下に示す。
+
+\begin{align*}
+    A_{SG}=\frac{2R_{L}g_{mn}}{ (1+2R_{L}g_{dp})(g_{mp}+j\omega C_{GS}) }\Delta g_{m}  \\
+    A_{SD}=\frac{2R_{L}g_{mn}}{ (1+2R_{L}g_{dp})(g_{mp}+j\omega C_{SD}) }\Delta g_{m}  \\
+    A_{GD}=\frac{2R_{L}g_{mn} }{ g_{mp}(1+2R_{L}g_{dp} + j2R_{L}\omega C_{GD}) }\Delta g_{m}  
+\end{align*}
+
+ここで、前述の\eqref{eq:delta_gm}式を代入すると
+
+\begin{align}
+    A_{SG}=\frac{4KR_{L}g_{mn} }{ (1+2R_{L}g_{dp})(g_{mp}+j\omega C_{GS}) }\cdot V_{CTRL}  \label{eq:a_sg}\\
+    A_{SD}=\frac{4KR_{L}g_{mn} }{ (1+2R_{L}g_{dp})(g_{mp}+j\omega C_{SD}) }\cdot V_{CTRL}  \label{eq:a_sd}\\
+    A_{GD}=\frac{4KR_{L}g_{mn} }{ g_{mp}(1+2R_{L}g_{dp} + j2R_{L}\omega C_{GD}) }\cdot V_{CTRL}    \label{eq:a_gd}
+\end{align}
+
+したがって、各寄生容量がついた時の遮断周波数を$f_{SG},f_{SD},f_{GD}$とおくと
+
+\begin{align}
+    f_{SG} &= \frac{g_{mp}}{2\pi C_{SG}}    \label{eq:cutoff_sg}\\
+    f_{SD} &= \frac{g_{mp}}{2\pi C_{SD}}    \label{eq:cutoff_sd}\\
+    f_{GD} &= \frac{1+2R_{L}g_{dp}}{4\pi R_{L}C_{GD}}      \label{eq:cutoff_gd}
+\end{align}
+
+と計算できる。
+
+\subsection{ソース-ゲート/ドレイン間の寄生容量について}
+    トランスコンダクタンスについては
+    \begin{align*}
+        g_{m}=\frac{2I_{d}}{V_{GS}-V_{th}}
+    \end{align*}
+    という関係がある。また、\eqref{eq:cutoff_sg},\eqref{eq:cutoff_sd}式より$g_{mp}$が変動すると遮断周波数も変動すると考えられるが、端子$v_{pS1},v_{pS2}$の電位はPMOSFETのゲート端子を基準に定まるため電流を変化させるとソース電位も変化してしまう。従って$g_{mp}$を直接制御することはできないので、バイアス電流を適切な範囲で振り、.op解析で求めた$g_{mp}$と、遮断周波数との関係を見ることとした。表\nobreak\refeq{table:sim_s_g/d}にRohm 0.18$\mathrm{\mu m}$processでのシミュレーション時の条件を示す。また、表\refeq{table:gm_cutoff}と図\refeq{fig:gm_cutoff}にトランスコンダクタンスと遮断周波数の関係を示す。ただし、遮断周波数$f_{\mathrm{cutoff}}$は低域のゲインから$3\mathrm{dB}$小さくなった周波数とし、$\prime$の付いたものはトランスコンダクタンスが最も小さかった$I_{d}=11\mathrm{[mA]}$の時の値で割ったものである。
+
+    \begin{table}[!h]
+        \caption{折り返し型ギルバート乗算回路の素子値}
+        \label{table:sim_s_g/d}
+        \centering
+        \begin{tabular}{cccccccccc}
+            MOSFET & L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & multifinger\\
+            \hline \hline
+            $M_{p}$ & 0.72 & 4.27 & 10 \\
+            $M_{n}$ & 0.72 & 4.27 & 20 \\
+            $M_{C}$ & 0.72 & 11.6 & 40 \\
+            &&&\\
+            $V_{dd}$[V] & $V_{A}$[V] & $V_{B}$[V] & $V_{C}$[V]\\
+            \hline\hline
+            1.8 & 1.59 & 1.09 & 0.65 \\
+            &&&\\
+             $V_{CTRL}$[mV] & $I_{C}\mathrm{[mA]}$ & $R_{L}[\mathrm{\Omega}]$ & \\
+            \hline\hline
+            200 & 4 & 300 &\\
+            &&&\\
+             & From[mA] & To[mA] & Step Size[mA]\\
+            \hline\hline
+            $I_{bias}$ & 3 & 11 & 1
+        \end{tabular}
+    \end{table}
+
+    \begin{table}[!h]
+        \caption{トランスコンダクタンスと遮断周波数の関係}
+        \label{table:gm_cutoff}
+        \centering
+        \begin{tabular}{ccccccccc}
+            $I_{d}[\mathrm{mA}]$ & $g_{mp}[\mathrm{mS}]$ & $f_{\mathrm{cutoff}}[\mathrm{GHz}]$ &$g\prime_{mn}$ & $f\prime_{\mathrm{cutoff}}$\\
+            \hline\hline
+            3 & 1.847 & 0.912 & 1.000 & 1.000\\
+            4 & 2.309 & 1.213 & 1.250 & 1.330\\
+            5 & 2.566 & 1.416 & 1.389 & 1.552\\
+            6 & 2.547 & 1.578 & 1.379 & 1.730\\
+            7 & 2.216 & 1.762 & 1.200 & 1.932\\
+            8 & 1.868 & 2.000 & 1.011 & 2.193\\
+            9 & 1.594 & 2.265 & 0.863 & 2.483\\
+            10 & 1.384 & 2.649 & 0.749 & 2.904\\
+            11 & 1.222 & 4.932 & 0.662 & 5.408
+        \end{tabular}
+    \end{table}
+
+    \begin{figure}[!h]
+        \begin{center}
+            \includegraphics*[width=80mm]{graphes/bitmap/gmp_cutoff.PNG}
+            \caption{トランスコンダクタンスと遮断周波数の関係}
+            \label{fig:gm_cutoff}
+        \end{center}
+    \end{figure}
+
+    \newpage
+
+    \eqref{eq:cutoff_sg},\eqref{eq:cutoff_sd}式では遮断周波数とトランスコンダクタンスは比例関係にあるが、図\refeq{fig:gm_cutoff}では比例関係が見て取れなかった。    
+
+\subsection{ゲートドレイン間の寄生容量について}
+    \eqref{eq:cutoff_gd}式より、
+    \begin{align*}
+        f_{GD}(R_{L})\equiv\frac{1+2R_{L}g_{dp}}{4\pi R_{L}C_{GD}}
+    \end{align*}
+    と置くと負荷抵抗が$n$倍になった時の遮断周波数は$f_{GD}(nR_{L})$と表せる。したがって、負荷抵抗が$n$倍になった時、遮断周波数は元の遮断周波数に比べ$\frac{f_{GD}(nR_{L})}{f_{GD}(R_{L})}$倍されることが分かる。
+    \begin{align}
+        \frac{f_{GD}(nR_{L})}{f_{GD}(R_{L})}=\frac{1+2nR_{L}g_{dp}}{n(1+2R_{L}g_{dp})} 
+    \end{align}
+    表\refeq{table:sim_gd}の条件下で行った.ac解析結果を図\refeq{graph:fgd_vout_ac}に示す。また、図\refeq{fig:rl_cutoff}に、負荷抵抗$R_{L}$と遮断周波数の関係を示す。ただし、この遮断周波数もソース-ゲート/ドレイン間と同様に計算した。
+
+    \begin{table}[h]
+        \caption{折り返し型ギルバート乗算回路の素子値}
+        \label{table:sim_gd}
+        \centering
+        \begin{tabular}{cccccccccc}
+            MOSFET & L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & multifinger\\
+            \hline \hline
+            $\mathrm{M_{p}}$ & 0.72 & 4.27 & 10 \\
+            $\mathrm{M_{n}}$ & 0.72 & 4.27 & 20 \\
+            $\mathrm{M_{C}}$ & 0.72 & 11.6 & 40 \\
+            &&&\\
+            $V_{dd}$[V] & $V_{A}$[V] & $V_{B}$[V] & $V_{C}$[V]\\
+            \hline\hline
+            1.8 & 1.59 & 1.09 & 0.65 \\
+            &&&\\
+            $I_{bias}$[mA] & $I_{C}\mathrm{[mA]}$ & $V_{CTRL}$[mV] & \\
+            \hline\hline
+            4 & 4 & 200 & \\
+            &&&\\
+            & From[$\mathrm{\Omega}$] & To[$\mathrm{\Omega}$] & Step Size[$\mathrm{\Omega}$]\\
+            \hline\hline
+            $R_{L}$ & 30 & 300 & 30
+        \end{tabular}
+    \end{table}
+
+    \newpage
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width=80mm]{graphes/bitmap/Fgd_vout_ac.PNG}
+            \caption{負荷抵抗を変化させたときの.ac解析結果}
+            \label{graph:fgd_vout_ac}
+        \end{center}
+    \end{figure}
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width=80mm]{graphes/bitmap/RL_cutooff.PNG}
+            \caption{負荷抵抗$R_{L}$と遮断周波数の関係}
+            \label{fig:rl_cutoff}
+        \end{center}        
+    \end{figure}
+    
+    表\refeq{table:sim_gd}のとき、.op解析結果では$g_{dp}=54.88[\mu S]$であった。対して負荷抵抗は2$\sim$3桁なので$R_{L}\gg g_{dp}$とすると
+    \begin{align*}
+        \frac{f_{GD}(nR_{L})}{f_{GD}(R_{L})}\approx \frac{1}{n}
+    \end{align*}
+    と近似できる。これは図\refeq{fig:rl_cutoff}とは一致しなかった。
+
+
+\section{おわりに}
+    寄生容量に関する検討ではどちらも周波数特性劣化の原因であるという結果は得られなかった。しかし、MOSFETにおける寄生容量は電圧により大きさが変動することや、別の結線方法で寄生容量が付くことなども考えられる。したがって、今回の検討では単純な端子間の寄生容量が主たる原因ではないとい考えられたが、バックゲートに対する容量なども考えられる。他の原因を検討するともにこれらのより複雑なモデルによる寄生容量に関しても検討する余地があると考えられる。
+
+
+\section{付録}
+\subsection{基本となる小信号等価解析の計算}
+    図\refeq{fig:eq_base}に基本となる小信号等価回路の半回路を示す。
+
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width=80mm]{figures/FoldedGilbertHalfBaseEquivalentCircuit.png}
+            \caption{基本となる小信号半回路}
+            \label{fig:eq_base}
+        \end{center}
+    \end{figure}
+
+    各部に流れる電流は
+
+    \begin{align*}
+        i_{ul}=g_{mn}v_{in}-g_{dn}v_{pS1}   \\
+        i_{ll}=(g_{mp}+\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}-v_{out+})    \\
+        i_{lr}=(g_{mp}-\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}-v_{out-})
+    \end{align*}
+
+    従って、KCLより
+
+    \begin{align}
+        i_{ul} &= i_{ll}+i_{lr}   \notag\\
+        g_{mn}v_{in}-g_{dn}v_{pS1} &= 2g_{mp}v_{pS1}+2g_{dp}v_{pS1}     \notag\\
+        v_{pS1} &= \frac{g_{mn}}{2g_{mp}+g_{dn}+2g_{dp}}v_{in}\approx\frac{g_{mn}}{2g_{mp}}v_{in}   \\
+    \end{align}
+
+    図\refeq{fig:eq_base}は差動回路であり、$v_{out+}=-v_{out-},i_{ll}=-i_{rr},i_{lr}=-i_{rl}$を利用すると
+
+    \begin{align}
+        i_{out+}=i_{ll}+i_{rl}&=i_{ll}-i_{lr}   \notag\\
+        &= 2\Delta g_{m}v_{pS1}-2g_{dp}v_{out+}     \label{eq:ioutp}\\
+        \therefore i_{out-} &= -2\Delta g_{m}v_{pS1}+2g_{dp}v_{out-}    \label{eq:ioutm}
+    \end{align}
+
+    ここで、$v_{out}=v_{out+}-v_{out-}$であるので
+
+    \begin{align*}
+        v_{out} &= R_{L}(i_{out+}-i_{out-}) \\
+        &= R_{L}(4\Delta g_{m}v_{pS1}-2g_{dp}v_{out})   \\
+        v_{out} &= \frac{4R_{L}}{1+2R_{L}g_{dp}}\Delta g_{m}v_{pS1}     \\
+        &\approx \frac{2R_{L}g_{mn}}{g_{mp}(1+2R_{L}g_{dp})}    
+    \end{align*}
+
+    \newpage
+
+    \subsection{ゲートソース間に寄生容量がついた場合}
+        ゲートソース間に寄生容量がついた時の小信号等価半回路を図\refeq{fig:eq_gs}に示す。
+
+        \begin{figure}[h]
+            \begin{center}
+                \includegraphics*[width=80mm]{figures/FoldedGilbert_GS_Half_Equivalent.png}
+                \caption{ゲートソース間に寄生容量がついた時の小信号等価半回路}
+                \label{fig:eq_gs}
+            \end{center}
+        \end{figure}
+
+        各部に流れる電流は
+
+        \begin{align*}
+            i_{ul}=g_{mn}v_{in}-g_{dn}v_{pS1}   \\
+            i_{ll}=(g_{mp}+\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}-v_{out+})    \\
+            i_{lr}=(g_{mp}-\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}-v_{out-})    \\
+            i_{cll} = i_{clr} \equiv i_{cl}=j\omega C_{GS}\cdot v_{pS1}
+        \end{align*}
+
+        KCLより
+
+        \begin{align*}
+            i_{ul} &= i_{ll}+i_{lr}+2i_{cl}     \\
+            g_{mn}v_{in}-g_{dn}v_{pS1} &= 2g_{mp}v_{pS1}+2g_{dp}v_{pS1}+j2\omega C_{GS}v_{pS1}  \\
+            v_{pS1} &= \frac{g_{mn}}{2g_{mp}+g_{dn}+2g_{dp}+j2\omega C_{GS}}v_{in}      \\
+            &\approx \frac{g_{mn}}{2g_{mp}+j2\omega C_{GS}}     \label{eq:vps1_gs}
+        \end{align*}
+
+        $i_{out+},i_{out-}$は\eqref{eq:ioutp},\eqref{eq:ioutm}式と同様なので、
+
+        \begin{align*}
+            v_{out} &= \frac{4R_{L}}{1+2R_{L}g_{dp}}\Delta g_{m}v_{pS1}     \\
+            &\approx\frac{2R_{L}g_{mn}}{( 1+2R_{L}g_{dp} )( g_{mp}+j\omega C_{GS} )}\Delta g_{m} v_{in}
+        \end{align*}
+
+        従って、ゲートソース間に寄生容量がついた場合の利得は
+        \begin{align*}
+            A_{GS} = \frac{2R_{L}g_{mn}}{( 1+2R_{L}g_{dp} )( g_{mp}+j\omega C_{GS} )}\Delta g_{m}   \tag{7}
+        \end{align*}
+    
+        と計算できた。
+
+        \subsection{ドレインソース間に寄生容量がついた場合}
+            ドレインソース間に寄生容量がついた時の小信号等価半回路を図\refeq{fig:eq_ds}に示す。
+
+            \begin{figure}[h]
+                \begin{center}
+                    \includegraphics*[width=80mm]{figures/FoldedGilbert_DS_Half_Equivalent.png}
+                    \caption{ドレインソース間に寄生容量がついたときの小信号等価半回路}
+                    \label{fig:eq_ds}
+                \end{center}
+            \end{figure}
+
+            各部に流れる電流は
+
+            \begin{align*}
+                i_{ul}=g_{mn}v_{in}-g_{dn}v_{pS1}      \\
+                i_{ll}=(g_{mp}+\Delta g_{m})v_{pS1}+(g_{dp}+j\omega C_{DS})(v_{pS1}-v_{out+})    \\
+                i_{lr}=(g_{mp}-\Delta g_{m})v_{pS1}+(g_{dp}+j\omega C_{DS})(v_{pS1}-v_{out-})    \\    
+            \end{align*}
+
+            KCLより
+
+            \begin{align*}
+                i_{ul} &= i_{ll}+i_{lr}     \\
+                g_{mn}v_{in}-g_{dn}v_{pS1} &= 2g_{mp}v_{pS1}+2(g_{dp}+j\omega C_{DS})v_{pS1}  \\
+                v_{pS1} &= \frac{g_{mn}}{2g_{mp}+g_{dn}+2g_{dp}+j2\omega C_{DS}}v_{in}  \\
+                &\approx\frac{g_{mn}}{2g_{mp}+j2\omega C_{DS}}
+            \end{align*}
+
+            これは\eqref{eq:vps1_gs}式と同様なので、利得も同様に計算できる。従って
+
+            \begin{align*}
+                A_{SD} = \frac{2R_{L}g_{mn}}{( 1+2R_{L}g_{dp} )( g_{mp}+j\omega C_{DS} )}\Delta g_{m}   \tag{8} 
+            \end{align*}
+
+            と計算できた。
+
+            \newpage
+
+            \subsection{ゲートドレイン間に寄生容量がついた場合}
+                ゲートドレイン間に寄生容量がついた場合の小信号等価半回路を図\refeq{fig:eq_gd}に示す。
+            
+                \begin{figure}[h]
+                    \begin{center}
+                        \includegraphics*[width=80mm]{figures/FoldedGilbert_GD_Half_Equivalent.png}
+                        \caption{ゲートドレイン間に寄生容量がついた時の小信号等価半回路}
+                        \label{fig:eq_gd}
+                    \end{center}
+                \end{figure}
+
+                各部に流れる電流は
+
+                \begin{align*}
+                    i_{ul}=g_{mn}v_{in}-g_{dn}v_{pS1}   \\
+                    i_{ll}=(g_{mp}+\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}-v_{out+})-i_{cll}    \\
+                    i_{lr}=(g_{mp}-\Delta g_{m})v_{pS1}+g_{dp}(v_{pS1}-v_{out-})-i_{clr}    \\
+                    i_{cll}=j\omega C_{GD}v_{out+}  \\
+                    i_{clr}=j\omega C_{GD}v_{out-} = -j\omega C_{GD}v_{out+}=i_{cll}
+                \end{align*}
+
+                KCLより
+
+                \begin{align*}
+                    i_{ul} &= i_{ll}+i_{lr}+i_{cll}+i_{clr}     \\                   
+                    g_{mn}v_{in}-g_{dn}v_{pS1} &= 2g_{mp}v_{pS1}+2g_{dp}v_{pS1}     \\
+                    v_{pS1} &= \frac{g_{mn}}{2g_{mp}+g_{dn}+2g_{dp}}v_{in}\approx\frac{g_{mn}}{2g_{mp}}v_{in}   \\
+                \end{align*}
+                \begin{align*}
+                    i_{out+} &= (i_{ll}-i_{cll}) - (i_{lr}-i_{clr})     \\
+                    &= 2\Delta g_{m}v_{pS1}-2g_{dp}v_{out+} -j2\omega C_{GD}v_{out+}    \\
+                    \therefore i_{out-} &= -2\Delta g_{m}v_{pS1}-2g_{dp}v_{out-} -j2\omega C_{GD}v_{out-}   \\
+                \end{align*}
+
+                \newpage
+                
+                $v_{out}=v_{out+}-v_{out-}$なので
+
+                \begin{align*}
+                    v_{out} &= R_{L}(i_{out+}-i_{out-})  \\
+                    &= 2R_{L} \left\{ 2\Delta g_{m}v_{pS1}-(g_{dp}+j\omega C_{GD})v_{out} \right\} \\
+                    v_{out} &= \frac{4R_{L}}{1+2R_{L}(g_{dp}+j\omega C_{GD})}\Delta g_{m}v_{pS1}    \\
+                    &\approx \frac{2R_{L}g_{mn}}{g_{mp} \left\{ 1+2R_{L}(g_{dp}+j\omega C_{GD}) \right\} }\Delta g_{m}v_{in}
+                \end{align*}
+
+                したがって、ゲートドレイン間の利得は
+
+                \begin{align*}
+                    A_{GD}=\frac{2R_{L}g_{mn} }{ g_{mp}(1+2R_{L}g_{dp} + j2R_{L}\omega C_{GD}) }\Delta g_{m}    \tag{9}
+                \end{align*}
+
+                と計算できた。
+
+\end{document}
