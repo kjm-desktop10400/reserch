@@ -62,15 +62,15 @@ int main(void)
                     buf = 'e';
                 }
                 dcop[i][j][count] = buf;
-                putc(dcop[i][j][count], stdout);
+                //putc(dcop[i][j][count], stdout);
                 count++;
             }
             dcop[i][j][count] = '\0';
-            putc('\t', stdout);
+            //putc('\t', stdout);
             
         }
 
-        fputs("\n", stdout);
+        //fputs("\n", stdout);
     }
 
     fputs("finished reading file.\n", stdout);
@@ -104,6 +104,7 @@ int main(void)
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set xrange [1e6 : 1e12]\n", pipe);
+    fputs("set yrange [-40 : 5]\n", pipe);
 
     for(int i = 0; i < 10; i++)
     {
@@ -129,11 +130,15 @@ int main(void)
         fputs("Kp = gmp**2 / (4*Id)\n", pipe);
         fputs("omg(x) = 2 * pi * x\n", pipe);
 
-        fputs("vout(x) = 20*log10(4*Kp*R*gmn*VCTRL / ( ( sqrt( 1**2 + (2*R*omg(x)*(cds+cdg))**2 ) )*( sqrt( gmp**2 +(omg(x)*(cds+cgs))**2 ) ) ))\n", pipe);
+        fputs("vdc = 20*log10(4*Kp*R*gmn*VCTRL)\n", pipe);
+        fputs("vac1(x) = 20*log10( sqrt( 1 + ( 2*R*omg(x)*(cds+cdg) )**2 ) )\n", pipe);
+        fputs("vac2(x) = 20*log10( sqrt( gmp**2 + ( omg(x)*(cds+cgs) )**2 ) ) \n", pipe);
+        fputs("vout(x) = vdc - vac1(x) - vac2(x)\n", pipe);
 
         if(i == 0)
         {
             fputs("plot vout(x) with lines\n", pipe);
+            fputs("replot vdc\n", pipe);
         }
         else
         {
