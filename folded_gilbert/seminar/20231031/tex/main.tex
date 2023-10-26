@@ -1,0 +1,117 @@
+\documentclass[twocolumn]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{kenzemi}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{float}
+
+\setcounter{topnumber}{100}
+\setcounter{bottomnumber}{100}
+\setcounter{totalnumber}{100}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+
+\renewcommand{\dbltopfraction}{.7}
+\renewcommand{\dblfloatpagefraction}{.5}
+
+\mathtoolsset{showonlyrefs = true}
+
+\begin{document}
+
+\title{ギルバート乗算回路における周波数特性改善方針の検討}
+\author{小島 光}
+\date{2023年10月31日}
+\abstract{以前まで検討していた折り返し型のギルバート乗算回路の問題点である周波数特性劣化の原因がPMOSであると仮定し、これを使わない新たなトポロジについて検討した。}
+\keyword{ギルバート乗算回路,小信号解析,周波数特性}
+\maketitle
+
+\section{はじめに}
+    フォトニックリザバコンピューティングの学習には高速な積和演算が必要であるが現状、要件を満たすような光を用いた積和演算行えていない。そこでリザバ層の出力を電気に変換しアナログ積和演算を行うことになった。ここで、リザバ層からは7つの出力があり、それぞれに任意の重みをかけ足し合わせる。これを電気で行うには図\refeq{fig:gilbert_conv}のような各ギルバートセルで積算を行い、電流をまとめて和をとる。即ち信号振幅を足し合わせるため7つの信号振幅の和が必要な振幅になる。つまり各セルの出力振幅は全体の$1/7$が最大となり、S/N比が小さくなってしまうことが問題として考えられる。この問題を改善すべく前回まではPMOSを使用する折り返し型のギルバート乗算回路(図\refeq{fig:gilbert_folded_NtoP})について検討してきたが信号振幅を改善できても周波数特性が劣化してしまうことが分かった。
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width=80mm]{figures/gilbert.png}
+            \caption{従来型のギルバートセル}
+            \label{fig:gilbert_conv}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width=80mm]{figures/folded_gilbert.png}
+            \caption{PMOSを使用した折り返し型ギルバートセル}
+            \label{fig:gilbert_folded_NtoP}
+        \end{center}
+    \end{figure}
+
+
+\section{三端子間に同時に寄生容量がついた場合の小信号等価解析}
+    周波数特性劣化の原因としてPMOSについた寄生容量が考えれる。そこで三端子間に寄生容量としてキャパシタを挿入した小信号等価回路を解析することにより寄生容量の影響を検討する。図\refeq{label:paracitic_eq}に計算の際に考えた小信号等価回路を示す。
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width=80mm]{figures/ParasiticCapacitoresEquivalent.png}
+            \caption{寄生容量を考慮した小信号等価回路}
+            \label{label:paracitic_eq}
+        \end{center}
+    \end{figure}
+    各部に流れる電流が各接点の電位などを用いて  
+    \begin{gather*}
+        i_{ul}=g_{mn}v_{in}-g_{dn}v_{pS1}   \\
+        i_{lSG}=i_{rSG}=j\omega C_{GS}v_{pS1}       \\
+        i_{lGD}=j\omega C_{GD}v_{out+}      \\
+        i_{rGD}=j\omega C_{GD}v_{out-}      \\
+        \therefore i_{lGD}+i_{rGD}=0\;\;\;(\because v_{out+}=-v_{out-})     \\
+        i_{ll} = (g_{mp}+\Delta g_{m})v_{pS1}+(g_{dp}+j\omega C_{SD})(v_{pS1}-v_{out+})-i_{lGD}    \\
+        i_{ll} = (g_{mp}-\Delta g_{m})v_{pS1}+(g_{dp}+j\omega C_{SD})(v_{pS1}-v_{out-})-i_{rGD}
+    \end{gather*}
+    KCLより
+    \begin{align*}
+        i_{ul} &= i_{ll}+i_{lGD}+i_{lSG}+i_{lr}+i_{rGD}+i_{rSG}    \\
+        &= i_{ll}+i_{lr}+2i_{lSG}   \\
+        g_{mn}v_{in}-g_{dn}v_{pS1} &= 2\left\{ g_{mp}v_{pS1}+g_{dp}v_{pS1}+ j\omega( C_{SD}+C_{SG} ) v_{pS1} \right\}   \\
+        v_{pS1} &= \frac{g_{mn}}{ 2g_{mp}+g_{dn}+2g_{dp}+j2\omega (C_{SD}+C_{SG}) }v_{in}
+    \end{align*}
+    ここで、$g_{mp}\ll g_{dp},g_{dn}$を仮定すると
+    \begin{align}
+        v_{pS1} \approx \frac{g_{mn}}{ 2\left\{ g_{mp}+j\omega(C_{SD}+C_{SG}) \right\} }    \label{eq:vps1}
+    \end{align}
+    となる。ここで、負荷抵抗に流れる電流は差動半回路の性質より$i_{lr}=-i_{rl}$となるので,KCLより
+    \begin{align*}
+        i_{out+}=i_{ll}+i_{rl}=i_{ll}-i_{lr}
+    \end{align*}
+    である。また、差動半回路であるので対応する電流・電圧は符号が反対で絶対値が等しいので
+    \begin{align*}
+        v_{out} &= v_{out+}-v_{out-}    \\
+        &=R_{L}(i_{out+}-i_{out-})      \\
+        &= 2R_{L}i_{out+}
+    \end{align*}
+    \eqref{eq:vps1}を用いると
+    \begin{align*}
+        v_{out} &= 2R_{L} \left[ 2\Delta g_{m}v_{pS1}- \left\{ g_{dp} + j\omega (C_{SD} + C_{GD}) \right\} \right]    \\
+        &= \frac{4R_{L}}{ 1+2R_{L}\left\{ g_{dp} + j\omega(C_{SD}+C_{GD}) \right\} } \Delta g_{m}v_{pS1}
+    \end{align*}
+    ここで、前回のゼミ発表より$\Delta g_{m}$は定数$K$を用いて
+    \begin{align*}
+        \Delta g_{m} = 2KV_{CTRL}
+    \end{align*}
+    だったので出力は
+    \begin{align}
+        v_{out} = \frac{4KR_{L}g_{mn}}{ \left\{ 1+j2R_{L}\omega(C_{SD}+C_{GD}) \right\}\left\{ g_{mp}+j\omega(C_{SD}+C_{SG}) \right\} }    \label{eq:vout}
+    \end{align}
+    と求められた。
+
+    折り返し型のギルバート乗算回路を$\mathrm{Rohm 0.18 \mu m process}$でシミュレーションを行い、.op解析から得られた各パラメータを入力した際のシミュレーション波形と理論式のグラフを図\refeq{fig:vout_sim}、\refeq{fig:vout_theory}に示す。
+
+
+
+
+\section{負荷にインダクタを負荷した際の周波数特性}
+
+
+\section{新規トポロジの提案}
+
+
+\section{おわりに}
+
+
+\end{document}
