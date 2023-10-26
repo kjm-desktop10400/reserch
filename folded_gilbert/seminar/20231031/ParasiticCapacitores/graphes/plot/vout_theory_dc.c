@@ -19,11 +19,11 @@ int main(void)
         gds,
         cgs,
         cdg,
-        cds,
+        cds
     };
 
     char buf;
-    char dcop[7][10][100];
+    char dcop[10][7][100];
     fputs("skip first line.\n", stdout);
     while(1)
     {
@@ -53,9 +53,13 @@ int main(void)
                     fputs("input file end.\n", stdout);
                     return 0;
                 }
-                if(buf == '\t' || buf == ' ' || buf == ',' || buf == '\n')
+                if(buf == ',' || buf == '\n')
                 {
                     break;
+                }
+                if(buf == 'E')
+                {
+                    buf = 'e';
                 }
                 dcop[i][j][count] = buf;
                 putc(dcop[i][j][count], stdout);
@@ -73,11 +77,13 @@ int main(void)
     fclose(input);
 
     FILE* pipe = popen("gnuplot -persist", "w");
-    if(pipe = NULL)
+    if(pipe == NULL)
     {
         fputs("couldnt open pipe.", stderr);
         return 0;
     }
+
+    int count = 0;
 
     //gnuplot setting
     fputs("plot sin(x)\n", pipe);
@@ -102,19 +108,30 @@ int main(void)
 
     for(int i = 0; i < 10; i++)
     {
-        fprintf(pipe, "VCTRL = %s*1e-3\n", dcop[i][VCTRL]);
-        fprintf(pipe, "gmn = %s\n", dcop[i][gmn]);
-        fprintf(pipe, "gmp = %s\n", dcop[i][gmp]);
-        fprintf(pipe, "gds = %s\n", dcop[i][gds]);
-        fprintf(pipe, "cgs = %s\n", dcop[i][cgs]);
-        fprintf(pipe, "cdg = %s\n", dcop[i][cdg]);
-        fprintf(pipe, "cds = %s\n", dcop[i][cds]);
 
-        fprintf(pipe, "Id = 1e-3\n");
-        fprintf(pipe, "R = 300\n");
-        fprintf(pipe, "Kp = gmp**2 / (4*Id)\n");
+        char buf[100];
+        sprintf(buf, "VCTRL = %s*1e-3\n", dcop[i][VCTRL]); 
+        
+        fputs(buf,pipe);     fputs("1\n",stdout);
 
-        //fputs("vout(x) = 20*log10( 4* Kp * R * gmn * VCTRL * x / (sqrt( (gmp - 4 * pi * R * (x**2) * (cds+cdg)(cds+gs) )**2 + ( 2 * pi * x * ( (cds+cgs) + R * gmp * (cds+cdg) ) )**2 )) )\n", pipe);
+        sprintf("gmn = %s\n", dcop[i][gmn]);     
+        fputs(buf, pipe);    fputs("2\n",stdout);
+        sprintf(buf, "gmp = %s\n",dcop[i][gmp]);
+        fputs(buf, pipe);     fputs("3\n",stdout);
+        sprintf(buf, "gds = %s\n",dcop[i][gds]);
+        fputs(buf, pipe);     fputs("4\n",stdout);
+        sprintf(buf, "cgs = %s\n",dcop[i][cgs]);
+        fputs(buf, pipe);     fputs("5\n",stdout);
+        sprintf(buf, "cdg = %s\n",dcop[i][cdg]);
+        fputs(buf, pipe);     fputs("6\n",stdout);
+        sprintf(buf, "cds = %s\n",dcop[i][cds]);
+        fputs(buf, pipe);     fputs("7\n",stdout);
+
+        fputs("Id = 1e-3\n", pipe);
+        fputs("R = 300\n", pipe);
+        fputs("Kp = gmp**2 / (4*Id)\n", pipe);
+
+        fputs("vout(x) = 20*log10( 4* Kp * R * gmn * VCTRL * x / (sqrt( (gmp - 4 * pi * R * (x**2) * (cds+cdg)(cds+gs) )**2 + ( 2 * pi * x * ( (cds+cgs) + R * gmp * (cds+cdg) ) )**2 )) )\n", pipe);
 
         if(i == 0)
         {
