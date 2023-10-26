@@ -108,7 +108,7 @@ int main(void)
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set xrange [1e8 :3e10]\n", pipe);
-    fputs("#set yrange [-20 : 20]\n", pipe);
+    fputs("set yrange [-20 : 20]\n", pipe);
 
     for(int i = 0; i < COLUMN; i++)
     {
@@ -135,13 +135,20 @@ int main(void)
 
         if(i == 0)
         {
-            fprintf(pipe, "plot vout%d(x) black with lines notitle\n", i, dcop[i][L]);
+            fprintf(pipe, "  plot vout%d(x) black dt 4 notitle\n", i, dcop[i][L]);
         }
         else
         {
-            fprintf(pipe, "replot vout%d(x) black with lines notitle\n", i, dcop[i][L]);
+            fprintf(pipe, "replot vout%d(x) black dt 4 notitle\n", i, dcop[i][L]);
         }
 
+    }
+
+    fputs("set datafile separator \",\"\n", pipe);
+    fputs("input = \"..\\\\data\\\\inductor_ac.vcsv\"\n", pipe);
+    for(int i = 0; i < COLUMN; i++)
+    {
+        fprintf(pipe, "replot input skip 6 using %d : %d black with lines notitle\n", 2 * i + 1, 2 * i + 2);
     }
 
     pclose(pipe);
