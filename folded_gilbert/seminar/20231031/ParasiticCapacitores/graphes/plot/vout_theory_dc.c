@@ -53,7 +53,7 @@ int main(void)
                     fputs("input file end.\n", stdout);
                     return 0;
                 }
-                if(buf == ',' || buf == '\n')
+                if(buf == '\t' || buf == '\n')
                 {
                     break;
                 }
@@ -86,7 +86,6 @@ int main(void)
     int count = 0;
 
     //gnuplot setting
-    fputs("plot sin(x)\n", pipe);
     fputs("set logscale x\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,30\"\n", pipe);
@@ -110,28 +109,27 @@ int main(void)
     {
 
         char buf[100];
-        sprintf(buf, "VCTRL = %s*1e-3\n", dcop[i][VCTRL]); 
-        
-        fputs(buf,pipe);     fputs("1\n",stdout);
-
-        sprintf("gmn = %s\n", dcop[i][gmn]);     
-        fputs(buf, pipe);    fputs("2\n",stdout);
+        sprintf(buf, "VCTRL = %s*1e-3\n", dcop[i][VCTRL]);    
+        fputs(buf,pipe);
+        sprintf(buf, "gmn = %s\n", dcop[i][gmn]);     
+        fputs(buf, pipe);
         sprintf(buf, "gmp = %s\n",dcop[i][gmp]);
-        fputs(buf, pipe);     fputs("3\n",stdout);
+        fputs(buf, pipe);
         sprintf(buf, "gds = %s\n",dcop[i][gds]);
-        fputs(buf, pipe);     fputs("4\n",stdout);
+        fputs(buf, pipe);
         sprintf(buf, "cgs = %s\n",dcop[i][cgs]);
-        fputs(buf, pipe);     fputs("5\n",stdout);
+        fputs(buf, pipe);
         sprintf(buf, "cdg = %s\n",dcop[i][cdg]);
-        fputs(buf, pipe);     fputs("6\n",stdout);
+        fputs(buf, pipe);
         sprintf(buf, "cds = %s\n",dcop[i][cds]);
-        fputs(buf, pipe);     fputs("7\n",stdout);
+        fputs(buf, pipe);
 
         fputs("Id = 1e-3\n", pipe);
         fputs("R = 300\n", pipe);
         fputs("Kp = gmp**2 / (4*Id)\n", pipe);
+        fputs("omg(x) = 2 * pi * x\n", pipe);
 
-        fputs("vout(x) = 20*log10( 4* Kp * R * gmn * VCTRL * x / (sqrt( (gmp - 4 * pi * R * (x**2) * (cds+cdg)(cds+gs) )**2 + ( 2 * pi * x * ( (cds+cgs) + R * gmp * (cds+cdg) ) )**2 )) )\n", pipe);
+        fputs("vout(x) = 20*log10(4*Kp*R*gmn*VCTRL / ( ( sqrt( 1**2 + (2*R*omg(x)*(cds+cdg))**2 ) )*( sqrt( gmp**2 +(omg(x)*(cds+cgs))**2 ) ) ))\n", pipe);
 
         if(i == 0)
         {
