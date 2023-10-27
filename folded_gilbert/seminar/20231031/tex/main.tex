@@ -44,7 +44,7 @@
 
 \section{三端子間に同時に寄生容量がついた場合の小信号等価解析}
     周波数特性劣化の原因としてPMOSについた寄生容量が考えれる。そこで三端子間に寄生容量としてキャパシタを挿入した小信号等価回路を解析することにより寄生容量の影響を検討する。図\refeq{label:paracitic_eq}に計算の際に考えた小信号等価回路を示す。
-    \begin{figure}[h]
+    \begin{figure}[H]
         \begin{center}
             \includegraphics*[width=80mm]{figures/ParasiticCapacitoresEquivalent.png}
             \caption{寄生容量を考慮した小信号等価回路}
@@ -69,7 +69,8 @@
     \begin{align*}
         i_{ul} &= i_{ll}+i_{lGD}+i_{lSG}+i_{lr}+i_{rGD}+i_{rSG}    \\
         &= i_{ll}+i_{lr}+2i_{lSG}   \\
-        g_{mn}v_{in}-g_{dn}v_{pS1} &= 2\left\{ g_{mp}v_{pS1}+g_{dp}v_{pS1}+ j\omega( C_{SD}+C_{SG} ) v_{pS1} \right\}   \\
+        g_{mn}v_{in}-g_{dn}v_{pS1} &= 2 (g_{mp}v_{pS1}+g_{dp}v_{pS1})\\
+        & \quad +j2\omega( C_{SD}+C_{SG} ) v_{pS1}   \\
         v_{pS1} &= \frac{g_{mn}}{ 2g_{mp}+g_{dn}+2g_{dp}+j2\omega (C_{SD}+C_{SG}) }v_{in}
     \end{align*}
     ここで、$g_{mp}\ll g_{dp},g_{dn}$を仮定すると
@@ -97,8 +98,8 @@
     \end{align*}
     だったので出力は
     \begin{multline}
-        v_{out} \\
-        = \frac{4KR_{L}g_{mn}\cdot V_{CTRL}\cdot v_{in}}{ \left\{ 1+j2R_{L}\omega(C_{SD}+C_{GD}) \right\}\left\{ g_{mp}+j\omega(C_{SD}+C_{SG}) \right\} }    \label{eq:vout}
+        v_{out} = \frac{4KR_{L}g_{mn}}{ \left\{ 1+j2R_{L}\omega(C_{SD}+C_{GD}) \right\}}\\
+        \times\frac{1}{\left\{ g_{mp}+j\omega(C_{SD}+C_{SG}) \right\}}\cdot V_{CTRL}\cdot v_{in}    \label{eq:vout}
     \end{multline}
     と求められた。
 
@@ -122,9 +123,14 @@
             \hline\hline
             1.8 & 1.59 & 1.09 & 0.65 \\
             &&&\\
-            $I_{bias}$[mA] && $V_{CTRL}$[mV] & \\
             \hline\hline
-            4 && 200 & \\
+            & $I_{bias}$[mA] & 4 & \\
+            \hline\hline
+            &&&\\
+            & From [mV] & To [mV] &  Step Size [mV]   \\
+            \hline\hline
+            $V_{CTRL}$ & 20 & 200 & 20
+
         \end{tabular}
     \end{table}
     \begin{figure}[H]
@@ -141,11 +147,12 @@
             \label{fig:vout_sim}
         \end{center}
     \end{figure}
+    \clearpage
     どちらも下から$V_{CTRL}=20\,\mathrm{mV},40\,\mathrm{mV},60\,\mathrm{mV}\cdots200\,\mathrm{mV}$のときの周波数特性である。二つを比較すると低域利得には数dBの差があるが遮断周波数はおおよそ近い結果が得られた。\eqref{eq:vout}式では虚部にのみ周波数を含んでいるので、やはり遮断周波数は虚部である寄生容量の値が影響していると考えられる。したがって折り返し型において周波数特性を改善する方法として寄生容量を小さくする、即ちサイズを小さくするといったことが考えられる。
 
 
 \section{負荷にインダクタを負荷した際の周波数特性}
-    前章ではトランジスタサイズを小さくし、寄生容量を減らすことで周波数特性改善につながるということについて述べたが、別の方法としてインダクタを付加するという方法が考えられる。集積化を目標にしているため大きなインダクタを乗せることはできないが、シミュレーションによる改善効果を検討することで現実的なサイズのインダクタを付加することが有効な改善方法になり得るかを検討する。図\refeq{fig:inductor}にインダクタを付加した小信号等価回路を示す。
+    前章ではトランジスタサイズを小さくし、寄生容量を減らすことで周波数特性改善につながる可能性があるということについて述べたが、別の方法としてインダクタを付加するという方法が考えられる。集積化を目標にしているため大きなインダクタを乗せることはできないが、シミュレーションによる改善効果を検討することで現実的なサイズのインダクタを付加することが有効な改善方法になり得るかを検討する。図\refeq{fig:inductor}にインダクタを付加した小信号等価回路を示す。
     \begin{figure}[H]
         \begin{center}
             \includegraphics*[width = 80mm]{figures/ParasiticInductorHalfEquivalent.png}
@@ -155,10 +162,10 @@
     \end{figure}
     このとき、インダクタは負荷抵抗に直列に挿入したので、\eqref{eq:vout}式の負荷抵抗に$R_{L}+j\omega L$を代入することで利得が求められる。したがって、インダクタを付加した際の利得は
     \begin{multline}
-        v_{out,i} \\
-        = \frac{4K(R_{L}+j\omega L)g_{mn}\cdot V_{CTRL}\cdot v_{in}}{ \left\{ 1+j2\omega(R_{L}+j\omega L)(C_{SD}+C_{GD}) \right\}\left\{ g_{mp}+j\omega(C_{SD}+C_{SG}) \right\} }    \label{eq:vout_inductor}
+        v_{out,i} = \frac{4K(R_{L}+j\omega L)g_{mn}}{ \left\{ 1+j2\omega(R_{L}+j\omega L)(C_{SD}+C_{GD}) \right\}}\\
+        \times\frac{1}{\left\{ g_{mp}+j\omega(C_{SD}+C_{SG}) \right\}} \cdot V_{CTRL}\cdot v_{in}   \label{eq:vout_inductor}
     \end{multline}
-    と求められた。コントロール電圧を$200\,\mathrm{mV}$に固定し、それ以外の条件は\refeq{table:state_folded_ac}と同様の条件でインダクタを付加した際の\eqref{eq:vout_inductor}式から得られる周波数特性を破線で、シミュレーション波形を実践で図\refeq{fig:inductor}に示す。ただし、どちらにおいても最も下の線が$10\,\mathrm{nH}$であり、上に行くにしたがって$5\,\mathrm{nH}$づつ大きくなる。
+    と求められた。コントロール電圧を$200\,\mathrm{mV}$に固定し、それ以外の条件は表\refeq{table:state_folded_ac}と同様の条件でインダクタを付加した際の\eqref{eq:vout_inductor}式から得られる周波数特性を破線で、シミュレーション波形を実践で図\refeq{fig:inductor}に示す。ただし、どちらにおいても最も下の線が$10\,\mathrm{nH}$であり、上に行くにしたがって$5\,\mathrm{nH}$づつ大きくなる。
     \begin{figure}[H]
         \begin{center}
             \includegraphics*[width = 80mm]{figures/inductor_monochrome.PNG}
@@ -179,8 +186,8 @@
             \label{fig:NtoN_folded}
         \end{center}
     \end{figure*}
-    提案回路ではカレントミラーと差動対で電流源からの電流を分流することにより、差動対での信号成分を右のカレントミラーに伝え、$\mathrm{M_{A1}~M_{A4}}$のバイアス電流を変化させる。さらにカレントミラーでは左の差動対のソース電位よりもしきい値電圧分右の差動対のソース電位を下げることができる。これによりPMOSを使用せず(周波数特性を従来型と比べ悪化させず)、信号振幅を確保することができるのではないかと予想した。しかしながら、合計で$3I_{bias}$の電流を流す。従来型の消費電流は$I_{bias}$なのでこのままの設計だと3倍の消費電力になる。また、カレントミラーについても信号を伝えるので、このカレントミラーのサイジングも周波数特性に影響を与えることが予想される。
-    新しい構成でもカレントミラーを含め完全差動で動作する。したがって解析では半回路を考えれば良い。図\refeq{fig:NtoN_half}に考える半回路を、図\refeq{fig:NtoN_half_equal}にその小信号等価回路を示す。
+    提案回路ではカレントミラーと差動対で電流源からの電流を分流することにより、差動対での信号成分を右のカレントミラーに伝え、$\mathrm{M_{A1}}$～$\mathrm{M_{A4}}$のバイアス電流を変化させる。さらにカレントミラーでは左の差動対のソース電位よりもしきい値電圧分右の差動対のソース電位を下げることができる。これによりPMOSを使用せず(周波数特性を従来型と比べ悪化させず)、信号振幅を確保することができるのではないかと予想した。しかしながら、合計で$3I_{bias}$の電流を流す。従来型の消費電流は$I_{bias}$なのでこのままの設計だと3倍の消費電力になる。また、カレントミラーについても信号を伝えるので、このカレントミラーのサイジングも周波数特性に影響を与えることが予想される。
+    新しい構成でもカレントミラーを含め完全差動で動作するため、解析では半回路を考えれば良い。図\refeq{fig:NtoN_half}に考える半回路を、図\refeq{fig:NtoN_half_equal}にその小信号等価回路を示す。
     \begin{figure}[H]
         \begin{center}
             \includegraphics*[width = 80mm]{figures/NtoNHalfDiff.png}
@@ -195,10 +202,144 @@
             \label{fig:NtoN_half_equal}
         \end{center}        
     \end{figure}
-    小信号等価回路において$\Delta g_{m}$は$V_{CTRL}$によるトランスコンダクタンスの変化分であり、前回のゼミ発表より$\Delta g_{m}=2KV_{CTRL}$と表せる。
+    \clearpage
+
+    小信号等価回路において$\Delta g_{m}$は$V_{CTRL}$によるトランスコンダクタンスの変化分であり、前回のゼミ発表より
+    \begin{align}
+        \Delta g_{m}=2KV_{CTRL}     \label{eq:delta_gm}
+    \end{align}
+    と表せる。図\refeq{fig:NtoN_half_equal}において、接点$\mathrm{A}$の電位を$v_{AS}$、$\mathrm{B}$の電位を$v_{BD}$とするとKCLより
+    \begin{align*}
+        0 &= g_{mB}(-v_{in})+g_{dB}v_{BD}+g_{dM}v_{BD}+g_{mM}v_{BD}       \\
+        v_{BD} &=\frac{g_{mB}}{g_{mM}+g_{dM}+g_{dB}}v_{in}              \\
+        &\approx\frac{g_{mB}}{g_{mM}}v_{in}
+    \end{align*}
+    である。次に、各部の電位を用いて
+    \begin{gather*}
+        i_{1} = (g_{mA}-\Delta g_{m})v_{AS}+g_{dA}(v_{AS}-\Delta v)     \\
+        i_{2} = (g_{mA}+\Delta g_{m})v_{AS}+g_{dA}(v_{AS}+\Delta v)     \\
+        i_{M} = g_{mM}v_{BD}+g_{dM}v_{AS}
+    \end{gather*}
+    と表せる。これらにKCLを用いて
+    \begin{align}
+        i_{1}+i_{2}+i_{M} &= 0      \notag\\
+        v_{AS} &= \frac{g_{mB}}{2g_{mA}+2g_{dA}+g_{dM}}\cdot v_{in}    \notag\\
+        &\approx-\frac{g_{mM}}{2g_{mA}}v_{BD} = -\frac{g_{mB}}{2g_{mA}}v_{in}   \label{eq:vas}
+    \end{align}
+    と$v_{AS}$を求められた。図\refeq{fig:NtoN_half_equal}は完全差動で動作するので$i_{3}=-i_{2}$となることから
+    \begin{align*}
+        i_{outp} &= i_{1}+i_{3}     \\
+        &= i_{1}-i_{2}              \\
+        &= -2\Delta g_{m}v_{AS}-2g_{dA}\Delta v
+    \end{align*}
+    である。$\Delta v$は負荷抵抗$R_{L}$とそこに流れる電流$i_{outp}$を用いて
+    \begin{align*}
+        \Delta v &= 2R_{L}i_{outp}      \\
+        &= \frac{-2R_{L}}{1+2R_{L}g_{dA}}\cdot\Delta g_{m}\cdot v_{AS}  \\
+        &= \frac{2KR_{L}g_{mB}}{g_{mA}(1+2R_{L}g_{dA})}\cdot V_{CTRL}\cdot v_{in}
+    \end{align*}
+    と計算できる。従って出力$v_{out}$は
+    \begin{align}
+        v_{out} &= \Delta v - (-\Delta v)   \\
+        &= \frac{4KR_{L}g_{mB}}{g_{mA}(1+2R_{L}g_{dA})}\cdot V_{CTRL}\cdot v_{in}   \label{eq:vout_NtoN}
+    \end{align}
+    と求められた。これは前回のゼミで求めた折り返し型のギルバート乗算回路の出力と一致する。
+    \newpage
+
+    最後にシミュレーションを用いて従来型のギルバートセルと比較を行う。それぞれのシミュレーションを条件を表\refeq{table:state_previous_ac}、\refeq{table:state_NtoN_ac}に示す。
+    \begin{table}[H]
+        \caption{従来型ギルバート乗算回路の素子値}
+        \label{table:state_previous_ac}
+        \centering
+        \begin{tabular}{cccccccccc}
+            \hline
+            &Process&$\mathrm{Rohm\,0.18\,\mu m}$&\\
+            \hline
+            &&&\\
+            MOSFET & L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & finger\\
+            \hline \hline
+            $\mathrm{M_{A}}$ & 0.72 & 4.27 & 10 \\
+            $\mathrm{M_{B}}$ & 0.72 & 4.27 & 20 \\
+            $\mathrm{M_{C}}$ & 0.72 & 11.6 & 40 \\
+            &&&\\
+            $V_{dd}$[V] & $V_{A}$[V] & $V_{B}$[V] & $V_{C}$[V]\\
+            \hline\hline
+            1.8 & 1.59 & 1.09 & 0.65 \\
+            &&&\\
+            \hline\hline
+            & $I_{bias}$[mA] & 4 & \\
+            \hline\hline
+            &&&\\
+            & From [mV] & To [mV] &  Step Size [mV]   \\
+            \hline\hline
+            $V_{CTRL}$ & 20 & 200 & 20
+        \end{tabular}
+    \end{table}
+    \begin{table}[H]
+        \caption{提案回路の素子値}
+        \label{table:state_NtoN_ac}
+        \centering
+        \begin{tabular}{cccccccccc}
+            \hline
+            &Process&$\mathrm{Rohm\,0.18\,\mu m}$&\\
+            \hline
+            &&&\\
+            MOSFET & L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & finger\\
+            \hline \hline
+            $\mathrm{M_{A}}$ & 0.72 & 4.27 & 10 \\
+            $\mathrm{M_{B}}$ & 0.72 & 4.27 & 20 \\
+            $\mathrm{M_{C}}$ & 0.72 & 11.6 & 40 \\
+            $\mathrm{M_{M}}$ & 0.32 & 10   & 8  \\
+            &&&\\
+            $V_{dd}$[V] & $V_{rnb}$[V] & $V_{lnb}$[V] & $V_{cb}$[V]\\
+            \hline\hline
+            1.8 & 1.59 & 1.09 & 0.65 \\
+            &&&\\
+            \hline\hline
+            & $I_{bias}$[mA] & 4 & \\
+            \hline\hline
+            &&&\\
+            & From [mV] & To [mV] &  Step Size [mV]   \\
+            \hline\hline
+            $V_{CTRL}$ & 20 & 200 & 20
+        \end{tabular}
+    \end{table}
+    これらの条件のもと、得られた従来型と提案回路のdc解析結果を図\refeq{fig:sim_previous_dc}、\refeq{fig:sim_NtoN_dc}に、ac解析結果を図\refeq{fig:sim_previous_ac}、\refeq{fig:sim_NtoN_ac}に示す。
+    \newpage
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/previous_dc_monochrome.PNG}
+            \caption{従来型のdc解析結果}
+            \label{fig:sim_previous_dc}
+        \end{center}
+    \end{figure}
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/NtoN_dc_monochrome.PNG}
+            \caption{提案回路のdc解析結果}
+            \label{fig:sim_NtoN_dc}
+        \end{center}
+    \end{figure}
+    \newpage
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/previous_ac_monochrome.PNG}
+            \caption{従来型のac解析結果}
+            \label{fig:sim_previous_ac}
+        \end{center}
+    \end{figure}
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/NtoN_ac_monochrome.PNG}
+            \caption{提案回路のac解析結果}
+            \label{fig:sim_NtoN_ac}
+        \end{center}
+    \end{figure}
+    どちらもdc解析では内側から$V_{CTRL}=20\,\mathrm{mV},40\,\mathrm{mV},60\,\mathrm{mV}\cdots200\,\mathrm{mV}$、ac解析では下から$V_{CTRL}=20\,\mathrm{mV},40\,\mathrm{mV},60\,\mathrm{mV}\cdots200\,\mathrm{mV}$の時の波形である。シミュレーション結果から従来型同様適切に$v_{in}$と$V_{CTRL}$に比例した出力が得られていることがうかがえる。また、周波数特性に関して従来型と比較するとごくわずかに遮断周波数が小さくなったように見える。おそらくはカレントミラーとして追加したNMOSによるものと思われる。各トランジスタサイズ、直流バイアスは(カレントミラー)を除いて従来型から変更していない。従って従来型から大きな性能劣化は見られなかった。
 
 
 \section{おわりに}
+    今回は新たな回路構成を思いついたのでその構成が今後突き詰めて行けるだけのポテンシャルがあるのかを確かめるべく検討したが、従来型と遜色ない性能が得られそうであると分かった。今後はこの構成でより高周波でも使えるような素子値の設計を行い、ゆくゆくは集積化して従来型に対する優位性を示したいと思う。
 
 
 \end{document}
