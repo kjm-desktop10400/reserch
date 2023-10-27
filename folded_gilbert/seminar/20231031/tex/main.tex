@@ -161,23 +161,28 @@
         v_{out,i} \\
         = \frac{4K(R_{L}+j\omega L)g_{mn}\cdot V_{CTRL}\cdot v_{in}}{ \left\{ 1+j2\omega(R_{L}+j\omega L)(C_{SD}+C_{GD}) \right\}\left\{ g_{mp}+j\omega(C_{SD}+C_{SG}) \right\} }    \label{eq:vout_inductor}
     \end{multline}
-    と求められた。コントロール電圧を$200\,\mathrm{mV}$に固定し、それ以外の条件は\refeq{table:state_folded_ac}と同様の条件でインダクタを付加した際の\eqref{eq:vout_inductor}式から得られる周波数特性を図\refeq{fig:vout_inductor_theoretical}に、シミュレーション波形を図\refeq{fig:vout_inductor_simulation}に示す。
+    と求められた。コントロール電圧を$200\,\mathrm{mV}$に固定し、それ以外の条件は\refeq{table:state_folded_ac}と同様の条件でインダクタを付加した際の\eqref{eq:vout_inductor}式から得られる周波数特性を破線で、シミュレーション波形を実践で図\refeq{fig:inductor}に示す。ただし、どちらにおいても最も下の線が$10\,\mathrm{nH}$であり、上に行くにしたがって$5\,\mathrm{nH}$づつ大きくなる。
     \begin{figure}[H]
         \begin{center}
-            \includegraphics*[width = 80mm]{figures/inductor_theoretical_monochrome.PNG}
+            \includegraphics*[width = 80mm]{figures/inductor_monochrome.PNG}
             \caption{\eqref{eq:vout_inductor}式の数波数特性}
-            \label{fig:vout_inductor_theoretical}
+            \label{fig:inductor}
         \end{center}
     \end{figure}
-    \begin{figure}[H]
-        \begin{center}
-            \includegraphics*[width = 80mm]{figures/inductor_simulation_monochrome.PNG}
-            \caption{インダクタを挿入した時のシミュレーション波形}
-            \label{fig:vout_inductor_simulation}
-        \end{center}
-    \end{figure}
+    理論式とシミュレーションではピーク周波数も異なっていた。\eqref{eq:vout_inductor}式の分母には他にもバックゲート間容量やオーバーラップ容量、ジャンクション容量といった寄生容量がつくことが考えられる。これらが$\omega L$と加算、乗算されることによりピーク周波数もずれてしまったのではないかと考えらる。
+    インダクタを挿入した場合、$2\,\mathrm{GHz}$周辺での利得の変化が激しく実際に使用できる周波数はたとえ数$10\,\mathrm{nH}$のインダクタを付加してもそれほど増加しないことが分かった。したがって、現状の折り返し型ギルバートセルにインダクタを付加したところで周波数特性はあまり大きく改善しないことが予想される。
+
 
 \section{新規トポロジの提案}
+    1・2章では折り返し型ギルバートセルの周波数特性改善方法について検討していたが、現状ではサイズを変更することのみが効果的な方法であると思われる。しかし、周波数特性劣化の原因はPMOSにあると考えれらることから、PMOSを使わずにギルバートセルを構成することが最も大きく周波数特性に影響を与えられると考えられる。そこで、図\refeq{fig:NtoN_folded}に今回提案するPMOSを使用しない折り返し型ギルバートセルを示す。
+    \begin{figure*}[t]
+        \begin{center}
+            \includegraphics*[width = 160mm]{figures/NtoNFolded.png}
+            \caption{提案する折り返し型ギルバートセル}
+            \label{fig:NtoN_folded}
+        \end{center}
+    \end{figure*}
+    提案回路ではカレントミラーと差動対で電流源からの電流を分流することにより、差動対での信号成分を右のカレントミラーに伝え、$\mathrm{M_{A1}~M_{A4}}$のバイアス電流を変化させる。さらにカレントミラーでは左の差動対のソース電位よりもしきい値電圧分右の差動対のソース電位を下げることができる。これによりPMOSを使用せず(周波数特性を従来型と比べ悪化させず)、信号振幅を確保することができるのではないかと予想した。しかしながら、合計で$3I_{bias}$の電流を流す。従来型の消費電流は$I_{bias}$なのでこのままの設計だと3倍の消費電力になる。また、カレントミラーについても信号を伝えるので、このカレントミラーのサイジングも周波数特性に影響を与えることが予想される。
 
 
 \section{おわりに}
