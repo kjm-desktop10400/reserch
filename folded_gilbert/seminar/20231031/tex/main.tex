@@ -37,13 +37,10 @@
         \end{center}
     \end{figure}
     \begin{figure}[H]
-        \begin{center}
             \includegraphics*[width=80mm]{figures/folded_gilbert.png}
             \caption{PMOSを使用した折り返し型ギルバートセル}
             \label{fig:gilbert_folded_NtoP}
-        \end{center}
     \end{figure}
-
 
 \section{三端子間に同時に寄生容量がついた場合の小信号等価解析}
     周波数特性劣化の原因としてPMOSについた寄生容量が考えれる。そこで三端子間に寄生容量としてキャパシタを挿入した小信号等価回路を解析することにより寄生容量の影響を検討する。図\refeq{label:paracitic_eq}に計算の際に考えた小信号等価回路を示す。
@@ -54,7 +51,7 @@
             \label{label:paracitic_eq}
         \end{center}
     \end{figure}
-    各部に流れる電流が各接点の電位などを用いて  
+    各部に流れる電流は各接点の電位などを用いて  
     \begin{gather*}
         i_{ul}=g_{mn}v_{in}-g_{dn}v_{pS1}   \\
         i_{lSG}=i_{rSG}=j\omega C_{GS}v_{pS1}       \\
@@ -105,7 +102,7 @@
     \end{multline}
     と求められた。
 
-    折り返し型のギルバート乗算回路でシミュレーションを行い、.op解析からコントロール電圧毎のパラメータを抽出した。この時のシミュレーション条件を図\refeq{table:state_folded_ac}に示す。また、この時のシミュレーション波形と.op解析で得られたパラメータを代入した理論式のグラフを図\refeq{fig:vout_theoretical}、\refeq{fig:vout_sim}に示す。
+    折り返し型のギルバート乗算回路でシミュレーションを行い、.op解析からコントロール電圧毎のパラメータを抽出した。この時のシミュレーション条件を表\refeq{table:state_folded_ac}に示す。また、この時のシミュレーション波形と.op解析で得られたパラメータを代入した理論式のグラフを図\refeq{fig:vout_theoretical}、\refeq{fig:vout_sim}に示す。
     \begin{table}[h]
         \caption{折り返し型ギルバート乗算回路の素子値}
         \label{table:state_folded_ac}
@@ -125,9 +122,9 @@
             \hline\hline
             1.8 & 1.59 & 1.09 & 0.65 \\
             &&&\\
-            $I_{bias}$[mA] & $I_{C}\mathrm{[mA]}$ & $V_{CTRL}$[mV] & \\
+            $I_{bias}$[mA] && $V_{CTRL}$[mV] & \\
             \hline\hline
-            4 & 4 & 200 & \\
+            4 && 200 & \\
         \end{tabular}
     \end{table}
     \begin{figure}[H]
