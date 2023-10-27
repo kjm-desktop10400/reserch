@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.26)  27 OCT 2023 11:28
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.25)  27 OCT 2023 14:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/Users/LarcH/Desktop/reserch/folded_gilbert/seminar/20231031/tex/main.tex
-(c:/Users/LarcH/Desktop/reserch/folded_gilbert/seminar/20231031/tex/main.tex
+**c:/Desktop/reserch/folded_gilbert/seminar/20231031/tex/main.tex
+(c:/Desktop/reserch/folded_gilbert/seminar/20231031/tex/main.tex
 pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
 L3 programming layer <2023-05-15>
 (c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -322,19 +322,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: figures/NtoNFolded.png Graphic file (type bmp)
 <figures/NtoNFolded.png>
+File: figures/NtoNHalfDiff.png Graphic file (type bmp)
+<figures/NtoNHalfDiff.png>
+File: figures/NtoNHalfDiffEqual.png Graphic file (type bmp)
+<figures/NtoNHalfDiffEqual.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [3]
-[4] (./main.aux)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+(./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3331 strings out of 476759
- 51510 string characters out of 5809550
+ 3347 strings out of 476760
+ 51930 string characters out of 5809571
  1866672 words of memory out of 5000000
- 23691 multiletter control sequences out of 15000+600000
+ 23704 multiletter control sequences out of 15000+600000
  525981 words of font info for 95 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,14n,62p,859b,381s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,14n,62p,847b,381s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (4 pages, 17968 bytes).
+Output written on main.dvi (4 pages, 19012 bytes).

@@ -180,6 +180,22 @@
         \end{center}
     \end{figure*}
     提案回路ではカレントミラーと差動対で電流源からの電流を分流することにより、差動対での信号成分を右のカレントミラーに伝え、$\mathrm{M_{A1}~M_{A4}}$のバイアス電流を変化させる。さらにカレントミラーでは左の差動対のソース電位よりもしきい値電圧分右の差動対のソース電位を下げることができる。これによりPMOSを使用せず(周波数特性を従来型と比べ悪化させず)、信号振幅を確保することができるのではないかと予想した。しかしながら、合計で$3I_{bias}$の電流を流す。従来型の消費電流は$I_{bias}$なのでこのままの設計だと3倍の消費電力になる。また、カレントミラーについても信号を伝えるので、このカレントミラーのサイジングも周波数特性に影響を与えることが予想される。
+    新しい構成でもカレントミラーを含め完全差動で動作する。したがって解析では半回路を考えれば良い。図\refeq{fig:NtoN_half}に考える半回路を、図\refeq{fig:NtoN_half_equal}にその小信号等価回路を示す。
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/NtoNHalfDiff.png}
+            \caption{提案回路の差動半回路}
+            \label{fig:NtoN_half}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/NtoNHalfDiffEqual.png}
+            \caption{差動半回路の小信号等価回路}
+            \label{fig:NtoN_half_equal}
+        \end{center}        
+    \end{figure}
+    小信号等価回路において$\Delta g_{m}$は$V_{CTRL}$によるトランスコンダクタンスの変化分であり、前回のゼミ発表より$\Delta g_{m}=2KV_{CTRL}$と表せる。
 
 
 \section{おわりに}
