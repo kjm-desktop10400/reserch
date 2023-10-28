@@ -136,7 +136,7 @@
     \begin{figure}[H]
         \begin{center}
             \includegraphics*[width = 80mm]{figures/vout_ac_theoretical_monochrome.PNG}
-            \caption{\eqref{eq:vout}式の周波数特性}
+            \caption{式\eqref{eq:vout}の周波数特性}
             \label{fig:vout_theoretical}
         \end{center}
     \end{figure}
@@ -148,7 +148,7 @@
         \end{center}
     \end{figure}
     \clearpage
-    どちらも下から$V_{CTRL}=20\,\mathrm{mV},40\,\mathrm{mV},60\,\mathrm{mV}\cdots200\,\mathrm{mV}$のときの周波数特性である。二つを比較すると低域利得には数dBの差があるが遮断周波数はおおよそ近い結果が得られた。\eqref{eq:vout}式では虚部にのみ周波数を含んでいるので、やはり遮断周波数は虚部である寄生容量の値が影響していると考えられる。したがって折り返し型において周波数特性を改善する方法として寄生容量を小さくする、即ちサイズを小さくするといったことが考えられる。
+    どちらも下から$V_{CTRL}=20\,\mathrm{mV},40\,\mathrm{mV},60\,\mathrm{mV}\cdots200\,\mathrm{mV}$のときの周波数特性である。二つを比較すると低域利得には数dBの差があるが遮断周波数はおおよそ近い結果が得られた。式\eqref{eq:vout}では虚部にのみ周波数を含んでいるので、やはり遮断周波数は虚部である寄生容量の値が影響していると考えられる。したがって折り返し型において周波数特性を改善する方法として寄生容量を小さくする、即ちサイズを小さくするといったことが考えられる。
 
 
 \section{負荷にインダクタを負荷した際の周波数特性}
@@ -160,20 +160,20 @@
             \label{fig:inductor}
         \end{center}
     \end{figure}
-    このとき、インダクタは負荷抵抗に直列に挿入したので、\eqref{eq:vout}式の負荷抵抗に$R_{L}+j\omega L$を代入することで利得が求められる。したがって、インダクタを付加した際の利得は
+    このとき、インダクタは負荷抵抗に直列に挿入したので、式\eqref{eq:vout}の負荷抵抗に$R_{L}+j\omega L$を代入することで利得が求められる。したがって、インダクタを付加した際の利得は
     \begin{multline}
         v_{out,i} = \frac{4K(R_{L}+j\omega L)g_{mn}}{ \left\{ 1+j2\omega(R_{L}+j\omega L)(C_{SD}+C_{GD}) \right\}}\\
         \times\frac{1}{\left\{ g_{mp}+j\omega(C_{SD}+C_{SG}) \right\}} \cdot V_{CTRL}\cdot v_{in}   \label{eq:vout_inductor}
     \end{multline}
-    と求められた。コントロール電圧を$200\,\mathrm{mV}$に固定し、それ以外の条件は表\refeq{table:state_folded_ac}と同様の条件でインダクタを付加した際の\eqref{eq:vout_inductor}式から得られる周波数特性を破線で、シミュレーション波形を実践で図\refeq{fig:inductor}に示す。ただし、どちらにおいても最も下の線が$10\,\mathrm{nH}$であり、上に行くにしたがって$5\,\mathrm{nH}$づつ大きくなる。
+    と求められた。コントロール電圧を$200\,\mathrm{mV}$に固定し、それ以外の条件は表\refeq{table:state_folded_ac}と同様の条件でインダクタを付加した際の式\eqref{eq:vout_inductor}から得られる周波数特性を破線で、シミュレーション波形を実践で図\refeq{fig:inductor}に示す。ただし、どちらにおいても最も下の線が$10\,\mathrm{nH}$であり、上に行くにしたがって$5\,\mathrm{nH}$づつ大きくなる。
     \begin{figure}[H]
         \begin{center}
             \includegraphics*[width = 80mm]{figures/inductor_monochrome.PNG}
-            \caption{\eqref{eq:vout_inductor}式の数波数特性}
+            \caption{式\eqref{eq:vout_inductor}の数波数特性}
             \label{fig:inductor}
         \end{center}
     \end{figure}
-    理論式とシミュレーションではピーク周波数も異なっていた。\eqref{eq:vout_inductor}式の分母には他にもバックゲート間容量やオーバーラップ容量、ジャンクション容量といった寄生容量がつくことが考えられる。これらが$\omega L$と加算、乗算されることによりピーク周波数もずれてしまったのではないかと考えらる。
+    理論式とシミュレーションではピーク周波数も異なっていた。式\eqref{eq:vout_inductor}の分母には他にもバックゲート間容量やオーバーラップ容量、ジャンクション容量といった寄生容量がつくことが考えられる。これらが$\omega L$と加算、乗算されることによりピーク周波数もずれてしまったのではないかと考えらる。
     インダクタを挿入した場合、$2\,\mathrm{GHz}$周辺での利得の変化が激しく実際に使用できる周波数はたとえ数$10\,\mathrm{nH}$のインダクタを付加してもそれほど増加しないことが分かった。したがって、現状の折り返し型ギルバートセルにインダクタを付加したところで周波数特性はあまり大きく改善しないことが予想される。
 
 
