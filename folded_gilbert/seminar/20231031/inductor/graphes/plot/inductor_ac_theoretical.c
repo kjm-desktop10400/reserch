@@ -95,7 +95,7 @@ int main(void)
     fputs("set xlabel \"frequency [Hz]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
     fputs("set ylabel \"magnitude [dB]\" font \"Arial,30\" offset -8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
-    fputs("set key bottom left spacing 2.5 offset 20,5\n", pipe);
+    fputs("set key top left spacing 2.5 offset 15,-2\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
     fputs("set lmargin 20\n", pipe);
     fputs("set rmargin 20\n", pipe);
@@ -107,8 +107,21 @@ int main(void)
     fputs("set mxtics 5\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [1e8 :3e10]\n", pipe);
-    fputs("set yrange [-20 : 20]\n", pipe);
+    fputs("set xrange [2e8 :3e10]\n", pipe);
+    fputs("set yrange [-10 : 20]\n", pipe);
+
+    //凡例の設定
+    fputs("set label 1   center at graph 0.89 , 0.50 \"10 nH\" font \", 20\" \n", pipe);
+    fputs("set label 2   center at graph 0.85 , 0.68 \"15 nH\" font \", 20\" \n", pipe);
+    fputs("set label 3   center at graph 0.83 , 0.80 \"20 nH\" font \", 20\" \n", pipe);
+    fputs("set label 4   center at graph 0.82 , 0.90 \"25 nH\" font \", 20\" \n", pipe);
+    fputs("set label 5   center at graph 0.79 , 0.95 \"30 nH\" font \", 20\" \n", pipe);
+
+    fputs("set label 6   center at graph 0.53 , 0.12 \"10 nH\" font \", 20\" \n", pipe);
+    fputs("set label 7   center at graph 0.53 , 0.23 \"15 nH\" font \", 20\" \n", pipe);
+    fputs("set label 8   center at graph 0.53 , 0.29 \"20 nH\" font \", 20\" \n", pipe);
+    fputs("set label 9   center at graph 0.82 , 0.90 \"     \" font \", 20\" \n", pipe);
+    fputs("set label 10  center at graph 0.30 , 0.38 \"30 nH\" font \", 20\" \n", pipe);
 
     for(int i = 0; i < COLUMN; i++)
     {
@@ -135,7 +148,7 @@ int main(void)
 
         if(i == 0)
         {
-            fprintf(pipe, "  plot vout%d(x) black dt 4 notitle\n", i, dcop[i][L]);
+            fprintf(pipe, "  plot vout%d(x) black dt 4 title \"theoretical\"\n", i, dcop[i][L]);
         }
         else
         {
@@ -148,7 +161,14 @@ int main(void)
     fputs("input = \"..\\\\data\\\\inductor_ac.vcsv\"\n", pipe);
     for(int i = 0; i < COLUMN; i++)
     {
+        if(i == 0)
+        {
+        fprintf(pipe, "replot input skip 6 using %d : %d black with lines title \"simulation\"\n", 2 * i + 1, 2 * i + 2);
+        }
+        else
+        {
         fprintf(pipe, "replot input skip 6 using %d : %d black with lines notitle\n", 2 * i + 1, 2 * i + 2);
+        }
     }
 
     pclose(pipe);

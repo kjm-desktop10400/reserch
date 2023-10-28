@@ -1,8 +1,8 @@
-PWD e:/Desktop/reserch/folded_gilbert/seminar/20231031/tex
+PWD c:/Desktop/reserch/folded_gilbert/seminar/20231031/tex
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT e:/Desktop/reserch/folded_gilbert/seminar/20231031/tex/main.tex
+INPUT c:/Desktop/reserch/folded_gilbert/seminar/20231031/tex/main.tex
 OUTPUT main.log
 INPUT c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 INPUT c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls

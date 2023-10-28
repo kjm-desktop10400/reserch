@@ -30,6 +30,13 @@ input = "..\\data\\previous_ac.vcsv"
 set xrange[1e6 : 1e12]
 set yrange[-40 : 15]
 
+set label 1  center at graph 0.25  , 0.47 "V_{CTRL} = 20  mV" font ", 20"
+set label 2  center at graph 0.25  , 0.58 "            40  mV" font ", 20"
+set label 3  center at graph 0.25  , 0.65 "            60  mV" font ", 20"
+set label 4  center at graph 0.25  , 0.70 "            80  mV" font ", 20"
+set label 10 center at graph 0.25  , 0.95 "            200 mV" font ", 20"
+
+
 plot   input skip 6 using 1  : 2  black with lines notitle # "VCTRL = 20  mV" 
 replot input skip 6 using 3  : 4  black with lines notitle # "VCTRL = 40  mV" 
 replot input skip 6 using 5  : 6  black with lines notitle # "VCTRL = 60  mV" 

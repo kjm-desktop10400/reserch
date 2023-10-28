@@ -107,6 +107,18 @@ int main(void)
     fputs("set xrange [1e6 : 1e12]\n", pipe);
     fputs("set yrange [-40 : 5]\n", pipe);
 
+    //凡例の設定
+    fputs("set label 1  center at graph 0.2  , 0.47 \"V_{CTRL} = 20  mV\" font \", 20\" \n", pipe);
+    fputs("set label 2  center at graph 0.2  , 0.61 \"           40  mV\" font \", 20\" \n", pipe);
+    fputs("set label 3  center at graph 0.2  , 0.69 \"           60  mV\" font \", 20\" \n", pipe);
+    fputs("set label 4  center at graph 0.2  , 0.75 \"           80  mV\" font \", 20\" \n", pipe);
+    fputs("set label 5  center at graph 0.2  , 0.99 \"                 \" font \", 20\" \n", pipe);
+    fputs("set label 6  center at graph 0.2  , 0.99 \"                 \" font \", 20\" \n", pipe);
+    fputs("set label 7  center at graph 0.2  , 0.99 \"                 \" font \", 20\" \n", pipe);
+    fputs("set label 8  center at graph 0.2  , 0.99 \"                 \" font \", 20\" \n", pipe);
+    fputs("set label 9  center at graph 0.2  , 0.99 \"                 \" font \", 20\" \n", pipe);
+    fputs("set label 10 center at graph 0.43 , 0.97 \"           200 mV\" font \", 20\" \n", pipe);
+
     for(int i = 0; i < 10; i++)
     {
 

@@ -30,15 +30,22 @@ input = "..\\data\\NtoN_ac.vcsv"
 set xrange[1e6 : 1e12]
 set yrange[-40 : 15]
 
-plot   input skip 6 using 1  : 2   with lines title  "VCTRL = 20  mV" 
-replot input skip 6 using 3  : 4   with lines title  "VCTRL = 40  mV" 
-replot input skip 6 using 5  : 6   with lines title  "VCTRL = 60  mV" 
-replot input skip 6 using 7  : 8   with lines title  "VCTRL = 80  mV" 
-replot input skip 6 using 9  : 10  with lines title  "VCTRL = 10  mV" 
-replot input skip 6 using 11 : 12  with lines title  "VCTRL = 120 mV" 
-replot input skip 6 using 13 : 14  with lines title  "VCTRL = 140 mV" 
-replot input skip 6 using 15 : 16  with lines title  "VCTRL = 160 mV" 
-replot input skip 6 using 17 : 18  with lines title  "VCTRL = 180 mV" 
-replot input skip 6 using 19 : 20  with lines title  "VCTRL = 200 mV" 
+set label 1  center at graph 0.25  , 0.32 "V_{CTRL} = 20  mV" font ", 20"
+set label 2  center at graph 0.25  , 0.43 "            40  mV" font ", 20"
+set label 3  center at graph 0.25  , 0.50 "            60  mV" font ", 20"
+set label 4  center at graph 0.25  , 0.55 "            80  mV" font ", 20"
+set label 10 center at graph 0.25  , 0.80 "            200 mV" font ", 20"
+
+
+plot   input skip 6 using 1  : 2  black with lines notitle # "VCTRL = 20  mV" 
+replot input skip 6 using 3  : 4  black with lines notitle # "VCTRL = 40  mV" 
+replot input skip 6 using 5  : 6  black with lines notitle # "VCTRL = 60  mV" 
+replot input skip 6 using 7  : 8  black with lines notitle # "VCTRL = 80  mV" 
+replot input skip 6 using 9  : 10 black with lines notitle # "VCTRL = 10  mV" 
+replot input skip 6 using 11 : 12 black with lines notitle # "VCTRL = 120 mV" 
+replot input skip 6 using 13 : 14 black with lines notitle # "VCTRL = 140 mV" 
+replot input skip 6 using 15 : 16 black with lines notitle # "VCTRL = 160 mV" 
+replot input skip 6 using 17 : 18 black with lines notitle # "VCTRL = 180 mV" 
+replot input skip 6 using 19 : 20 black with lines notitle # "VCTRL = 200 mV" 
 
 pause -1
