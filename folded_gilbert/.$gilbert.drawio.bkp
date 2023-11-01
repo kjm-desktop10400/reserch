@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-10-31T05:38:50.431Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="ZYITf2DY2_eFyekQVVNk" version="21.1.2" type="device">
+<mxfile host="Electron" modified="2023-10-25T06:47:47.581Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="nOodJl_h20pDiU2akXX6" version="21.1.2" type="device">
   <diagram id="ffSt11Aic0SPQzXxFWyP" name="ページ1">
-    <mxGraphModel dx="1195" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+    <mxGraphModel dx="1182" dy="690" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -232,9 +232,6 @@
         </mxCell>
         <mxCell id="tbDva1GplSQeZt8lTgYG-4" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;`V_{C}`&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="200" y="490" width="100" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="6eA2RvXwnaoV6-tkCbMX-1" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="330" y="270" width="20" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
