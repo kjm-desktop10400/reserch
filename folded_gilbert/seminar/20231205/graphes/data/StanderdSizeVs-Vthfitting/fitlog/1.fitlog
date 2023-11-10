@@ -1,0 +1,4 @@
+# fit [0.6 : 1] f(x) input skip 6 using 1 : 2 via A, B
+# final sum of squares of residuals : 3.02879e-05
+A               = 0.00308105405607822   
+B               = -0.00184596849623672  
