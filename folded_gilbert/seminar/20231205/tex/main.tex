@@ -1,0 +1,61 @@
+\documentclass[twocolumn]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{kenzemi}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{float}
+
+\setcounter{topnumber}{100}
+\setcounter{bottomnumber}{100}
+\setcounter{totalnumber}{100}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+
+\renewcommand{\dbltopfraction}{.7}
+\renewcommand{\dblfloatpagefraction}{.5}
+
+\mathtoolsset{showonlyrefs = true}
+
+\begin{document}
+
+\title{折り返し型ギルバート乗算回路のシミュレーション}
+\author{小島 光}
+\date{2023年12月5日}
+\abstract{前回NMOSを使用した折り返し型のギルバート乗算回路(以下折り返し型と呼ぶ)の信号振幅が従来型に比べて広く取ることができること、小信号等価解析上では二つの入力の積に比例した出力を得られることが分かった。前回はカレントミラーのサイズを揃えていたが、今回はより柔軟な設計・利得のためにサイズを揃えない場合の小信号等価解析を行い、乗算が可能であることを示した。その後ギルバート乗算回路の素子値を決め、バッファ回路設計し回路単体、および実際に測定する時に近い条件でシミュレーションを行い性能を評価した。}
+\keyword{ギルバート乗算回路,小信号解析,周波数特性,集積回路}
+\maketitle
+
+
+\section{はじめに}
+    フォトニックリザバコンピューティングの学習には高速な積和演算が必要であるが現状、要件を満たすような光を用いた積和演算行えていない。そこでリザバ層の出力を電気に変換しアナログ積和演算を行うことになった。ここで、リザバ層からは7つの出力があり、それぞれに任意の重みをかけ足し合わせる。これを電気で行うには複数のギルバートセルで乗算を行い、各出力電流をまとめることで和をとって積和演算を行う。即ち信号振幅を足し合わせるため7つの信号振幅の和が必要な振幅になる。つまり各セルの出力振幅は全体の$1/7$が最大となり、S/N比が小さくなってしまうことが問題として考えられる。そこで通常のギルバート乗算回路を応用し信号の折り返しを行うことでより広い信号振幅の獲得を図った。今回はこの折り返し型について具体的な素子値を定め、現実的なシミュレーションを行った。
+
+\section{カレントミラーのサイズによる利得への影響}
+    図\refeq{fig:NtoN}に折り返し型の回路図を示す。$\mathrm{M_{U},M_{L}}$はともに定電圧を与え、定電流源として用いている。前回までとの差異はカレントミラーのサイズを左右で任意に変えることができるようにした点である。この時の差動半回路を図\refeq{fig:NtoNhalf}に、その小信号等価回路を図\refeq{fig:NtoNhalfeq}に示す。
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 100mm]{figures/NtoNFolded.png}
+            \caption{折り返し型ギルバートセル}
+            \label{fig:NtoN}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/NtoNHalfDiff.png}
+            \caption{折り返し型ギルバートセルの差動半回路}
+            \label{fig:NtoNhalf}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/NtoNHalfDiffEqual.png}
+            \caption{差動半回路の小信号等価回路}
+            \label{fig:NtoNhalfeq}
+        \end{center}
+    \end{figure}
+    
+
+
+
+\end{document}
