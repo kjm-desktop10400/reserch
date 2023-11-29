@@ -1,4 +1,4 @@
-# fit [0.75 : ] f(x) "Id-Vgs_L_054u.vcsv" skip 6 using 1  : (sqrt($2 )) via g, i
-# final sum of squares of residuals : 2.71019e-05
-g               = 0.0500965409292834    
-i               = -0.0203259511056281   
+# fit [fit_s : fit_e] f(x) "gm-Vgs_L_054u.dat" using 1 : 2 via g, i
+# final sum of squares of residuals : 6.23703e-06
+g               = 0.00569604357454773   
+i               = -0.00203487548252598  
