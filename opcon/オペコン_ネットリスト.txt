@@ -1,0 +1,21 @@
+.PARAM psvoltage=1.8
+.SUBCKT opamp inm inp out vdd vss
+M8 N007 N010 vss vss cmosn l=9.8u w=1.35u m=1
+M5 N003 inm N007 vss cmosn l=9u w=1.5u m=1
+M7 vdd N002 N006 vss cmosn l=10.8u w=1.08u m=1
+M10 out N006 vss vss cmosn l=0.72u w=2u m=1
+M1 N006 N009 vss vss cmosn l=10.8u w=1.08u m=1
+M11 vdd N002 out vdd cmosp l=0.72u w=6.6u m=1
+M4 vdd N003 N003 vdd cmosp l=1.2u w=1.35u m=1
+M3 vdd N003 N002 vdd cmosp l=1.2u w=1.35u m=1
+M6 N002 inp N007 vss cmosn l=9u w=1.5u m=1
+M13 vdd N004 N004 vdd cmosp l=2.7u w=0.27u m=1
+M2 N004 N005 N005 N004 cmosp l=2.7u w=0.27u m=1
+M9 N005 N008 N008 N005 cmosp l=2.7u w=0.27u m=1
+M12 N008 N011 N011 N008 cmosp l=2.7u w=0.27u m=1
+M14 N011 N009 N009 N011 cmosp l=2.7u w=0.27u m=1
+M15 N009 N010 N010 N009 cmosp l=2.7u w=0.27u m=1
+M16 N010 N012 N012 N010 cmosp l=2.7u w=0.27u m=1
+M17 N012 N013 N013 N012 cmosp l=2.7u w=0.27u m=1
+M18 N013 vss vss N013 cmosp l=2.7u w=0.27u m=1
+.ends
