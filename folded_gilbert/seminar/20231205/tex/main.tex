@@ -134,12 +134,12 @@
         \label{table:bias}
         \centering
         \begin{tabular}{c|ccccccccc}
-            \\
+            \multicolumn{2}{c}{} \\
             $\mathrm{V_{lbias}}$ & 1.1 V\\
             $\mathrm{V_{rbias}}$ & 1.1 V \\
             $\mathrm{V_{U}}$     & 0.5 V  \\
             $\mathrm{V_{L}}$     & 0.81V  \\
-            $\mathrm{R}$         & 510 $\mathrm{\Omega}$  
+            $\mathrm{R}$         & 900 $\mathrm{\Omega}$  
         \end{tabular}
         \end{table}
 
@@ -164,14 +164,14 @@
         \begin{align}
             i_{m}=g_{m}V_{out}=g_{m}(V_{in}-V_{out}-V_{th})
         \end{align}
-        と表せる。図\refeq{fig:nmos_unit_circuit}と同様の条件で.OP解析を行った結果より、今回はしきい値電圧を$0.53$ Vとして計算を行う。ここで先ほどと異なるしきい値電圧を用いるのは、乗算においては入力に対して線形な出力を得られることを期待して線形近似した際のx切片を用いたが、二乗則では電流.OP解析でえられた値を用いるほうが少なくともシミュレーションに近い値が出るためである。折り返し型の出力は1.8 Vと0.7 Vの間で変動するので、$V_{in}=1.25$ Vを中心とする$\pm 0.55$ Vとする。従ってこの時のバッファ回路の出力電圧$V_{out}$は
+        と表せる。図\refeq{fig:nmos_unit_circuit}と同様の条件で.OP解析を行った結果より、折り返し型の出力は1.8 Vと0.7 Vの間で変動するので、$V_{in}=1.25$ Vを中心とする$\pm 0.55$ Vとする。従ってこの時のバッファ回路の出力電圧$V_{out}$は
         \begin{align}
-            g_{m}V_{out} &=g_{m}(1.25-V_{out}-0.53)     \notag\\
-            V_{out}&=0.36\;\mathrm{V}   \notag
+            g_{m}V_{out} &=g_{m}(1.25-V_{out}-0.6)     \notag\\
+            V_{out}&=0.325\approx0.33\;\mathrm{V}   \notag
         \end{align}
         と求められた。従って電流$i_{m}$は
         \begin{align*}
-            i_{m}=g_{m}V_{out}=7.2\;\mathrm{mA}
+            i_{m}=g_{m}V_{out}=6.5\;\mathrm{mA}
         \end{align*}
         と計算できる。つまり、$V_{in}=1.25$ V、$V_{out}=0.36$ Vの時に7.2 mAの電流を流すような形状比を探すことで目的のトランジスタのサイズを得ることができる。ここの方法で求められた形状比を表\refeq{table:buf_size}に示す。
         \begin{table}[H]
@@ -181,7 +181,7 @@
             \begin{tabular}{cccccccccc}
                 L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & finger\\
                 \hline \hline
-                0.32 & 1.88 & 32 \\  
+                0.32 & 3.52 & 16 \\  
             \end{tabular}
         \end{table}
 
@@ -189,28 +189,28 @@
     素子値が決待ったので回路ごとのシミュレーション結果を示す。
     \begin{figure}[H]
         \begin{center}
-            \includegraphics*[width = 80mm]{}
+            \includegraphics*[width = 80mm]{figures/NtoN_dc.PNG}
             \caption{折り返し型の直流解析結果}
             \label{fig:sim_NtoN_dc}
         \end{center}
     \end{figure}
     \begin{figure}[H]
         \begin{center}
-            \includegraphics*[width = 80mm]{}
+            \includegraphics*[width = 80mm]{figures/NtoN_ac_gain.PNG}
             \caption{折り返し型の利得の周波数特性}
             \label{fig:sim_NtoN_ac_gain}
         \end{center}
     \end{figure}
     \begin{figure}[H]
         \begin{center}
-            \includegraphics*[width = 80mm]{}
+            \includegraphics*[width = 80mm]{figures/NtoN_ac_phase.PNG}
             \caption{折り返し型の位相の周波数特性}
             \label{fig:sim_NtoN_ac_phase}
         \end{center}
     \end{figure}
     \begin{figure}[H]
         \begin{center}
-            \includegraphics*[width = 80mm]{}
+            \includegraphics*[width = 80mm]{figures/NtoN_tr.PNG}
             \caption{折り返し型の過渡解析結果}
             \label{fig:sim_NtoN_tr}
         \end{center}

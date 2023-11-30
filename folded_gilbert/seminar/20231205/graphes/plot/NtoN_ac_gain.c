@@ -23,7 +23,7 @@ int main(void)
     fputs("set xlabel \"freq [Hz]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
     fputs("set ylabel \"gain [dB]\" font \"Arial,30\" offset -8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
-    fputs("set key top left spacing 2.5 offset 30,-2\n", pipe);
+    fputs("set key center right spacing 2.5 offset 22,0\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
     fputs("set lmargin 20\n", pipe);
     fputs("set rmargin 20\n", pipe);
@@ -57,15 +57,15 @@ int main(void)
 
     fputs("input = \"..\\\\data\\\\NtoN_ac_gain.vcsv\"\n", pipe);
 
-    for(int i = 1; i*0.02 <= 0.3; i++)
+    for(int i = 1; i*0.02 <= 0.31; i++)
     {
         if(i == 1)
         {
-            fprintf(pipe, "plot input skip 6 using %d : (($%d) * 1e0) with lines notitle\n", 2 * i - 1, 2 * i);
+            fprintf(pipe, "plot input skip 6 using %d : (($%d) * 1e0) with lines title \"%.2f V\" \n", 2 * i - 1, 2 * i, i * 0.02);
         }
         else 
         {
-            fprintf(pipe, "replot input skip 6 using %d : (($%d) * 1e0) with lines notitle\n", 2 * i - 1, 2 * i);
+            fprintf(pipe, "replot input skip 6 using %d : (($%d) * 1e0) with lines title \"%.2f V\" \n", 2 * i - 1, 2 * i, i * 0.02);
         }
 
     }
