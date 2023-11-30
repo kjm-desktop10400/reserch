@@ -144,7 +144,7 @@
         \end{table}
 
     \subsection{バッファ回路の設計}
-        3.1節の設計で乗算器自体の設計は終わりだが、高周波回路の測定の際にはインピーダンス整合をとる必要がある。多くの場合インダクタとキャパシタを負荷することで整合をとるが、これらは周波数によりインピーダンスが変化するため広帯域の出力が必要となる本回路に用いることはできない。そのため複素成分の整合をとることはできないが実数である抵抗成分については整合をとる。これには図\refeq{fig:buf}に示すような以前から検討していたバッファ回路を用いる。
+        3.1節の設計で乗算器自体の設計は終わりだが、高周波回路の測定の際にはインピーダンス整合をとる必要がある。多くの場合インダクタとキャパシタを付加することで整合をとるが、これらは周波数によりインピーダンスが変化するため広帯域の出力が必要となる本回路に用いることはできない。そのため複素成分の整合をとることはできないが実数である抵抗成分については整合をとる。これには図\refeq{fig:buf}に示すような以前から検討していたバッファ回路を用いる。
         \begin{figure}[H]
             \begin{center}
                 \includegraphics*[width = 80mm]{figures/resister_buf.png}
@@ -152,7 +152,15 @@
                 \label{fig:buf}
             \end{center}
         \end{figure}
-        このバッファ回路は小信号等価回路を考えると図\refeq{fig:buf_eq}のようになる。つまり出力端子から見ると抵抗成分は$g_{m1}$のみのように見える。図\refeq{fig:buf}の電流についてKCLを用いると直流では
+        このバッファ回路の負荷を取り外した小信号等価回路を考えると図\refeq{fig:buf_eq}のようになる。
+        \begin{figure}[H]
+            \begin{center}
+                \includegraphics*[width = 80mm]{figures/buf_equal.png}
+                \caption{バッファ回路の小信号等価回路}
+                \label{fig:buf_eq}
+            \end{center}
+        \end{figure}
+        つまり出力端子から見ると抵抗成分は$g_{m1}$のみのように見える。図\refeq{fig:buf}の電流についてKCLを用いると直流では
         \begin{align}
             i_{m}=g_{m}V_{out}=g_{m}(V_{in}-V_{out}-V_{th})
         \end{align}
@@ -167,15 +175,67 @@
         \end{align*}
         と計算できる。つまり、$V_{in}=1.25$ V、$V_{out}=0.36$ Vの時に7.2 mAの電流を流すような形状比を探すことで目的のトランジスタのサイズを得ることができる。ここの方法で求められた形状比を表\refeq{table:buf_size}に示す。
         \begin{table}[H]
-        \caption{バッファ回路のトランジスタサイズ}
-        \label{table:buf_size}
-        \centering
-        \begin{tabular}{cccccccccc}
-            L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & finger\\
-            \hline \hline
-            0.32 & 1.88 & 32 \\  
-        \end{tabular}
+            \caption{バッファ回路のトランジスタサイズ}
+            \label{table:buf_size}
+            \centering
+            \begin{tabular}{cccccccccc}
+                L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & finger\\
+                \hline \hline
+                0.32 & 1.88 & 32 \\  
+            \end{tabular}
         \end{table}
+
+\section{回路ごとのシミュレーション}
+    素子値が決待ったので回路ごとのシミュレーション結果を示す。
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{}
+            \caption{折り返し型の直流解析結果}
+            \label{fig:sim_NtoN_dc}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{}
+            \caption{折り返し型の利得の周波数特性}
+            \label{fig:sim_NtoN_ac_gain}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{}
+            \caption{折り返し型の位相の周波数特性}
+            \label{fig:sim_NtoN_ac_phase}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{}
+            \caption{折り返し型の過渡解析結果}
+            \label{fig:sim_NtoN_tr}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{}
+            \caption{バッファ回路の直流解析結果}
+            \label{fig:sim_buf_dc}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{}
+            \caption{バッファ回路の交流解析結果}
+            \label{fig:sim_buf_ac}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{}
+            \caption{バッファ回路の過渡解析結果}
+            \label{fig:sim_buf_tr}
+        \end{center}
+    \end{figure}
 
 
 
