@@ -82,7 +82,7 @@
         &=R_{L}\cdot(-2\Delta g_{m}v_{AS}+2\Delta vg_{dA})      \notag\\
         \Delta v&=\frac{2R_{L}\Delta g_{m}}{1+2R_{L}g_{dA}}v_{AS}   \label{eq:delta_v}
     \end{align}
-    と計算できる。出力電圧を$v_{out}$とすると、式\eqref{eq:vas}、\eqref{eq:delta_v}、と定数$K_{A}$を用いて$\Delta g_{m}=2K_{A}V_{CTRL}$と表せることを勘案すると
+    と計算できる。出力電圧を$v_{out}$とすると、式\eqref{eq:vas}、\eqref{eq:delta_v}、と定数$K_{A}$を用いて$\Delta g_{m}=2K_{A}V_{CTRL}$と表せることを用いると
     \begin{align}
         v_{out}=\frac{4K_{A}R_{L}}{1+2R_{L}g_{dA}}\cdot\frac{g_{mMA}}{g_{mMB}}\cdot\frac{g_{mB}}{g_{mA}}\cdot V_{CTRL}\cdot v_{in}     \label{eq:vout}
     \end{align}
@@ -90,100 +90,56 @@
 
 
 \section{素子値の設計}
-        \subsection{折り返し型の素子値}
-        今回、出力振幅を大きくするためにNMOSにはトリプルウェルを用いて、バルクの電位を各NMOSのソース電位に合わせることとした。図\refeq{fig:nmos_unit_circuit}に示す回路において$\mathrm{V_{ds}}=1.8\;\mathrm{V}$とし、$v_{in}$を$0\;\mathrm{V}$から$1.8\;\mathrm{V}$まで掃引した時のドレイン電流を図\refeq{fig:nmos_unit_circuit}に示す。さらに、図\refeq{fig:nmos_unit}には$v_{in}=0.8\;\mathrm{V}$から$v_{in}=1\;\mathrm{V}$での最小二乗法による近似直線とそのx切片を示す。ただし、トランジスタはゲート長を$0.18\;\mathrm{\mu m}$、ゲート幅を$0.44\;\mathrm{\mu m}$、並列数を$16$とした。
-        \begin{figure}[H]
-            \begin{center}
-                \includegraphics*[width = 80mm]{figures/nmos_unit_circuit.png}
-                \caption{DC解析を行った回路}
-                \label{fig:nmos_unit_circuit}
-            \end{center}
-        \end{figure}
-        \begin{figure}[H]
-            \begin{center}
-                \includegraphics*[width = 80mm]{figures/nmos_unit.PNG}
-                \caption{差動半回路の小信号等価回路}
-                \label{fig:nmos_unit}
-            \end{center}
-        \end{figure}
-        この結果から、このサイズのトランジスタのしきい値電圧はおよそ$0.6\;\mathrm{V}$と推定することができた。
-        $\mathrm{M_{B}}$には後述する整合の影響を受け$\pm0.1\;\mathrm{V}$の信号が入る。図\refeq{fig:nmos_unit}では$0.7\;\mathrm{V}$付近から線形に電流が増加していたので、ゲートソース間のバイアス電圧を$0.8\;\mathrm{V}$とすれば入力信号に関しては飽和領域で使用できる。また、$\mathrm{M_{A}}$のソース電位は$0.3\;\mathrm{V}$とした。この時ゲートのバイアス電圧$\mathrm{V_{lbias}}$は$1.1\;\mathrm{V}$と決まる。さらに、飽和領域で使用するためゲート電位はドレイン電位よりもしきい値電圧分大きくなればよいので、今回は少し余裕を持たせ、ドレイン電位は$0.7\;\mathrm{V}$とした。さらに$M_{B}$についても$M_{A}$と同様のバイアスで使用することとした。残るはカレントミラーと電流源の設計である。$\mathrm{M_{MB}}$に関してはゲートソース間電圧が十分とれているので、レイアウトのコストを減らすために$\mathrm{M_{A},M_{B}}$と同様のサイズにした。残るトランジスタは流す電流と直流電位が決まっているので自ずと決まる。$\mathrm{M_{MA}}$に関しては周波数特性を悪化させないためゲート長を$0.18\;\mathrm{\mu m}$とし、それ以外の電流源は交流的には動作しないので周波数特性には影響しない。そのためドレインソース間電圧の影響を抑えるためチャネル長を大きくした。負荷抵抗に関しては負荷抵抗に流れる直流電流が電源電圧と$\mathrm{M_{A}}$のドレイン電位を半分に分圧するように決めた。
-        \newpage
-        以上の考えのもと設計したトランジスタサイズを表\refeq{table:size}に、与える直流電圧と負荷抵抗を表\refeq{table:bias}に示す。
-        \begin{table}[H]
-        \caption{設計したトランジスタサイズ}
-        \label{table:size}
-        \centering
-        \begin{tabular}{cccccccccc}
-            \hline
-            &Process&$\mathrm{Rohm\,0.18\,\mu m}$&\\
-            \hline
-            &&&\\
-            MOSFET & L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & finger\\
-            \hline \hline
-            $\mathrm{M_{A}}$ & 0.18 & 0.44 & 16 \\
-            $\mathrm{M_{B}}$ & 0.18 & 0.44 & 16 \\
-            $\mathrm{M_{MA}}$& 0.18 & 0.78 & 32 \\
-            $\mathrm{M_{MB}}$& 0.18 & 0.44 & 16 \\
-            $\mathrm{M_{U}}$ & 0.72 & 2.16 & 32 \\
-            $\mathrm{M_{L}}$ & 0.72 & 1.48 & 32 \\            
-        \end{tabular}
-        \end{table}
-        \begin{table}[H]
-        \caption{直流電圧と負荷抵抗}
-        \label{table:bias}
-        \centering
-        \begin{tabular}{c|ccccccccc}
-            \multicolumn{2}{c}{} \\
-            $\mathrm{V_{lbias}}$ & 1.1 V\\
-            $\mathrm{V_{rbias}}$ & 1.1 V \\
-            $\mathrm{V_{U}}$     & 0.5 V  \\
-            $\mathrm{V_{L}}$     & 0.81V  \\
-            $\mathrm{R}$         & 900 $\mathrm{\Omega}$  
-        \end{tabular}
-        \end{table}
-
-    \subsection{バッファ回路の設計}
-        3.1節の設計で乗算器自体の設計は終わりだが、高周波回路の測定の際にはインピーダンス整合をとる必要がある。多くの場合インダクタとキャパシタを付加することで整合をとるが、これらは周波数によりインピーダンスが変化するため広帯域の出力が必要となる本回路に用いることはできない。そのため複素成分の整合をとることはできないが実数である抵抗成分については整合をとる。これには図\refeq{fig:buf}に示すような以前から検討していたバッファ回路を用いる。
-        \begin{figure}[H]
-            \begin{center}
-                \includegraphics*[width = 80mm]{figures/resister_buf.png}
-                \caption{整合用のバッファ回路}
-                \label{fig:buf}
-            \end{center}
-        \end{figure}
-        このバッファ回路の負荷を取り外した小信号等価回路を考えると図\refeq{fig:buf_eq}のようになる。
-        \begin{figure}[H]
-            \begin{center}
-                \includegraphics*[width = 80mm]{figures/buf_equal.png}
-                \caption{バッファ回路の小信号等価回路}
-                \label{fig:buf_eq}
-            \end{center}
-        \end{figure}
-        つまり出力端子から見ると抵抗成分は$g_{m1}$のみのように見える。図\refeq{fig:buf}の電流についてKCLを用いると直流では
-        \begin{align}
-            i_{m}=g_{m}V_{out}=g_{m}(V_{in}-V_{out}-V_{th})
-        \end{align}
-        と表せる。図\refeq{fig:nmos_unit_circuit}と同様の条件で.OP解析を行った結果より、折り返し型の出力は1.8 Vと0.7 Vの間で変動するので、$V_{in}=1.25$ Vを中心とする$\pm 0.55$ Vとする。従ってこの時のバッファ回路の出力電圧$V_{out}$は
-        \begin{align}
-            g_{m}V_{out} &=g_{m}(1.25-V_{out}-0.6)     \notag\\
-            V_{out}&=0.325\approx0.33\;\mathrm{V}   \notag
-        \end{align}
-        と求められた。従って電流$i_{m}$は
-        \begin{align*}
-            i_{m}=g_{m}V_{out}=6.5\;\mathrm{mA}
-        \end{align*}
-        と計算できる。つまり、$V_{in}=1.25$ V、$V_{out}=0.36$ Vの時に7.2 mAの電流を流すような形状比を探すことで目的のトランジスタのサイズを得ることができる。ここの方法で求められた形状比を表\refeq{table:buf_size}に示す。
-        \begin{table}[H]
-            \caption{バッファ回路のトランジスタサイズ}
-            \label{table:buf_size}
-            \centering
-            \begin{tabular}{cccccccccc}
-                L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & finger\\
-                \hline \hline
-                0.32 & 3.52 & 16 \\  
+    今回、出力振幅を大きくするためにNMOSにはトリプルウェルを用いて、バルクの電位を各NMOSのソース電位に合わせることとした。図\refeq{fig:nmos_unit_circuit}に示す回路において$\mathrm{V_{ds}}=1.8\;\mathrm{V}$とし、$v_{in}$を$0\;\mathrm{V}$から$1.8\;\mathrm{V}$まで掃引した時のドレイン電流を図\refeq{fig:nmos_unit}に示す。さらに、図\refeq{fig:nmos_unit}には$v_{in}=0.8\;\mathrm{V}$から$v_{in}=1\;\mathrm{V}$での最小二乗法による近似直線とそのx切片を示す。ただし、トランジスタはゲート長を$0.18\;\mathrm{\mu m}$、ゲート幅を$0.44\;\mathrm{\mu m}$、並列数を$16$とした。
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/nmos_unit_circuit.png}
+            \caption{DC解析を行った回路}
+            \label{fig:nmos_unit_circuit}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/nmos_unit.PNG}
+            \caption{差動半回路の小信号等価回路}
+            \label{fig:nmos_unit}
+        \end{center}
+    \end{figure}
+    この結果から、このサイズのトランジスタのしきい値電圧はおよそ$0.6\;\mathrm{V}$と推定することができた。
+    $\mathrm{M_{B}}$には後述する整合の影響を受け$\pm0.1\;\mathrm{V}$の信号が入る。図\refeq{fig:nmos_unit}では$0.7\;\mathrm{V}$付近から線形に電流が増加していたので、ゲートソース間のバイアス電圧を$0.8\;\mathrm{V}$とすれば入力信号に関しては飽和領域で使用できる。また、$\mathrm{M_{A}}$のソース電位は$0.3\;\mathrm{V}$とした。この時ゲートのバイアス電圧$\mathrm{V_{lbias}}$は$1.1\;\mathrm{V}$と決まる。さらに、飽和領域で使用するためゲート電位はドレイン電位よりもしきい値電圧分大きくなればよいので、今回は少し余裕を持たせ、ドレイン電位は$0.7\;\mathrm{V}$とした。さらに$M_{B}$についても$M_{A}$と同様のバイアスで使用することとした。残るはカレントミラーと電流源の設計である。$\mathrm{M_{MB}}$に関してはゲートソース間電圧が十分とれているので、レイアウトのコストを減らすために$\mathrm{M_{A},M_{B}}$と同様のサイズにした。残るトランジスタは流す電流と直流電位が決まっているので自ずと決まる。$\mathrm{M_{MA}}$に関しては周波数特性を悪化させないためゲート長を$0.18\;\mathrm{\mu m}$とし、それ以外の電流源は交流的には動作しないので周波数特性には影響しない。そのためドレインソース間電圧の影響を抑えるためチャネル長を大きくした。負荷抵抗に関しては負荷抵抗に流れる直流電流が電源電圧と$\mathrm{M_{A}}$のドレイン電位を半分に分圧するように決めた。
+    \newpage
+    以上の考えのもと設計したトランジスタサイズを表\refeq{table:size}に、与える直流電圧と負荷抵抗を表\refeq{table:bias}に示す。
+    \begin{table}[H]
+    \caption{設計したトランジスタサイズ}
+    \label{table:size}
+    \centering
+    \begin{tabular}{cccccccccc}
+        \hline
+        &Process&$\mathrm{Rohm\,0.18\,\mu m}$&\\
+        \hline
+        &&&\\
+        MOSFET & L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & M\\
+        \hline \hline
+        $\mathrm{M_{A}}$ & 0.18 & 0.44 & 16 \\
+        $\mathrm{M_{B}}$ & 0.18 & 0.44 & 16 \\
+        $\mathrm{M_{MA}}$& 0.18 & 0.78 & 32 \\
+        $\mathrm{M_{MB}}$& 0.18 & 0.44 & 16 \\
+        $\mathrm{M_{U}}$ & 0.72 & 2.16 & 32 \\
+        $\mathrm{M_{L}}$ & 0.72 & 1.48 & 32 \\            
+    \end{tabular}
+    \end{table}
+    \begin{table}[H]
+    \caption{直流電圧と負荷抵抗}
+    \label{table:bias}
+    \centering
+    \begin{tabular}{cccccccccc}
+        $\mathrm{V_{lbias}}$ & 1.1 V\\\hline
+        $\mathrm{V_{rbias}}$ & 1.1 V \\\hline
+        $\mathrm{V_{U}}$     & 0.5 V  \\\hline
+        $\mathrm{V_{L}}$     & 0.81V  \\\hline
+        $\mathrm{R}$         & 900 $\mathrm{\Omega}$  
             \end{tabular}
-        \end{table}
+    \end{table}
 
 \section{回路ごとのシミュレーション}
     素子値が決待ったので回路ごとのシミュレーション結果を示す。
@@ -215,21 +171,7 @@
             \label{fig:sim_NtoN_tr}
         \end{center}
     \end{figure}
-    \begin{figure}[H]
-        \begin{center}
-            \includegraphics*[width = 80mm]{}
-            \caption{バッファ回路の交流解析結果}
-            \label{fig:sim_buf_ac}
-        \end{center}
-    \end{figure}
-    \begin{figure}[H]
-        \begin{center}
-            \includegraphics*[width = 80mm]{}
-            \caption{バッファ回路の過渡解析結果}
-            \label{fig:sim_buf_tr}
-        \end{center}
-    \end{figure}
-
+    図\refeq{fig:sim_NtoN_dc}は折り返し型の直流解析結果である。
 
 
 

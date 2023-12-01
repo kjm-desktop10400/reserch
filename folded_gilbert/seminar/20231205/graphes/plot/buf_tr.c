@@ -35,8 +35,8 @@ int main(void)
     fputs("set mxtics 10\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [0 : 30]\n", pipe);
-    fputs("set yrange [-1.8 : 1.8]\n", pipe);
+    fputs("set xrange [0 : 5]\n", pipe);
+    fputs("set yrange [0 : 1.8]\n", pipe);
     #pragma endregion
 
     //凡例の設定
@@ -55,10 +55,10 @@ int main(void)
     */
     #pragma endregion
 
-    fputs("input = \"..\\\\data\\\\buf_ac.vcsv\"\n", pipe);
+    fputs("input = \"..\\\\data\\\\buf_tr.vcsv\"\n", pipe);
 
-    fprintf(pipe, "plot   input skip 6 using (($1) * 1e9) : 2 with lines title \"1\"  \n");
-    fprintf(pipe, "replot input skip 6 using (($3) * 1e9) : 4 with lines title \"2\"  \n");
+    fprintf(pipe, "plot   input skip 6 using (($1) * 1e9) : 2 with lines title \"output\"  \n");
+    fprintf(pipe, "replot input skip 6 using (($3) * 1e9) : 4 with lines title \"input\"  \n");
 
     pclose(pipe);
 

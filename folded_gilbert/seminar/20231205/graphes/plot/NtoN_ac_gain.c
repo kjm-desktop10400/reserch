@@ -17,6 +17,7 @@ int main(void)
     #pragma region 
     fputs("set logscale x\n", pipe);
     //fputs("set logscale y\n", pipe);
+    fputs("set format x \"10^{%L}\" \n", pipe);
     fputs("set datafile separator \",\" \n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);

@@ -17,6 +17,7 @@ int main(void)
     #pragma region 
     fputs("set logscale x\n", pipe);
     //fputs("set logscale y\n", pipe);
+    fputs("set format x \"10^{%L}\" \n", pipe);
     fputs("set datafile separator \",\" \n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
@@ -24,7 +25,7 @@ int main(void)
     fputs("set ylabel  \"gain [dB]\" font \"Arial,30\" offset -8,0\n", pipe);
     fputs("set y2label \"pahse [deg]\" font \"Arial,30\" offset 7,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
-    fputs("set key top left spacing 2.5 offset 22,10\n", pipe);
+    fputs("set key top left spacing 2.5 offset 15, -5\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
     fputs("set lmargin 20\n", pipe);
     fputs("set rmargin 20\n", pipe);
@@ -40,7 +41,7 @@ int main(void)
     fputs("set grid xtics mxtics ytics mytics linewidth 2, linewidth 1, linewidth 1 linewidth 1\n", pipe);
     fputs("set xrange [1e6 : 1e10]\n", pipe);
     fputs("set yrange [-7 : -5]\n", pipe);
-    fputs("set y2range [0 : 5]\n", pipe);
+    fputs("set y2range [0 : 6]\n", pipe);
     #pragma endregion
 
     //凡例の設定
@@ -61,8 +62,8 @@ int main(void)
 
     fputs("input = \"..\\\\data\\\\buf_ac.vcsv\"\n", pipe);
 
-    fputs(" plot   input skip 6 using 1 : 2 axis x1y1 with lines title \"gain\" \n", pipe);
-    fputs(" replot input skip 6 using 3 : 4 axis x1y2 with lines title \"phase\" \n", pipe);
+    fputs(" plot   input skip 6 using 1 : 2 axis x1y2 with lines title \"phase\" \n", pipe);
+    fputs(" replot input skip 6 using 3 : 4 axis x1y1 with lines title \"gain\" \n", pipe);
 
     pclose(pipe);
 
