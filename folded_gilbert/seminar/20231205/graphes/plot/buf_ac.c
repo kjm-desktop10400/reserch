@@ -32,16 +32,16 @@ int main(void)
     fputs("set bmargin 6\n", pipe);
     fputs("set tmargin 2\n", pipe);
     fputs("set tics font \"Arial,25\"\n", pipe);
-    fputs("set xtics   offset 0 , -0.8\n", pipe);
-    fputs("set ytics   offset 0 , 0\n", pipe);
-    fputs("set y2tics 1.25 offset 0 , 0\n", pipe);
+    fputs("set xtics    offset 0 , -0.8\n", pipe);
+    fputs("set ytics  0.5 offset 0 , 0\n", pipe);
+    fputs("set y2tics 1.5 offset 0 , 0\n", pipe);
     fputs("set mxtics 10\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set my2tics 5\n", pipe);
     fputs("set grid xtics mxtics ytics mytics linewidth 2, linewidth 1, linewidth 1 linewidth 1\n", pipe);
-    fputs("set xrange [1e6 : 1e10]\n", pipe);
-    fputs("set yrange [-7 : -5]\n", pipe);
-    fputs("set y2range [0 : 6]\n", pipe);
+    fputs("set xrange [1e6 : 1e12]\n", pipe);
+    fputs("set yrange [-6 : -3]\n", pipe);
+    fputs("set y2range [0 : 9]\n", pipe);
     #pragma endregion
 
     //凡例の設定
@@ -62,8 +62,8 @@ int main(void)
 
     fputs("input = \"..\\\\data\\\\buf_ac.vcsv\"\n", pipe);
 
-    fputs(" plot   input skip 6 using 1 : 2 axis x1y2 with lines title \"phase\" \n", pipe);
-    fputs(" replot input skip 6 using 3 : 4 axis x1y1 with lines title \"gain\" \n", pipe);
+    fputs(" plot   input skip 6 using 3 : 4 axis x1y2 with lines title \"phase\" \n", pipe);
+    fputs(" replot input skip 6 using 1 : 2 axis x1y1 with lines title \"gain\" \n", pipe);
 
     pclose(pipe);
 

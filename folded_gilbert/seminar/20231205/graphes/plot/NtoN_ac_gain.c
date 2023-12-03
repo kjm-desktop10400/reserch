@@ -36,8 +36,8 @@ int main(void)
     fputs("set mxtics 10\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [1e6 : 1e10]\n", pipe);
-    fputs("set yrange [-20 : 20]\n", pipe);
+    fputs("set xrange [1e6 : 1e12]\n", pipe);
+    fputs("set yrange [-20 : 25]\n", pipe);
     #pragma endregion
 
     //凡例の設定

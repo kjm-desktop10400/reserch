@@ -31,12 +31,12 @@ int main(void)
     fputs("set tmargin 2\n", pipe);
     fputs("set tics font \"Arial,25\"\n", pipe);
     fputs("set xtics offset 0 , -0.8\n", pipe);
-    fputs("set ytics 0.2 offset 0 , 0\n", pipe);
+    fputs("set ytics 0.25 offset 0 , 0\n", pipe);
     fputs("set mxtics 5\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set xrange [-0.2 : 0.2]\n", pipe);
-    fputs("set yrange [-1.1 : 1.1]\n", pipe);
+    fputs("set yrange [-1.6 : 1.6]\n", pipe);
     #pragma endregion
 
     //凡例の設定
