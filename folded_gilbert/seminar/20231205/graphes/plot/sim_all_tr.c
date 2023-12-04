@@ -35,7 +35,7 @@ int main(void)
     fputs("set mxtics 10\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [0 : 15]\n", pipe);
+    fputs("set xrange [4 : 15]\n", pipe);
     //fputs("set yrange [-20 : 20]\n", pipe);
     #pragma endregion
 

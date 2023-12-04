@@ -90,6 +90,7 @@
 
 
 \section{素子値の設計}
+    \subsection{乗算器の設計}
     今回、出力振幅を大きくするためにNMOSにはトリプルウェルを用いて、バルクの電位を各NMOSのソース電位に合わせることとした。図\refeq{fig:nmos_unit_circuit}に示す回路において$\mathrm{V_{ds}}=1.8\;\mathrm{V}$とし、$v_{in}$を$0\;\mathrm{V}$から$1.8\;\mathrm{V}$まで掃引した時のドレイン電流を図\refeq{fig:nmos_unit}に示す。さらに、図\refeq{fig:nmos_unit}には$v_{in}=0.8\;\mathrm{V}$から$v_{in}=1\;\mathrm{V}$での最小二乗法による近似直線とそのx切片を示す。ただし、トランジスタはゲート長を$0.18\;\mathrm{\mu m}$、ゲート幅を$0.44\;\mathrm{\mu m}$、並列数を$16$とした。
     \begin{figure}[H]
         \begin{center}
@@ -106,9 +107,7 @@
         \end{center}
     \end{figure}
     この結果から、このサイズのトランジスタのしきい値電圧はおよそ$0.6\;\mathrm{V}$と推定することができた。
-    $\mathrm{M_{B}}$には後述する整合の影響を受け$\pm0.1\;\mathrm{V}$の信号が入る。図\refeq{fig:nmos_unit}では$0.7\;\mathrm{V}$付近から線形に電流が増加していたので、ゲートソース間のバイアス電圧を$0.8\;\mathrm{V}$とすれば入力信号に関しては飽和領域で使用できる。また、$\mathrm{M_{A}}$のソース電位は$0.3\;\mathrm{V}$とした。この時ゲートのバイアス電圧$\mathrm{V_{lbias}}$は$1.1\;\mathrm{V}$と決まる。さらに、飽和領域で使用するためゲート電位はドレイン電位よりもしきい値電圧分大きくなればよいので、今回は少し余裕を持たせ、ドレイン電位は$0.7\;\mathrm{V}$とした。さらに$M_{B}$についても$M_{A}$と同様のバイアスで使用することとした。残るはカレントミラーと電流源の設計である。$\mathrm{M_{MB}}$に関してはゲートソース間電圧が十分とれているので、レイアウトのコストを減らすために$\mathrm{M_{A},M_{B}}$と同様のサイズにした。残るトランジスタは流す電流と直流電位が決まっているので自ずと決まる。$\mathrm{M_{MA}}$に関しては周波数特性を悪化させないためゲート長を$0.18\;\mathrm{\mu m}$とし、それ以外の電流源は交流的には動作しないので周波数特性には影響しない。そのためドレインソース間電圧の影響を抑えるためチャネル長を大きくした。負荷抵抗に関しては負荷抵抗に流れる直流電流が電源電圧と$\mathrm{M_{A}}$のドレイン電位を半分に分圧するように決めた。
-    \newpage
-    以上の考えのもと設計したトランジスタサイズを表\refeq{table:size}に、与える直流電圧と負荷抵抗を表\refeq{table:bias}に示す。
+    $\mathrm{M_{B}}$には後述する整合の影響を受け$\pm0.1\;\mathrm{V}$の信号が入る。図\refeq{fig:nmos_unit}では$0.7\;\mathrm{V}$付近から線形に電流が増加していたので、ゲートソース間のバイアス電圧をこの付近に取れば入力信号に関しては飽和領域で使用できる。また、$\mathrm{M_{A}}$のドレイン電位は信号振幅拡大のためになるべく小さくするすることが望ましく、そのためにはソースの電位もなるべく下げる必要がある。今回は$\mathrm{M_{A}}$のドレインを0.5 V、ソースを0.3 Vと決めた。この時カレントミラー$\mathrm{M_{MA}}$が飽和領域で動くためにはゲートがドレイン電位としきい値電圧の和より小さくならなければならない。そこで、今回は0.7 Vとした。これは$\mathrm{M_{B}}$のドレイン電位にもなるので、この電位から$\mathrm{M_{B}}$のゲート、ソース電位を決定した。後はこれらの電位を満たすようなトランジスタサイズを求めた。    以上の考えのもと設計したトランジスタサイズを表\refeq{table:size}に、与える直流電圧と負荷抵抗を表\refeq{table:bias}に示す。
     \begin{table}[H]
     \caption{設計したトランジスタサイズ}
     \label{table:size}
@@ -140,6 +139,47 @@
         $\mathrm{R}$         & 650 $\mathrm{\Omega}$  
             \end{tabular}
     \end{table}
+
+    \subsection{バッファ回路について}
+        今回用いる整合用バッファ回路の回路図を図\refeq{fig:buf_circuit}に示す。
+        \begin{figure}[bh]
+            \begin{center}
+                \includegraphics*[width = 80mm]{figures/resister_buf.png}
+                \caption{整合用バッファ回路}
+                \label{fig:buf_circuit}
+            \end{center}
+        \end{figure}
+        整合がとれている時、$g_{m}=20$ mSになるため出力振幅は入力振幅の半分になる。また、振幅を最大にするため$v_{in}=1.8-V_{in}$とする。これを用いると、入力の電位が最も低くなるときの電流$i_{m}$から
+        \begin{align*}
+            i_{m}&=g_{m}(V_{out}-v_{out})=g_{m}\left\{ V_{in}-v_{in} -(V_{out}-v_{out}) -V_{th} \right\}      \notag \\
+            V_{out}&=\frac{1}{2}\left( V_{in}-V_{th} \right)
+        \end{align*}
+        と表現できる。これを用いると、$\mathrm{M_{buf}}$が飽和領域で動作する条件は
+        \begin{align*}
+            V_{in}-v_{in}-\left( V_{out}-v_{out} \right) > V_{th}   \\
+            V_{in} > 0.9 +\frac{1}{2}V_{th}
+        \end{align*}
+        と計算できる。今回しきい値電圧を0.6 Vとしていたので、入力電位は
+        \begin{align}
+            V_{in}>1.2  \label{eq:buf_in_sat}
+        \end{align}
+        と分かる。したがって、入力の最大値は1.2 Vを中心とする$\pm 0.6$ Vまでであればクリップすることなく出力することができる。このとき、
+        \begin{align*}
+            i_{m}=g_{m}V_{out}=6\;\mathrm{V}
+        \end{align*}
+        であるので、このような電流、電圧で動作するサイズにすればよい。その素子値を表\refeq{table:buf_size}に示す。
+        \begin{table}[H]
+            \caption{設計したトランジスタサイズ}
+            \label{table:buf_size}
+            \centering
+            \begin{tabular}{cccccccccc}
+                MOSFET & L[$\mathrm{\mu m}$] & W[$\mathrm{\mu m}$] & M\\
+                \hline \hline
+                $\mathrm{M_{A}}$ & 0.32 & 4 & 16 \\
+            \end{tabular}
+            \end{table}
+                
+    
 
 \section{回路ごとのシミュレーション}
     素子値が決待ったので回路ごとのシミュレーション結果を示す。
