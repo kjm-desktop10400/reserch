@@ -27,7 +27,7 @@
 
 
 \section{はじめに}
-    フォトニックリザバコンピューティングの学習には高速な積和演算が必要であるが現状、要件を満たすような光を用いた積和演算行えていない。そこでリザバ層の出力を電気に変換しアナログ積和演算を行うことになった。ここで、リザバ層からは7つの出力があり、それぞれに任意の重みをかけ足し合わせる。これを電気で行うには複数のギルバートセルで乗算を行い、各出力電流をまとめることで和をとって積和演算を行う。即ち信号振幅を足し合わせるため7つの信号振幅の和が必要な振幅になる。つまり各セルの出力振幅は全体の$1/7$が最大となり、S/N比が小さくなってしまうことが問題として考えられる。そこで通常のギルバート乗算回路を応用し信号の折り返しを行うことでより広い信号振幅の獲得を図った。今回はこの折り返し型について具体的な素子値を定め、$\mathrm{Rohm\;0.18\;\mu m\;process}$を用いた実際的なシミュレーションを行った。
+    フォトニックリザバコンピューティングの学習には高速な積和演算が必要であるが現状、要件を満たすような光を用いた積和演算行えていない。そこでリザバ層の出力を電気に変換しアナログ積和演算を行うことになった。ここで、リザバ層からは7つの出力があり、それぞれに任意の重みをかけ、足し合わせる。これを電気で行うには複数のギルバートセルで乗算を行い、各出力電流をまとめることで和をとって積和演算を行う。即ち信号振幅を足し合わせるため7つの信号振幅の和が必要な振幅になる。つまり各セルの出力振幅は全体の$1/7$が最大となり、S/N比が小さくなってしまうことが問題として考えられる。そこで通常のギルバート乗算回路を応用し信号の折り返しを行うことでより広い信号振幅の獲得を図った。今回はこの折り返し型について具体的な素子値を定め、$\mathrm{Rohm\;0.18\;\mu m\;process}$を用いたパッケージレベルでのシミュレーションを行った。
 
 \section{カレントミラーのサイズによる利得への影響}
     図\refeq{fig:NtoN}に折り返し型の回路図を示す。$\mathrm{M_{U},M_{L}}$はともに定電圧を与え、定電流源として用いている。前回までとの差異はカレントミラーのサイズを左右で任意に変えることができるようにした点である。この時の差動半回路を図\refeq{fig:NtoNhalf}に、その小信号等価回路を図\refeq{fig:NtoNhalfeq}に示す。
@@ -55,20 +55,20 @@
 
     \newpage
 
-    接点BにおいてKCLを用いると
+    図\refeq{fig:NtoNhalfeq}の接点BにおいてKCLを用いると
     \begin{align}
         g_{mB}\cdot(-v_{in})&+g_{dB}v_{BD} +g_{dMB}v_{BD}+g_{mMB}v_{BD}=0       \notag\\
         v_{BD}&=\frac{g_{mB}}{g_{mMB}+g_{dMA}+g_{dMB}}v_{in}          \notag\\
         &\approx \frac{g_{mB}}{g_{mMB}}v_{in}    \label{eq:vbd}
     \end{align}
-    である。次に接点AについてKCLと、式\eqref{eq:vbd}を用いると
+    である。次に図\refeq{fig:NtoNhalfeq}の接点AについてKCLと、式\eqref{eq:vbd}を用いると
     \begin{align}
         g_{mMA}v_{BD}+g_{dMA}v_{AS}&=(g_{mA}-\Delta g_{m})v_{AS} \notag\\ &\quad\quad +g_{dA}(\Delta v -v_{AS})       \notag\\
         & \quad\quad\quad\quad +(g_{mA}+\Delta g_{m})v_{AS} \notag\\& \quad\quad\quad\quad\quad\quad +g_{dA}(-\Delta v -v_{AS})       \notag\\
         v_{AS}&=\frac{g_{mMA}}{2g_{mA}-2g_{dA}-g_{dMA}}v_{AS}   \notag\\
         &\approx \frac{g_{mMA}}{g_{mMB}}\cdot\frac{g_{mB}}{g_{mA}}v_{in}    \label{eq:vas}
     \end{align}
-    と表せる。さらに、接点OについてKCLと式\eqref{eq:vas}を用いると
+    と表せる。さらに、図\refeq{fig:NtoNhalfeq}の接点OについてKCLと式\eqref{eq:vas}を用いると
     \begin{align}
         i_{outp} = i_{A1}+i_{A3}
     \end{align}
@@ -91,28 +91,28 @@
 
 \section{素子値の設計}
     \subsection{乗算器の設計}
-    今回、出力振幅を大きくするためにNMOSにはトリプルウェルを用いて、バルクの電位を各NMOSのソース電位に合わせることとした。図\refeq{fig:nmos_unit_circuit}に示す回路において$\mathrm{V_{ds}}=1.8\;\mathrm{V}$とし、$v_{in}$を$0\;\mathrm{V}$から$1.8\;\mathrm{V}$まで掃引した時のドレイン電流を図\refeq{fig:nmos_unit}に示す。さらに、図\refeq{fig:nmos_unit}には$v_{in}=0.8\;\mathrm{V}$から$v_{in}=1\;\mathrm{V}$での最小二乗法による近似直線とそのx切片を示す。ただし、トランジスタはゲート長を$0.18\;\mathrm{\mu m}$、ゲート幅を$0.44\;\mathrm{\mu m}$、並列数を$16$とした。
-    \begin{figure}[H]
+        今回、出力振幅を大きくするためにNMOSにはトリプルウェルを用いて、バルクの電位を各NMOSのソース電位に合わせることとした。図\refeq{fig:nmos_unit_circuit}に示す回路において$\mathrm{V_{ds}}=1.8\;\mathrm{V}$とし、$v_{in}$を$0\;\mathrm{V}$から$1.8\;\mathrm{V}$まで掃引した時のドレイン電流を図\refeq{fig:nmos_unit}に示す。さらに、図\refeq{fig:nmos_unit}には$v_{in}=0.8\;\mathrm{V}$から$v_{in}=1\;\mathrm{V}$での最小二乗法による近似直線とそのx切片を示す。ただし、トランジスタはチャネル長を$0.18\;\mathrm{\mu m}$、チャネル幅を$0.44\;\mathrm{\mu m}$、並列数を$16$とした。
+        \begin{figure}[H]
         \begin{center}
             \includegraphics*[width = 80mm]{figures/nmos_unit_circuit.png}
             \caption{DC解析を行った回路}
             \label{fig:nmos_unit_circuit}
         \end{center}
-    \end{figure}
-    \begin{figure}[H]
-        \begin{center}
-            \includegraphics*[width = 80mm]{figures/nmos_unit.PNG}
-            \caption{差動半回路の小信号等価回路}
-            \label{fig:nmos_unit}
-        \end{center}
-    \end{figure}
-    この結果から、このサイズのトランジスタのしきい値電圧はおよそ$0.6\;\mathrm{V}$と推定することができた。
-    $\mathrm{M_{B}}$には後述する整合の影響を受け$\pm0.1\;\mathrm{V}$の信号が入る。図\refeq{fig:nmos_unit}では$0.7\;\mathrm{V}$付近から線形に電流が増加していたので、ゲートソース間のバイアス電圧をこの付近に取れば入力信号に関しては飽和領域で使用できる。また、$\mathrm{M_{A}}$のドレイン電位は信号振幅拡大のためになるべく小さくするすることが望ましく、そのためにはソースの電位もなるべく下げる必要がある。今回は$\mathrm{M_{A}}$のドレインを0.5 V、ソースを0.3 Vと決めた。この時カレントミラー$\mathrm{M_{MA}}$が飽和領域で動くためにはゲートがドレイン電位としきい値電圧の和より小さくならなければならない。そこで、今回は0.7 Vとした。これは$\mathrm{M_{B}}$のドレイン電位にもなるので、この電位から$\mathrm{M_{B}}$のゲート、ソース電位を決定した。後はこれらの電位を満たすようなトランジスタサイズを求めた。    以上の考えのもと設計したトランジスタサイズを表\refeq{table:size}に、与える直流電圧と負荷抵抗を表\refeq{table:bias}に示す。
-    \begin{table}[H]
-    \caption{設計したトランジスタサイズ}
-    \label{table:size}
-    \centering
-    \begin{tabular}{cccccccccc}
+        \end{figure}
+        \begin{figure}[H]
+            \begin{center}
+                \includegraphics*[width = 80mm]{figures/nmos_unit.PNG}
+                \caption{差動半回路の小信号等価回路}
+                \label{fig:nmos_unit}
+            \end{center}
+        \end{figure}
+        この結果から、このサイズのトランジスタのしきい値電圧はおよそ$0.6\;\mathrm{V}$と推定することができた。
+        $\mathrm{M_{B}}$には後述する整合の影響を受け$\pm0.1\;\mathrm{V}$の信号が入る。図\refeq{fig:nmos_unit}では$0.7\;\mathrm{V}$付近から線形に電流が増加していたので、ゲートソース間のバイアス電圧をこの付近に取れば入力信号に関しては飽和領域で使用できる。また、$\mathrm{M_{A}}$のドレイン電位は信号振幅拡大のためになるべく小さくするすることが望ましく、そのためにはソースの電位もなるべく下げる必要がある。今回は$\mathrm{M_{A}}$のドレインを0.5 V、ソースを0.3 Vと決めた。この時カレントミラー$\mathrm{M_{MA}}$が飽和領域で動くためにはゲートがドレイン電位としきい値電圧の和より小さくならなければならない。そこで、今回は0.7 Vとした。これは$\mathrm{M_{B}}$のドレイン電位にもなるので、この電位から$\mathrm{M_{B}}$のゲート、ソース電位を決定した。後はこれらの電位を満たすようなトランジスタサイズを求めた。    以上の考えのもと設計したトランジスタサイズを表\refeq{table:size}に、与える直流電圧と負荷抵抗を表\refeq{table:bias}に示す。
+        \begin{table}[H]
+        \caption{設計したトランジスタサイズ}
+        \label{table:size}
+        \centering
+        \begin{tabular}{cccccccccc}
         \hline
         &Process&$\mathrm{Rohm\,0.18\,\mu m}$&\\
         \hline
@@ -125,24 +125,24 @@
         $\mathrm{M_{MB}}$& 0.18 & 0.44 & 16 \\
         $\mathrm{M_{U}}$ & 0.72 & 2.16 & 16 \\
         $\mathrm{M_{L}}$ & 0.72 & 1.48 & 32 \\            
-    \end{tabular}
-    \end{table}
-    \begin{table}[H]
-    \caption{直流電圧と負荷抵抗}
-    \label{table:bias}
-    \centering
-    \begin{tabular}{cccccccccc}
+        \end{tabular}
+        \end{table}
+        \begin{table}[H]
+        \caption{直流電圧と負荷抵抗}
+        \label{table:bias}
+        \centering
+        \begin{tabular}{cccccccccc}
         $\mathrm{V_{lbias}}$ & 1.1 V\\\hline
         $\mathrm{V_{rbias}}$ & 0.9 V \\\hline
         $\mathrm{V_{U}}$     & 0.5 V  \\\hline
         $\mathrm{V_{L}}$     & 0.81V  \\\hline
         $\mathrm{R}$         & 650 $\mathrm{\Omega}$  
-            \end{tabular}
-    \end{table}
+                \end{tabular}
+        \end{table}
 
-    \subsection{バッファ回路について}
+    \subsection{バッファ回路の設計}
         今回用いる整合用バッファ回路の回路図を図\refeq{fig:buf_circuit}に示す。
-        \begin{figure}[bh]
+        \begin{figure}[H]
             \begin{center}
                 \includegraphics*[width = 80mm]{figures/resister_buf.png}
                 \caption{整合用バッファ回路}
@@ -165,9 +165,9 @@
         \end{align}
         と分かる。したがって、入力の最大値は1.2 Vを中心とする$\pm 0.6$ Vまでであればクリップすることなく出力することができる。このとき、
         \begin{align*}
-            i_{m}=g_{m}V_{out}=6\;\mathrm{V}
+            i_{m}=g_{m}V_{out}=6\;\mathrm{mA}
         \end{align*}
-        であるので、このような電流、電圧で動作するサイズにすればよい。その素子値を表\refeq{table:buf_size}に示す。
+        であるので、このような電流、電圧で動作するサイズにすれば整合がとれる。その素子値を表\refeq{table:buf_size}に示す。
         \begin{table}[H]
             \caption{設計したトランジスタサイズ}
             \label{table:buf_size}
@@ -182,7 +182,7 @@
     
 
 \section{回路ごとのシミュレーション}
-    素子値が決待ったので回路ごとのシミュレーション結果を示す。
+    素子値が決待ったので回路ごとのシミュレーションを行い、その結果を示す。また、比較として関根研 安藤さんの設計した乗算器の直流解析結果を示す。
     \begin{figure}[H]
         \begin{center}
             \includegraphics*[width = 80mm]{figures/NtoN_dc.PNG}
@@ -211,8 +211,72 @@
             \label{fig:sim_NtoN_tr}
         \end{center}
     \end{figure}
-    図\refeq{fig:sim_NtoN_dc}は折り返し型の直流解析結果である。
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/buf_ac.PNG}
+            \caption{バッファ回路の周波数特性}
+            \label{fig:sim_buf_ac}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/buf_tr.PNG}
+            \caption{バッファ回路の過渡解析結果}
+            \label{fig:sim_buf_tr}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/for_compair_dc.png}
+            \caption{安藤さんの乗算器の直流解析結果}
+            \label{fig:sim_for_compair}
+        \end{center}
+    \end{figure}
+    図\refeq{fig:sim_NtoN_dc}は折り返し型の直流解析結果である。また、図\refeq{fig:sim_for_compair}は安藤さんの回路の直流解析結果であり、比較すると折り返し型の方が線形性・出力振幅ともに改善していることが分かる。図\refeq{fig:sim_NtoN_ac_gain}、\refeq{fig:sim_NtoN_ac_phase}は折り返し型の周波数特性、図\refeq{fig:sim_NtoN_tr}は過渡解析結果である。どれも用途によって評価基準が変わるため一概に評価することはできないので参考として掲載した。図\refeq{fig:sim_buf_ac}と図\refeq{fig:sim_buf_tr}はそれぞれバッファ回路の周波数特性と過渡解析結果である。どちらもギルバート乗算回路のボトルネックにはならないと考えられる。
 
+
+\section{パッケージ実装した際のシミュレーション}
+    実際に高周波回路を作成、測定するとき、目的の回路の他にもケーブルや静電気対策の素子などによる影響を考慮しなければならないため、これらの影響をシミュレーションで確認した。図\refeq{fig:package_model}に電源から集積回路内部までで考慮すべき影響の等価回路を示す。
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/package_model.png}
+            \caption{パッケージした際の等価回路}
+            \label{fig:package_model}
+        \end{center}
+    \end{figure}
+    このモデルは森が使っていたものと同様のものでありESDにはチャネル長$1\;\mathrm{\mu m}$、チャネル幅$10\;\mathrm{\mu m}$、並列数$10$のNMOSとPMOSを用いた。入力とこのモデルの間には対接地で$50\;\Omega$の抵抗を、出力との間にはバッファ回路を付加し、整合をとっている。これは信号の入出力部に使用するが、直流を印加する部分に関しては理想的な電圧源を用いた。この状態での直流解析結果を図\refeq{fig:sim_all_dc}に周波数特性を図\refeq{fig:sim_all_ac}に過渡解析結果を図\refeq{fig:sim_all_tr}に、$v_{in}=0.4$ V、$V_{CTRL}=0.2$ Vとした時の100 ns分の過渡解析結果を\refeq{fig:sim_all_tr_envelope}に示す。
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/sim_all_dc.PNG}
+            \caption{パッケージレベルでの直流解析結果}
+            \label{fig:sim_all_dc}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/sim_all_ac_gain.PNG}
+            \caption{パッケージレベルでの周波数特性}
+            \label{fig:sim_all_ac}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/sim_all_tr.PNG}
+            \caption{パッケージレベルでの過渡解析結果(15 ns)}
+            \label{fig:sim_all_tr}
+        \end{center}
+    \end{figure}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics*[width = 80mm]{figures/sim_all_tr_envelope.PNG}
+            \caption{パッケージレベルでの過渡解析結果(100 ns)}
+            \label{fig:sim_all_tr_envelope}
+        \end{center}
+    \end{figure}
+    パッケージレベルでのシミュレーションでは図\refeq{fig:package_model}にあるように電源の後に50 $\Omega$の抵抗があり、入力の直前に対接地で50 $\Omega$の抵抗が負荷されている。これによりMOSのゲート端子に印加される電圧は電源によって印加される電圧の半分になってしまうため、乗算器に入力される信号の倍の電圧を電源に用いた。さらに、出力には利得が0.5倍であるバッファ回路が入っているため乗算器の出力も半分になる。実際、図\refeq{fig:sim_NtoN_dc}と図\refeq{fig:sim_all_dc}を比較すると出力範囲には4倍程度の差がある。この乗算器単体との差は測定をするために生じているものなので、出力にどの程度の係数がかかっているかが分かれば問題ない。図\refeq{fig:sim_all_ac}より利得の周波数特性は波打っているのでどこまで信頼できるか分からないが、遮断周波数はおよそ1 GHz程度であった。図\refeq{fig:sim_all_tr}では最初の5 ns程度は波形が出ていないが、これは同軸ケーブルによる遅延である。
+
+\section{おわりに}
+    今回は折り返し型の乗算回路においてシミュレーション上では出力振幅が従来の物よりも広く取れることが確認できた。また、直流解析や過渡解析から回路動作は問題ないことが確認できた。今後は卒業論文の作業と並行しつつレイアウトを始めたいと思う。
 
 
 \end{document}
