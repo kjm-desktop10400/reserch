@@ -59,6 +59,11 @@ int main(void)
 
     for(int i = 1; i*0.02 <= 0.31; i++)
     {
+
+        fprintf(pipe, "A%d = 1\n", i);
+        fprintf(pipe, "B%d = 0.6\n", i);
+        fprintf(pipe, "f%d(x) = A%d * x + B%d\n", i, i, i);
+        
         if(i == 1)
         {
             fprintf(pipe, "plot input skip 6 using %d : (($%d) * 1e0) with lines title \"%.2f V\" \n", 2 * i - 1, 2 * i, i * 0.02);
@@ -67,6 +72,12 @@ int main(void)
         {
             fprintf(pipe, "replot input skip 6 using %d : (($%d) * 1e0) with lines title \"%.2f V\" \n", 2 * i - 1, 2 * i, i * 0.02);
         }
+
+        fprintf(pipe, "fit [-0.1 : 0.1] f%d(x) input skip 6 using %d : %d via A%d, B%d \n",i ,2 * i - 1, 2 * i, i, i);
+
+        fprintf(pipe, "replot f%d(x) with lines dt 3 notitle \n", i);
+
+        fprintf(pipe, "save fit sprintf(\"..\\\\data\\\\dc_fitlog\\\\fitlog\\\\%d.fitlog\") \n", i);
 
     }
 

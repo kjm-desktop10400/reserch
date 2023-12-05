@@ -1,0 +1,4 @@
+# fit [-0.1 : 0.1] f5(x) input skip 6 using 9 : 10 via A5, B5 
+# final sum of squares of residuals : 0.0120753
+A5              = 4.84003325652759      
+B5              = 0.000155495881276845  

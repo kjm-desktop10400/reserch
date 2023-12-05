@@ -1,0 +1,4 @@
+# fit [-0.1 : 0.1] f7(x) input skip 6 using 13 : 14 via A7, B7 
+# final sum of squares of residuals : 0.0233268
+A7              = 6.90238796800067      
+B7              = 0.000284627319070989  

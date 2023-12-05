@@ -1,0 +1,4 @@
+# fit [-0.1 : 0.1] f15(x) input skip 6 using 29 : 30 via A15, B15 
+# final sum of squares of residuals : 0.0198942
+A15             = 9.24861486374912      
+B15             = 0.000260990057825262  
