@@ -1,4 +1,4 @@
-# fit [-0.1 : 0.1] f4(x) input skip 6 using 7 : 8 via A4, B4 
-# final sum of squares of residuals : 0.00862098
-A4              = 6.04345493233849      
-B4              = 0.000123937056012091  
+# fit [-0.01 : 0.01] f4(x) input skip 6 using 7 : 8 via A4, B4 
+# final sum of squares of residuals : 7.60312e-06
+A4              = 6.34635616697445      
+B4              = 9.08384756556291e-13  
