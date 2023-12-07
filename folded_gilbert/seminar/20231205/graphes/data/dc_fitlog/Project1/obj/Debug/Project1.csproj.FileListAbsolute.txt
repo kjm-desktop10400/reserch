@@ -1,0 +1,8 @@
+C:\Desktop\reserch\folded_gilbert\seminar\20231205\graphes\data\dc_fitlog\Project1\bin\Debug\Project1.exe.config
+C:\Desktop\reserch\folded_gilbert\seminar\20231205\graphes\data\dc_fitlog\Project1\bin\Debug\Project1.exe
+C:\Desktop\reserch\folded_gilbert\seminar\20231205\graphes\data\dc_fitlog\Project1\bin\Debug\Project1.pdb
+C:\Desktop\reserch\folded_gilbert\seminar\20231205\graphes\data\dc_fitlog\Project1\obj\Debug\Project1.csproj.AssemblyReference.cache
+C:\Desktop\reserch\folded_gilbert\seminar\20231205\graphes\data\dc_fitlog\Project1\obj\Debug\Project1.csproj.SuggestedBindingRedirects.cache
+C:\Desktop\reserch\folded_gilbert\seminar\20231205\graphes\data\dc_fitlog\Project1\obj\Debug\Project1.csproj.CoreCompileInputs.cache
+C:\Desktop\reserch\folded_gilbert\seminar\20231205\graphes\data\dc_fitlog\Project1\obj\Debug\Project1.exe
+C:\Desktop\reserch\folded_gilbert\seminar\20231205\graphes\data\dc_fitlog\Project1\obj\Debug\Project1.pdb
