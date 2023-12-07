@@ -1,4 +1,4 @@
-# fit [-0.01 : 0.01] f3(x) input skip 6 using 5 : 6 via A3, B3 
-# final sum of squares of residuals : 1.67843e-07
-A3              = 4.53234220018043      
-B3              = 1.49220839091404e-12  
+# fit [-0.1 : 0.1] f3(x) input skip 6 using 5 : 6 via A3, B3 
+# final sum of squares of residuals : 0.00310607
+A3              = 4.46051179016097      
+B3              = 5.33329807107919e-05  

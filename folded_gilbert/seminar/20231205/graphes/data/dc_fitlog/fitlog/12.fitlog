@@ -1,4 +1,4 @@
-# fit [-0.01 : 0.01] f12(x) input skip 6 using 23 : 24 via A12, B12 
-# final sum of squares of residuals : 1.49897e-05
-A12             = 11.6443677022024      
-B12             = -1.42663936432782e-14 
+# fit [-0.1 : 0.1] f12(x) input skip 6 using 23 : 24 via A12, B12 
+# final sum of squares of residuals : 0.0167899
+A12             = 11.0540293925345      
+B12             = 0.000241305862253908  

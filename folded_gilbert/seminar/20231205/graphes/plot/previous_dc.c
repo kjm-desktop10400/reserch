@@ -75,7 +75,7 @@ int main(void)
 
         fprintf(pipe, "fit [-0.1 : 0.1] f%d(x) input skip 6 using %d : %d via A%d, B%d \n",i ,2 * i - 1, 2 * i, i, i);
 
-        fprintf(pipe, "replot f%d(x) with lines dt 3 notitle \n", i);
+    //    fprintf(pipe, "replot f%d(x) with lines dt 3 notitle \n", i);
 
         fprintf(pipe, "save fit sprintf(\"..\\\\data\\\\previous_fitlog\\\\fitlog\\\\%d.fitlog\") \n", i);
 

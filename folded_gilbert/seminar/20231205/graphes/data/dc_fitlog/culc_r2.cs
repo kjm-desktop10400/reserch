@@ -72,12 +72,12 @@ namespace Project1
         private void Set_fit_param()
         {
             string[] buf = File.ReadAllLines(@"fit_param.dat");
-            string[] line_buf = new string[2];
+            string[] line_buf = new string[10];
 
             for (int i = 1; i < num-1; i++)
             {
 
-                line_buf = buf[i].Split(',');
+                line_buf = buf[i-1].Split(',');
                 fit_param_slope[i] = double.Parse(line_buf[0]);
                 fit_param_intercept[i] = double.Parse(line_buf[1]);
 
@@ -149,7 +149,7 @@ namespace Project1
                 for (int j = 1; j <= num - 2; j++)
                 {
 
-                    sw.WriteLine(fit_param_slope[j].ToString() + "," + fit_param_intercept[j] + "," + (sum_of_square[j] / sum_of_recursion[j]).ToString());
+                    sw.WriteLine(fit_param_slope[j].ToString() + "," + fit_param_intercept[j] + "," + sum_of_squared_residual[j].ToString());
 
                 }
 
