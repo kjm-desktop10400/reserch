@@ -21,7 +21,7 @@ int main(void)
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
     fputs("set xlabel \"freq [Hz]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
-    fputs("set ylabel \"v_{out} [V]\" font \"Arial,30\" offset -8,0\n", pipe);
+    fputs("set ylabel \"v_{meas} [V]\" font \"Arial,30\" offset -8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
     fputs("set key top right spacing 2.5 offset -5,0\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
@@ -55,8 +55,8 @@ int main(void)
     */
     #pragma endregion
 
-    //fputs("input = \"..\\\\data\\\\NtoN_dft_vin_01.vcsv\"\n", pipe);
-    fputs("input = \"..\\\\data\\\\sim_all_dft_vin_04.vcsv\"\n", pipe);
+    fputs("input = \"..\\\\data\\\\NtoN_dft_vin_01.vcsv\"\n", pipe);
+    //fputs("input = \"..\\\\data\\\\sim_all_dft_vin_02.vcsv\"\n", pipe);
 
     for(int i = 1; i <= 5; i++)
     {
@@ -83,7 +83,7 @@ int main(void)
 
     }
 
-    fprintf(pipe, "plot input skip 6 using 1 : ((sqrt(($2)**2 + ($3)**2))) with impulses linewidth 3 title \"v_{in} = 0.4 V\" \n");
+    fprintf(pipe, "plot input skip 6 using 1 : ((sqrt(($2)**2 + ($3)**2))) with impulses linewidth 3 title \"v_{in} = 0.1 V\" \n");
 
 
     pclose(pipe);
