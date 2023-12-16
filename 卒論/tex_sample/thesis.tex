@@ -1,0 +1,95 @@
+\documentclass[a4,12pt,dvipdfmx]{jreport}
+
+\usepackage{wadakensoturon}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath}
+\usepackage{array,booktabs}
+\usepackage{subfig}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage{subfig}
+\usepackage{here}
+\usepackage{lscape}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{cases}
+\allowdisplaybreaks
+
+\usepackage{listings} %日本語のコメントアウトをする場合jlistingが必要
+%ここからソースコードの表示に関する設定
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+%ここまでソースコードの表示に関する設定
+
+
+%著者の情報
+\title{磁界共鳴方式無線電力伝送回路の\\周波数特性に着目した \\ FSK変調方式電力・データ同時伝送システムの設計}
+\month{2019年2月}
+\year{2019}
+\date{2019年2月28日}
+\id{1512161046}
+\author{藤田\hspace{1zw}誉大}
+\supervisor{和田\hspace{1zw}和千}
+\labolatory{波動信号処理回路研究室}
+
+\company{就職先の会社名}
+\companyaddress{会社の所在地}
+\companypostcode{会社の郵便番号}
+\companyTEL{会社の電話番号}
+
+\address{神奈川県川崎市中原区井田1-3-25-2}
+\postcode{211-0035}
+\TEL{090-1261-9350}
+
+%\bkm%				PDFにブックマークをつけるには，ここをコメントアウトしてください．
+%\com%			進学の方は，ここをコメントアウトしてください．
+\titlecover%		表紙を作らない場合，ここをコメントアウトしてください．
+%\chaptercover%		章の表紙を作らない場合は，ここをコメントアウトしてください．
+%\sectionclearpage%	節の終わりで改ページしない場合は，ここをコメントアウトしてください．
+
+\begin{document}
+\maketitle[%表紙と目次を作成
+%ここに図目次などの追加項目を書くことができます．
+]
+
+\input{chapter1.tex}
+\input{chapter2.tex}
+\input{chapter3.tex}
+\input{chapter4.tex}            
+\input{chapter5.tex}        
+
+%参考文献
+\bibliography{bib_for_thesis}
+\bibliographystyle{sieicej}
+
+\begin{thepublished}{99}
+\bibitem{Fujita2019a}藤田 誉大, 和田 和千，「磁界共鳴型ワイヤレス給電における周波数分割現象の考察とPLL を用いた極大電力点自動追従回路の検討」, 電子情報通信学会論文誌B, vol. J102-B, no. 6, pp.459-472, 2019.6
+\bibitem{Fujita2019b}藤田 誉大, 和田 和千，「磁界共鳴型ワイヤレス電力伝送の周波数特性に着目したFSK変調方式電力・データ同時伝送回路の提案」，電気学会電子回路研究会，ECT-19-055, 2019.9
+\bibitem{Fujita2020a}藤田 誉大, 和田 和千，「2つのPLLによるピーク周波数自動追従回路とFSK変調回路とを備えた磁界共鳴方式電力・データ同時伝送回路の実装検討」，電気学会2020年度総合大会講演論文集，1227・1228-C2, 2020.3(発表予定)
+
+
+\end{thepublished}
+\newpage
+
+\input{acknowledgement.tex}
+
+\appendix
+\input{appendix.tex}
+
+\end{document}
