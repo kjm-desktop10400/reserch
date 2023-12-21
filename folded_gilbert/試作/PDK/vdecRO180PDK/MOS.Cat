@@ -1,0 +1,6 @@
+TDMCHECKPOINT="1.0"
+keepEmptyCategory type="unknown"
+vdecRO180PDK/nmos18 type="cell"
+vdecRO180PDK/nmos33 type="cell"
+vdecRO180PDK/pmos18 type="cell"
+vdecRO180PDK/pmos33 type="cell"
