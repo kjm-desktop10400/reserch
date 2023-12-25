@@ -1,0 +1,87 @@
+\documentclass[a4,12pt,dvipdfmx]{jreport}
+
+\usepackage{wadakensoturon}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath}
+\usepackage{array,booktabs}
+\usepackage{subfig}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage{subfig}
+\usepackage{here}
+\usepackage{lscape}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{cases}
+\allowdisplaybreaks
+
+\usepackage{listings} %日本語のコメントアウトをする場合jlistingが必要
+%ここからソースコードの表示に関する設定
+\lstset{
+  basicstyle={\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},
+  numbers=left,
+  xrightmargin=0zw,
+  xleftmargin=3zw,
+  numberstyle={\scriptsize},
+  stepnumber=1,
+  numbersep=1zw,
+  lineskip=-0.5ex
+}
+%ここまでソースコードの表示に関する設定
+
+
+%著者の情報
+\title{カレントミラーを組み合わせた折り返し型アナログ乗算回路の出力範
+囲を拡大する回路構成}
+\month{2024年2月}
+\year{2024}
+\date{2024年2月日}
+\id{1512201217}
+\author{小島\hspace{1zw}光}
+\supervisor{和田\hspace{1zw}和千}
+\labolatory{波動信号処理回路研究室}
+
+\company{就職先の会社名}
+\companyaddress{会社の所在地}
+\companypostcode{会社の郵便番号}
+\companyTEL{会社の電話番号}
+
+\address{東京都葛飾区堀切8-8-3-306}
+\postcode{124-0006}
+\TEL{070-3614-1189}
+
+%\bkm%				PDFにブックマークをつけるには，ここをコメントアウトしてください．
+%\com%			進学の方は，ここをコメントアウトしてください．
+\titlecover%		表紙を作らない場合，ここをコメントアウトしてください．
+%\chaptercover%		章の表紙を作らない場合は，ここをコメントアウトしてください．
+%\sectionclearpage%	節の終わりで改ページしない場合は，ここをコメントアウトしてください．
+
+\begin{document}
+\maketitle[%表紙と目次を作成
+%ここに図目次などの追加項目を書くことができます．
+]
+
+\input{chapter1.tex}
+%\input{chapter2.tex}
+%\input{chapter3.tex}
+%\input{chapter4.tex}            
+%\input{chapter5.tex}        
+
+%参考文献
+%\bibliography{bib_for_thesis}
+%\bibliographystyle{sieicej}
+
+\input{acknowledgement.tex}
+
+%\appendix
+%\input{appendix.tex}
+
+\end{document}
