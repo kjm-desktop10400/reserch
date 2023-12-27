@@ -1,6 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1703477908 "c:/Desktop/reserch/卒論/thesis/thesis.tex" "thesis.pdf" "thesis" 1703477910 2
-  "c:/Desktop/reserch/卒論/thesis/thesis.tex" 1703394272 2526 d01fc010965721b265ac11c5f6a69839 ""
+["dvipdf"] 0 "thesis.dvi" "thesis.pdf" "thesis" 0 -1
+  "thesis.dvi" 1703604644 16376 d3a3de0b7b7fb03f0685737180f0c836 "pdflatex"
+  (generated)
+  "thesis.pdf"
+  (rewritten before read)
+["pdflatex"] 1703605262 "c:/Desktop/reserch/卒論/thesis/thesis.tex" "thesis.dvi" "thesis" 1703605263 2
+  "c:/Desktop/reserch/卒論/thesis/thesis.tex" 1703597727 2561 6d03d95b20f75c2783920cb2190749fe ""
   "c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty" 1684985712 2222 78b930a5a6e3dc2ac69b78c2057b94d7 ""
   "c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty" 1684985712 4173 c989ee3ced31418e3593916ab26c793a ""
   "c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty" 1684985712 88393 1adf6fa3f245270d06e3d4f8910f7fc5 ""
@@ -24,11 +29,11 @@
   "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1684985507 40967 d940221f8762fd5848760382d97d1226 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1684993029 7888696 845fa539bd14cda30006d5ef62d86a88 ""
   "c:/texlive/2023/texmf.cnf" 1684992786 713 e69b156964470283e0530f5060668171 ""
-  "thesis.aux" 1703477908 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "thesis.tex" 1703394272 2526 d01fc010965721b265ac11c5f6a69839 ""
+  "thesis.aux" 1703605262 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "thesis.tex" 1703597727 2561 6d03d95b20f75c2783920cb2190749fe ""
   "wadakensoturon.sty" 1703312080 8452 d0f3ca2813dfd2331609df5fc0e6647f ""
   (generated)
   "thesis.aux"
+  "thesis.dvi"
   "thesis.log"
-  "thesis.pdf"
   (rewritten before read)
