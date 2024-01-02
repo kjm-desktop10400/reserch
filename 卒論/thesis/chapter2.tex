@@ -46,18 +46,37 @@
             \newpage
             
         \subsection{小信号等価回路}
-            次に小信号等価回路を考えるが、ここでギルバート乗算回路は差動対の組み合わせでできているため、半回路を考えることで回路全体の小信号解析を行うことができる。そこで図\ref{fig:2_gilbert}の$M_{A1},M_{A2},M_{B1}$についての半回路は$V_{S}$が交流的に接地されていることに留意すると、図\ref{fig:2_halfeq}に示すようになる。
-            \begin{figure}
+            \begin{figure}[b]
                 \begin{center}
                     \includegraphics[width=160mm]{figures/chapter2/halfeq.png}
                     \label{fig:2_halfeq}
                     \caption{ギルバート乗算回路の小信号半回路}
                 \end{center}
             \end{figure}
+            次に小信号等価回路を考えるが、ここでギルバート乗算回路は差動対の組み合わせでできているため、半回路を考えることで回路全体の小信号解析を行うことができる。そこで図\ref{fig:2_gilbert}の$M_{A1},M_{A2},M_{B1}$についての半回路は$V_{S}$が交流的に接地されていることに留意すると、図\ref{fig:2_halfeq}に示すようになる。
+            この時、接点$AB$にKCLを用いると
+            \begin{align}
+                g_{mB}v_{in}+g_{dB}V_{AB}&=(g_{m}+\Delta g_{m})(-v_{AB})+g_{dA}(-v_{out}-v_{AB})\\
+                &\quad\quad\quad\quad +(g_{m}-\Delta g_{m})(-v_{AB})+g_{dA}(v_{out}-v_{AB})     \label{eq:2_kcl}
+            \end{align}
+            と書ける。さらに、完全差動回路であることに留意すると$i_{3}$は$i_{3}=-i_{2}$という関係が成り立つ。これを用いると、負荷抵抗$R_{L}$に流れる電流$i_{out-}$は$i_{1}$の向きを正に取ると
+            \begin{align}
+                i_{out-}&=i_{1}+i_{2}       \notag\\
+                &=(g_{m}+\Delta g_{m})(-v_{BA})+g_{dA}(-v_{out}-v_{AB})       \notag\\
+                &\quad\quad\quad\quad -\left\{  (g_{m}-\Delta g_{m})(-v_{AB})+g_{dA}(v_{out}-v_{AB})  \right\}   \notag\\
+                &=-2(\Delta g_{m}v_{AB}+g_{dA}v_{out})      \label{eq:2_iout}
+            \end{align}
+            と表せる。オームの法則を用いると
+            \begin{align}
+                0-(-v_{out})&=R_{L}(-i_{out-})      \notag\\
+                v_{out}&=-\frac{ 2R_{L}v_{AB} }{ 1-R_{L}g_{dA} }  \Delta g_{m}  \label{eq:2_vout}
+            \end{align}
             
 
 
     \section{出力範囲}
+        
+
 
 %    \begin{figure}
 %        \begin{center}
