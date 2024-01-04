@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.25)  2 JAN 2024 13:17
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.25)  4 JAN 2024 19:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -250,25 +250,76 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 Package: cases 2020/03/29 ver 3.2
 \numc@numwid=\dimen195
 )
+(c:/texlive/2023/texmf-dist/tex/latex/mathtools/empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+
+(c:/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+
+(c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count288
+\calc@Bcount=\count289
+\calc@Adimen=\dimen196
+\calc@Bdimen=\dimen197
+\calc@Askip=\skip71
+\calc@Bskip=\skip72
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count290
+\calc@Cskip=\skip73
+)
+\g_MT_multlinerow_int=\count291
+\l_MT_multwidth_dim=\dimen198
+\origjot=\skip74
+\l_MT_shortvdotswithinadjustabove_dim=\dimen199
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen256
+\l_MT_above_intertext_sep=\dimen257
+\l_MT_below_intertext_sep=\dimen258
+\l_MT_above_shortintertext_sep=\dimen259
+\l_MT_below_shortintertext_sep=\dimen260
+\xmathstrut@box=\box74
+\xmathstrut@dim=\dimen261
+)
+\l_EQ_equationtype_int=\count292
+\l_EQ_alignmentmode_int=\count293
+\l_EQ_totalwidth_dim=\dimen262
+\l_EQ_displaywidth_dim=\dimen263
+\l_EQ_temp_linewidth_dim=\dimen264
+\l_EQ_linewidth_dim=\dimen265
+\EmphEqdelimitershortfall=\dimen266
+\EmphEqdelimiterfactor=\count294
+\g_EQ_toptag_height_dim=\dimen267
+\g_EQ_bottomtag_depth_dim=\dimen268
+\g_EQ_toprow_height_dim=\dimen269
+\g_EQ_bottomrow_depth_dim=\dimen270
+\g_EQ_widesttag_dim=\dimen271
+\EQ_mathdisplay_box=\box75
+\EQ_tag_box=\box76
+\g_EQ_temprow_int=\count295
+)
 (c:/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count288
-\lst@gtempboxa=\box74
+\lst@mode=\count296
+\lst@gtempboxa=\box77
 \lst@token=\toks26
-\lst@length=\count289
-\lst@currlwidth=\dimen196
-\lst@column=\count290
-\lst@pos=\count291
-\lst@lostspace=\dimen197
-\lst@width=\dimen198
-\lst@newlines=\count292
-\lst@lineno=\count293
-\lst@maxwidth=\dimen199
+\lst@length=\count297
+\lst@currlwidth=\dimen272
+\lst@column=\count298
+\lst@pos=\count299
+\lst@lostspace=\dimen273
+\lst@width=\dimen274
+\lst@newlines=\count300
+\lst@lineno=\count301
+\lst@maxwidth=\dimen275
 
 (c:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count294
-\lst@skipnumbers=\count295
-\lst@framebox=\box75
+\c@lstnumber=\count302
+\lst@skipnumbers=\count303
+\lst@framebox=\box78
 )
 (c:/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
@@ -277,11 +328,11 @@ Package: listings 2023/02/27 1.9 (Carsten Heinz)
 
 (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2023-04-19 L3 backend support: dvipdfmx
-\g__graphics_track_int=\count296
-\l__pdf_internal_box=\box76
-\g__pdf_backend_object_int=\count297
-\g__pdf_backend_annotation_int=\count298
-\g__pdf_backend_link_int=\count299
+\g__graphics_track_int=\count304
+\l__pdf_internal_box=\box79
+\g__pdf_backend_object_int=\count305
+\g__pdf_backend_annotation_int=\count306
+\g__pdf_backend_link_int=\count307
 )
 
 LaTeX Warning: Unused global option(s):
@@ -313,7 +364,8 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count300
+\Hy@linkcounter=\count308
+\c@lstlisting=\count309
  (./Abstract.tex [0
 
 ]
@@ -367,40 +419,19 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 15.
 File: figures/chapter2/OperatingPoint.png Graphic file (type bmp)
 <figures/chapter2/OperatingPoint.png>
-
-Overfull \hbox (56.9055pt too wide) in paragraph at lines 19--20
- [] 
- []
-
-[5] [6]
+ [5] [6]
 File: figures/chapter2/halfeq.png Graphic file (type bmp)
 <figures/chapter2/halfeq.png>
+ [7] [8]) (./acknowledgement.tex [9]) [10
 
-Overfull \hbox (56.9055pt too wide) in paragraph at lines 51--53
- [] 
- []
-
-
-Package caption Warning: \label without proper reference on input line 52.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:2_halfeq' on page 7 undefined on input line 56.
-
-) (./acknowledgement.tex [7] [8]) [9
-
-] (./thesis.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 5586 strings out of 476760
- 92495 string characters out of 5809571
+ 6508 strings out of 476760
+ 109880 string characters out of 5809571
  1852672 words of memory out of 5000000
- 25909 multiletter control sequences out of 15000+600000
+ 26818 multiletter control sequences out of 15000+600000
  525018 words of font info for 82 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 69i,9n,79p,1025b,431s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,11n,79p,1025b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.dvi (12 pages, 18200 bytes).
+Output written on thesis.dvi (13 pages, 20360 bytes).
