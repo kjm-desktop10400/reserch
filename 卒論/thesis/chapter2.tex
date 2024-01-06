@@ -85,12 +85,36 @@
 
     \section{出力範囲}
         次にギルバート乗算回路の出力範囲を考える。適切に乗算が行える条件はMOSFETが遮断領域に入らないことであるとすると、制約条件として各MOSFETにおいて
+        \begin{subequations}
         \begin{empheq}[left={\empheqlbrace}]{align}
-            &V_{GS}-V_{th}<V_{DS}       \tag{\ref{eq:2_binding_conditions}.a}   \label{eq:2_vds_cond}   \\
-            &V_{th}<V_{GS}              \tag{\ref{eq:2_binding_conditions}.b}   \label{eq:2_vgs_cond}
+            &V_{GS}-V_{th}<V_{DS}          \\
+            &V_{th}<V_{GS}              
         \end{empheq}        \label{eq:2_binding_conditions}
-        を満たす必要がある。ただし、$V_{GS}$、$V_{DS}$、$V_{th}$はゲートソース間電圧、ドレインソース間電圧、しきい電圧である。
-        
+        \end{subequations}
+        を満たす必要がある。ただし、$V_{GS}$、$V_{DS}$、$V_{th}$はゲートソース間電圧、ドレインソース間電圧、しきい電圧である。これを図\ref{fig:2_gilbert}の各MOSFETに用いると
+        \begin{empheq}[left={M_{A}:\empheqlbrace}]{align}
+            &V_{A}+V_{CTRL}-V_{AB}-V_{th}<V_{out}-v_{out}-V_{AB}        \tag{\ref{eq:2_ma_binding_pre}.a}   \\
+            &V_{th}<V_{A}-V_{CTRL}-V_{AB}                               \tag{\ref{eq:2_ma_binding_pre}.b}
+        \end{empheq}        \label{eq:2_ma_binding_pre}
+        \begin{empheq}[left={M_{B}:\empheqlbrace}]{align}
+            &V_{B}+v_{in}-V_{S}-V_{th}<V_{AB}-V_{S}     \tag{\ref{eq:2_mb_binding_pre}.a} \\
+            &V_{th}<V_{B}-v_{in}-V_{S}                  \tag{\ref{eq:2_mb_binding_pre}.b}
+        \end{empheq}        \label{eq:2_mb_binding_pre}
+        \begin{empheq}[left={M_{C}:\empheqlbrace}]{align}
+            &V_{C}-V_{th}<V_{S}     \tag{\ref{eq:2_mc_binding_pre}.a} \\
+            &V_{th}<V_{C}           \tag{\ref{eq:2_mc_binding_pre}.b}
+        \end{empheq}        \label{eq:2_mc_binding_pre}
+        と表現することができる。$M_{A},M_{B}$の.a不等式には両辺にソース電位が含まれているのでそれを消去すると
+        \begin{empheq}[left={M_{A}:\empheqlbrace}]{align}
+            &V_{A}+V_{CTRL}-V_{th}<V_{out}-v_{out}        \tag{\ref{eq:2_ma_binding}.a'}   \\
+            &V_{th}<V_{A}-V_{CTRL}-V_{AB}                 \tag{\ref{eq:2_ma_binding}.b'}
+        \end{empheq}        \label{eq:2_ma_binding}
+        \begin{empheq}[left={M_{B}:\empheqlbrace}]{align}
+            &V_{B}+v_{in}-V_{th}<V_{AB}     \tag{\ref{eq:2_mb_binding}.a'} \\
+            &V_{th}<V_{B}-v_{in}-V_{S}      \tag{\ref{eq:2_mb_binding}.b'}
+        \end{empheq}        \label{eq:2_mb_binding}
+        とまとめられる。
+
 
 
 %    \begin{figure}
@@ -100,3 +124,6 @@
 %            \label{fig:2_}
 %        \end{center}
 %    \end{figure}
+
+%    \begin{empheq}[left={\empheqlbrace}]{align}
+%    \end{empheq}        \label{eq:}

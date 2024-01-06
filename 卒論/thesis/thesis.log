@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.25)  4 JAN 2024 19:48
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.25)  5 JAN 2024 18:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -426,12 +426,12 @@ File: figures/chapter2/halfeq.png Graphic file (type bmp)
 
 ] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 6508 strings out of 476760
- 109880 string characters out of 5809571
- 1852672 words of memory out of 5000000
- 26818 multiletter control sequences out of 15000+600000
+ 6511 strings out of 476760
+ 109947 string characters out of 5809571
+ 1866672 words of memory out of 5000000
+ 26821 multiletter control sequences out of 15000+600000
  525018 words of font info for 82 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  69i,11n,79p,1025b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.dvi (13 pages, 20360 bytes).
+Output written on thesis.dvi (13 pages, 22308 bytes).
