@@ -3,7 +3,7 @@
         まず、図\ref{fig:2_gilbert}に現在広く使用されているギルバート乗算回路の回路図を示す。
         \begin{figure}[bth]
             \begin{center}
-                \includegraphics[width=160mm]{figures/chapter2/gilbert.png}
+                \includegraphics[width=0.99\textwidth]{figures/chapter2/gilbert.pdf}
                 \caption{ギルバート乗算回路}
                 \label{fig:2_gilbert}
             \end{center}
@@ -16,7 +16,7 @@
             小信号解析を行うにあたり$M_{A}$の扱いが問題となる。小信号解析ではMOSFETの出力が線形に近似できるような小信号入力に対して行うが、動作点が変動すると線形な近似が合わなくなる。この問題を扱うために、まず図\ref{fig:2_OP}に示す差動ゲート接地の差動対について考える。\par
             \begin{figure}[b]
                 \begin{center}
-                    \includegraphics[width=80mm]{figures/chapter2/OperatingPoint.png}
+                    \includegraphics[width=0.5\textwidth]{figures/chapter2/OperatingPoint.pdf}
                     \caption{ゲート接地の差動対}
                     \label{fig:2_OP}
                 \end{center}
@@ -47,10 +47,10 @@
             
         \subsection{小信号等価回路}
             次に小信号等価回路を考えるが、ここでギルバート乗算回路は差動対の組み合わせでできているため、半回路を考えることで回路全体の小信号解析を行うことができる。
-            \begin{figure}[b]
+            \begin{figure}[!b]
                 \begin{center}
 
-                    \includegraphics[width=125mm]{figures/chapter2/halfeq.png}
+                    \includegraphics[width=0.99\textwidth]{figures/chapter2/halfeq.pdf}
                     \caption{ギルバート乗算回路の小信号半回路}
                     \label{fig:2_half}
 
@@ -84,36 +84,70 @@
 
 
     \section{出力範囲}
-        次にギルバート乗算回路の出力範囲を考える。適切に乗算が行える条件はMOSFETが遮断領域に入らないことであるとすると、制約条件として各MOSFETにおいて
+        次にギルバート乗算回路の出力範囲を考える。適切に乗算が行える条件はMOSFETが遮断領域に入らないことであるとすると、制約条件として各MOSFETにおいてしきい電圧$V_{th}$が一定であるとすると
         \begin{subequations}
-        \begin{empheq}[left={\empheqlbrace}]{align}
-            &V_{GS}-V_{th}<V_{DS}          \\
-            &V_{th}<V_{GS}              
-        \end{empheq}        \label{eq:2_binding_conditions}
+            \begin{empheq}[left={\empheqlbrace}]{align}
+                &V_{GS}-V_{th}<V_{DS}          \\
+                &V_{th}<V_{GS}              
+            \end{empheq}        \label{eq:2_binding_conditions}
         \end{subequations}
         を満たす必要がある。ただし、$V_{GS}$、$V_{DS}$、$V_{th}$はゲートソース間電圧、ドレインソース間電圧、しきい電圧である。これを図\ref{fig:2_gilbert}の各MOSFETに用いると
-        \begin{empheq}[left={M_{A}:\empheqlbrace}]{align}
-            &V_{A}+V_{CTRL}-V_{AB}-V_{th}<V_{out}-v_{out}-V_{AB}        \tag{\ref{eq:2_ma_binding_pre}.a}   \\
-            &V_{th}<V_{A}-V_{CTRL}-V_{AB}                               \tag{\ref{eq:2_ma_binding_pre}.b}
-        \end{empheq}        \label{eq:2_ma_binding_pre}
-        \begin{empheq}[left={M_{B}:\empheqlbrace}]{align}
-            &V_{B}+v_{in}-V_{S}-V_{th}<V_{AB}-V_{S}     \tag{\ref{eq:2_mb_binding_pre}.a} \\
-            &V_{th}<V_{B}-v_{in}-V_{S}                  \tag{\ref{eq:2_mb_binding_pre}.b}
-        \end{empheq}        \label{eq:2_mb_binding_pre}
-        \begin{empheq}[left={M_{C}:\empheqlbrace}]{align}
-            &V_{C}-V_{th}<V_{S}     \tag{\ref{eq:2_mc_binding_pre}.a} \\
-            &V_{th}<V_{C}           \tag{\ref{eq:2_mc_binding_pre}.b}
-        \end{empheq}        \label{eq:2_mc_binding_pre}
+        \begin{subequations}
+            \begin{empheq}[left={M_{A}:\empheqlbrace}]{align}
+                &V_{A}+V_{CTRL}-V_{AB}-V_{th}<V_{out}-\frac{1}{2}v_{out}-V_{AB}           \\
+                &V_{th}<V_{A}-V_{CTRL}-V_{AB}                               
+            \end{empheq}        \label{eq:2_ma_binding_pre}
+        \end{subequations}
+        \begin{subequations}
+            \begin{empheq}[left={M_{B}:\empheqlbrace}]{align}
+                &V_{B}+v_{in}-V_{S}-V_{th}<V_{AB}-V_{S}      \\
+                &V_{th}<V_{B}-v_{in}-V_{S}                  
+            \end{empheq}        \label{eq:2_mb_binding_pre}
+        \end{subequations}
+        \begin{subequations}
+            \begin{empheq}[left={M_{C}:\empheqlbrace}]{align}
+                &V_{C}-V_{th}<V_{S}      \\
+                &V_{th}<V_{C}           
+            \end{empheq}        \label{eq:2_mc_binding_pre}
+        \end{subequations}
         と表現することができる。$M_{A},M_{B}$の.a不等式には両辺にソース電位が含まれているのでそれを消去すると
-        \begin{empheq}[left={M_{A}:\empheqlbrace}]{align}
-            &V_{A}+V_{CTRL}-V_{th}<V_{out}-v_{out}        \tag{\ref{eq:2_ma_binding}.a'}   \\
-            &V_{th}<V_{A}-V_{CTRL}-V_{AB}                 \tag{\ref{eq:2_ma_binding}.b'}
-        \end{empheq}        \label{eq:2_ma_binding}
-        \begin{empheq}[left={M_{B}:\empheqlbrace}]{align}
-            &V_{B}+v_{in}-V_{th}<V_{AB}     \tag{\ref{eq:2_mb_binding}.a'} \\
-            &V_{th}<V_{B}-v_{in}-V_{S}      \tag{\ref{eq:2_mb_binding}.b'}
-        \end{empheq}        \label{eq:2_mb_binding}
-        とまとめられる。
+        \begin{subequations}
+            \begin{empheq}[left={M_{A}:\empheqlbrace}]{align}
+                &V_{A}+V_{CTRL}-V_{th}<V_{out}-\frac{1}{2}v_{out}           \\
+                &V_{th}<V_{A}-V_{CTRL}-V_{AB}                 
+            \end{empheq}        \label{eq:2_ma_binding}
+        \end{subequations}
+        \begin{subequations}
+            \begin{empheq}[left={M_{B}:\empheqlbrace}]{align}
+                &V_{B}+v_{in}-V_{th}<V_{AB}      \\
+                &V_{th}<V_{B}-v_{in}-V_{S}      
+            \end{empheq}        \label{eq:2_mb_binding}
+        \end{subequations}
+        とまとめられる。さらに式(\ref{eq:2_mc_binding_pre})より
+        \begin{align}
+            0<V_{S}     \label{eq:2_range_vs}
+        \end{align}
+        である。次に式(\ref{eq:2_ma_binding})から$V_{A}$を消去すると
+        \begin{align}
+            V_{AB}+2V_{CTRL}<V_{out}-\frac{1}{2}v_{out}     \label{eq:2_range_va}\\
+        \end{align}
+        であり、また式(\ref{eq:2_mb_binding})から$V_{B}$を消去すると
+        \begin{align}
+            V_{S}+2v_{in}<V_{AB}        \label{eq:2_range_vb}
+        \end{align}
+        と分かる。以上より、式(\ref{eq:2_range_va}),(\ref{eq:2_range_va})から
+        \begin{align}
+            V_{S}+2v_{in}+2V_{CTRL}<V_{out}-\frac{1}{2}v_{out}      \label{eq:2_range_out}
+        \end{align}
+        である。さらに、出力電圧は電源電圧からも制約を受けるので
+        \begin{align}
+            V_{out}+v_{out}<V_{dd}
+        \end{align}
+        であり、出力範囲を$v_{range}$とすると式(\ref{eq:2_range_out})と合わせ
+        \begin{align}
+            0<v_{range}<V_{dd}-(V_{S}+2V_{CTRL}+2v_{in})    \label{eq:2_girlbert_range}
+        \end{align}
+        と考えることができる。
 
 
 
@@ -125,5 +159,7 @@
 %        \end{center}
 %    \end{figure}
 
-%    \begin{empheq}[left={\empheqlbrace}]{align}
-%    \end{empheq}        \label{eq:}
+%    \begin{subequations}
+%        \begin{empheq}[left={\empheqlbrace}]{align}
+%        \end{empheq}        \label{eq:}
+%    \end{subequations}
