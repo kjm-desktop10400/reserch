@@ -1,27 +1,28 @@
 \chapter{ギルバート乗算回路}
     \section{回路構成}
         まず、図\ref{fig:2_gilbert}に現在広く使用されているギルバート乗算回路の回路図を示す。
-        \begin{figure}[bth]
+        \begin{figure}[!b]
             \begin{center}
                 \includegraphics[width=0.99\textwidth]{figures/chapter2/gilbert.pdf}
                 \caption{ギルバート乗算回路}
                 \label{fig:2_gilbert}
             \end{center}
         \end{figure}
-        ギルバート乗算回路は$v_{in}$と$V_{CTRL}$に差動で信号を入力することで二つの入力信号に比例した電圧出力を差動で出力することができる。ここで、$M_{B}$の差動対は入力信号に比例した電流を$M_{A}$のソースから引き込む。さらに$M_{A}$の動作点が制御電圧$V_{CTRL}$に比例して変動することに注意すると負荷抵抗に流れる電流が二つの入力に比例していることが分かる。詳細は次節にて導出する。
+        ギルバート乗算回路は$v_{in}$と$V_{CTRL}$に差動で信号を入力することで二つの入力信号に比例した電圧出力を差動で出力することができる。ここで、$M_{B}$の差動対は入力信号に比例した電流を$M_{A}$のソースから引き込む。さらに$M_{A}$の動作点が制御電圧$V_{CTRL}$に比例して変動する。これにより負荷抵抗に流れる電流が二つの入力に比例していることが分かる。詳細は次節にて導出する。
 
 
     \section{小信号解析}
         \subsection{動作点の変動}   \label{ch:gilbert_valiable_gm}
             小信号解析を行うにあたり$M_{A}$の扱いが問題となる。小信号解析ではMOSFETの出力が線形に近似できるような小信号入力に対して行うが、動作点が変動すると線形な近似が合わなくなる。この問題を扱うために、まず図\ref{fig:2_OP}に示す差動ゲート接地の差動対について考える。\par
-            \begin{figure}[b]
+            \begin{figure}[!b]
                 \begin{center}
-                    \includegraphics[width=0.5\textwidth]{figures/chapter2/OperatingPoint.pdf}
+                    \includegraphics[width=0.7\textwidth]{figures/chapter2/OperatingPoint.pdf}
                     \caption{ゲート接地の差動対}
                     \label{fig:2_OP}
                 \end{center}
             \end{figure}
-            一般に、MOSFETのドレイン電流は二乗則に従い、ゲートソース間電圧$V_{GS}$、しきい電圧$V_{th}$と形状などによって決まる固有の係数$K$を用いて
+            \clearpage
+            一般に、MOSFETのドレイン電流$I_{D}$は二乗則に従い、ゲートソース間電圧$V_{GS}$、しきい電圧$V_{th}$と形状などによって決まるトランスコンダクタンス係数$K$を用いて
             \begin{align}
                 I_{D}=K(V_{GS}-V_{th})^{2}  \label{eq:2_id}
             \end{align}
@@ -30,7 +31,7 @@
                 g_{m}&=\frac{ \partial I_{D} }{ \partial V_{GS} }   \notag\\
                 &=2K(V_{GS}-V_{th})     \label{eq:2_gm}
             \end{align}
-            となる。次に差動成分$V_{diff}\neq0$のとき、左右のMOSFETのトランスコンダクタンスは
+            となる。次に差動成分$V_{diff}\neq0$のとき、左右のMOSFETのトランスコンダクタンス$g_{ml},g_{mr}$は
             \begin{align}
                 g_{ml}&=2K\left\{ (V_{G}+V_{diff}) -V_{th} \right\}     \notag\\
                 &=g_{m}+2KV_{diff}      \notag\\
@@ -42,7 +43,7 @@
                 g_{ml}&=g_{m}+\Delta g_{m}   \label{eq:2_dgml}\\
                 g_{mr}&=g_{m}-\Delta g_{m}   \label{eq:2_dgmr}
             \end{align}
-            と求められた。したがって、ゲート接地増幅回路ではゲート電圧に比例したトランスコンダクタンスを得ることができる。
+            と表すことができる。$\Delta g_{m} \propto V_{diff}$であることから、図\ref{fig:2_OP}のようなゲート接地差動増幅回路においてトランスコンダクタンスはゲートソース間電圧の差動成分に比例することが分かった。
             \newpage
             
         \subsection{小信号等価回路}
@@ -57,7 +58,7 @@
                 \end{center}
 
             \end{figure}
-            そこで図\ref{fig:2_gilbert}の$M_{A1},M_{A2},M_{B1}$についての半回路は$V_{S}$が交流的に接地されていることに留意すると、図\ref{fig:2_half}に示すようになる。この時、接点$AB$にKCLを用いると
+            そこで図\ref{fig:2_gilbert}の$M_{A1},M_{A2},M_{B1}$についての半回路は$V_{S}$が交流的に接地されていることに留意すると、図\ref{fig:2_half}に示すようになる。ただし、$g_{m},g_{mB}$は$\mathrm{M_{A},M_{B}}$のトランスコンダクタンス、$g_{dA},g_{dB}$は$\mathrm{M_{A},M_{B}}$のドレインソース間抵抗、$R_{L}$は深い抵抗である。また、$v_{AB}$は接点ABの電位であるが直流電圧源が小信号的には短絡であることに留意し、$\mathrm{M_{A}}$のゲートへの入力が直流であることを仮定すると$\mathrm{M_{A}}$のゲートソース間電圧は$-V_{AB}$となる。この時、接点ABにKCLを用いると
             \begin{align}
                 g_{mB}v_{in}+g_{dB}v_{AB}&=(g_{m}+\Delta g_{m})(-v_{AB})+g_{dA}(v_{outm}-v_{AB})    \notag\\
                 &\quad\quad\quad\quad +(g_{m}-\Delta g_{m})(-v_{AB})+g_{dA}(v_{outp}-v_{AB})     \notag\\
