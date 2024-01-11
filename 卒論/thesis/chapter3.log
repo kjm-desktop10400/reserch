@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.26)  8 JAN 2024 23:50
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.25)  11 JAN 2024 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**e:/Desktop/reserch/卒論/thesis/chapter3.tex
-(e:/Desktop/reserch/卒論/thesis/chapter3.tex
+**c:/Desktop/reserch/卒論/thesis/chapter3.tex
+(c:/Desktop/reserch/卒論/thesis/chapter3.tex
 pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
 L3 programming layer <2023-05-15>
 ! Undefined control sequence.
@@ -12,10 +12,10 @@ l.1 \chapter
 ? x
  
 Here is how much of TeX's memory you used:
- 19 strings out of 476759
- 455 string characters out of 5809550
+ 19 strings out of 476760
+ 455 string characters out of 5809571
  1843672 words of memory out of 5000000
- 20505 multiletter control sequences out of 15000+600000
+ 20504 multiletter control sequences out of 15000+600000
  516158 words of font info for 49 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  15i,0n,23p,142b,18s stack positions out of 10000i,1000n,20000p,200000b,200000s

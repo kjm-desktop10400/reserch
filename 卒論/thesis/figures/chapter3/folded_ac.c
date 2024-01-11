@@ -21,8 +21,8 @@ int main(void)
     fputs("set datafile separator \",\" \n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
-    fputs("set xlabel \"Freq [Hz]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
-    fputs("set ylabel \"Gain [dB]\" font \"Arial,30\" offset -8,0\n", pipe);
+    fputs("set xlabel \"Freq [Hz]\" font \"cmr10,30\" offset 0,-1.5\n", pipe);
+    fputs("set ylabel \"Gain [dB]\" font \"cmr10,30\" offset -8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
     fputs("set key center right spacing 2.5 offset 22,0\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
@@ -43,11 +43,19 @@ int main(void)
     //凡例の設定
     #pragma region
     
-    fputs("set label 1   center at graph 0.2   , 0.3  \"V_{CTRL} = 20 mV\" font \", 20\" \n", pipe);
-    fputs("set label 2   center at graph 0.268 , 0.45 \"40 mV\" font \", 20\" \n", pipe);
-    fputs("set label 3   center at graph 0.268 , 0.55 \"60 mV\" font \", 20\" \n", pipe);
-    fputs("set label 4   center at graph 0.268 , 0.618 \"80 mV\" font \", 20\" \n", pipe);
-    fputs("set label 5   center at graph 0.268 , 0.92 \"200 mV\" font \", 20\" \n", pipe);
+    fputs("set label 6  right  at graph 0.25  , 0.28  \"V_{CTRL} = \" font \"Times New Roman:Italic, 20\" \n", pipe);
+
+    fputs("set label 1  left   at graph 0.25  , 0.28  \"20 \"         font \"Times New Roman, 20\" \n", pipe);
+    fputs("set label 2  left   at graph 0.25  , 0.44  \"40 \"         font \"Times New Roman, 20\" \n", pipe);
+    fputs("set label 3  left   at graph 0.25  , 0.53  \"60 \"         font \"Times New Roman, 20\" \n", pipe);
+    fputs("set label 4  left   at graph 0.25  , 0.60  \"80 \"         font \"Times New Roman, 20\" \n", pipe);
+    fputs("set label 5  left   at graph 0.25  , 0.92  \"200 \"        font \"Times New Roman, 20\" \n", pipe);
+
+    fputs("set label 12 center at graph 0.35  , 0.28  \"mV\"          font \"Times New Roman, 20\" \n", pipe);
+    fputs("set label 22 center at graph 0.35  , 0.44  \"mV\"          font \"Times New Roman, 20\" \n", pipe);
+    fputs("set label 32 center at graph 0.35  , 0.53  \"mV\"          font \"Times New Roman, 20\" \n", pipe);
+    fputs("set label 42 center at graph 0.35  , 0.60  \"mV\"          font \"Times New Roman, 20\" \n", pipe);
+    fputs("set label 52 center at graph 0.374 , 0.92  \"mV\"          font \"Times New Roman, 20\" \n", pipe);
     
     #pragma endregion
 

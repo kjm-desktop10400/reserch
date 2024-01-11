@@ -9,7 +9,7 @@
                 \label{fig:3_folded_gilbert}
             \end{center}
         \end{figure}
-        この構造では定電流源を用いることで各$\mathrm{M_{B}}$に流れる信号電流の増減が$\mathrm{M_{p}}$に反転して伝えられる。ゲート接地増幅回路としてはpMOSFET($\mathrm{M_{p1}}$～$\mathrm{M_{p4}}$)を用いることで制御電圧に比例したトランスコンダクタンスを得る。このような折り返しカスコード型の構造をとることで出力電圧は$M_{p}$と電流源のpMOSFETで分圧するため、入力電圧分出力振幅が広がることが予測される。しかし左右それぞれにバイアス電流を流すため消費電流が増加する。さらにpMOSFETを小信号に使用するためどうしてもnMOSFETのみのギルバート乗算回路よりも遮断周波数が下がってしまう。$\mathrm{RHOM\;0.18\mu\;m\;Process}$にてギルバート乗算回路と折り返しカスコード型の乗算回路をバイアス電流が同じになるように設計したときのそれぞれの素子値を表\ref{table:3_gilbert_param}、表\ref{table:3_folded_gilbert_param}に示す。またこの素子値におけるシミュレーションでの周波数特性を図\ref{fig:3_gilbert_ac}、図\ref{fig:3_folded_gilbert_ac}にそれぞれ示す。
+        この構造では定電流源を用いることで各$\mathrm{M_{B}}$に流れる信号電流の増減が$\mathrm{M_{p}}$に反転して伝えられる。ゲート接地増幅回路としてはpMOSFET($\mathrm{M_{p1}}$～$\mathrm{M_{p4}}$)を用いることで制御電圧に比例したトランスコンダクタンスを得る。このような折り返しカスコード型の構造をとることで出力電圧は$M_{p}$と電流源のpMOSFETで分圧するため、入力電圧分出力振幅が広がることが予測される。しかし左右それぞれにバイアス電流を流すため消費電流が増加する。さらにpMOSFETを小信号に使用するためどうしてもnMOSFETのみのギルバート乗算回路よりも遮断周波数が低下するといったデメリットが考えられる。$\mathrm{RHOM\;0.18\mu\;m\;Process}$にてギルバート乗算回路と折り返しカスコード型の乗算回路をバイアス電流が同じになるように設計したときのそれぞれの素子値を表\ref{table:3_gilbert_param}、表\ref{table:3_folded_gilbert_param}に示す。またこの素子値におけるシミュレーションでの周波数特性を図\ref{fig:3_gilbert_ac}、図\ref{fig:3_folded_gilbert_ac}にそれぞれ示す。
         \begin{table}[!b]
             \begin{minipage}[t]{.45\textwidth}
                 \begin{center}
@@ -106,7 +106,7 @@
             \label{fig:3_folded_gilbert_ac}
         \end{figure}
         \clearpage
-        今回の設計ではトランスコンダクタンスも揃っているので利得は同程度であるが、遮断周波数は1桁程度落ちてしまっている。本論文での目的はS/N比を向上させるために出力範囲を拡大することであるが、フォトニックリザバに用いることを想定すると周波数特性が構造的にギルバート乗算回路よりも悪化するのは避けたい。そこでpMOSFETを使用せずに信号の折り返しを行うことで出力範囲を拡大できるのではないかと考え、これを実現する回路を図\ref{fig:3_folded_mirror_gilbert}に示す。\par
+        今回の設計ではトランスコンダクタンスも揃っているので利得は同程度であるが、遮断周波数は1桁程度落ちてしまっている。本論文での目的はS/N比を向上させるために出力範囲を拡大することであるが、フォトニックリザバに用いることを想定すると周波数特性が構造的にギルバート乗算回路よりも悪化するのは避けたい。そこでpMOSFETを使用せずに信号の折り返しを行うことで出力範囲を拡大できるのではないかと考え、これを実現する回路を図\ref{fig:3_folded_mirror_gilbert}に示し、これをカレントミラーを組み合わせた折り返し型乗算回路とした。\par
         \begin{figure}[!b]
             \begin{center}
                 \includegraphics[width=0.99\textwidth]{figures/chapter3/NtoNFolded.pdf}
@@ -114,17 +114,76 @@
                 \label{fig:3_folded_mirror_gilbert}
             \end{center}
         \end{figure}
-        $\mathrm{M_{U},M_{L}}$はともに電流源として用いており、定電流$I_{Lbias}$を入力のMOSFETである$\mathrm{M_{B}}$とカレントミラーの参照電流を流す$M_{MB}$で分流する。これにより、入力の差動対によって$v_{in}$に比例した信号電流を符号を逆転させ$M_{MB}$に流す。カレントミラーのコピー側である$\mathrm{M_{MA}}$には$\mathrm{M_{MB}}$と$\mathrm{M_{MA}}$の形状比と$v_{in}$に比例した電流を流すことができる。これにより制御電圧を印加し、$\mathrm{M_{A}}$に流れるバイアス電流を変動させる。$\mathrm{M_{A}}$はゲート接地増幅回路であり、\ref{ch:gilbert_valiable_gm}節での議論からトランスコンダクタンスは$V_{CTRL}$に比例しており、負荷抵抗に流れる電流を$V_{in}$と$V_{CTRL}$に比例したものにすることができる。負荷抵抗によって電流を電圧に変換することができるという。このような想定の元、図\ref{fig:3_folded_mirror_gilbert}の構成を考えた。
+        $\mathrm{M_{U},M_{L}}$はともに電流源として用いており、定電流$I_{Lbias}$を入力のMOSFETである$\mathrm{M_{B}}$とカレントミラーの参照電流を流す$M_{MB}$で分流する。これにより、入力の差動対によって$v_{in}$に比例した信号電流を符号を逆転させ$M_{MB}$に流す。カレントミラーのコピー側である$\mathrm{M_{MA}}$には$\mathrm{M_{MB}}$と$\mathrm{M_{MA}}$の形状比と$v_{in}$に比例した電流を流すことができる。これにより制御電圧を印加する$\mathrm{M_{A}}$に流れるバイアス電流を変動させる。$\mathrm{M_{A}}$はゲート接地増幅回路であり、\ref{ch:gilbert_valiable_gm}節での議論からトランスコンダクタンスは$V_{CTRL}$に比例しており、負荷抵抗に流れる電流を$V_{in}$と$V_{CTRL}$に比例したものにすることができる。そして負荷抵抗によって電流を電圧に変換する。このようにしてカレントミラーと差動対で電流を分流することで折り返しカスコード型の様に信号を伝達することができるのではないかと予測し、図\ref{fig:3_folded_mirror_gilbert}の構成を考えた。
 
     \section{小信号解析}
-        前節では今回提案する構成によって乗算ができると考える理由を述べたが、本節では小信号解析により提案回路によって乗算が可能であることを示す。\par
-        図\ref{fig:3_folded_mirror_gilbert}の小信号半回路を図\ref{fig:3_folded_mirror_half}に示す。
+        前節では今回提案する構成によって乗算ができると考える理由を述べたが、本節では小信号解析により提案回路を用いたアナログ乗算が可能であることを示す。\par
+        図\ref{fig:3_folded_mirror_gilbert}はギルバート乗算回路同様差動回路であるため差動半回路を考えることで回路全体の小信号解析を行うことができる。したがって半回路として考える部分を図\ref{fig:3_folded_mirror_gilbert_half}に示す。また、この時の小信号等価半回路を図\ref{fig:3_folded_mirror_half}に示す。
         \begin{figure}[!b]
             \centering
-            \includegraphics[width=125mm]{figures/chapter3/NtoNHalfDiffEqual.pdf}
+            \includegraphics[width=0.99\textwidth]{figures/chapter3/NtoNFolded_half.pdf}
+            \caption{カレントミラーを組み合わせた折り返し型アナログ乗算回路の半回路として考える部分}
+            \label{fig:3_folded_mirror_gilbert_half}
+        \end{figure}
+        \begin{figure}[!b]
+            \centering
+            \includegraphics[width=0.99\textwidth]{figures/chapter3/NtoNHalfDiffEqual.pdf}
             \caption{カレントミラーを組み合わせた折り返し型アナログ乗算回路の小信号半回路}
             \label{fig:3_folded_mirror_half}
         \end{figure}
+        \clearpage
+        ここで$g_{mB},g_{mMB},g_{mMA},g_{mA}$はそれぞれ$\mathrm{M_{B},M_{MB},M_{MA},M_{A}}$のトランスコンダクタンスであり、$g_{dB},g_{dMB},g_{dMA},g_{dA}$は$\mathrm{M_{B},M_{MB},M_{MA},M_{A}}$のドレインソース間抵抗である。また$R_{L}$は負荷抵抗であり、$v_{AS},v_{BD}$はそれぞれ接点A,Bの電位とする。この時、接点BにKCLを用いると$v_{BD}$は
+        \begin{align}
+            0&=g_{mB}(-v_{in})+(g_{dB}+g_{dMB})v_{BD}+g_{mMB}v_{BD}     \notag\\
+            v_{BD}&=\frac{g_{mB}}{ g_{mMB}+g_{dMA}+g_{dMB} }v_{in}      \notag
+        \end{align}
+        と表せる。ここで、$g_{mB}>>g_{dMA},g_{dMB}$を仮定すると
+        \begin{align}
+            v_{BD}\approx \frac{g_{mB}}{g_{mMB}}v_{in}      \label{eq:3_vbd}
+        \end{align}
+        と近似することができる。次に$i_{A1},i_{A2}$はそれぞれ
+        \begin{align}
+            i_{A1}&=(g_{mA}-\Delta g_{m})(-v_{AS})+g_{dA}(v_{outp}-v_{AS})      \label{eq:3_ia1}\\
+            i_{A2}&=(g_{mA}+\Delta g_{m})(-v_{AS})+g_{dA}(v_{outm}-v_{AS})      \label{eq:3_ia2}   
+        \end{align}
+        であることを用いると、接点AについてのKCLを考えることで$v_{AS}$は
+        \begin{align*}
+            g_{mMA}v_{BD}+g_{dMA}v_{AS}&=i_{A1}+i_{A2}   \\
+            &=(g_{mA}-\Delta g_{m})(-v_{AS})+g_{dA}(v_{outp}-v_{AS})    \\
+            &\quad\quad\quad\quad +(g_{mA}+\Delta g_{m})(-v_{AS})+g_{dA}(v_{outm}-v_{AS})       \\
+            &=-2g_{mA}v_{AS}-2g_{dA}v_{AS}  \\
+            v_{AS} &= -\frac{ g_{mMA} }{ 2g_{mA}+2g_{dA}+g_{dMA} }v_{BD}
+        \end{align*}
+        と計算できる。さらに$g_{mMA}>>2g_{dA},g_{dMA}$を仮定すると
+        \begin{align}
+            V_{AS} \approx -\frac{g_{mMA}}{2g_{mA}} v_{BD}      \label{eq:3_vas}
+        \end{align}
+        の近似ができる。ここで図\ref{fig:3_folded_mirror_half}が差動回路であることに注意すると、\mbox{$i_{A3}=-i_{A2}$} \mbox{$v_{outp}=-v_{outm}$}の関係が成り立つので
+        \begin{align}
+            i_{outp}&=i_{A1}+i_{A3}     \notag\\
+            &=i_{A1}-i_{A2}     \notag\\
+            &=2\Delta g_{m}v_{AS}+2g_{dA}v_{outp}     \label{eq:3_ioutp}
+        \end{align}
+        と$v_{outp}$を用いて$i_{outp}$を表すことができた。接点OについてのKVLを考えると
+        \begin{align}
+            v_{outp}&=0-R_{L}i_{outp}       \notag\\
+            &=-R_{L}\left( 2\Delta g_{m}v_{AS}+2g_{dA}v_{outp}  \right)       \notag\\
+            &=-\frac{ 2R_{L} }{ 1+2R_{L}g_{dA} } \cdot \Delta g_{m}v_{AS}       \label{eq:3_voutp}    
+        \end{align}
+        であるので、出力電圧$v_{out}$を$v_{out}:=v_{outp}-v_{outm}$とすれば$v_{outp}=-v_{outm}$であることに留意すると
+        \begin{align*}
+            v_{out}&=2v_{outp}  \\
+            &=-\frac{ 4R_{L} }{ 1+2R_{L}g_{dA} } \cdot \Delta g_{m}v_{AS}
+        \end{align*}
+        と計算できる。ここで式(\ref{eq:3_vbd})、(\ref{eq:3_vas})を代入すると
+        \begin{align*}
+            v_{out}=\frac{ g_{mB} }{ g_{mA} }\cdot\frac{ g_{mMA} }{ g_{mMB} }\cdot\frac{ 2R_{L} }{ 1+2R_{L} g_{dA}}\cdot\Delta g_{m}v_{in}
+        \end{align*}
+        である。さらに\ref{ch:gilbert_valiable_gm}の結論を用いれば、$\mathrm{M_{A}}$のトランスコンダクタンス係数を$K$としたとき$\Delta g_{m}=2KV_{CTRL}$なので
+        \begin{align}
+            v_{out}=\frac{ g_{mB} }{ g_{mA} }\cdot\frac{ g_{mMA} }{ g_{mMB} }\cdot\frac{ 4KR_{L} }{ 1+2R_{L} g_{dA}}\cdot V_{CTRL}\cdot v_{in}      \label{eq:3_vout}
+        \end{align}
+        と計算することができた。したがってカレントミラーを組み合わせた折り返し型乗算回路は入力電圧$v_{in}$と制御電圧$V_{CTRL}$に比例した出力を得ることができる。特にカレントミラーの形状比が同一である場合、$g_{mMA}=g_{mMB}$となるため、ギルバート乗算回路の出力と一致することが分かる。
 
 
     \section{出力範囲}
@@ -137,7 +196,7 @@
 
 %    \begin{figure}[!b]
 %        \centering
-%        \includegraphics[width=0.9\textwidth]{figures/chapter}
+%        \includegraphics[width=0.99\textwidth]{figures/chapter}
 %        \caption{}
 %        \label{fig:3_}
 %    \end{figure}

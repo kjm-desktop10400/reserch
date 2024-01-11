@@ -47,38 +47,58 @@
             \newpage
             
         \subsection{小信号等価回路}
-            次に小信号等価回路を考えるが、ここでギルバート乗算回路は差動対の組み合わせでできているため、半回路を考えることで回路全体の小信号解析を行うことができる。
+            次に小信号等価回路を考えるが、ここでギルバート乗算回路は差動対の組み合わせでできているため、半回路を考えることで回路全体の小信号解析を行うことができる。半回路では対応する電位・電流はそれぞれ逆符号となるため半分のみを考えれば全体を解析したことと等価になる。そこで左右の負荷抵抗$R_{L}$、$\mathrm{M_{A1}}$と$\mathrm{M_{A4}}$、$\mathrm{M_{A2}}$と$\mathrm{M_{A3}}$、$\mathrm{M_{B1}}$と$\mathrm{M_{B2}}$がそれぞれ対応すしていることに留意すると図\ref{fig:2_gilbert_half}のような部分において半回路を考えれば良いと分かる。
             \begin{figure}[!b]
-                \begin{center}
-
-                    \includegraphics[width=0.99\textwidth]{figures/chapter2/halfeq.pdf}
-                    \caption{ギルバート乗算回路の小信号半回路}
-                    \label{fig:2_half}
-
-                \end{center}
-
+                \centering
+                \includegraphics[width=0.99\textwidth]{figures/chapter2/gilbert_half.pdf}
+                \caption{ギルバート乗算回路の内半回路を考える部分}
+                \label{fig:2_gilbert_half}
             \end{figure}
-            そこで図\ref{fig:2_gilbert}の$M_{A1},M_{A2},M_{B1}$についての半回路は$V_{S}$が交流的に接地されていることに留意すると、図\ref{fig:2_half}に示すようになる。ただし、$g_{m},g_{mB}$は$\mathrm{M_{A},M_{B}}$のトランスコンダクタンス、$g_{dA},g_{dB}$は$\mathrm{M_{A},M_{B}}$のドレインソース間抵抗、$R_{L}$は深い抵抗である。また、$v_{AB}$は接点ABの電位であるが直流電圧源が小信号的には短絡であることに留意し、$\mathrm{M_{A}}$のゲートへの入力が直流であることを仮定すると$\mathrm{M_{A}}$のゲートソース間電圧は$-V_{AB}$となる。この時、接点ABにKCLを用いると
+            図\ref{fig:2_gilbert_half}の半回路を小信号等価回路に置き換える際、MOSFETは図\ref{fig:2_moseq}のような小信号等価回路モデルに、直流電圧源は短絡に、直流電流源は開放に置き換えると図\ref{fig:2_half}のような小信号等価半回路を書くことができる。
+            \begin{figure}[!b]
+                \centering
+                \includegraphics[width=0.5\textwidth]{figures/chapter2/mos_eq.pdf}
+                \caption{MOSFETの小信号等価回路モデル}
+                \label{fig:2_moseq}
+            \end{figure}
+            \begin{figure}[!b]
+                \centering
+                \includegraphics[width=0.99\textwidth]{figures/chapter2/halfeq.pdf}
+                \caption{ギルバート乗算回路の小信号半回路}
+                \label{fig:2_half}
+            \end{figure}
+            \clearpage
+            ただし、$V_{S}$は差動のソース電位であり、一定であると捉えることができる。即ち$\mathrm{M_{C}}$は交流的な信号は$0\mathrm{ V}$であるため、接地として扱う。また$g_{mA},g_{mB}$は$\mathrm{M_{A},M_{B}}$のトランスコンダクタンス、$g_{dA},g_{dB}$は$\mathrm{M_{A},M_{B}}$のドレインソース間抵抗、$R_{L}$は負荷抵抗である。まず、電流$i_{1},i_{2}$はそれぞれ
             \begin{align}
-                g_{mB}v_{in}+g_{dB}v_{AB}&=(g_{m}+\Delta g_{m})(-v_{AB})+g_{dA}(v_{outm}-v_{AB})    \notag\\
-                &\quad\quad\quad\quad +(g_{m}-\Delta g_{m})(-v_{AB})+g_{dA}(v_{outp}-v_{AB})     \notag\\
-                v_{AB}&=-\frac{g_{mB}}{2g_{m}+2g_{dA}+g_{dB}}v_{in}     \label{eq:2_vab}
+                i_{1}&=(g_{mA}+\Delta g_{m})(-v_{AB})+g_{dA}(v_{outm}-v_{AB})        \label{eq:2_i1}\\
+                i_{2}&=(g_{mA}-\Delta g_{m})(-v_{AB})+g_{dA}(v_{outp}-v_{AB})        \label{eq:2_i2}
             \end{align}
-            と書ける。さらに、完全差動回路であることを踏まえると$i_{3}=-i_{2}$、$v_{outp}=-v_{outm}$という関係が成り立つ。また最終的な出力電圧を$v_{out}:=v_{outp}-v_{outm}$と定義する。これに留意して負荷抵抗$R_{L}$に流れる電流$i_{outm}$は
+            と表せる。ここで、小信号等価回路に置き換えた際、$V_{A},V_{CTRL}$は短絡されているので、接点ABにKCLを用いると
             \begin{align}
-                i_{outm}&=i_{1}+i_{2}       \notag\\
-                &=(g_{m}+\Delta g_{m})(-v_{AB})+g_{dA}(v_{outm}-v_{AB})       \notag\\
-                &\quad\quad\quad\quad -\left\{  (g_{m}-\Delta g_{m})(-v_{AB})+g_{dA}(v_{outp}-v_{AB})  \right\}   \notag\\
-                &=-2(\Delta g_{m}v_{AB}+g_{dA}v_{out})      \label{eq:2_iout}
+                g_{mB}v_{in}+g_{dB}v_{AB}&=i_{1}+i_{2}    \notag\\
+                &=-2g_{mA}v_{AB}-2g_{dA}v_{AB}               \notag\\
+                v_{AB}&=-\frac{g_{mB}}{2g_{mA}+2g_{dA}+g_{dB}}v_{in}     \label{eq:2_vab}
+            \end{align}
+            と書ける。さらに、完全差動回路であることを踏まえると$i_{3}=-i_{2}$、$v_{outp}=-v_{outm}$という関係が成り立つ。このとき負荷抵抗$R_{L}$に流れる電流$i_{outm}$は
+            \begin{align}
+                i_{outm}&=i_{1}+i_{3}       \notag\\
+                &=i_{1}-i_{2}   \notag\\
+                &=-2\Delta g_{m}+2g_{dA}v_{outm}    \label{eq:2_ioutm}
             \end{align}
             と表せる。オームの法則を用いると
             \begin{align}
-                v_{out}&=\left\{ \left(0-R_{L}i_{outp}\right) - \left(0-R_{L}i_{outm}\right) \right\}    \notag\\
-                &=\frac{ 4R_{L} }{1+2R_{L}g_{dA}}\Delta g_{m}v_{AB}     \notag
+                v_{outm}&=-R_{L}i_{outm}    \notag\\
+                &=\frac{ 2R_{L} }{1+2R_{L}g_{dA}}\Delta g_{m}v_{AB}     \notag
             \end{align}
-            と計算できる。ここで、$g_{m}>>g_{dA},g_{dB}$を仮定し\ref{ch:gilbert_valiable_gm}の結果と式(\ref{eq:2_vab})を用いると出力電圧は
+            と計算できる。最終的な出力は$v_{outp}$と$v_{outm}$の差をとることとすると
+            \begin{align*}
+                v_{out}&:=v_{outp}-v_{outm}     \\
+                &=-2v_{outm}                    \\
+                &=-\frac{ 4R_{L} }{1+2R_{L}g_{dA}}\Delta g_{m}v_{AB}
+            \end{align*}
+            である。ここで、$g_{mA}>>g_{dA},g_{dB}$を仮定し\ref{ch:gilbert_valiable_gm}の結果と式(\ref{eq:2_vab})を用いると出力電圧は
             \begin{align}
-                v_{out}=\frac{ 8KR_{L} }{ 1+2R_{L} }\cdot\frac{ g_{mB} }{ 2g_{m} }\cdot V_{CTRL}\cdot v_{in}       \label{eq:2_vout}
+                v_{out}=\frac{ g_{mB} }{ g_{mA} }\cdot \frac{ 4KR_{L} }{ 1+2R_{L}g_{dA} }\cdot V_{CTRL}\cdot v_{in}       \label{eq:2_vout}
             \end{align}
             と表すことができる。ここで、$V_{CTRL}$と$K$はそれぞれ$M_{A}$に与える制御電圧とトランスコンダクタンス係数である。以上より、小信号を入力した際には出力として入力電圧$v_{in}$と制御電圧$V_{CTRL}$に比例した電圧を得る、すなわち乗算ができることが確かめられた。
             \newpage
