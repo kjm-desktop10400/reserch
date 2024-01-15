@@ -104,7 +104,7 @@
             \newpage
 
 
-    \section{出力範囲}
+    \section{出力範囲}      \label{ch:2_range}
         次にギルバート乗算回路の出力範囲を考える。適切に乗算が行える条件はMOSFETが遮断領域に入らないことであるとすると、制約条件として各MOSFETにおいてしきい電圧$V_{th}$が一定であるとすると
         \begin{subequations}
             \begin{empheq}[left={\empheqlbrace}]{align}
@@ -162,7 +162,7 @@
         \end{align}
         である。さらに、出力電圧は電源電圧からも制約を受けるので
         \begin{align}
-            V_{out}+v_{out}<V_{dd}
+            V_{out}+\frac{1}{2}v_{out}<V_{dd}
         \end{align}
         であり、出力範囲を$v_{range}$とすると式(\ref{eq:2_range_out})と合わせ
         \begin{align}
