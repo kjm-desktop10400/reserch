@@ -187,6 +187,75 @@
 
 
     \section{出力範囲}
+        次に、\ref{ch:2_range}と同様の方法で出力範囲を求めギルバート乗算回路と比較を行う。まず、適切に動作する条件をすべてのMOSFETが飽和領域で動作することするための式(\ref{eq:2_binding_conditions})を再掲すると
+        \begin{subequations}
+            \begin{empheq}[left={\empheqlbrace}]{align*}
+                &V_{GS}-V_{th}<V_{DS}          \\
+                &V_{th}<V_{GS}              
+            \end{empheq}
+        \end{subequations}
+        であった。これを図\ref{fig:3_folded_mirror_gilbert}の各MOSFETに適用すると
+        \begin{subequations}
+            \begin{empheq}[left={M_{A}:\empheqlbrace}]{align}
+                &V_{rbias}+V_{CTRL}-V_{AS}-V_{th}<V_{out-\frac{1}{2}}-V_{AS}        \\
+                &V_{th}<V_{rbias}-V_{CTRL}-V_{AS}
+            \end{empheq}        \label{eq:3_ma_binding}
+        \end{subequations}
+        \begin{subequations}
+            \begin{empheq}[left={M_{MA}:\empheqlbrace}]{align}
+                &V_{M}-V_{th}<V_{AS}        \\
+                &V_{th}<V_{dd}-V_{U}
+            \end{empheq}        \label{eq:3_mma_binding}
+        \end{subequations}
+        \begin{subequations}
+            \begin{empheq}[left={M_{U}:\empheqlbrace}]{align}
+                &V_{dd}+v_{in}-V_{BS}-V_{th}<V_{dd}-V_{BS}      \\
+                &V_{th}<V_{dd}-V_{U}
+            \end{empheq}        \label{eq:3_mu_binding}
+        \end{subequations}
+        \begin{subequations}
+            \begin{empheq}[left={M_{B}:\empheqlbrace}]{align}
+                &V_{lbias}+v_{in}-V_{BS}-V_{th}<V_{M}-V_{BS}        \\
+                &V_{th}<V_{lbias}-v_{in}-V_{BS}
+            \end{empheq}        \label{eq:3_mb_binding}
+        \end{subequations}
+        \begin{subequations}
+            \begin{empheq}[left={M_{L}:s\empheqlbrace}]{align}
+                &V_{L}-V_{th}<V_{BS}        \\
+                &V_{th}<V_{L}
+            \end{empheq}        \label{eq:3_ml_binding}
+        \end{subequations}
+        という5つの不等式が得られる。ただし、$\mathrm{M_{MA}}$に関してはダイオード接続になっているので常に飽和領域で動作する。まず$\mathrm{M_{L}}$について、式(\ref{eq:3_ml_binding}b)の両辺に$-V_{th}$を加えると
+        \begin{align*}
+            0<V_{L}-V_{th}
+        \end{align*}
+        となる。これと式(\ref{eq:3_ml_binding}a)と合わせると
+        \begin{align}
+            0<V_{BS}    \label{eq:3_vbs_range}
+        \end{align}
+        を得る。同様に$\mathrm{M_{A},M_{B},M_{U}}$についてもa式とb式をまとめると
+        \begin{align}
+            \mathrm{M_{A}}\;:\;&V_{AS}<V_{out}-\frac{1}{2}v_{out}-2V_{CTRL}        \label{eq:3_vas_upper}\\
+            \mathrm{M_{B}}\;:\;&V_{BS}+2v_{in}<V_{M}                               \label{eq:3_vm_lower}\\
+            \mathrm{M_{U}}\;:\;&V_{M}<V_{dd}                                       \label{eq:3_vm_upper}
+        \end{align}
+        と表すことができる。式(\ref{eq:3_vm_upper})に関しては、$V_{m}$が電源電圧内であれば飽和領域で動作するということなので今回はほとんど考慮する必要がない。次に式(\ref{eq:3_vas_upper})の両辺に$-V_{th}$を加えることで式(\ref{eq:3_mma_binding}a)の左辺と等しくなることに注意すると、式(\ref{eq:3_vm_lower})より
+        \begin{align}
+            V_{BS}+2v_{in}&<V_{out}-\frac{1}{2}v_{out}-2V_{CTRL}-V_{th}         \notag\\
+            V_{BS}+2v_{in}+2V_{CTRL}+V_{th}&<V_{out}-\frac{1}{2}v_{out}         \notag\\
+            \frac{1}{2}v_{out}&<V_{out}-(V_{BS}+2v_{in}+2V_{CTRL}-V_{th})        \label{eq:3_vout_lower}
+        \end{align}
+        を得る。また、出力電圧は電源電圧にも制限を受けるため
+        \begin{align}
+            V_{out}+\frac{1}{2}&<V_{dd}                                          \notag\\
+            \frac{1}{2}v_{out}&<V_{dd}-V_{out}                                  \label{eq:3_vout_upper}
+        \end{align}
+        が必要となる。式(\ref{eq:3_vout_lower})、(\ref{eq:3_vout_upper})の辺々を足し合わせると
+        \begin{align}
+            v_{out}&<V_{dd}-(V_{BS}+2v_{in}+2V_{CTRL}-V_{th})                  \label{eq:3_vout_range}
+        \end{align}
+        と求められた。これはギルバート乗算回路の出力範囲、式(\ref{ch:2_range})と比較すると$V_{th}$だけ大きくなっていることが分かる。この出力振幅の拡大はカレントミラーによって生じており、参照側はドレインとゲートを短絡しているがコピー側では飽和領域で動作する条件からドレイン電位を参照側よりもしきい電圧$V_{th}$分下げられることに起因する。つまりカレントミラーを多数接続することでさらに$\mathrm{M_{A}}$のソース電位を下げられる可能性があるが、カレントミラーのドレインソース間電圧が小さくなるとドレイン電流が小さくなることが考えられる。
+
 
 
     \section{シミュレーションによる確認}
