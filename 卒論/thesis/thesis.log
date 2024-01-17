@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.25)  15 JAN 2024 17:57
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.26)  17 JAN 2024 00:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/Desktop/reserch/卒論/thesis/thesis.tex
-(c:/Desktop/reserch/卒論/thesis/thesis.tex
+**e:/Desktop/reserch/卒論/thesis/thesis.tex
+(e:/Desktop/reserch/卒論/thesis/thesis.tex
 pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
 L3 programming layer <2023-05-15>
 (c:/texlive/2023/texmf-dist/tex/platex/base/jreport.cls
@@ -447,10 +447,10 @@ File: figures/chapter3/NtoNHalfDiffEqual.pdf Graphic file (type pdf)
 
 ] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 6606 strings out of 476760
- 112505 string characters out of 5809571
+ 6606 strings out of 476759
+ 112505 string characters out of 5809550
  1867672 words of memory out of 5000000
- 26903 multiletter control sequences out of 15000+600000
+ 26904 multiletter control sequences out of 15000+600000
  525018 words of font info for 82 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  69i,14n,79p,1235b,495s stack positions out of 10000i,1000n,20000p,200000b,200000s
