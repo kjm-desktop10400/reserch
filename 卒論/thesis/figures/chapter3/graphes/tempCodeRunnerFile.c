@@ -43,7 +43,7 @@ int main(void)
     #pragma endregion
 
     //凡例の設定
-    #pragma region legends
+    #pragma region
     
     //fputs("set label 6  right  at graph 0.25  , 0.28  \"V_{CTRL} = \" font \"BKM-cmmi10, 20\" \n", pipe);
     //fputs("set label 1  left   at graph 0.27  , 0.28  \"20 \"         font \"BKM-cmr10, 20\" \n", pipe);
@@ -59,27 +59,14 @@ int main(void)
     
     #pragma endregion
 
-    #pragma region objects
-
-    fputs("set style arrow 1 head size screen 0.012,30,60 filled front lw 1.5  \n", pipe);
-
-    fputs("set object 1 ellipse at 1.4,0.38 size 0.07,0.2 angle 30 unit xx front fillcolor black linewidth 0.7 \n", pipe);
-    fputs("set arrow  1 from 1.33,0.39 to 1.2,0.39 as 1 black \n", pipe);
-
-    fputs("set object 2 ellipse at 1,0.48 size 0.07,0.2 angle 0 unit xx front fillcolor black linewidth 1 \n", pipe);
-    fputs("set arrow  2 from 1.03,0.51 to 1.16,0.51 as 1 black \n", pipe);
-
-    fputs("set object 3 ellipse at 0.775,0.55 size 0.07,0.2 angle 60 unit xx front fillcolor black linewidth 1 \n", pipe);
-    fputs("set arrow  3 from 0.87,0.54 to 1,0.54 as 1 black \n", pipe);
-
-    #pragma endregion
+    fprintf(pipe, "set object 1 ellipse at 1.2,0.3 size 0.2,0.4 angle 30 unit xx front fillcolor black linewidth 1\n");
 
     fputs("input = \"id_vgs.vcsv\"\n", pipe);
 
     fprintf(pipe, "plot   input skip 6 using 1 : (($4) * 1e3) axis x1y1 black with lines notitle  \n");
     fprintf(pipe, "replot input skip 6 using 1 : (($2) * 1e3) axis x1y2 black with lines notitle  \n");
 
-    fprintf(pipe, "f(x) =K * (x - Vth) \n");
+    fprintf(pipe, "f(x) =2 * K * (x - Vth) \n");
     fprintf(pipe, "K = 100e-6 \n");
     fprintf(pipe, "Vth = 0.4 \n");
     fprintf(pipe, "fit [0.5:0.65] f(x) input skip 6 using 1 : 2 via K, Vth \n");
