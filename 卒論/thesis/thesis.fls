@@ -1,8 +1,8 @@
-PWD c:/Users/LarcH/Desktop/reserch/卒論/thesis
+PWD e:/Desktop/reserch/卒論/thesis
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/LarcH/Desktop/reserch/卒論/thesis/thesis.tex
+INPUT e:/Desktop/reserch/卒論/thesis/thesis.tex
 OUTPUT thesis.log
 INPUT c:/texlive/2023/texmf-dist/tex/platex/base/jreport.cls
 INPUT c:/texlive/2023/texmf-dist/tex/platex/base/jreport.cls

@@ -1,469 +1,1898 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.26)  18 JAN 2024 18:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.26)  19 JAN 2024 02:07
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/LarcH/Desktop/reserch/卒論/thesis/thesis.tex
-(c:/Users/LarcH/Desktop/reserch/卒論/thesis/thesis.tex
-pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
-L3 programming layer <2023-05-15>
-(c:/texlive/2023/texmf-dist/tex/platex/base/jreport.cls
-Document Class: jreport 2020/09/30 v1.8f Standard pLaTeX class
-\c@@paper=\count184
-(c:/texlive/2023/texmf-dist/tex/platex/base/jsize12.clo
-File: jsize12.clo 2020/09/30 v1.8f Standard pLaTeX file (size option)
-)
-\c@part=\count185
-\c@chapter=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
-\c@figure=\count192
-\c@table=\count193
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\symmincho=\mathgroup4
-LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 704.
-\toclineskip=\dimen156
-\@lnumwidth=\dimen157
-\bibindent=\dimen158
-\heisei=\count194
-) (./wadakensoturon.sty (c:/texlive/2023/texmf-dist/tex/latex/setspace/setspace
-.sty
+**e:/Desktop/reserch/卒論/thesis/thesis.tex
+(e:/Desktop/reserch/卒論/thesis/thesis.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-05-15> (c:/texlive/2023/texmf-dist/tex/platex/base/jreport.cls
+
+c:/texlive/2023/texmf-dist/tex/platex/base/jreport.cls:16: LaTeX Error: This file needs format `pLaTeX2e'
+               but this is `LaTeX2e'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \NeedsTeXFormat{pLaTeX2e}
+                              
+The current input file will not be processed further,
+because it was written for some other flavor of TeX.
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (./wadakensoturon.sty (c:/texlive/2023/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-)
-(c:/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+) (c:/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip48
+\f@nch@O@elh=\skip49
+\f@nch@O@erh=\skip50
+\f@nch@O@olh=\skip51
+\f@nch@O@orh=\skip52
+\f@nch@O@elf=\skip53
+\f@nch@O@erf=\skip54
+\f@nch@O@olf=\skip55
+\f@nch@O@orf=\skip56
+)
+./wadakensoturon.sty:135: Undefined control sequence.
+\setstretch ...ef \baselinestretch {#1}\@currsize 
+                                                  
+l.135 \setstretch					{1.3}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-\f@nch@headwidth=\skip50
-\f@nch@O@elh=\skip51
-\f@nch@O@erh=\skip52
-\f@nch@O@olh=\skip53
-\f@nch@O@orh=\skip54
-\f@nch@O@elf=\skip55
-\f@nch@O@erf=\skip56
-\f@nch@O@olf=\skip57
-\f@nch@O@orf=\skip58
-))
-(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+
+./wadakensoturon.sty:167: LaTeX Error: Command \appendix undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.167 \renewcommand{\appendix}
+                              {\par
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./wadakensoturon.sty:192: LaTeX Error: Command \bibname undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.192 \renewcommand{\bibname}
+                             {参考文献}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./wadakensoturon.sty:193: LaTeX Error: Environment thebibliography undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \renewenvironment{thebibliography}
+                                        [1]% 再定義
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
-)
-(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+\KV@toks@=\toks16
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-
-(c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 107.
-
-(c:/texlive/2023/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+ (c:/texlive/2023/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2022/09/22 v5.0m Graphics/color driver for dvipdfmx
 ))
-\Gin@req@height=\dimen159
-\Gin@req@width=\dimen160
-)
-(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
+) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip59
+\@mathmargin=\skip57
 
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
-
-(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks18
-\ex@=\dimen161
-))
-(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
+\@emptytoks=\toks17
+\ex@=\dimen142
+)) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen162
-)
-(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen143
+) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count195
+\inf@bad=\count185
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count196
-\leftroot@=\count197
+\uproot@=\count186
+\leftroot@=\count187
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count198
-\DOTSCASE@=\count199
+\classnum@=\count188
+\DOTSCASE@=\count189
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box68
-\strutbox@=\box69
+\Mathstrutbox@=\box51
+\strutbox@=\box52
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen163
+\big@size=\dimen144
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count266
+\macc@depth=\count190
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count267
+\c@MaxMatrixCols=\count191
 \dotsspace@=\muskip16
-\c@parentequation=\count268
-\dspbrk@lvl=\count269
-\tag@help=\toks19
-\row@=\count270
-\column@=\count271
-\maxfields@=\count272
-\andhelp@=\toks20
-\eqnshift@=\dimen164
-\alignsep@=\dimen165
-\tagshift@=\dimen166
-\tagwidth@=\dimen167
-\totwidth@=\dimen168
-\lineht@=\dimen169
-\@envbody=\toks21
-\multlinegap=\skip60
-\multlinetaggap=\skip61
-\mathdisplay@stack=\toks22
+\c@parentequation=\count192
+\dspbrk@lvl=\count193
+\tag@help=\toks18
+\row@=\count194
+\column@=\count195
+\maxfields@=\count196
+\andhelp@=\toks19
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks20
+\multlinegap=\skip58
+\multlinetaggap=\skip59
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-)
-(c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+) (c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen170
-\ar@mcellbox=\box70
-\extrarowheight=\dimen171
-\NC@list=\toks23
-\extratabsurround=\skip62
-\backup@length=\skip63
-\ar@cellbox=\box71
-)
-(c:/texlive/2023/texmf-dist/tex/latex/booktabs/booktabs.sty
+\col@sep=\dimen151
+\ar@mcellbox=\box53
+\extrarowheight=\dimen152
+\NC@list=\toks22
+\extratabsurround=\skip60
+\backup@length=\skip61
+\ar@cellbox=\box54
+) (c:/texlive/2023/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen172
-\lightrulewidth=\dimen173
-\cmidrulewidth=\dimen174
-\belowrulesep=\dimen175
-\belowbottomsep=\dimen176
-\aboverulesep=\dimen177
-\abovetopsep=\dimen178
-\cmidrulesep=\dimen179
-\cmidrulekern=\dimen180
-\defaultaddspace=\dimen181
-\@cmidla=\count273
-\@cmidlb=\count274
-\@aboverulesep=\dimen182
-\@belowrulesep=\dimen183
-\@thisruleclass=\count275
-\@lastruleclass=\count276
-\@thisrulewidth=\dimen184
-)
-(c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty
+\heavyrulewidth=\dimen153
+\lightrulewidth=\dimen154
+\cmidrulewidth=\dimen155
+\belowrulesep=\dimen156
+\belowbottomsep=\dimen157
+\aboverulesep=\dimen158
+\abovetopsep=\dimen159
+\cmidrulesep=\dimen160
+\cmidrulekern=\dimen161
+\defaultaddspace=\dimen162
+\@cmidla=\count197
+\@cmidlb=\count198
+\@aboverulesep=\dimen163
+\@belowrulesep=\dimen164
+\@thisruleclass=\count199
+\@lastruleclass=\count266
+\@thisrulewidth=\dimen165
+) (c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-
-(c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
+ (c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/03/12 v3.6j Customizing captions (AR)
-
-(c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
+ (c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
-\caption@tempdima=\dimen185
-\captionmargin=\dimen186
-\caption@leftmargin=\dimen187
-\caption@rightmargin=\dimen188
-\caption@width=\dimen189
-\caption@indent=\dimen190
-\caption@parindent=\dimen191
-\caption@hangindent=\dimen192
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
-p \iftdir \sbox \@tempboxa {#1\hskip 1zw#2}\else \sbox \@tempboxa {#1: #2}\fi \
-ifdim \wd \@tempboxa >\hsize \iftdir #1\hskip 1zw#2\relax \par \else #1: #2\rel
-ax \par \fi \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempboxa
- \hfil }\fi \vskip \belowcaptionskip  on input line 1176.
+\caption@tempdima=\dimen166
+\captionmargin=\dimen167
+\caption@leftmargin=\dimen168
+\caption@rightmargin=\dimen169
+\caption@width=\dimen170
+\caption@indent=\dimen171
+\caption@parindent=\dimen172
+\caption@hangindent=\dimen173
+\abovecaptionskip=\skip62
+\belowcaptionskip=\skip63
+Package caption Info: Document class w/o caption stuff detected.
 )
-
-Package caption Warning: Unknown document class (or package),
-(caption)                standard defaults will be used.
-See the caption package documentation for explanation.
-
-\c@caption@flags=\count277
-\c@continuedfloat=\count278
+\c@caption@flags=\count267
+\c@continuedfloat=\count268
 )
-\c@KVtest=\count279
+\c@KVtest=\count269
 \sf@farskip=\skip64
-\sf@captopadj=\dimen193
+\sf@captopadj=\dimen174
 \sf@capskip=\skip65
 \sf@nearskip=\skip66
-\c@subfigure=\count280
-\c@subfigure@save=\count281
-\c@lofdepth=\count282
-\c@subtable=\count283
-\c@subtable@save=\count284
-\c@lotdepth=\count285
-\sf@top=\skip67
-\sf@bottom=\skip68
-) (c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty
+\c@subfigure=\count270
+
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: LaTeX Error: No counter 'figure' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\c@subfigure@save=\count271
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Extra \endcsname.
+\newcounter ...ifdefinable \csname c@#1\endcsname 
+                                                  {\@definecounter {#1}}\@if...
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+\c@=\count272
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Extra \endcsname.
+\@definecounter ...ewcount \csname c@#1\endcsname 
+                                                  \setcounter {#1}\z@ \globa...
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing number, treated as zero.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Extra \endcsname.
+<argument> ...xt@figure\endcsname depth\endcsname 
+                                                  \z@ \relax 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Extra \endcsname.
+\@definecounter ...r \let \csname cl@#1\endcsname 
+                                                  \@empty \@addtoreset {#1}{...
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Extra \endcsname.
+\@definecounter ...er \let \csname p@#1\endcsname 
+                                                  \@empty \expandafter \gdef...
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing number, treated as zero.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Extra \endcsname.
+<argument> ...xt@figure\endcsname depth\endcsname 
+                                                  \@ne \relax 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+Missing character: There is no ^^A in font nullfont!
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@figure 
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Use of \the doesn't match its definition.
+\caption@ifatletter ->\ifnum \the \catcode 
+                                           `\@ =11 \expandafter \@firstoftwo...
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Use of \the doesn't match its definition.
+<argument> ...lineno\endcsname {\the \inputlineno 
+                                                  }
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:298: Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.298 ...ined{c@subfigure}{\newsubfloat{figure}}{}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:299: Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\c@subtable=\count
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:299: LaTeX Error: No counter 'table' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:299: Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\c@subtable@save=\count
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:299: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@table 
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:299: Extra \endcsname.
+\@ifundefined #1->\ifcsname #1\endcsname 
+                                         \@ifundefin@d@i \else \@ifundefin@d...
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:299: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@table 
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:299: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@table 
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:299: Missing \endcsname inserted.
+<to be read again> 
+                   \ext@table 
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:299: Use of \the doesn't match its definition.
+\caption@ifatletter ->\ifnum \the \catcode 
+                                           `\@ =11 \expandafter \@firstoftwo...
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:299: Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:299: Use of \the doesn't match its definition.
+<argument> ...lineno\endcsname {\the \inputlineno 
+                                                  }
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:299: Use of \the doesn't match its definition.
+\KV@@sp@c ...KV@toks@ {#1}\edef #3{\the \KV@toks@ 
+                                                  }
+l.299 ...efined{c@subtable}{\newsubfloat{table}}{}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:316: Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.316 }
+       
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:317: Use of \the doesn't match its definition.
+<write> ... =\string \skip \the \allocationnumber 
+                                                  
+l.317 \newskip\sf@top
+                     
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\sf@top=\skip
+c:/texlive/2023/texmf-dist/tex/latex/subfig/subfig.sty:318: Use of \the doesn't match its definition.
+<write> ... =\string \skip \the \allocationnumber 
+                                                  
+l.318 \newskip\sf@bottom
+                        
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\sf@bottom=\skip
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 298--516
+[]
+ []
+
+)
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Use of \the doesn't match its definition.
+\@pushfilename ...ame }{\@currext }{\the \catcode 
+                                                  `\@}\@currnamestack }\xdef...
+l.9 \usepackage
+               {comment}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+(c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip69
-\multirow@cntb=\count286
-\multirow@dima=\skip70
-\bigstrutjot=\dimen194
+
+c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty:29: Use of \the doesn't match its definition.
+\@declareoption ...e ds@#1\endcsname {\the \toks@ 
+                                                  }
+l.29 \DeclareOption{debug}{\multirowdebugtrue}
+                                              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty:55: Use of \the doesn't match its definition.
+\@declareoption ...e ds@#1\endcsname {\the \toks@ 
+                                                  }
+l.55 }}
+       
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty:116: Use of \the doesn't match its definition.
+\@declareoption ...e ds@#1\endcsname {\the \toks@ 
+                                                  }
+l.116 }
+       
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty:118: Use of \the doesn't match its definition.
+\in@ ... {\in@@ #2{}{}#1}\edef \in@@ {\the \toks@ 
+                                                  }\expandafter \endgroup \i...
+l.118 \newlength
+                {\multirow@colwidth}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty:118: Use of \the doesn't match its definition.
+\in@ ... {\in@@ #2{}{}#1}\edef \in@@ {\the \toks@ 
+                                                  }\expandafter \endgroup \i...
+l.118 \newlength
+                {\multirow@colwidth}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty:118: Use of \the doesn't match its definition.
+\in@ ... {\in@@ #2{}{}#1}\edef \in@@ {\the \toks@ 
+                                                  }\expandafter \endgroup \i...
+l.118 \newlength
+                {\multirow@colwidth}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty:118: Use of \the doesn't match its definition.
+\g@addto@macro ...fter {#1#2}\xdef #1{\the \toks@ 
+                                                  }\endgroup 
+l.118 \newlength
+                {\multirow@colwidth}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty:118: Use of \the doesn't match its definition.
+<write> ... =\string \skip \the \allocationnumber 
+                                                  
+l.118 \newlength{\multirow@colwidth}
+                                    
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\multirow@colwidth=\skip
+c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty:119: Use of \the doesn't match its definition.
+<write> ...=\string \count \the \allocationnumber 
+                                                  
+l.119 \newcount\multirow@cntb
+                             
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\multirow@cntb=\count
+c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty:120: Use of \the doesn't match its definition.
+<write> ... =\string \skip \the \allocationnumber 
+                                                  
+l.120 \newlength\multirow@dima
+                              
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\multirow@dima=\skip
+c:/texlive/2023/texmf-dist/tex/latex/multirow/multirow.sty:185: Use of \the doesn't match its definition.
+<write> ...=\string \dimen \the \allocationnumber 
+                                                  
+l.185 ...newdimen\bigstrutjot \bigstrutjot=\jot}{}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+\bigstrutjot=\dimen
 )
-(c:/texlive/2023/texmf-dist/tex/latex/comment/comment.sty
-\CommentStream=\write3
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Improper alphabetic constant.
+<to be read again> 
+                   \spacefactor 
+l.9 \usepackage
+               {comment}
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
 
-Excluding comment 'comment')
-(c:/texlive/2023/texmf-dist/tex/latex/here/here.sty)
-(c:/texlive/2023/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count287
-\float@exts=\toks24
-\float@box=\box72
-\@float@everytoks=\toks25
-\@floatcapt=\box73
-)
-(c:/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
-Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
-)
-(c:/texlive/2023/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 332.
-Package: cite 2015/02/27  v 5.5
-)
-(c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(c:/texlive/2023/texmf-dist/tex/latex/cases/cases.sty
-Package: cases 2020/03/29 ver 3.2
-\numc@numwid=\dimen195
-)
-(c:/texlive/2023/texmf-dist/tex/latex/mathtools/empheq.sty
-Package: empheq 2017/03/31 v2.15 Emphasizing equations
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Invalid code (48), should be in the range 0..15.
+<to be read again> 
+                   \spacefactor 
+l.9 \usepackage
+               {comment}
+I'm going to use 0 instead of that illegal code value.
 
-(c:/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
-)
-(c:/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: You can't use `\spacefactor' in vertical mode.
+<recently read> \spacefactor 
+                             
+l.9 \usepackage
+               {comment}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
-(c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count288
-\calc@Bcount=\count289
-\calc@Adimen=\dimen196
-\calc@Bdimen=\dimen197
-\calc@Askip=\skip71
-\calc@Bskip=\skip72
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count290
-\calc@Cskip=\skip73
-)
-\g_MT_multlinerow_int=\count291
-\l_MT_multwidth_dim=\dimen198
-\origjot=\skip74
-\l_MT_shortvdotswithinadjustabove_dim=\dimen199
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen256
-\l_MT_above_intertext_sep=\dimen257
-\l_MT_below_intertext_sep=\dimen258
-\l_MT_above_shortintertext_sep=\dimen259
-\l_MT_below_shortintertext_sep=\dimen260
-\xmathstrut@box=\box74
-\xmathstrut@dim=\dimen261
-)
-\l_EQ_equationtype_int=\count292
-\l_EQ_alignmentmode_int=\count293
-\l_EQ_totalwidth_dim=\dimen262
-\l_EQ_displaywidth_dim=\dimen263
-\l_EQ_temp_linewidth_dim=\dimen264
-\l_EQ_linewidth_dim=\dimen265
-\EmphEqdelimitershortfall=\dimen266
-\EmphEqdelimiterfactor=\count294
-\g_EQ_toptag_height_dim=\dimen267
-\g_EQ_bottomtag_depth_dim=\dimen268
-\g_EQ_toprow_height_dim=\dimen269
-\g_EQ_bottomrow_depth_dim=\dimen270
-\g_EQ_widesttag_dim=\dimen271
-\EQ_mathdisplay_box=\box75
-\EQ_tag_box=\box76
-\g_EQ_temprow_int=\count295
-)
-(c:/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count296
-\lst@gtempboxa=\box77
-\lst@token=\toks26
-\lst@length=\count297
-\lst@currlwidth=\dimen272
-\lst@column=\count298
-\lst@pos=\count299
-\lst@lostspace=\dimen273
-\lst@width=\dimen274
-\lst@newlines=\count300
-\lst@lineno=\count301
-\lst@maxwidth=\dimen275
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing $ inserted.
+<inserted text> 
+                $
+l.9 \usepackage
+               {comment}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-(c:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count302
-\lst@skipnumbers=\count303
-\lst@framebox=\box78
-)
-(c:/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2023/02/27 1.9 listings configuration
-))
-Package: listings 2023/02/27 1.9 (Carsten Heinz)
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Use of \the doesn't match its definition.
+\g__para_standard_everypar_tl ...dent: \the \toks 
+                                                  11 
+l.9 \usepackage
+               {comment}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-(c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
-File: l3backend-dvipdfmx.def 2023-04-19 L3 backend support: dvipdfmx
-\g__graphics_track_int=\count304
-\l__pdf_internal_box=\box79
-\g__pdf_backend_object_int=\count305
-\g__pdf_backend_annotation_int=\count306
-\g__pdf_backend_link_int=\count307
-)
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-LaTeX Warning: Unused global option(s):
-    [a4].
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
 
-(./thesis.aux)
-\openout1 = `thesis.aux'.
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: float package is loaded.
-Package caption Info: listings package is loaded.
-Package caption Info: End \AtBeginDocument code.
-\Hy@linkcounter=\count308
-\c@lstlisting=\count309
- (./Abstract.tex [0
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-]
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
-) [0
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-] (./thesis.toc
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
-)
-\tf@toc=\write4
-\openout4 = `thesis.toc'.
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
 
- [1
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
-] (./chapter1.tex
-第 1 章
-File: figures/chapter1/config.pdf Graphic file (type pdf)
-<figures/chapter1/config.pdf>
-[1
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-]) (./chapter2.tex [2] [3]
-第 2 章
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 2.
-File: figures/chapter2/gilbert.pdf Graphic file (type pdf)
-<figures/chapter2/gilbert.pdf>
-[4
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-]
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 15.
-File: figures/chapter2/OperatingPoint.pdf Graphic file (type pdf)
-<figures/chapter2/OperatingPoint.pdf>
- [5] [6
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
 
-]
-File: figures/chapter2/gilbert_half.pdf Graphic file (type pdf)
-<figures/chapter2/gilbert_half.pdf>
-File: figures/chapter2/mos_eq.pdf Graphic file (type pdf)
-<figures/chapter2/mos_eq.pdf>
-File: figures/chapter2/halfeq.pdf Graphic file (type pdf)
-<figures/chapter2/halfeq.pdf>
- [7] [8] [9
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
-] [10] [11]) (./chapter3.tex [12]
-第 3 章
-File: figures/chapter3/folded_gilbert.pdf Graphic file (type pdf)
-<figures/chapter3/folded_gilbert.pdf>
-File: figures/chapter3/previous_ac.pdf Graphic file (type pdf)
-<figures/chapter3/previous_ac.pdf>
-File: figures/chapter3/folded_ac.pdf Graphic file (type pdf)
-<figures/chapter3/folded_ac.pdf>
-[13
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-] [14] [15]
-File: figures/chapter3/NtoNFolded.pdf Graphic file (type pdf)
-<figures/chapter3/NtoNFolded.pdf>
- [16
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-]
-File: figures/chapter3/NtoNFolded_half.pdf Graphic file (type pdf)
-<figures/chapter3/NtoNFolded_half.pdf>
-File: figures/chapter3/NtoNHalfDiffEqual.pdf Graphic file (type pdf)
-<figures/chapter3/NtoNHalfDiffEqual.pdf>
- [17] [18] [19
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
 
-] [20] [21] [22]
-File: figures/chapter3/id_vgs.pdf Graphic file (type pdf)
-<figures/chapter3/id_vgs.pdf>
- [23] [24]
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
-LaTeX Warning: Reference `table:3_previous' on page 25 undefined on input line 
-298.
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-) (./acknowledgement.tex [25]) [26
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
-] (./thesis.aux)
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
 
-LaTeX Warning: There were undefined references.
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
- ) 
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing = inserted for ifdim.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+I was expecting to see `<', `=', or `>'. Didn't.
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Missing number, treated as zero.
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   p@ 
+l.9 \usepackage
+               {comment}
+(That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 6614 strings out of 476759
- 112769 string characters out of 5809550
- 1867672 words of memory out of 5000000
- 26911 multiletter control sequences out of 15000+600000
- 525018 words of font info for 82 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 69i,14n,79p,1247b,495s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 3236 strings out of 476096
+ 54939 string characters out of 5795114
+ 1850845 words of memory out of 5000000
+ 23643 multiletter control sequences out of 15000+600000
+ 512287 words of font info for 32 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 69i,1n,79p,278b,78s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.dvi (29 pages, 58448 bytes).
+e:/Desktop/reserch/卒論/thesis/thesis.tex:9:  ==> Fatal error occurred, no output PDF file produced!

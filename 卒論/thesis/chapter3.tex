@@ -295,7 +295,46 @@
                 \left( V_{A}+v_{CTRL} \right) - V_{AB} -V_{th} &< V_{out} - V_{AB}   \\
                 0.9 &< V_{out}
             \end{align*}
-            と分かり、$V_{out}-\frac{1}{2}v_{out}=0.9\;\mathrm{V}$とした。直流電流についてはとりあえず$1\;\mathrm{mA}$とした。これはドレインソース間電圧が$0.4\;\mathrm{V}$程度でも十分流せる電流だと考え決めた。出力端子の直流電位は$\mathrm{M_{A}}$のドレイン端子の下限$0.9\;\mathrm{V}$と電源電圧$1.8\;\mathrm{V}$の中心である$1.35\;\mathrm{V}$になるよう、無入力状態では負荷抵抗にドレイン電流の半分が流れることに注意し、$R_{L}=900\;\mathrm{\Omega}$とした。この直流バイアスを満たすようなトランジスタサイズを表\ref{table:3_previous}に示す。
+            と分かり、$V_{out}-\frac{1}{2}v_{out}=0.9\;\mathrm{V}$とした。直流電流についてはとりあえず$1\;\mathrm{mA}$とした。これはドレインソース間電圧が$0.4\;\mathrm{V}$程度でも十分流せる電流だと考え決めた。出力端子の直流電位は$\mathrm{M_{A}}$のドレイン端子の下限$0.9\;\mathrm{V}$と電源電圧$1.8\;\mathrm{V}$の中心である$1.35\;\mathrm{V}$になるよう、無入力状態では負荷抵抗にドレイン電流の半分が流れることに注意し、$R_{L}=900\;\mathrm{\Omega}$とした。この直流バイアスを満たすようなトランジスタサイズを表\ref{table:3_prev_com_param}に示す。\par
+            \begin{table}[!b]
+                \centering
+                \caption{出力範囲を比較するギルバート乗算回路}
+                \label{table:3_prev_com_param}
+                \begin{tabular}{c|c|r}
+                            \hline
+                            \multicolumn{2}{c}{Gilbert}   & \multicolumn{1}{c}{Value}     \\
+                            \hline\hline
+                            &   Channel Length   &   0.18 $\mathrm{\mu m}$   \\
+                            \cline{2-3}
+                            $\mathrm{M_{A}}$   &   Channel Width   &   4.26 $\mathrm{\mu m}$   \\
+                            \cline{2-3}
+                                &   Multifinger   & 2    \\
+                            \hline
+                            &   Channel Length   &   0.18 $\mathrm{\mu m}$   \\
+                            \cline{2-3}
+                            $\mathrm{M_{B}}$   &   Channel Width   &   4.26 $\mathrm{\mu m}$   \\
+                            \cline{2-3}
+                                &   Multifinger   & 4    \\
+                            \hline
+                            &   Channel Length   &   0.18 $\mathrm{\mu m}$   \\
+                            \cline{2-3}
+                            $\mathrm{M_{C}}$   &   Channel Width   &   17 $\mathrm{\mu m}$   \\
+                            \cline{2-3}
+                                &   Multifinger   & 10    \\
+                            \hline
+                            \multicolumn{2}{c|}{$\mathrm{V_{dd}}$} &   1.8 $\mathrm{V}$   \\
+                            \hline
+                            \multicolumn{2}{c|}{$\mathrm{V_{A}}$} &   1.16 $\mathrm{V}$   \\
+                            \hline
+                            \multicolumn{2}{c|}{$\mathrm{V_{B}}$} &   0.76 $\mathrm{V}$   \\
+                            \hline
+                            \multicolumn{2}{c|}{$\mathrm{V_{C}}$} &   0.6 $\mathrm{V}$   \\
+                            \hline
+                            \multicolumn{2}{c|}{$\mathrm{R_{L}}$} &   900 $\mathrm{\Omega}$   \\
+                            \hline
+                \end{tabular}
+            \end{table}
+            次にカレントミラーを組み合わせた折り返し型乗算回路の素子値の設計を行う。まず、$\mathrm{M_{B},M_{C}}$についてはギルバート乗算回路と同様の素子値、直流電位とする。次に$\mathrm{M_{MA}}$の素子値を$\mathrm{M_{B}}$と同様にすると、
             
 
 
