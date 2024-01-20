@@ -261,42 +261,40 @@
     \section{シミュレーションによる確認}
         
         出力範囲が理論上はカレントミラーの閾電圧$V_{th}$分広げられることを前節で示すことができたが、本節では$\mathrm{ROHM\;0.18\;\mu m\;Process}$においてギルバート乗算回路と比較しカレントミラーを組み合わせた折り返し型乗算回路の出力範囲が広がっていることを確認する。
-
-        \subsection{素子値の設計}
-            今回は入力電圧と制御電圧を共に$0.2\;\mathrm{V}$として設計を行う。また、\\$\mathrm{ROHM\;0.18\;\mu m\;Process}$ではトリプルウェル構造を作ることができるので、各MOSFETのバルク端子は各々のソースと短絡させた。これはしきい電圧を小さくし、設計を容易にするためである。\par
-            大まかな方針として高速化をするために直流で動作する部分を除きチャネル長を最小寸法である$0.18\;\mu m$を用いることとした。まずはしきい電圧を推定するためにドレイン電流($I_{D}$)-ゲートソース間電圧($V_{GS}$)特性を調べた。ただし、ここの時のチャネル長は$1\;\mu m$とした。また、トランスコンダクタンスは式(\ref{eq:2_gm})を再掲すると
-            \begin{align*}
-                g_{m}=\frac{\partial I_{D}}{\partial V_{GS}}=K(V_{GS}-V_{th})
-            \end{align*}
-            であった。これは$V_{GS}$に関する1次式であり、最小二乗法による近似が容易である。そのためこのトランスコンダクタンスに近似した1次間数からしきい電圧を推定した。この時のnMOSFETの$I_{D}-V_{GS}$特性、トランスコンダクタンス$g_{m}-V_{GS}$特性とその近似直線を図\ref{fig:3_vth_est}に示す。
-            \begin{figure}[!b]
-                \centering
-                \includegraphics[width=0.99\textwidth]{figures/chapter3/id_vgs.pdf}
-                \caption{$\mathrm{ROHM\;0.18\;\mu m\;Process}$における$\mathrm{(L,W)}=(0.18\;\mathrm{\mu m},1\;\mathrm{\mu m})$の時の$I_{D}-V_{GS}$,$g_{m}-V_{GS}$特性}
-                \label{fig:3_vth_est}
-            \end{figure}
-            ただし、最小二乗法による線形近似はトランスコンダクタンスが直線的に変化していると思われる$0.5\;\mathrm{V}$から$0.65\;\mathrm{V}$の間で行った。この時の傾きは約$1.74\;\mathrm{mS/V}$、しきい電圧は約$0.46\;\mathrm{V}$であった。次に直流電位を定める。図\ref{fig:2_gilbert}において、$\mathrm{V_{S}}$の電位を$0.1\;\mathrm{V}$と定めた。これは$\mathrm{M_{C}}$は直流的に動作するため、理想的には周波数特性に影響しない。そのためトランジスタサイズを大きくすることができるので低い電圧で動作させることとした。$\mathrm{M_{A},M_{B}}$の入力に与える直流バイアスに関しては飽和領域で使用するために自ずと決まる。$\mathrm{M_{B}}$に関して、ゲート電位は入力電圧分増減するので
-            \begin{align*}
-                \left( V_{B}-v_{in} \right) -V_{S} &> V_{th}  \\
-                V_{B} &> 0.76
-            \end{align*}
-            という直流バイアスの下限が決まる。従って今回は$V_{B}=0.76\;\mathrm{V}$とした。$V_{AB}$についても、$\mathrm{M_{B}}$が飽和で動作する条件より
-            \begin{align*}
-                \left( V_{B}+v_{in} \right) - V_{S} -V_{th} &< V_{AB} - V_{S}   \\
-                0.5 &< V_{AB}  
-            \end{align*}
-            と下限が定まる。$\mathrm{M_{A}}$についても同様に直流バイアスは
-            \begin{align*}
-                \left( V_{A}-v_{CTRL} \right) -V_{AB} &> V_{th}  \\
-                V_{A} &> 1.16
-            \end{align*}
-            と条件が決まり、$V_{A}=1.16\;\mathrm{V}$とした。$V_{out}$の下限は
-            \begin{align*}
-                \left( V_{A}+v_{CTRL} \right) - V_{AB} -V_{th} &< V_{out} - \frac{1}{2}v_{out} - V_{AB}   \\
-                0.9 &< V_{out} - \frac{1}{2}v_{out}
-            \end{align*}
-            と分かり、$V_{out}-\frac{1}{2}v_{out}=0.9\;\mathrm{V}$とした。直流電流についてはとりあえず$1\;\mathrm{mA}$とした。これはドレインソース間電圧が$0.4\;\mathrm{V}$程度でも十分流せる電流だと考え、この値とした。出力端子の直流電位は$\mathrm{M_{A}}$のドレイン端子の下限$0.9\;\mathrm{V}$と電源電圧$1.8\;\mathrm{V}$の中心である$1.35\;\mathrm{V}$になるよう、無入力状態では負荷抵抗にドレイン電流の半分が流れることに注意し、$R_{L}=900\;\mathrm{\Omega}$とした。この直流バイアスを満たすようなトランジスタサイズを表\ref{table:3_prev_com_param}に示す。\par
-            \begin{table}[!b]
+        今回は入力電圧と制御電圧を共に$0.2\;\mathrm{V}$として設計を行う。また、\\$\mathrm{ROHM\;0.18\;\mu m\;Process}$ではトリプルウェル構造を作ることができるので、各MOSFETのバルク端子は各々のソースと短絡させた。これはしきい電圧を小さくし、設計を容易にするためである。\par
+        大まかな方針として高速化をするために直流で動作する部分を除きチャネル長を最小寸法である$0.18\;\mu m$を用いることとした。まずはしきい電圧を推定するためにドレイン電流($I_{D}$)-ゲートソース間電圧($V_{GS}$)特性を調べた。ただし、ここの時のチャネル長は$1\;\mu m$とした。また、トランスコンダクタンスは式(\ref{eq:2_gm})を再掲すると
+        \begin{align*}
+            g_{m}=\frac{\partial I_{D}}{\partial V_{GS}}=K(V_{GS}-V_{th})
+        \end{align*}
+        であった。これは$V_{GS}$に関する1次式であり、最小二乗法による近似が容易である。そのためこのトランスコンダクタンスに近似した1次間数からしきい電圧を推定した。この時のnMOSFETの$I_{D}-V_{GS}$特性、トランスコンダクタンス$g_{m}-V_{GS}$特性とその近似直線を図\ref{fig:3_vth_est}に示す。
+        \begin{figure}[!b]
+            \centering
+            \includegraphics[width=0.99\textwidth]{figures/chapter3/id_vgs.pdf}
+            \caption{$\mathrm{ROHM\;0.18\;\mu m\;Process}$における$\mathrm{(L,W)}=(0.18\;\mathrm{\mu m},1\;\mathrm{\mu m})$の時の$I_{D}-V_{GS}$,$g_{m}-V_{GS}$特性}
+            \label{fig:3_vth_est}
+        \end{figure}
+        ただし、最小二乗法による線形近似はトランスコンダクタンスが直線的に変化していると思われる$0.5\;\mathrm{V}$から$0.65\;\mathrm{V}$の間で行った。この時の傾きは約$1.74\;\mathrm{mS/V}$、しきい電圧は約$0.46\;\mathrm{V}$であった。次に直流電位を定める。図\ref{fig:2_gilbert}において、$\mathrm{V_{S}}$の電位を$0.1\;\mathrm{V}$と定めた。これは$\mathrm{M_{C}}$は直流的に動作するため、理想的には周波数特性に影響しない。そのためトランジスタサイズを大きくすることができるので低い電圧で動作させることとした。$\mathrm{M_{A},M_{B}}$の入力に与える直流バイアスに関しては飽和領域で使用するために自ずと決まる。$\mathrm{M_{B}}$に関して、ゲート電位は入力電圧分増減するので
+        \begin{align*}
+            \left( V_{B}-v_{in} \right) -V_{S} &> V_{th}  \\
+            V_{B} &> 0.76
+        \end{align*}
+        という直流バイアスの下限が決まる。従って今回は$V_{B}=0.76\;\mathrm{V}$とした。$V_{AB}$についても、$\mathrm{M_{B}}$が飽和で動作する条件より
+        \begin{align*}
+            \left( V_{B}+v_{in} \right) - V_{S} -V_{th} &< V_{AB} - V_{S}   \\
+            0.5 &< V_{AB}  
+        \end{align*}
+        と下限が定まる。$\mathrm{M_{A}}$についても同様に直流バイアスは
+        \begin{align*}
+            \left( V_{A}-v_{CTRL} \right) -V_{AB} &> V_{th}  \\
+            V_{A} &> 1.16
+        \end{align*}
+        と条件が決まり、$V_{A}=1.16\;\mathrm{V}$とした。$V_{out}$の下限は
+        \begin{align*}
+            \left( V_{A}+v_{CTRL} \right) - V_{AB} -V_{th} &< V_{out} - \frac{1}{2}v_{out} - V_{AB}   \\
+            0.9 &< V_{out} - \frac{1}{2}v_{out}
+        \end{align*}
+        と分かり、$V_{out}-\frac{1}{2}v_{out}=0.9\;\mathrm{V}$とした。直流電流についてはとりあえず$1\;\mathrm{mA}$とした。これはドレインソース間電圧が$0.4\;\mathrm{V}$程度でも十分流せる電流だと考え、この値とした。出力端子の直流電位は$\mathrm{M_{A}}$のドレイン端子の下限$0.9\;\mathrm{V}$と電源電圧$1.8\;\mathrm{V}$の中心である$1.35\;\mathrm{V}$になるよう、無入力状態では負荷抵抗にドレイン電流の半分が流れることに注意し、$R_{L}=900\;\mathrm{\Omega}$とした。この直流バイアスを満たすようなトランジスタサイズを表\ref{table:3_prev_com_param}に示す。\par
+        \begin{table}[!b]
                 \centering
                 \caption{出力範囲を比較するギルバート乗算回路}
                 \label{table:3_prev_com_param}
@@ -333,28 +331,28 @@
                     \multicolumn{2}{c|}{$\mathrm{R_{L}}$} &   $900\;\mathrm{\Omega}$   \\
                     \hline
                 \end{tabular}
-            \end{table}
-            次にカレントミラーを組み合わせた折り返し型乗算回路の素子値の設計を行う。まず、$\mathrm{M_{B},M_{L}}$についてはギルバート乗算回路と同様の素子値、直流電位とする。次に$\mathrm{M_{MB}}$の素子値を$\mathrm{M_{B}}$と同様にすると、$\mathrm{M_{B}}$のゲートソース間電圧と$\mathrm{M_{MB}}$のドレインソース間電圧が等しくなった時に同じ大きさの電流が流れる。つまり、$\mathrm{M_{B}}$のゲート端子の直流電位$V_{lbias}$から$\mathrm{M_{B}}$のソース電位$V_{BS}$を引いた$0.66\;\mathrm{V}$が$V_{M}$の直流電位となる。従って、電流源$\mathrm{M_{U}}$はこの直流バイアスで$1\;\mathrm{mA}$の流すことができる形状を探した。このとき、入力$v_{in}$を$-0.2\;\mathrm{V}$から$0.2\;\mathrm{V}$まで掃引すると、$V_{M}$の最大値はおよそ$0.76\;\mathrm{V}$であった。したがって、$\mathrm{M_{MA}}$が飽和領域で動作するためには
-            \begin{align*}
-                0.76-V_{th} &< V_{AS}      \\
-                0.3 &< V_{AS}
-            \end{align*}
-            が必要となる。同様にして$\mathrm{M_{A}}$については
-            \begin{align*}
-                \left( V_{rbias}-V_{CTRL} \right) -V_{AS} &> V_{th}     \\
-                V_{rbias} &> 0.96
-            \end{align*}
-            と分かった。さらに出力電位に関しては
-            \begin{align*}
-                \left( V_{rbias}+V_{CTRL} \right) - V_{AS} - V_{th} &< V_{out} - v_{AS} \\
-                0.7 &< V_{out} - \frac{1}{2}v_{out}
-            \end{align*}
-            であるので、出力範囲の下限は$0.7\;\mathrm{V}$とすることとした。$\mathrm{M_{A}}$のサイズを$\mathrm{M_{B}}$のサイズと同様にし、並列数を半分にすると、$\mathrm{M_{MA}}$に流れる電流は$\mathrm{M_{B}}$と等しくなる。したがって、負荷抵抗の値を無信号時に出力範囲の中間になるように決めると$1.1\;\mathrm{k\Omega}$となる。$\mathrm{M_{MA}}$の形状はまず、$\mathrm{M_{MB}}$と同様にした。以上の素子値でも乗算は可能だが、増幅率がすこし足りなかったので素子値を調整した。最終的なカレントミラーを組み合わせた折り返し型乗算回路の素子値を表\ref{table:3_folded_mirror_com_param}に示す。
-            \begin{table}[!b]
-                \centering
-                \caption{出力範囲を比較するカレントミラーを組み合わせた折り返し型乗算回路}
-                \label{table:3_folded_mirror_com_param}
-                \begin{tabular}{c|c|r}
+        \end{table}
+        次にカレントミラーを組み合わせた折り返し型乗算回路の素子値の設計を行う。まず、$\mathrm{M_{B},M_{L}}$についてはギルバート乗算回路と同様の素子値、直流電位とする。次に$\mathrm{M_{MB}}$の素子値を$\mathrm{M_{B}}$と同様にすると、$\mathrm{M_{B}}$のゲートソース間電圧と$\mathrm{M_{MB}}$のドレインソース間電圧が等しくなった時に同じ大きさの電流が流れる。つまり、$\mathrm{M_{B}}$のゲート端子の直流電位$V_{lbias}$から$\mathrm{M_{B}}$のソース電位$V_{BS}$を引いた$0.66\;\mathrm{V}$が$V_{M}$の直流電位となる。従って、電流源$\mathrm{M_{U}}$はこの直流バイアスで$1\;\mathrm{mA}$の流すことができる形状を探した。このとき、入力$v_{in}$を$-0.2\;\mathrm{V}$から$0.2\;\mathrm{V}$まで掃引すると、$V_{M}$の最大値はおよそ$0.76\;\mathrm{V}$であった。したがって、$\mathrm{M_{MA}}$が飽和領域で動作するためには
+        \begin{align*}
+            0.76-V_{th} &< V_{AS}      \\
+            0.3 &< V_{AS}
+        \end{align*}
+        が必要となる。同様にして$\mathrm{M_{A}}$については
+        \begin{align*}
+            \left( V_{rbias}-V_{CTRL} \right) -V_{AS} &> V_{th}     \\
+            V_{rbias} &> 0.96
+        \end{align*}
+        と分かった。さらに出力電位に関しては
+        \begin{align*}
+            \left( V_{rbias}+V_{CTRL} \right) - V_{AS} - V_{th} &< V_{out} - v_{AS} \\
+            0.7 &< V_{out} - \frac{1}{2}v_{out}
+        \end{align*}
+        であるので、出力範囲の下限は$0.7\;\mathrm{V}$とすることとした。$\mathrm{M_{A}}$のサイズを$\mathrm{M_{B}}$のサイズと同様にし並列数を半分にすると$\mathrm{M_{MA}}$に流れる電流は$\mathrm{M_{B}}$と等しくなる。したがって、負荷抵抗の値を無信号時に出力範囲の中間になるように決めると$1.1\;\mathrm{k\Omega}$となる。$\mathrm{M_{MA}}$の形状は$\mathrm{M_{MB}}$と同様にした。以上の素子値でも乗算は可能だが、増幅率がすこし足りなかったので素子値を調整した。最終的なカレントミラーを組み合わせた折り返し型乗算回路の素子値を表\ref{table:3_folded_mirror_com_param}に示す。
+        \begin{table}[!b]
+            \centering
+            \caption{出力範囲を比較するカレントミラーを組み合わせた折り返し型乗算回路}
+            \label{table:3_folded_mirror_com_param}
+            \begin{tabular}{c|c|r}
                     \hline
                     \multicolumn{2}{c}{Gilbert}   & \multicolumn{1}{c}{Value}     \\
                     \hline\hline
@@ -406,9 +404,35 @@
                     \hline
                     \multicolumn{2}{c|}{$\mathrm{R_{L}}$} &   $1.1\;\mathrm{K \Omega}$   \\
                     \hline
-                \end{tabular}
-            \end{table}
-          
+            \end{tabular}
+        \end{table}
+        これらの素子値においての直流解析結果を図\ref{fig:3_previous_dc_com}、\ref{fig:3_folded_mirror_dc_com}に、交流解析結果を図\ref{fig:3_previous_ac_com}、\ref{fig:3_folded_mirror_ac_com}に示す。
+        \begin{figure}[!b]
+            \centering
+            \includegraphics[width=0.9\textwidth]{figures/chapter3/previous_dc_com.pdf}
+            \caption{設計したギルバート乗算回路の直流解析結果}
+            \label{fig:3_previous_dc_com}
+        \end{figure}
+        \begin{figure}[!b]
+            \centering
+            \includegraphics[width=0.9\textwidth]{figures/chapter3/folded_mirror_dc_com.pdf}
+            \caption{設計した折り返しカスコード型乗算回路の直流解析結果}
+            \label{fig:3_folded_mirror_dc_com}
+        \end{figure}
+        \begin{figure}[!b]
+            \centering
+            \includegraphics[width=0.99\textwidth]{figures/chapter3/previous_ac_com.pdf}
+            \caption{設計したギルバート乗算回路の交流解析結果}
+            \label{fig:3_previous_ac_com}
+        \end{figure}
+        \begin{figure}[!b]
+            \centering
+            \includegraphics[width=0.99\textwidth]{figures/chapter3/folded_mirror_ac_com.pdf}
+            \caption{設計した折り返しカスコード型乗算回路の交流解析結果}
+            \label{fig:3_folded_mirror_ac_com}
+        \end{figure}
+
+
 
 
 %    \begin{figure}[!b]
