@@ -42,13 +42,13 @@ int main(void)
     //凡例の設定
     #pragma region
     
-    fputs("set label 6  right  at graph 0.25  , 0.43  \"V_{CTRL} = \" font \"BKM-cmmi10, 20\" \n", pipe);
-    fputs("set label 1  left   at graph 0.27  , 0.43  \"20 \"         font \"BKM-cmr10, 20\" \n", pipe);
+    fputs("set label 6  right  at graph 0.25  , 0.41  \"V_{CTRL} = \" font \"BKM-cmmi10, 20\" \n", pipe);
+    fputs("set label 1  left   at graph 0.27  , 0.41  \"20 \"         font \"BKM-cmr10, 20\" \n", pipe);
     fputs("set label 2  left   at graph 0.27  , 0.55  \"40 \"         font \"BKM-cmr10, 20\" \n", pipe);
     fputs("set label 3  left   at graph 0.27  , 0.63  \"60 \"         font \"BKM-cmr10, 20\" \n", pipe);
     fputs("set label 4  left   at graph 0.27  , 0.70  \"80 \"         font \"BKM-cmr10, 20\" \n", pipe);
     fputs("set label 5  left   at graph 0.27  , 0.91  \"200 \"        font \"BKM-cmr10, 20\" \n", pipe);
-    fputs("set label 12 center at graph 0.35  , 0.43  \"mV\"          font \"BKM-cmr10, 20\" \n", pipe);
+    fputs("set label 12 center at graph 0.35  , 0.41  \"mV\"          font \"BKM-cmr10, 20\" \n", pipe);
     fputs("set label 22 center at graph 0.35  , 0.55  \"mV\"          font \"BKM-cmr10, 20\" \n", pipe);
     fputs("set label 32 center at graph 0.35  , 0.63  \"mV\"          font \"BKM-cmr10, 20\" \n", pipe);
     fputs("set label 42 center at graph 0.35  , 0.70  \"mV\"          font \"BKM-cmr10, 20\" \n", pipe);

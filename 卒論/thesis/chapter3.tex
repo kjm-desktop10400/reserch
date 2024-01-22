@@ -407,6 +407,7 @@
             \end{tabular}
         \end{table}
         これらの素子値においての直流解析結果を図\ref{fig:3_previous_dc_com}、\ref{fig:3_folded_mirror_dc_com}に、交流解析結果を図\ref{fig:3_previous_ac_com}、\ref{fig:3_folded_mirror_ac_com}に示す。
+        図\ref{fig:3_previous_dc_com}、\ref{fig:3_folded_mirror_dc_com}のどちらも適切に入力電圧と制御電圧に比例した電圧出力を得ることが確かめられた。また、ギルバート乗算回路では出力振幅は$\pm 0.8\mathrm{\;V}$程度であったが、カレントミラーを組み合わせた折り返し型乗算回路では$\pm 1.3\mathrm{\;V}$程度の振幅を得ることができている。ギルバート乗算回路については、式(\ref{eq:2_range_out})に今回使用した値を代入すると$0.9 <　v_{out}$となるため今回のシミュレーション結果はその範囲内に入っている。同様に、カレントミラーを組み合わせた折り返し型乗算回路については、式(\ref{eq:3_vout_range})に値を代入すると$1.3 < v_{out}$となる。こちらも理論式の範囲内であった。次に交流解析結果について、遮断周波数はギルバート乗算回路でおよそ$7\;\mathrm{GHz}$程度、カレントミラーを組み合わせた折り返し型乗算回路で$3\;\mathrm{GHz}$程度と劣化はしている結果となった。一つの要因としてはカレントミラーが信号の伝達にかかわっているので、ギルバート乗算回路にはないその部分が周波数特性劣化の原因になりうるということが考えられる。また、通過するMOSFETが増えたためゲートのキャパシタンス成分が増加し遮断周波数が低下したことが考えらえる。ただ、出力振幅の拡大は確認でき、周波数特性の劣化はPMOSを使用した折り返しカスコード型よりも抑えることができた。\clearpage
         \begin{figure}[!b]
             \centering
             \includegraphics[width=0.9\textwidth]{figures/chapter3/previous_dc_com.pdf}
@@ -428,12 +429,11 @@
         \begin{figure}[!b]
             \centering
             \includegraphics[width=0.99\textwidth]{figures/chapter3/folded_mirror_ac_com.pdf}
-            \caption{設計した折り返しカスコード型乗算回路の交流解析結果}
+            \caption{設計したカレントミラーを組み合わせた折り返し型乗算回路の乗算回路の交流解析結果}
             \label{fig:3_folded_mirror_ac_com}
         \end{figure}
 
-
-
+        
 
 %    \begin{figure}[!b]
 %        \centering
