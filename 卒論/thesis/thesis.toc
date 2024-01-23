@@ -10,5 +10,5 @@
 \contentsline {section}{\numberline {3.2}小信号解析}{17}{}%
 \contentsline {section}{\numberline {3.3}出力範囲}{21}{}%
 \contentsline {section}{\numberline {3.4}シミュレーションによる確認}{23}{}%
-\contentsline {chapter}{\numberline {第4章}結論}{32}{}%
-\contentsline {chapter}{謝辞}{34}{}%
+\contentsline {chapter}{\numberline {第4章}結論}{31}{}%
+\contentsline {chapter}{謝辞}{33}{}%
