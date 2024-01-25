@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.26)  23 JAN 2024 13:32
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.5.26)  25 JAN 2024 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -341,24 +341,24 @@ LaTeX Warning: Unused global option(s):
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -392,7 +392,7 @@ File: figures/chapter1/config.pdf Graphic file (type pdf)
 <figures/chapter1/config.pdf>
 [1
 
-]) (./chapter2.tex [2] [3]
+]) (./chapter2.tex [2]
 第 2 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
@@ -400,7 +400,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 2.
 File: figures/chapter2/gilbert.pdf Graphic file (type pdf)
 <figures/chapter2/gilbert.pdf>
-[4
+[3
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
@@ -409,7 +409,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 15.
 File: figures/chapter2/OperatingPoint.pdf Graphic file (type pdf)
 <figures/chapter2/OperatingPoint.pdf>
- [5] [6
+ [4] [5
 
 ]
 File: figures/chapter2/gilbert_half.pdf Graphic file (type pdf)
@@ -418,60 +418,65 @@ File: figures/chapter2/mos_eq.pdf Graphic file (type pdf)
 <figures/chapter2/mos_eq.pdf>
 File: figures/chapter2/halfeq.pdf Graphic file (type pdf)
 <figures/chapter2/halfeq.pdf>
- [7] [8] [9
+ [6] [7] [8
 
-] [10] [11]) (./chapter3.tex [12]
+] [9] [10]) (./chapter3.tex [11]
 第 3 章
 File: figures/chapter3/folded_gilbert.pdf Graphic file (type pdf)
 <figures/chapter3/folded_gilbert.pdf>
+
+Overfull \hbox (24.28456pt too wide) in paragraph at lines 60--93
+ [] 
+ []
+
 File: figures/chapter3/previous_ac.pdf Graphic file (type pdf)
 <figures/chapter3/previous_ac.pdf>
 File: figures/chapter3/folded_ac.pdf Graphic file (type pdf)
 <figures/chapter3/folded_ac.pdf>
-[13
+[12
 
-] [14] [15]
+] [13] [14]
 File: figures/chapter3/NtoNFolded.pdf Graphic file (type pdf)
 <figures/chapter3/NtoNFolded.pdf>
- [16
+ [15
 
 ]
 File: figures/chapter3/NtoNFolded_half.pdf Graphic file (type pdf)
 <figures/chapter3/NtoNFolded_half.pdf>
 File: figures/chapter3/NtoNHalfDiffEqual.pdf Graphic file (type pdf)
 <figures/chapter3/NtoNHalfDiffEqual.pdf>
- [17] [18]
+ [16] [17]
 Overfull \hbox (1.7924pt too wide) in paragraph at lines 136--137
 \JY1/mc/m/n/12 ンダクタンスであり\OT1/cmr/m/n/12 ,$\OML/cmm/m/it/12 g[]; g[]; g
 []; g[]$ \JY1/mc/m/n/12 は $[]$ のドレインソ ー
  []
 
-[19
+[18
 
-] [20] [21] [22]
+] [19] [20] [21]
 File: figures/chapter3/id_vgs.pdf Graphic file (type pdf)
 <figures/chapter3/id_vgs.pdf>
- [23] [24] [25] [26] [27] [28]
+ [22] [23] [24] [25] [26] [27]
 File: figures/chapter3/previous_dc_com.pdf Graphic file (type pdf)
 <figures/chapter3/previous_dc_com.pdf>
 File: figures/chapter3/folded_mirror_dc_com.pdf Graphic file (type pdf)
 <figures/chapter3/folded_mirror_dc_com.pdf>
 
 
-LaTeX Warning: Text page 29 contains only floats.
+LaTeX Warning: Text page 28 contains only floats.
 
-[29
+[28
 
 ]
 File: figures/chapter3/previous_ac_com.pdf Graphic file (type pdf)
 <figures/chapter3/previous_ac_com.pdf>
 File: figures/chapter3/folded_mirror_ac_com.pdf Graphic file (type pdf)
 <figures/chapter3/folded_mirror_ac_com.pdf>
-) (./chapter4.tex [30]
+) (./chapter4.tex [29]
 第 4 章
-) [31
+) [30
 
-] (./acknowledgement.tex [32]) [33
+] (./acknowledgement.tex [31]) [32
 
 ] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
@@ -483,4 +488,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  69i,14n,79p,1313b,495s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on thesis.dvi (36 pages, 72536 bytes).
+Output written on thesis.dvi (35 pages, 72960 bytes).

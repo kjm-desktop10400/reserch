@@ -17,7 +17,7 @@
                     \label{table:3_gilbert_param}
                     \begin{tabular}{c|c|r}
                         \hline
-                        \multicolumn{2}{c}{Gilbert}   & \multicolumn{1}{c}{Value}     \\
+                        \multicolumn{2}{c|}{Gilbert Parameter}   & \multicolumn{1}{c}{Value}     \\
                         \hline\hline
                         &   Channel Length   &   0.72 $\mathrm{\mu m}$   \\
                         \cline{2-3}
@@ -59,7 +59,7 @@
                     \label{table:3_folded_gilbert_param}
                     \begin{tabular}{c|c|r}
                             \hline
-                            \multicolumn{2}{c}{Folded Cascode}   & \multicolumn{1}{c}{Value}     \\
+                            \multicolumn{2}{c|}{Folded Cascode Parameter}   & \multicolumn{1}{c}{Value}     \\
                             \hline\hline
                             &   Channel Length   &   0.72 $\mathrm{\mu m}$   \\
                             \cline{2-3}
@@ -106,7 +106,7 @@
             \label{fig:3_folded_gilbert_ac}
         \end{figure}
         \clearpage
-        今回の設計ではトランスコンダクタンスも揃っているので利得は同程度であるが,遮断周波数は1桁程度落ちてしまっている.本論文での目的はS/N比を向上させるために出力範囲を拡大することであるが,フォトニックリザバに用いることを想定すると周波数特性が構造的にギルバート乗算回路よりも悪化するのは避けたい.そこでPMOSFETを使用せずに信号の折り返しを行うことで出力範囲を拡大できるのではないかと考え,これを実現する回路を図\ref{fig:3_folded_mirror_gilbert}に示し,これを「カレントミラーを組み合わせた折り返し型乗算回路」とした.\par
+        今回の設計ではトランスコンダクタンスも揃っているので利得は同程度であるが,遮断周波数は1桁程度落ちてしまっている.本論文での目的はS/N比を向上させるために出力範囲を拡大することであるが,フォトニックリザバに用いることを想定すると周波数特性が構造的にギルバート乗算回路よりも悪化するのは避けたい.そこでPMOSFETを使用せずに信号の折り返しを行うことで出力範囲を拡大できるのではないかと考えられる.これを実現する回路を図\ref{fig:3_folded_mirror_gilbert}に示す.この構造の回路を「カレントミラーを組み合わせた折り返し型乗算回路」と呼ぶことにする.\par
         \begin{figure}[!b]
             \begin{center}
                 \includegraphics[width=0.99\textwidth]{figures/chapter3/NtoNFolded.pdf}
@@ -299,7 +299,7 @@
                 \label{table:3_prev_com_param}
                 \begin{tabular}{c|c|r}
                     \hline
-                    \multicolumn{2}{c}{Gilbert}   & \multicolumn{1}{c}{Value}     \\
+                    \multicolumn{2}{c|}{Parameter}   & Value     \\
                     \hline\hline
                     &   Channel Length   &   0.18 $\mathrm{\mu m}$   \\
                     \cline{2-3}
@@ -325,7 +325,7 @@
                     \hline
                     \multicolumn{2}{c|}{$\mathrm{V_{B}}$} &   $0.76\;\mathrm{V}$   \\
                     \hline
-                    \multicolumn{2}{c|}{$\mathrm{V_{C}}$} &   $0.6;\mathrm{V}$   \\
+                    \multicolumn{2}{c|}{$\mathrm{V_{C}}$} &   $0.6\;\mathrm{V}$   \\
                     \hline
                     \multicolumn{2}{c|}{$\mathrm{R_{L}}$} &   $900\;\mathrm{\Omega}$   \\
                     \hline
@@ -353,7 +353,7 @@
             \label{table:3_folded_mirror_com_param}
             \begin{tabular}{c|c|r}
                     \hline
-                    \multicolumn{2}{c}{Gilbert}   & \multicolumn{1}{c}{Value}     \\
+                    \multicolumn{2}{c|}{Parameter}   & \multicolumn{1}{c}{Value}     \\
                     \hline\hline
                     &   Channel Length   &   0.18 $\mathrm{\mu m}$   \\
                     \cline{2-3}
@@ -381,7 +381,7 @@
                     \hline
                     &   Channel Length   &   0.72 $\mathrm{\mu m}$   \\
                     \cline{2-3}
-                    $\mathrm{M_{U}}$   &   Channel Width   &   5.26u $\mathrm{\mu m}$   \\
+                    $\mathrm{M_{U}}$   &   Channel Width   &   5.26 $\mathrm{\mu m}$   \\
                     \cline{2-3}
                         &   Multifinger   & 8    \\
                     \hline
@@ -401,7 +401,7 @@
                     \hline
                     \multicolumn{2}{c|}{$\mathrm{V_{L}}$} &   $0.6\;\mathrm{V}$   \\
                     \hline
-                    \multicolumn{2}{c|}{$\mathrm{R_{L}}$} &   $1.1\;\mathrm{K \Omega}$   \\
+                    \multicolumn{2}{c|}{$\mathrm{R_{L}}$} &   $1.1\;\mathrm{k \Omega}$   \\
                     \hline
             \end{tabular}
         \end{table}
