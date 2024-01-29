@@ -1,0 +1,5106 @@
+
+
+*******************************************************************************
+Thu Jan 18 11:38:01 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : *]
+        #datapoints = 1401
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6490284098e-05   0.00e+00  7.70e-05    1.000000e-04   4.000000e-01
+   5 6.7011811538e-07  -5.25e-01  7.70e-09    2.118093e-04   9.637019e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 6.70118e-07
+rel. change during last iteration : -5.24747e-06
+
+degrees of freedom    (FIT_NDF)                        : 1399
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.1886e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.78998e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000211809      +/- 1.682e-06    (0.7942%)
+Vth             = 0.0963702        +/- 0.005256     (5.454%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.970  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 11:39:58 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 1.80000]
+        #datapoints = 1401
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6490284098e-05   0.00e+00  7.70e-05    1.000000e-04   4.000000e-01
+   5 6.7011811538e-07  -5.25e-01  7.70e-09    2.118093e-04   9.637019e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 6.70118e-07
+rel. change during last iteration : -5.24747e-06
+
+degrees of freedom    (FIT_NDF)                        : 1399
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.1886e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.78998e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000211809      +/- 1.682e-06    (0.7942%)
+Vth             = 0.0963702        +/- 0.005256     (5.454%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.970  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 11:40:10 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 1.80000]
+        #datapoints = 1401
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)*1e3
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 1.0701940556e+01   0.00e+00  7.70e-02    1.000000e-04   4.000000e-01
+   6 6.7011808646e-07  -4.22e-02  7.70e-08    2.117995e-07   9.633829e-02
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 6.70118e-07
+rel. change during last iteration : -4.21726e-07
+
+degrees of freedom    (FIT_NDF)                        : 1399
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.1886e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.78998e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 2.11799e-07      +/- 1.682e-09    (0.7942%)
+Vth             = 0.0963383        +/- 0.005256     (5.456%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.970  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 11:42:49 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 1.80000]
+        #datapoints = 1401
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6490284098e-05   0.00e+00  7.70e-05    1.000000e-04   4.000000e-01
+   5 6.7011811538e-07  -5.25e-01  7.70e-09    2.118093e-04   9.637019e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 6.70118e-07
+rel. change during last iteration : -5.24747e-06
+
+degrees of freedom    (FIT_NDF)                        : 1399
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.1886e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.78998e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000211809      +/- 1.682e-06    (0.7942%)
+Vth             = 0.0963702        +/- 0.005256     (5.454%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.970  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 11:43:06 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:03:33 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:04:12 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:04:34 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:05:03 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:05:34 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:05:43 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:12:33 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:12:50 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:13:37 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:13:54 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:14:04 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:14:10 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:14:17 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:14:24 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:14:49 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:15:03 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:15:40 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:15:50 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:15:56 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:16:16 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:16:24 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:18:03 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:18:31 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:20:00 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:20:48 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.800000 : 1.80000]
+        #datapoints = 1001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 6.6035903403e-05   0.00e+00  9.07e-05    1.000000e-04   4.000000e-01
+   5 1.6975872258e-07  -4.55e-01  9.07e-10    1.746382e-04  -4.737043e-02
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.69759e-07
+rel. change during last iteration : -4.55e-06
+
+degrees of freedom    (FIT_NDF)                        : 999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.30357e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.69929e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000174638      +/- 1.111e-06    (0.6363%)
+Vth             = -0.0473704       +/- 0.004741     (10.01%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.984  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:21:21 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:21:55 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:22:26 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:26:21 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:27:44 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:28:12 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:28:56 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:29:33 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:29:46 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:30:20 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:32:05 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:33:08 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:33:20 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:33:38 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:34:38 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:35:16 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:35:36 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:36:36 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:37:20 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:37:44 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:40:05 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:40:47 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:41:51 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:42:34 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:42:42 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:43:58 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:44:19 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:45:02 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:45:14 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:48:04 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:48:23 2024
+
+
+FIT:    data read from input skip 6 using 1 : 4
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = K * (x - Vth)**2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5438069503e-07   0.00e+00  1.40e-05    1.000000e-04   4.000000e-01
+   5 2.0982638105e-10  -2.91e-03  1.40e-05    6.954085e-04   4.299675e-01
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.09826e-10
+rel. change during last iteration : -2.91493e-08
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.26087e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.27202e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000695408      +/- 2.465e-06    (0.3545%)
+Vth             = 0.429967         +/- 0.0005077    (0.1181%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.968  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:51:49 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 2.1455703145e-05   0.00e+00  6.53e-05    1.000000e-04   4.000000e-01
+   4 1.8219390310e-07  -1.20e-08  6.53e-09    6.545702e-04   4.225255e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1.82194e-07
+rel. change during last iteration : -1.19859e-13
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.13956e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.57774e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.00065457       +/- 4.632e-06    (0.7077%)
+Vth             = 0.422525         +/- 0.001495     (0.3539%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.837  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:52:01 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.400000 : 0.800000]
+        #datapoints = 400
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 2.1455703145e-05   0.00e+00  6.53e-05    1.000000e-04   4.000000e-01
+   4 1.8219390310e-07  -1.20e-08  6.53e-09    6.545702e-04   4.225255e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1.82194e-07
+rel. change during last iteration : -1.19859e-13
+
+degrees of freedom    (FIT_NDF)                        : 398
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.13956e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.57774e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.00065457       +/- 4.632e-06    (0.7077%)
+Vth             = 0.422525         +/- 0.001495     (0.3539%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.837  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:52:20 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 14:53:00 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:05:08 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:05:53 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:06:15 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:06:32 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:09:00 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:09:25 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:10:44 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:11:11 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:13:00 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:13:30 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:13:45 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:14:18 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:14:36 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:14:46 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:20:09 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:20:47 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:21:28 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:22:03 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:22:26 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:22:40 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:24:20 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:24:47 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:25:07 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:25:19 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:25:28 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:25:41 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:25:50 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:25:55 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:26:04 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:26:18 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:26:37 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:26:56 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:27:11 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:27:21 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:30:04 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:30:55 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:31:12 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:31:24 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:32:22 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:33:09 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:33:22 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:34:24 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:35:05 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:35:12 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:35:28 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:36:26 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:36:40 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:36:49 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:36:58 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:37:03 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:37:09 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:37:23 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:37:30 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:38:02 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:38:09 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:38:38 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:39:35 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:39:41 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:39:46 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:39:59 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:40:05 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:41:29 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:41:42 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:42:25 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:43:02 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:43:28 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:43:42 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:43:53 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:44:04 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:44:11 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:44:50 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 15:59:26 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =2 * K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 4.5136743354e-06   0.00e+00  6.20e-05    1.000000e-04   4.000000e-01
+  41 1.3755999703e-09  -3.72e-04  6.20e-09    8.713921e-04   4.626328e-01
+
+After 41 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -3.72113e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.000871392      +/- 2.874e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 
+
+
+*******************************************************************************
+Thu Jan 18 16:09:11 2024
+
+
+FIT:    data read from input skip 6 using 1 : 2
+        format = x:z
+        x range restricted to [0.500000 : 0.650000]
+        #datapoints = 150
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) =K * (x - Vth)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   K             Vth          
+   0 5.4868562769e-06   0.00e+00  3.10e-05    1.000000e-04   4.000000e-01
+  44 1.3755999703e-09  -4.11e-04  3.10e-09    1.742784e-03   4.626328e-01
+
+After 44 iterations the fit converged.
+final sum of squares of residuals : 1.3756e-09
+rel. change during last iteration : -4.11202e-09
+
+degrees of freedom    (FIT_NDF)                        : 148
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.0487e-06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 9.29459e-12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+K               = 0.00174278       +/- 5.749e-06    (0.3299%)
+Vth             = 0.462633         +/- 0.0003957    (0.08553%)
+
+correlation matrix of the fit parameters:
+                K      Vth    
+K               1.000 
+Vth             0.933  1.000 

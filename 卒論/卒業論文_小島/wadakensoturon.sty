@@ -1,0 +1,248 @@
+\usepackage{setspace}%				行間
+\usepackage{fancyhdr}%				ヘッダ
+
+%しおり・リンク作成---------------------------------------------------
+\newcommand\bkm{
+\usepackage[dvipdfmx]{hyperref}%	しおり・リンク作成
+%hyperref設定
+\hypersetup{%
+bookmarks=true,%				しおりをつくる
+bookmarksnumbered=true,%		しおりに節番号などを付ける
+colorlinks=true,%				しおりに色を付ける
+linkcolor=blue,%				リンクの色
+citecolor=blue,%
+linkbordercolor=1 1 1,%			リンクの枠の色
+setpagesize=false%
+}
+\AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}}	%しおりの文字化け防止
+}
+
+%表紙と署名---------------------------------------------------------------
+\newcommand\mcf{0}
+\newcommand\ccf{0}
+\newcommand\com{\renewcommand\mcf{1}}
+\newcommand\titlecover{\renewcommand\ccf{1}}
+
+
+\def\year#1{\def\@year{#1}}%								   				年度
+\def\month#1{\def\@month{#1}}%											提出日
+\def\labolatory#1{\def\@labolatory{#1}}%										研究室名
+\def\supervisor#1{\def\@supervisor{#1}}%										指導教員
+\def\date#1{\def\@date{#1}}%												提出日
+\def\id#1{\def\@id{#1}}%													学生番号
+\def\company#1{\def\@company{#1}}%										会社名
+\def\companyaddress#1{\def\@companyaddress{#1}}%							会社所在地
+\def\companypostcode#1{\def\@companypostcode{#1}}%							会社郵便番号		
+\def\companyTEL#1{\def\@companyTEL{#1}}%									会社電話番号
+\def\address#1{\def\@address{#1}}% 											実家住所
+\def\postcode#1{\def\@postcode{#1}}%										郵便番号
+\def\TEL#1{\def\@TEL{#1}}%	  											電話番号
+%
+\def\maketitle[#1]{%
+\ifodd\ccf%
+\begin{center}
+\vfill%
+%就職者用の表紙
+\ifodd\mcf%
+\vfill%
+{\Large 明治大学\hspace{1zw}理工学部\par}%　
+{\Large\@year 年度\par}%													年度
+{\Large 卒業論文\par}%	
+{\Huge\@title\par}\vfill%													タイトル
+{\Large 学生番号：\@id\par}%												学生番号
+{\Large 電気電子生命学科\par}%											学科名	
+{\Large \@author\par}%													氏名
+{\Large 指導教員：\@supervisor\par}\vspace{5mm}%							指導教員	
+{就職先：\@company\par}%													就職先
+{本社所在地：〒\@companypostcode\hspace{1zw}\@companyaddress\par}% 		会社所在地
+{電話番号：\@companyTEL\par}\vspace{5mm}%									会社電話番号
+{実家住所：〒\@postcode\hspace{1zw}\@address\par}%							実家住所
+{電話番号：\@TEL\par}%													実家電話番号
+%学部生用の表紙
+\else%
+\vfill
+%\vspace{20mm}
+{\Large 明治大学\hspace{1zw}理工学部\par}%　
+{\Large\@year 年度\par}%													年度
+{\Large 卒業論文\par}%	
+{\Huge\@title\par}\vfill%													タイトル
+{\Large 学生番号：\@id\par}%												学生番号
+{\Large 電気電子生命学科\par}%											学科名	
+{\Large \@author\par}%													氏名
+{\Large 指導教員：\@supervisor\par}\vspace{5mm}%							指導教員	
+{実家住所：〒\@postcode\hspace{1zw}\@address\par}%							実家住所
+{電話番号：\@TEL\par}%													実家電話番号
+%
+\fi%end of mcf
+\end{center}%
+\thispagestyle{empty}%
+\def\thepage{\roman{page}}
+\setcounter{page}{0}
+\fi%end of ccf
+\input{Abstract.tex}%														概要
+\setcounter{page}{0}
+\tableofcontents%	目次
+\newpage%
+#1%	additional contents
+\setcounter{page}{1}
+\def\thepage{\arabic{page}}
+}
+%
+\def\makesignature{%
+%就職者用の署名
+\ifodd\mcf%
+\vfill%
+\begin{list}{}{\setlength\itemsep{-1zh}}%
+\item \hfill \@date%
+\item \hfill 明治大学\hspace{1zw}理工学部\hspace{1zw}電気電子生命学科\hspace{1zw}4年%
+\item \hfill \@labolatory%
+\item \hfill \@author%
+\end{list}%
+\vspace{4zh}%
+%学部生用の署名
+\else%
+\vfill%
+\begin{list}{}{\setlength\itemsep{-1zh}}%
+\item \hfill \@date%
+\item \hfill 明治大学\hspace{1zw}理工学部\hspace{1zw}電気電子生命学科\hspace{1zw}4年%
+\item \hfill \@labolatory%
+\item \hfill \@author%
+\end{list}%
+\fi%
+}%
+%空白の1ページ
+\AtEndDocument{
+\ifodd\mcf%
+\mbox{}%
+\clearpage%
+\thispagestyle{empty}%
+\mbox{}%
+\else\relax\fi%
+}
+
+%余白と行間
+\setlength{\voffset}		{0.6cm}
+\setlength{\topmargin}		{0pt}
+%\setlength{\headheight}		{1.5zh}
+%\setlength{\headsep}		{2zh}
+\setlength{\hoffset}		{0.96cm}
+\setlength{\oddsidemargin}	{0pt}
+\setlength{\textheight}		{21.6cm}
+%\setlength{\footskip}		{15mm}
+\setlength{\textwidth}		{14cm}
+\setlength{\marginparsep}	{0pt}
+\setlength{\marginparwidth}	{0pt}
+\setstretch					{1.3}
+
+%章の表紙------------------------------------------------------------
+\newcommand\chaptercover{%
+\def\@makechapterhead##1{%
+\clearpage\thispagestyle{empty}%
+\mbox{}\vfill%
+\hrule height 0.5pt
+\begin{center}
+\noindent{\LARGE\bfseries 第{\Huge\thechapter}章\par\noindent\Huge##1\par}%
+\end{center}
+\hrule height 0.25pt
+\vfill\mbox{}\vfill%
+\clearpage}}
+
+%節の終わりで改ページ------------------------------------------------------------
+\newcommand\sectionclearpage{%
+\renewcommand\section{%
+\ifnum\c@section<1\relax\else\clearpage\fi%
+\@startsection%
+{section}{1}{0pt}%
+{1.5\Cvs \@plus.5\Cvs \@minus.2\Cvs}%
+{.5\Cvs \@plus.3\Cvs}%
+{\reset@font\Large\bfseries}}}
+%ヘッダと章・節のカウンタ-------------------------------------------------------------
+%\pagestyle{fancy}
+%\lhead{\leftmark}
+%\rhead{}
+%\cfoot{\thepage}
+%\renewcommand{\chaptermark}[1]{\markboth{第\ \normalfont\thechapter\ 章~#1}{}}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection #1}{}}
+%付録-------------------------------------------------------------
+\renewcommand{\appendix}{\par
+  \setcounter{chapter}{0}%
+  \setcounter{section}{0}%
+  \renewcommand{\@chapapp}{\appendixname}%
+  \renewcommand{\@chappos}\space%
+  \renewcommand{\thechapter}{\@Alph\c@chapter}
+  \renewcommand{\chaptermark}[1]{\markboth{付録\ \normalfont\thechapter~##1}{}}
+%
+\def\@makechapterhead##1{\hbox{}%
+  \vskip2\Cvs
+  {\parindent\z@
+   \raggedright
+   \reset@font\huge\bfseries
+   \leavevmode
+   \ifnum \c@secnumdepth >\m@ne
+     \setlength\@tempdima{\linewidth}%
+     \setbox\z@\hbox{\@chapapp\thechapter\@chappos\hskip1zw}%
+     \addtolength\@tempdima{-\wd\z@}%
+     \unhbox\z@\nobreak
+     \vtop{\hsize\@tempdima##1}%
+   \else
+     ##1\relax
+   \fi}\nobreak\vskip3\Cvs}
+}
+%参考文献-----------------------------------------------------------
+\renewcommand{\bibname}{参考文献}
+\renewenvironment{thebibliography}[1]% 再定義
+{\chapter*{\bibname\@mkboth{\bibname}{\bibname}}%
+\markright{\bibname}
+ \addcontentsline{toc}{chapter}{\bibname}% この行追加
+   \list{\@biblabel{\@arabic\c@enumiv}}%
+        {\settowidth\labelwidth{\@biblabel{#1}}%
+         \leftmargin\labelwidth
+         \advance\leftmargin\labelsep
+         \@openbib@code
+         \usecounter{enumiv}%
+         \let\p@enumiv\@empty
+         \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+   \sloppy
+   \clubpenalty4000
+   \@clubpenalty\clubpenalty
+   \widowpenalty4000%
+   \sfcode`\.\@m}
+  {\def\@noitemerr
+    {\@latex@warning{Empty `thebibliography' environment}}%
+   \endlist}
+%発表論文-----------------------------------------------------------
+\def\editthepublished
+{
+\renewcommand{\bibname}{研究業績}
+\renewcommand\bibitem{\@ifnextchar[\@lbibitem\@bibitem}
+\def\bibitem{\@ifnextchar[\@lbibitem\@bibitem}
+%\def\@lbibitem[#1]#2{\item[\@biblabel{#1}\hfill]\if@filesw
+%      {\let\protect\noexpand
+%       \immediate
+%       \write\@auxout{\string\bibcite{#2}{#1}}}\fi\ignorespaces}
+\def\@bibitem##1{\item\if@filesw \immediate\write\@auxout
+       {\string\bibcite{##1}{P\@arabic\c@enumiv}}\fi\ignorespaces}
+}
+\newenvironment{thepublished}[1]% 再定義
+{%
+\editthepublished%
+\chapter*{\bibname\@mkboth{\bibname}{\bibname}}%
+\markright{\bibname}
+ \addcontentsline{toc}{chapter}{\bibname}% この行追加
+   \list{\@biblabel{P\@arabic\c@enumiv}}%
+        {\settowidth\labelwidth{\@biblabel{#1}}%
+         \leftmargin\labelwidth
+         \advance\leftmargin\labelsep
+         \@openbib@code
+         \usecounter{enumiv}%
+         \let\p@enumiv\@empty
+         \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+   \sloppy
+   \clubpenalty4000
+   \@clubpenalty\clubpenalty
+   \widowpenalty4000%
+   \sfcode`\.\@m}
+  {\def\@noitemerr
+    {\@latex@warning{Empty `thebibliography' environment}}%
+   \endlist}
+
