@@ -164,4 +164,4 @@ Add-Type $pinvokeCode -ErrorAction SilentlyContinue
 [Resolution.PrmaryScreenResolution]::ChangeResolution($width,$height,$freq) 
 } 
  
-Set-ScreenResolution -Width 1600 -Height 900 -Freq 60
+Set-ScreenResolution -Width 3440 -Height 1440 -Freq 60
