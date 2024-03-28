@@ -1,1 +1,0 @@
-powershell -NoProfile -ExecutionPolicy Unrestricted .\3440x1440.ps1
