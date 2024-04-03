@@ -1,0 +1,4 @@
+# fit [0 : 0.858824] f5(x) input using 9 : 10 via Is5, nVt5 
+# final sum of squares of residuals : 1.48233e-06
+Is5             = 1.05744625330689e-15  
+nVt5            = 0.0323541201188235    

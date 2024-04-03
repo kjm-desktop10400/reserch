@@ -1,0 +1,4 @@
+# fit [0 : 0.811765] f1(x) input using 1 : 2 via Is1, nVt1 
+# final sum of squares of residuals : 1.13058e-07
+Is1             = 2.70360501204977e-17  
+nVt1            = 0.0282549954615776    

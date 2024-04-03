@@ -1,0 +1,4 @@
+# fit [0 : 0.894118] f8(x) input using 15 : 16 via Is8, nVt8 
+# final sum of squares of residuals : 6.38446e-06
+Is8             = 7.33759197853843e-14  
+nVt8            = 0.0386336185841406    

@@ -13,6 +13,9 @@ int main(void)
 
     int count = 0;
 
+    double fit_s = 0;
+    double fit_e = 0;
+
     //gnuplot setting
     #pragma region 
     //fputs("set logscale x\n", pipe);
@@ -20,8 +23,8 @@ int main(void)
     fputs("set datafile separator \",\" \n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
-    fputs("set xlabel \"time [ns]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
-    fputs("set ylabel \"voltage [V]\" font \"Arial,30\" offset -8,0\n", pipe);
+    fputs("set xlabel \"Voltage [V]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
+    fputs("set ylabel \"Current [mA]\" font \"Arial,30\" offset -8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
     fputs("set key center right spacing 2.5 offset 22,0\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
@@ -35,8 +38,8 @@ int main(void)
     fputs("set mxtics 10\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [0 : 5]\n", pipe);
-    fputs("set yrange [0 : 1.8]\n", pipe);
+    fputs("set xrange [0 : 1.2]\n", pipe);
+    fputs("set yrange [-0.5 : 6]\n", pipe);
     #pragma endregion
 
     //凡例の設定
@@ -55,10 +58,17 @@ int main(void)
     */
     #pragma endregion
 
-    fputs("input = \"..\\\\data\\\\buf_tr.vcsv\"\n", pipe);
+    fputs("input = \"..\\\\data\\\\Ic_Vbe_vcc.vcsv\"\n", pipe);
 
-    fprintf(pipe, "plot   input skip 6 using (($1) * 1e9) : 2 with lines title \"output\"  \n");
-    fprintf(pipe, "replot input skip 6 using (($3) * 1e9) : 4 with lines title \"input\"  \n");
+    fprintf(pipe, "plot   input skip 6 using (($33) * 1e0) : (($34) * 1e3) with lines notitle \n");
+
+    fit_s = 0;
+    fit_e = 0.9;
+
+    fprintf(pipe, "Is = 1e-9\n nVt = 26*1e-3\n");
+    fprintf(pipe, "f(x) = Is * (exp(x / nVt) - 1) \n");
+    fprintf(pipe, "fit[%lf : %lf] f(x) input using 33 : 34 via Is, nVt \n", fit_s, fit_e);
+    fprintf(pipe, "replot [%lf : %lf] f(x) * 1e3 with lines dt 3 notitle \n", fit_s, fit_e);
 
     pclose(pipe);
 

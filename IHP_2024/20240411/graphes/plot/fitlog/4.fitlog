@@ -1,0 +1,4 @@
+# fit [0 : 0.835294] f3(x) input using 5 : 6 via Is3, nVt3 
+# final sum of squares of residuals : 4.49521e-07
+Is3             = -5.67306788246096e-06 
+nVt3            = 0.000967401329909523  
