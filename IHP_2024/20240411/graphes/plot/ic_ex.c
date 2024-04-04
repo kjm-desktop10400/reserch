@@ -62,13 +62,13 @@ int main(void)
 
     fprintf(pipe, "plot   input skip 6 using (($33) * 1e0) : (($34) * 1e3) with lines notitle \n");
 
-    fit_s = 0;
-    fit_e = 0.9;
+    fit_s = 0.7;
+    fit_e = 1;
 
     fprintf(pipe, "Is = 1e-9\n nVt = 26*1e-3\n");
     fprintf(pipe, "f(x) = Is * (exp(x / nVt) - 1) \n");
     fprintf(pipe, "fit[%lf : %lf] f(x) input using 33 : 34 via Is, nVt \n", fit_s, fit_e);
-    fprintf(pipe, "replot [%lf : %lf] f(x) * 1e3 with lines dt 3 notitle \n", fit_s, fit_e);
+    fprintf(pipe, "replot [%lf : %lf] f(x) * 1e3 with lines dt 3 notitle \n", fit_s, 1.8);
 
     pclose(pipe);
 
