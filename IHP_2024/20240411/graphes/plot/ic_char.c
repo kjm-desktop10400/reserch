@@ -20,8 +20,8 @@ int main(void)
     fputs("set datafile separator \",\" \n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
-    fputs("set xlabel \"Voltage [V]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
-    fputs("set ylabel \"Current [mA]\" font \"Arial,30\" offset -8,0\n", pipe);
+    fputs("set xlabel \"V_{BE} [V]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
+    fputs("set ylabel \"I_{C} [mA]\" font \"Arial,30\" offset -8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
     fputs("set key center right spacing 2.5 offset 22,0\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
@@ -65,11 +65,12 @@ int main(void)
     }
 
 
-    for(int i = 1; i <= 17; i++)
+    for(int i = 6; i <= 17; i++)
     {
+        fprintf(pipe, "Is%d = 1 * 1e-9 \n nVt%d = 26 * 1e-3 \n", i, i);
         fprintf(pipe, "f%d(x) = Is%d * (exp(x / nVt%d) - 1) \n", i, i, i);
-        fprintf(pipe, "fit [0 : %f] f%d(x) input using %d : %d via Is%d, nVt%d \n", 0.8 + (1 - 0.8) * i / 17, i, 2 * i - 1, 2 * i, i, i);
-        fprintf(pipe, "save fit \"fitlog\\\\%d.fitlog\" \n", i);
+        fprintf(pipe, "fit [0 : %f] f%d(x) input using %d : %d via Is%d, nVt%d \n", 1.0, i, 2 * i - 1, 2 * i, i, i);
+        fprintf(pipe, "save fit \"fitlog\\\\%d.fitlog\" \n", i - 5);
     }
 
     pclose(pipe);

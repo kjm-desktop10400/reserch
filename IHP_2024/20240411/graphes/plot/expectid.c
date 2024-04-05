@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 int main(void)
 {
@@ -17,11 +18,11 @@ int main(void)
     #pragma region 
     //fputs("set logscale x\n", pipe);
     //fputs("set logscale y\n", pipe);
-    //fputs("set datafile separator \",\" \n", pipe);
+    fputs("set datafile separator \",\" \n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
-    fputs("set xlabel \"Voltage [V]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
-    fputs("set ylabel \"Current [mA]\" font \"Arial,30\" offset -8,0\n", pipe);
+    fputs("set xlabel \"V_{BE} [V]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
+    fputs("set ylabel \"I_{C} [mA]\" font \"Arial,30\" offset -8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
     fputs("set key center right spacing 2.5 offset 22,0\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
@@ -35,8 +36,8 @@ int main(void)
     fputs("set mxtics 10\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [0 : 1.2]\n", pipe);
-    //fputs("set yrange [-0.5 : 6]\n", pipe);
+    fputs("set xrange [0.6 : 1.1]\n", pipe);
+    fputs("set yrange [-0.5 : 6]\n", pipe);
     #pragma endregion
 
     //凡例の設定
@@ -55,49 +56,56 @@ int main(void)
     */
     #pragma endregion
 
-    fputs("input = \"..\\\\data\\\\fit_param.dat\"\n", pipe);
+    fputs("input = \"..\\\\data\\\\Ic_Vbe_vcc.vcsv\"\n", pipe);
     
-    double Is[]  = {1.11170860541161e-16 ,
-                    -4.1939998695612e-06 ,
-                    3.72109657804553e-16 ,
-                    9.97445399511497e-16 ,
-                    -1.99573687115542e-06,
-                    9.93578688160171e-15 ,
-                    3.78098348096064e-14 ,
-                    -5.06425976254592e-05,
-                    5.04740602297164e-13 ,
-                    1.85498501854192e-12 ,
-                    2.18892456293681     ,
-                    -103.400585050921    ,
-                    -23902.7194104083    ,
-                    -238517.459374802    ,
-                    990.192068164852     ,
-                    197.00208400261      ,
-                    1282.70340164136};
+    double Is[]  = {
+        1.87173845572722e-09,
+        1.77227676550119e-09,
+        1.71648543261281e-09,
+        1.66250782567958e-09,
+        1.60793200687931e-09,
+        1.55257654051431e-09,
+        1.49653028086608e-09,
+        1.43981639266176e-09,
+        1.38270040051655e-09,
+        1.32552336928955e-09,
+        1.26877021360967e-09,
+        1.21307502008694e-09
+    };
 
-    double nVt[]  = {0.0297325949613834  ,
-                    0.000479855143422414,
-                    0.0310618062401813  ,
-                    0.0322605059162088  ,
-                    0.000918334902307028,
-                    0.0353987760759854  ,
-                    0.0374873741806549  ,
-                    0.000717906238011878,
-                    0.0422428561355249  ,
-                    0.0450691646425714  ,
-                    3417.34967959301    ,
-                    -136745.872385607   ,
-                    -27295450.759349    ,
-                    -233293633.33112    ,
-                    841569.422943622    ,
-                    145756.2806498      ,
-                    838171.526971914    };
+    double nVt[]  = {
+        0.0694404644407099,
+        0.0690775340254522,
+        0.0688336960843752,
+        0.0685902228537533,
+        0.0683395818245278,
+        0.0680806984047932,
+        0.067813281130594 ,
+        0.0675367634013803,
+        0.067251352712556 ,
+        0.066957530381003 ,
+        0.0666563532815534,
+        0.0663495733765555
+    };
 
-    fprintf(pipe, "plot %lf * (exp(x / %lf) - 1) notitle \n", Is[0], nVt[0]);
+    double aveIs = 0;
+    double aveNVt = 0;
 
-    for(int i = 2; i <= 17; i++)
+    for(int i = 0; i < 12; i++)
     {
-        fprintf(pipe, "replot %lf * (exp(x / %lf) - 1) notitle \n", Is[i - 1], nVt[i - 1]);
+        aveIs += Is[i];
+        aveNVt += nVt[i];
+    }
+    aveIs /= 12;
+    aveNVt /= 12;
+
+    printf("Is : %e\tnVt : %e\n", aveIs, aveNVt);
+
+    fprintf(pipe, "plot (%e * (exp(x / %e) - 1) * 1e3) with lines dt 3 lw 3 black notitle \n", aveIs, aveNVt);
+
+    for(int i = 6; i <= 17; i++)
+    {
+        fprintf(pipe, "replot input skip 6 using ($%d) : (($%d) * 1e3) with lines notitle \n", 2 * i - 1, 2 * i);
     }
 
     pclose(pipe);
