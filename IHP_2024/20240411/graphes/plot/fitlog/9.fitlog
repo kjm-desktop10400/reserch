@@ -1,4 +1,4 @@
-# fit [0 : 1.000000] f14(x) input using 27 : 28 via Is14, nVt14 
-# final sum of squares of residuals : 6.92673e-05
-Is14            = 1.38270040051655e-09  
-nVt14           = 0.067251352712556     
+# fit [0.8 : 1] f14(x) input using 27 : 28 via Is14, nVt14 
+# final sum of squares of residuals : 0.00013736
+Is14            = 1.99975617249684e-09  
+nVt14           = 0.0690132293291983    

@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
 
 int main(void)
 {
@@ -16,13 +15,13 @@ int main(void)
 
     //gnuplot setting
     #pragma region 
-    //fputs("set logscale x\n", pipe);
+    fputs("set logscale x\n", pipe);
     //fputs("set logscale y\n", pipe);
     fputs("set datafile separator \",\" \n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
-    fputs("set xlabel \"V_{BE} [V]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
-    fputs("set ylabel \"I_{C} [mA]\" font \"Arial,30\" offset -8,0\n", pipe);
+    fputs("set xlabel \"freq [Hz]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
+    fputs("set ylabel \"phase [deg]\" font \"Arial,30\" offset -8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
     fputs("set key center right spacing 2.5 offset 22,0\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
@@ -32,12 +31,12 @@ int main(void)
     fputs("set tmargin 2\n", pipe);
     fputs("set tics font \"Arial,25\"\n", pipe);
     fputs("set xtics  offset 0 , -0.8\n", pipe);
-    fputs("set ytics  offset 0 , 0\n", pipe);
+    fputs("set ytics 15 offset 0 , 0\n", pipe);
     fputs("set mxtics 10\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [0.6 : 1.1]\n", pipe);
-    fputs("set yrange [-0.5 : 6]\n", pipe);
+    fputs("set xrange [1e6 : 1e12]\n", pipe);
+    fputs("set yrange [-180 : ]\n", pipe);
     #pragma endregion
 
     //凡例の設定
@@ -56,54 +55,13 @@ int main(void)
     */
     #pragma endregion
 
-    fputs("input = \"..\\\\data\\\\Ic_Vbe_vcc.vcsv\"\n", pipe);
-    
-    double Is[]  = {
-        2.84838096367594e-09,
-        2.57535342247743e-09,
-        2.48009235710166e-09,
-        2.38463175506499e-09,
-        2.28870420774456e-09,
-        2.1923979310573e-09	,
-        2.09595490796755e-09,
-        1.99975617249684e-09,
-        1.90436338433164e-09,
-        1.81056136723144e-09,
-        1.71932931688407e-09,
-    };
+    fputs("input = \"..\\\\data\\\\ac_phase.vcsv\"\n", pipe);
 
-    double nVt[]  = {
-        0.0715895251071894,
-        0.0708710513590811,
-        0.0705833479651953,
-        0.0702878956971511,
-        0.0699834983829239,
-        0.0696696583547187,
-        0.0693461901341383,
-        0.0690132293291983,
-        0.0686713992778503,
-        0.0683220243465562,
-        0.067967186758406,
-    };
+    fprintf(pipe, "plot   input skip 6 using (($1) * 1e0) : (($2) * 1e0) with lines notitle \n");
 
-    double aveIs = 0;
-    double aveNVt = 0;
-
-    for(int i = 0; i < 11; i++)
+    for(int i = 1; i < 10; i++)
     {
-        aveIs += Is[i];
-        aveNVt += nVt[i];
-    }
-    aveIs /= 11;
-    aveNVt /= 11;
-
-    printf("Is : %e\tnVt : %e\n", aveIs, aveNVt);
-
-    fprintf(pipe, "plot (%e * (exp(x / %e) - 1) * 1e3) with lines dt 3 lw 3 black notitle \n", aveIs, aveNVt);
-
-    for(int i = 7; i <= 17; i++)
-    {
-        fprintf(pipe, "replot input skip 6 using ($%d) : (($%d) * 1e3) with lines notitle \n", 2 * i - 1, 2 * i);
+        fprintf(pipe, "replot   input skip 6 using (($%d) * 1e0) : (($%d) * 1e0) with lines notitle \n", 2 * i + 1, 2 * i + 2);
     }
 
     pclose(pipe);

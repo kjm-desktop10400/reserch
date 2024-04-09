@@ -1,4 +1,4 @@
-# fit [0 : 1.000000] f9(x) input using 17 : 18 via Is9, nVt9 
-# final sum of squares of residuals : 6.43736e-05
-Is9             = 1.66250782567958e-09  
-nVt9            = 0.0685902228537533    
+# fit [0.8 : 1] f9(x) input using 17 : 18 via Is9, nVt9 
+# final sum of squares of residuals : 0.00012634
+Is9             = 2.48009235710166e-09  
+nVt9            = 0.0705833479651953    
