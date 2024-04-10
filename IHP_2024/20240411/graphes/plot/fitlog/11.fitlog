@@ -1,4 +1,4 @@
-# fit [0.8 : 1] f16(x) input using 31 : 32 via Is16, nVt16 
-# final sum of squares of residuals : 0.000142328
-Is16            = 1.81056136723144e-09  
-nVt16           = 0.0683220243465562    
+# fit [0 : 0.91] f16(x) input using 31 : 32 via Is16, nVt16 
+# final sum of squares of residuals : 1.07282e-05
+Is16            = 2.6379033261205e-13   
+nVt16           = 0.0408413023544324    

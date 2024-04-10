@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 
 int main(void)
 {
@@ -35,8 +36,8 @@ int main(void)
     fputs("set mxtics 10\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [0.8 : 1]\n", pipe);
-    fputs("set yrange [-0.5 : 4]\n", pipe);
+    fputs("set xrange [0.6 : 1.1]\n", pipe);
+    fputs("set yrange [-0.5 : 6]\n", pipe);
     #pragma endregion
 
     //凡例の設定
@@ -56,21 +57,55 @@ int main(void)
     #pragma endregion
 
     fputs("input = \"..\\\\data\\\\Ic_Vbe_vcc.vcsv\"\n", pipe);
+    
+    double Is[]  = {
+        5.22674633492532e-13,
+        4.92516675336137e-13,
+        4.6292103947011e-13	,
+        4.34539472327628e-13,
+        4.07086128909925e-13,
+        3.80589363712121e-13,
+        3.5508236115376e-13	,
+        3.30600302057624e-13,
+        3.07442908549372e-13,
+        2.85081475937763e-13,
+        2.6379033261205e-13	,
+        2.43541689885933e-13,
+    };
 
-    fprintf(pipe, "plot   input skip 6 using (($1) * 1e0) : (($2) * 1e3) with lines notitle \n");
+    double nVt[]  = {
+        0.0424128699332232,
+        0.0422700958252106,
+        0.0421213775181314,
+        0.0419723156196243,
+        0.0418200286454793,
+        0.0416644779344385,
+        0.0415056683652256,
+        0.0413436414215174,
+        0.041181269951981 ,
+        0.0410129458384106,
+        0.0408413023544324,
+        0.0406659922904669,
+    };
 
-    for(int i = 2; i <= 17; i++)
+    double aveIs = 0;
+    double aveNVt = 0;
+
+    for(int i = 0; i < 12; i++)
     {
-        fprintf(pipe, "replot input skip 6 using (($%d) * 1e0) : (($%d) * 1e3) with lines notitle \n", 2 * i - 1, 2 * i);
+        aveIs += Is[i];
+        aveNVt += nVt[i];
     }
+    aveIs /=  12;
+    aveNVt /= 12;
 
+    printf("Is : %e\tnVt : %e\n", aveIs, aveNVt);
 
-    for(int i = 6; i <= 17; i++)
+    fprintf(pipe, "plot (%e * (exp(x / %e) - 1) * 1e3) with lines dt 3 lw 3 black notitle \n", aveIs, aveNVt);
+
+    for(int i = 7; i <= 17; i++)
     {
-        fprintf(pipe, "Is%d = 1 * 1e-9 \n nVt%d = 26 * 1e-3 \n", i, i);
-        fprintf(pipe, "f%d(x) = Is%d * (exp(x / nVt%d) - 1) \n", i, i, i);
-        fprintf(pipe, "fit [0 : 0.91] f%d(x) input using %d : %d via Is%d, nVt%d \n", i, 2 * i - 1, 2 * i, i, i);
-        fprintf(pipe, "save fit \"fitlog\\\\%d.fitlog\" \n", i - 5);
+        fprintf(pipe, "replot input skip 6 using ($%d) : (($%d) * 1e3) with lines notitle \n", 2 * i - 1, 2 * i);
     }
 
     pclose(pipe);
