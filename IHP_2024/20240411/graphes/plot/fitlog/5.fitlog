@@ -1,4 +1,4 @@
-# fit [0 : 0.91] f10(x) input using 19 : 20 via Is10, nVt10 
-# final sum of squares of residuals : 1.03681e-05
-Is10            = 4.07086128909925e-13  
-nVt10           = 0.0418200286454793    
+# fit [0 : 0.8] f10(x) input using 19 : 20 via Is10, nVt10 
+# final sum of squares of residuals : 4.07989e-08
+Is10            = 1.20781533306404e-17  
+nVt10           = 0.0274060045523471    

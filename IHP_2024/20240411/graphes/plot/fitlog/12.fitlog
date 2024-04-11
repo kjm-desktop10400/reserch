@@ -1,4 +1,4 @@
-# fit [0 : 0.91] f17(x) input using 33 : 34 via Is17, nVt17 
-# final sum of squares of residuals : 1.07975e-05
-Is17            = 2.43541689885933e-13  
-nVt17           = 0.0406659922904669    
+# fit [0 : 0.8] f17(x) input using 33 : 34 via Is17, nVt17 
+# final sum of squares of residuals : 3.44993e-08
+Is17            = 1.04109922439517e-17  
+nVt17           = 0.0272491289060359    

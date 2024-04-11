@@ -17,7 +17,7 @@ int main(void)
     //gnuplot setting
     #pragma region 
     //fputs("set logscale x\n", pipe);
-    //fputs("set logscale y\n", pipe);
+    fputs("set logscale y\n", pipe);
     fputs("set datafile separator \",\" \n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
@@ -36,8 +36,8 @@ int main(void)
     fputs("set mxtics 10\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [0.6 : 1.1]\n", pipe);
-    fputs("set yrange [-0.5 : 6]\n", pipe);
+    fputs("set xrange [ : 1.1]\n", pipe);
+    fputs("set yrange [ : 6]\n", pipe);
     #pragma endregion
 
     //凡例の設定

@@ -69,7 +69,7 @@ int main(void)
     {
         fprintf(pipe, "Is%d = 1 * 1e-9 \n nVt%d = 26 * 1e-3 \n", i, i);
         fprintf(pipe, "f%d(x) = Is%d * (exp(x / nVt%d) - 1) \n", i, i, i);
-        fprintf(pipe, "fit [0 : 0.91] f%d(x) input using %d : %d via Is%d, nVt%d \n", i, 2 * i - 1, 2 * i, i, i);
+        fprintf(pipe, "fit [0 : 0.8] f%d(x) input using %d : %d via Is%d, nVt%d \n", i, 2 * i - 1, 2 * i, i, i);
         fprintf(pipe, "save fit \"fitlog\\\\%d.fitlog\" \n", i - 5);
     }
 

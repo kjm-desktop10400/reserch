@@ -1,4 +1,4 @@
-# fit [0 : 0.91] f7(x) input using 13 : 14 via Is7, nVt7 
-# final sum of squares of residuals : 1.01939e-05
-Is7             = 4.92516675336137e-13  
-nVt7            = 0.0422700958252106    
+# fit [0 : 0.8] f7(x) input using 13 : 14 via Is7, nVt7 
+# final sum of squares of residuals : 4.32752e-08
+Is7             = 1.28471816890667e-17  
+nVt7            = 0.0274716177729068    

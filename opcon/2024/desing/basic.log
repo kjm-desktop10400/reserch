@@ -1,0 +1,42 @@
+LTspice 24.0.11 for Windows
+Circuit: * C:\Users\wada\Desktop\reserch\opcon\2024\desing\basic.asc
+Start Time: Thu Apr 11 11:57:48 2024
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter HDIF
+Error on line 4 : v1 nc_09 nc_10 v
+	 Unknown parameter "v"
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Node NC_02 is floating.
+WARNING: Node NC_03 is floating.
+WARNING: Node NC_04 is floating.
+WARNING: Node NC_06 is floating.
+WARNING: Node NC_07 is floating.
+WARNING: Node NC_08 is floating.
+WARNING: Node NC_10 is floating.
+
+WARNING: Less than two connections to node nc_01.  This node is used by m2.
+WARNING: Less than two connections to node nc_02.  This node is used by m2.
+WARNING: Less than two connections to node nc_03.  This node is used by m2.
+WARNING: Less than two connections to node nc_04.  This node is used by m2.
+WARNING: Less than two connections to node nc_05.  This node is used by m3.
+WARNING: Less than two connections to node nc_06.  This node is used by m3.
+WARNING: Less than two connections to node nc_07.  This node is used by m3.
+WARNING: Less than two connections to node nc_08.  This node is used by m3.
+WARNING: Less than two connections to node nc_09.  This node is used by v1.
+WARNING: Less than two connections to node nc_10.  This node is used by v1.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+v1: Missing value, assumed 0V @ DC
+v4: Missing value, assumed 0V @ DC
+Total elapsed time: 0.170 seconds.
+
