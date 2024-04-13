@@ -1,6 +1,6 @@
 LTspice 24.0.11 for Windows
 Circuit: * C:\Users\wada\Desktop\reserch\opcon\2024\desing\basic.asc
-Start Time: Thu Apr 11 18:03:49 2024
+Start Time: Fri Apr 12 10:53:59 2024
 m2: all pins shorted together -- ignoring.
 m3: all pins shorted together -- ignoring.
 Ignoring BSIM parameter XL
@@ -112,5 +112,5 @@ dQbdVdb:  -1.37e-18
 dQbdVsb:  -5.84e-15
 
 
-Total elapsed time: 0.095 seconds.
+Total elapsed time: 0.138 seconds.
 

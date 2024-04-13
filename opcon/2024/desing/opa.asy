@@ -1,0 +1,29 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -32 48 -32 -48
+LINE Normal 48 0 -32 48
+LINE Normal -32 -48 48 0
+LINE Normal -32 -16 -64 -16
+LINE Normal -32 16 -64 16
+LINE Normal 48 0 64 0
+LINE Normal 0 -29 0 -48
+LINE Normal 0 29 0 48
+WINDOW 0 -16 0 Left 0
+SYMATTR Prefix x
+SYMATTR SpiceModel opa01
+SYMATTR ModelFile opa01.lib
+PIN -64 16 TOP 8
+PINATTR PinName inm
+PINATTR SpiceOrder 1
+PIN -64 -16 BOTTOM 8
+PINATTR PinName inp
+PINATTR SpiceOrder 2
+PIN 64 0 BOTTOM 8
+PINATTR PinName out
+PINATTR SpiceOrder 3
+PIN 0 -48 LEFT 8
+PINATTR PinName VDD
+PINATTR SpiceOrder 4
+PIN 0 48 LEFT 8
+PINATTR PinName VSS
+PINATTR SpiceOrder 5
