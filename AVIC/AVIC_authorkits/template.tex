@@ -1,0 +1,71 @@
+\documentclass[english, a4paper, 10pt]{ieej-tec}
+%\usepackage[dvips]{graphicx}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[cmex10]{amsmath}
+
+\setlength{\topmargin}{-20mm}
+\setlength{\oddsidemargin}{-32mm}
+\setlength{\evensidemargin}{-32mm}
+%\pagestyle{empty}
+
+\title{Paper Title}
+\authorlist{%
+ \authorentry*{Taro DENKI}{DU}
+ \authorentry{Jiro DENKI}{DU}
+ \authorentry{Hanako DENSHI}{DEU}
+ \authorentry{Ichiro DENSHI}{DEU}
+}
+\affiliate[DU]{Denki University}
+\affiliate[DEU]{Denshi University}
+
+%¥breakaffiliate{1}
+%¥breakJauthorline{3}
+%¥breakEauthorline{3}
+
+\begin{document}
+\begin{abstract}
+Most word limits are around 200 words.
+\end{abstract}
+
+\begin{keyword}
+AVIC, ECT, Integrated circuit, Analog design, ..., (5--6 words).
+\end{keyword}
+\maketitle
+
+\section{Introduction}
+This template, using ieej-tec.cls for the PC, provides authors with most of the formatting specifications needed for preparing electronic versions of their papers. All standard paper components have been specified for three reasons: (1) ease of use when formatting individual papers, (2) automatic compliance to electronic requirements that facilitate the concurrent or later production of electronic products, and (3) conformity of style throughout a conference proceedings. Margins, column widths, line spacing, and type styles are built-in.
+
+
+\section{Section 2}
+
+\begin{figure}[b]
+\begin{center}
+\includegraphics[scale=0.7]{avic_logo.eps}
+\caption{AVIC logo.}
+\end{center}
+\end{figure}
+
+\begin{table}[b]
+  \centering
+  \caption{Device parameters.} \label{table1}
+  \begin{tabular}{lcr}  
+  \hline
+    M1 [$\mu$m]  & W/L= 10/ 0.18\\
+    M2 [$\mu$m]  & W/L= 60/ 0.18\\
+    C				    & 0.25 pF\\ \hline
+  \end{tabular}
+\end{table}
+
+\subsection{Subsection}
+
+\section{Conclusion}
+
+%===================================================================================
+%References Here
+%=================================================================================== 
+\begin{thebibliography}{9}
+\bibitem{CTIA}
+S.M.\ Park and H.-J.\ Yoo, ``1.25-Gb/s regulated cascode CMOS transimpedance amplifier for gigabit ethernet applications,''
+{\em IEEE J. Solid-state Circuit} vol.\ 39, no.\ 1, pp.\ 112--121, Jan.\ 2004.
+\end{thebibliography}
+\end{document}
