@@ -1,6 +1,6 @@
 LTspice 24.0.11 for Windows
-Circuit: * C:\Desktop\reserch\opcon\2024\desing\railtorail.asc
-Start Time: Sun Apr 14 17:19:13 2024
+Circuit: * C:\Users\wada\Desktop\reserch\opcon\2024\desing\railtorail.asc
+Start Time: Thu May 16 15:42:10 2024
 m2: all pins shorted together -- ignoring.
 m3: all pins shorted together -- ignoring.
 Ignoring BSIM parameter XL
@@ -10,12 +10,12 @@ Ignoring BSIM parameter XL
 Ignoring BSIM parameter XW
 Ignoring BSIM parameter HDIF
 solver = Normal
-Maximum thread count: 8
+Maximum thread count: 16
 tnom = 27
 temp = 27
 method = modified trap
 WARNING: Less than two connections to node n005.  This node is used by v1.
-WARNING: Less than two connections to node n011.  This node is used by e1.
+WARNING: Less than two connections to node n010.  This node is used by e1.
 WARNING: Less than two connections to node vshift.  This node is used by v4.
 WARNING: Less than two connections to node n020.  This node is used by r4.
 Warning: Pd = 0 is less than W.
@@ -30,26 +30,15 @@ Warning: Pd = 0 is less than W.
 Warning: Ps = 0 is less than W.
 Warning: Pd = 0 is less than W.
 Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
 v1: Missing value, assumed 0V @ DC
-Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
-Starting Gmin stepping
-Gmin = 10
-Gmin = 1.07374
-Gmin = 0.115292
-Gmin = 0.0123794
-Gmin = 0.00132923
-Gmin = 0.000142725
-Gmin = 1.5325e-05
-Gmin = 1.6455e-06
-Gmin = 1.76685e-07
-Gmin = 1.89714e-08
-Gmin = 2.03704e-09
-Gmin = 2.18725e-10
-Gmin = 2.34854e-11
-Gmin = 2.52173e-12
-Gmin = 2.70769e-13
-Gmin = 0
-Gmin stepping succeeded in finding the operating point.
-
-Total elapsed time: 0.253 seconds.
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.236 seconds.
 
