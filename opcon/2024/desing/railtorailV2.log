@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
 Circuit: * E:\GitRepository\reserch\opcon\2024\desing\railtorailV2.asc
-Start Time: Fri May 17 16:55:20 2024
+Start Time: Mon May 20 15:42:24 2024
 Ignoring BSIM parameter XL
 Ignoring BSIM parameter XW
 Ignoring BSIM parameter HDIF
@@ -48,5 +48,5 @@ Gmin = 2.70769e-13
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
-Total elapsed time: 2.034 seconds.
+Total elapsed time: 1.836 seconds.
 
