@@ -20,8 +20,8 @@ int main(void)
     fputs("set datafile separator \",\" \n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
-    fputs("set xlabel \"freq [Hz]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
-    fputs("set ylabel \"trance impedance [ohm]\" font \"Arial,30\" offset -8,0\n", pipe);
+    fputs("set xlabel \"freqency [Hz]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
+    fputs("set ylabel \"trans-impedance [ohm]\" font \"Arial,30\" offset -8,0\n", pipe);
     fputs("set y2label \"phase [deg]\" font \"Arial,30\" offset 8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
     fputs("set key bottom left spacing 2.5 offset 25,0\n", pipe);
