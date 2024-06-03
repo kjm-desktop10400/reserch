@@ -61,7 +61,7 @@ int main(void)
 
     fputs("input = \"..\\\\data\\\\firstStage.vcsv\"\n", pipe);
 
-    fprintf(pipe, "plot     input skip 6 using 1 : (sqrt(($2)**2 + ($3)**2)) axis x1y1 with lines title \"trance impedance\" \n");
+    fprintf(pipe, "plot     input skip 6 using 1 : (sqrt(($2)**2 + ($3)**2)) axis x1y1 with lines title \"trans-impedance\" \n");
     fprintf(pipe, "replot   input skip 6 using 1 : 5 axis x1y2 with lines title \"phase\" \n");
 
     
