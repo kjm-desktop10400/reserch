@@ -16,7 +16,7 @@ int main(void)
     //gnuplot setting
     #pragma region 
     fputs("set logscale x\n", pipe);
-    fputs("set logscale y\n", pipe);
+    //fputs("set logscale y\n", pipe);
     fputs("set datafile separator \",\" \n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
@@ -55,15 +55,9 @@ int main(void)
     */
     #pragma endregion
 
-    fputs("virtuoso = \"..\\\\data\\\\doubleStageTiaAc.vcsv\"\n", pipe);
-    fputs("LTS = \"..\\\\data\\\\TIASubCont.txt\"\n", pipe);
+    fputs("input = \"..\\\\data\\\\.vcsv\"\n", pipe);
 
-    fprintf(pipe, "plot     virtuoso skip 6 using 1 : (sqrt(($2)**2 + ($3)**2)) * 1e-3 with lines title \"IHP out\" \n");
-    fprintf(pipe, "replot   virtuoso skip 6 using 1 : (sqrt(($5)**2 + ($6)**2)) * 1e-3 with lines title \"IHP v_{m}\" \n");
-    fprintf(pipe, "replot   LTS skip 1 using 1 : (10**(($4)/20)) * 1e-3 with lines title \"LTS v_{out}\" \n");
-    fprintf(pipe, "replot   LTS skip 1 using 1 : (10**(($2)/20)) * 1e-3 with lines title \"LTS v_{m}\" \n");
-
-
+    fprintf(pipe, "plot     input skip 6 using  :  with lines title \"\" \n");
     
 
     pclose(pipe);

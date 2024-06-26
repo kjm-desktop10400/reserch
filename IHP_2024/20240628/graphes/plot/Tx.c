@@ -11,17 +11,23 @@ int main(void)
         return 0;
     }
 
+    //pipe = fopen("plotfile.plt", "w");
+
     int count = 0;
 
     //gnuplot setting
     #pragma region 
     fputs("set logscale x\n", pipe);
     fputs("set logscale y\n", pipe);
+    fputs("set logscale z\n", pipe);
     fputs("set datafile separator \",\" \n", pipe);
-    fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
+    //fputs("set terminal postscript eps enhanced \",\" \n", pipe);
+    //fputs("set output \"output.eps\" \n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
     fputs("set xlabel \"frequency [Hz]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
-    fputs("set ylabel \"Trans-Impedance [k ohm]\" font \"Arial,30\" offset -8,0\n", pipe);
+    //fputs("set format x \"10^{%%L}\" \n", pipe);
+    //fputs("set format y \"10^{%%L}\" \n", pipe);
+    fputs("set ylabel \"Gc [ohm]\" font \"Arial,30\" offset -8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
     fputs("set key top right spacing 2.5 offset 0,0\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
@@ -30,13 +36,13 @@ int main(void)
     fputs("set bmargin 6\n", pipe);
     fputs("set tmargin 2\n", pipe);
     fputs("set tics font \"Arial,25\"\n", pipe);
-    fputs("set xtics  offset 0 , -0.8\n", pipe);
-    fputs("set y1tics  offset 0 , 0\n", pipe);
+    //fputs("set xtics  offset 0 , -0.8\n", pipe);
+    //fputs("set ytics  offset 0 , 0\n", pipe);
     fputs("set mxtics 10\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set xrange [1e6 : 1e12]\n", pipe);
-    fputs("set yrange [ : ]\n", pipe);
+    fputs("set yrange [1 : 1e9]\n", pipe);
     #pragma endregion
 
     //凡例の設定
@@ -55,16 +61,24 @@ int main(void)
     */
     #pragma endregion
 
-    fputs("virtuoso = \"..\\\\data\\\\doubleStageTiaAc.vcsv\"\n", pipe);
-    fputs("LTS = \"..\\\\data\\\\TIASubCont.txt\"\n", pipe);
+    //fputs("input = \"..\\\\data\\\\.vcsv\"\n", pipe);
 
-    fprintf(pipe, "plot     virtuoso skip 6 using 1 : (sqrt(($2)**2 + ($3)**2)) * 1e-3 with lines title \"IHP out\" \n");
-    fprintf(pipe, "replot   virtuoso skip 6 using 1 : (sqrt(($5)**2 + ($6)**2)) * 1e-3 with lines title \"IHP v_{m}\" \n");
-    fprintf(pipe, "replot   LTS skip 1 using 1 : (10**(($4)/20)) * 1e-3 with lines title \"LTS v_{out}\" \n");
-    fprintf(pipe, "replot   LTS skip 1 using 1 : (10**(($2)/20)) * 1e-3 with lines title \"LTS v_{m}\" \n");
+    fputs("i = {0, 1}  \n", pipe);
+    fputs("gm = 24.82e-3  \n", pipe);
+    fputs("gce = 52e-6  \n", pipe);
+    fputs("gie = 88e-6  \n", pipe);
+    fputs("Gc = 1.15e-3  \n", pipe);
+    fputs("Ge = 1.54e-3  \n", pipe);
+    fputs("Gce = gie + Ge  \n", pipe);
+    fputs("Cpd = 16e-15  \n", pipe);
+    fputs("Cjc = 2.396e-15  \n", pipe);
+    fputs("Cje = 12.95e-15  \n", pipe);
+    fputs("f(x) = (gm + gce) / ( Ge*gce + Gc*( Ge + gm + gie + gce ) + i * 2*pi* x * ( gce*(Cpd+Cje) + (Ge + gm + gie + gce) * Cjc + Gc * (Cpd+Cje) ) - 4 * pi * pi * Cjc * (Cpd + Cje) ) \n", pipe);
+    fputs("g(x, y) = (gm + gce) / ( Ge*gce +y*( Ge + gm + gie + gce ) + i * 2*pi* x * ( gce*(Cpd+Cje) + (Ge + gm + gie + gce) * Cjc + y * (Cpd+Cje) ) - 4 * pi * pi * Cjc * (Cpd + Cje) ) \n", pipe);
+    fputs("p(x, y) = 5e3+x*1e-36 \n", pipe);
 
 
-    
+    fprintf(pipe, "splot abs(g(x, 1/y)), p(x, y) with lines title \"X_{T}\" \n");    
 
     pclose(pipe);
 
