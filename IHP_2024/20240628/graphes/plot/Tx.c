@@ -41,7 +41,7 @@ int main(void)
     fputs("set mxtics 10\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [1e6 : 1e12]\n", pipe);
+    fputs("set xrange [1e9 : 1e12]\n", pipe);
     fputs("set yrange [1 : 10e3]\n", pipe);
     #pragma endregion
 
@@ -69,9 +69,9 @@ int main(void)
     fputs("gie = 88e-6  \n", pipe);
 
     //fputs("Gc = 1.15e-3  \n", pipe);
-    fputs("Gc = 1.15e-3  \n", pipe);
+    fprintf(pipe, "Gc = %lf  \n", 1.0/870);
 
-    fputs("Ge = 1.54e-3  \n", pipe);
+    fprintf(pipe, "Ge = %lf  \n", 1/650);
     
     fputs("Gce = gie + Ge  \n", pipe);
     fputs("Cpd = 16e-15  \n", pipe);
@@ -83,15 +83,23 @@ int main(void)
     fputs("f(x, y) = (gm + gce) / ( (gie + y) * gce + Gc*( (gie + y) + gm + gie + gce ) + i * 2*pi* x * ( gce*(Cpd+Cje) + ((gie + y) + gm + gie + gce) * Cjc + Gc * (Cpd+Cje) ) - (2 * pi * x)**2 * Cjc * (Cpd + Cje) ) \n", pipe);
     fputs("g(x, y) = (gm + gce) / ( (gie + Ge) * gce + y*( (gie + Ge) + gm + gie + gce ) + i * 2*pi* x * ( gce*(Cpd+Cje) + ((gie + Ge) + gm + gie + gce) * Cjc + y * (Cpd+Cje) ) - (2 * pi * x)**2 * Cjc * (Cpd + Cje) ) \n", pipe);
 
+    fputs("j(x) = (gm + gce) / ( (gie + 1.0/800) * gce + (1.0/600)*( (gie + 1.0/800) + gm + gie + gce ) + i * 2*pi* x * ( gce*(Cpd+Cje) + ((gie + 1.0/800) + gm + gie + gce) * Cjc + (1.0/600) * (Cpd+Cje) ) - (2 * pi * x)**2 * Cjc * (Cpd + Cje) ) \n", pipe);
+
     fputs("h(x, y, C) = (gm + gce) / ( (gie + y) * gce + C*( (gie + y) + gm + gie + gce ) + i * 2*pi* x * ( gce*(Cpd+Cje) + ((gie + y) + gm + gie + gce) * Cjc + C * (Cpd+Cje) ) - (2 * pi * x)**2 * Cjc * (Cpd + Cje) ) \n", pipe);
-    fputs("i(x, y, E) = (gm + gce) / ( (gie + E) * gce + y*( (gie + E) + gm + gie + gce ) + i * 2*pi* x * ( gce*(Cpd+Cje) + ((gie + E) + gm + gie + gce) * Cjc + y * (Cpd+Cje) ) - (2 * pi * x)**2 * Cjc * (Cpd + Cje) ) \n", pipe);
 
 
     //fprintf(pipe, "splot abs(f(x, 1/y)) with lines title \"RE\" , abs(g(x, 1/y)) with lines title \"RC\" \n");    
+
+    for(int i = 0; i < 10; i++)
+    {
+        fprintf(pipe, "h%d(x, y) = (gm + gce) / ( (gie + y) * gce + %lf*( (gie + y) + gm + gie + gce ) + i * 2*pi* x * ( gce*(Cpd+Cje) + ((gie + y) + gm + gie + gce) * Cjc + %lf * (Cpd+Cje) ) - (2 * pi * x)**2 * Cjc * (Cpd + Cje) ) \n", i,  1.0/((i + 1) * 100),  1.0/((i + 1) * 100));    
+        fprintf(pipe, "i%d(x, y) = (gm + gce) / ( (gie + %lf) * gce + y*( (gie + %lf) + gm + gie + gce ) + i * 2*pi* x * ( gce*(Cpd+Cje) + ((gie + %lf) + gm + gie + gce) * Cjc + y * (Cpd+Cje) ) - (2 * pi * x)**2 * Cjc * (Cpd + Cje) ) \n", i,  1.0/((i + 1) * 100),  1.0/((i + 1) * 100), 1.0/((i + 1) * 100));
+    }
+
     fprintf(pipe, "splot ");
     for(int i = 0; i < 10; i++)
     {
-        fprintf(pipe, "abs(i(x, 1/y, 1/%d)) with lines title \"RE : %d\"", (i + 1) * 100, (i + 1) * 100);
+        fprintf(pipe, "abs(h%d(x, 1/y)) with lines title \"RE : %d\"", i, (i + 1) * 100);
 
         if(i != 9)
         {
@@ -100,7 +108,7 @@ int main(void)
     }
     fprintf(pipe, "\n");
 
-    //fprintf(pipe, "plot abs(T(x)) with lines notitle \"X_{T}\" \n");    
+    fprintf(pipe, "plot abs(j(x)) with lines title \"new\", abs(T(x)) with lines title \"pre\" \n");    
 
 
     pclose(pipe);
