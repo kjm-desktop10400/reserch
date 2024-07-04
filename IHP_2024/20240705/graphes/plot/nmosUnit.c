@@ -60,10 +60,12 @@ int main(void)
     fputs("input = \"..\\\\data\\\\nmosUnit.vcsv\"\n", pipe);
 
     fputs("f(x) = g * x + i  \n", pipe);
+    fputs("g(x) = K * (x - 0.5)**2  \n", pipe);
 
     fprintf(pipe, "plot     input skip 6 using 1 : (sqrt($2) * 1e3) with lines title \"sqrt I_{d}\" \n");
 
     fputs("fit [0.7 : 1] f(x) input skip 6 using 1 : (sqrt($2)) via g, i \n", pipe);
+    fputs("fit [1 : 1.2] g(x) input skip 6 using 1 : 2 via K \n", pipe);
     fprintf(pipe, "replot   ( g * x + i ) * 1e3  with lines title \"estimated\" \n");
 
     
