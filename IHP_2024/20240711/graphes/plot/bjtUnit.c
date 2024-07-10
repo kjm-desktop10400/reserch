@@ -16,14 +16,16 @@ int main(void)
     //gnuplot setting
     #pragma region 
     //fputs("set logscale x\n", pipe);
-    //fputs("set logscale y\n", pipe);
+    //fputs("set logscale y1\n", pipe);
+    //fputs("set logscale y2\n", pipe);
     fputs("set datafile separator \",\" \n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
-    fputs("set xlabel \" []\" font \"Arial,30\" offset 0,-1.5\n", pipe);
-    fputs("set ylabel \" []\" font \"Arial,30\" offset -8,0\n", pipe);
+    fputs("set xlabel \"V_{BE} [V]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
+    fputs("set ylabel \"I_{C} [mA]\" font \"Arial,30\" offset -8,0\n", pipe);
+    fputs("set y2label \"g_{m} [mS]\" font \"Arial,30\" offset 8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
-    fputs("set key top right spacing 2.5 offset 0,0\n", pipe);
+    fputs("set key top left spacing 2.5 offset 30,0\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
     fputs("set lmargin 20\n", pipe);
     fputs("set rmargin 20\n", pipe);
@@ -31,12 +33,15 @@ int main(void)
     fputs("set tmargin 2\n", pipe);
     fputs("set tics font \"Arial,25\"\n", pipe);
     fputs("set xtics  offset 0 , -0.8\n", pipe);
-    fputs("set ytics  offset 0 , 0\n", pipe);
+    fputs("set y1tics  offset 0 , 0\n", pipe);
+    fputs("set y2tics  offset 0 , 0\n", pipe);
     fputs("set mxtics 10\n", pipe);
-    fputs("set mytics 5\n", pipe);
+    fputs("set my1tics 5\n", pipe);
+    fputs("set my2tics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [1e6 : 1e12]\n", pipe);
-    fputs("set yrange [ : ]\n", pipe);
+    fputs("set xrange [0 : 1.7]\n", pipe);
+    //fputs("set y1range [ : ]\n", pipe);
+    //fputs("set y2range [0 : 40]\n", pipe);
     #pragma endregion
 
     //凡例の設定
@@ -55,9 +60,10 @@ int main(void)
     */
     #pragma endregion
 
-    fputs("input = \"..\\\\data\\\\.vcsv\"\n", pipe);
+    fputs("input = \"..\\\\data\\\\bjtUnit.vcsv\"\n", pipe);
 
-    fprintf(pipe, "plot     input skip 6 using  :  with lines title \"\" \n");
+    fprintf(pipe, "plot     input skip 6 using 3 : (($4) * 1e3 ) axis x1y1 with lines title \"current\" \n");
+    fprintf(pipe, "replot   input skip 6 using 1 : (($2) * 1e3 ) axis x1y2 with lines title \"trans-conductance\" \n");
     
 
     pclose(pipe);

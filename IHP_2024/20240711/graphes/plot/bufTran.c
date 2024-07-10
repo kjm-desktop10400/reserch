@@ -20,8 +20,8 @@ int main(void)
     fputs("set datafile separator \",\" \n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
     fputs("set tics font \"Arial,20\"\n", pipe);
-    fputs("set xlabel \" []\" font \"Arial,30\" offset 0,-1.5\n", pipe);
-    fputs("set ylabel \" []\" font \"Arial,30\" offset -8,0\n", pipe);
+    fputs("set xlabel \"Time [ns]\" font \"Arial,30\" offset 0,-1.5\n", pipe);
+    fputs("set ylabel \"Voltage [V]\" font \"Arial,30\" offset -8,0\n", pipe);
     fputs("set key font\"Arial,25\"\n", pipe);
     fputs("set key top right spacing 2.5 offset 0,0\n", pipe);
     fputs("set terminal windows size 1000,700\n", pipe);
@@ -35,8 +35,8 @@ int main(void)
     fputs("set mxtics 10\n", pipe);
     fputs("set mytics 5\n", pipe);
     fputs("set grid xtics mxtics ytics linewidth 2, linewidth 1, linewidth 1\n", pipe);
-    fputs("set xrange [1e6 : 1e12]\n", pipe);
-    fputs("set yrange [ : ]\n", pipe);
+    //fputs("set xrange [1e6 : 1e12]\n", pipe);
+    //fputs("set yrange [ : ]\n", pipe);
     #pragma endregion
 
     //凡例の設定
@@ -55,9 +55,10 @@ int main(void)
     */
     #pragma endregion
 
-    fputs("input = \"..\\\\data\\\\.vcsv\"\n", pipe);
+    fputs("input = \"..\\\\data\\\\bufTran.vcsv\"\n", pipe);
 
-    fprintf(pipe, "plot     input skip 6 using  :  with lines title \"\" \n");
+    fprintf(pipe, "plot     input skip 6 using (($1) * 1e9) : 2 with lines title \"input\" \n");
+    fprintf(pipe, "replot   input skip 6 using (($3) * 1e9) : 4 with lines title \"output\" \n");
     
 
     pclose(pipe);
